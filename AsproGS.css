@@ -4534,7 +4534,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-profiles-favourites .cc-favourites:last-child img[alt*="Hachiman Hikigaya"],
 .b-catalog_entry-tooltip img[alt*="Hachiman Hikigaya"],
 .p-profiles-show .about a img[alt*="Hachiman Hikigaya"] {
-  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/947895.jpg");
+  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/1176145.jpg");
 }
 
 .b-catalog_entry .cover .image-decor img[alt*="Yukino Yukinoshita"],
@@ -4543,7 +4543,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-profiles-favourites .cc-favourites:last-child img[alt*="Yukino Yukinoshita"],
 .b-catalog_entry-tooltip img[alt*="Yukino Yukinoshita"],
 .p-profiles-show .about a img[alt*="Yukino Yukinoshita"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/947924.jpg"); 
+  content: url("https://desu.shikimori.one/system/user_images/original/184680/1176138.jpg"); 
 }
 
 .b-catalog_entry .cover .image-decor img[alt*="Ginko"],
@@ -4606,7 +4606,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-profiles-favourites .cc-favourites:last-child img[alt*="Iroha Isshiki"],
 .b-catalog_entry-tooltip img[alt*="Iroha Isshiki"],
 .p-profiles-show .about a img[alt*="Iroha Isshiki"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/859076.jpg"); 
+  content: url("https://kawai.shikimori.one/system/user_images/original/184680/1176116.jpg"); 
 }
 
 .b-catalog_entry .cover .image-decor img[alt*="Yumiko Miura"],
@@ -4769,6 +4769,15 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .b-catalog_entry-tooltip img[alt*="Kyouko Otonashi"],
 .p-profiles-show .about a img[alt*="Kyouko Otonashi"] {
   content: url("https://dere.shikimori.one/system/user_images/original/184680/1094924.jpg");
+}
+
+.b-catalog_entry .cover .image-decor img[alt*="Youzou Ooba"],
+.b-db_entry > .c-image img[alt*="Youzou Ooba"],
+.p-profiles-show .cc-favourites img[alt*="Youzou Ooba"],
+.p-profiles-favourites .cc-favourites:last-child img[alt*="Youzou Ooba"],
+.b-catalog_entry-tooltip img[alt*="Youzou Ooba"],
+.p-profiles-show .about a img[alt*="Youzou Ooba"] {
+  content: url("https://desu.shikimori.one/system/user_images/original/184680/1185168.jpg"); 
 }
 
 /* Манга и ранобэ */
