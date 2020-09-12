@@ -4039,14 +4039,8 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .p-profiles .profile-head .c-brief header .notice span::after {
-  display: inline-block;
-  content: '';
-  width: .3rem;
-  height: .3rem;
-  margin: 1px 5px;
-  padding: 0;
-  border-radius: 50%;
-  background: #435158;
+  content: '●';
+  color: #435158;
 }
 
 .b-options-floated a::after, .b-options-floated .link::after, .p-user_rates-index .list-groups .summary .stat-value::after {
