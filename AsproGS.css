@@ -6221,15 +6221,6 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   -webkit-text-stroke: thin;
 }
 
-
-.p-profiles .profile-head .c-brief header .notice span::after {
-  width: .25rem;
-  height: 0.25rem;
-  margin: 2px 5px;
-}
-
-
-
 .b-spoiler_block>div {
   border-left: 4px solid #232f3c;
   padding: 3px 3px 3px 14px;
