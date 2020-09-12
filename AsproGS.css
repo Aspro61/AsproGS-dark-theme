@@ -6242,7 +6242,7 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   background-color: var(--v3-background-color);
 }
 
-.b-spoiler_block>button {
+.b-spoiler_block>span {
   line-height: 20px;
   border: 1px solid;
   margin-bottom: 5px;
@@ -6251,8 +6251,8 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   border-color: var(--main-border-color);
 }
 
-.b-spoiler_block>button:hover,
-.b-spoiler_block>button:active {
+.b-spoiler_block>span:hover,
+.b-spoiler_block>span:active {
   background-color: var(--background-color-hover);
 }
 
