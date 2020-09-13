@@ -2793,7 +2793,7 @@ header.head h2 a.back::after {
   justify-content: center;
 }
 
-@media (max-width: 480px) {  
+@media (max-width: 1024px) {  
   .u-tabs > div:not([data-tab]) {
    justify-content: left;
   }
