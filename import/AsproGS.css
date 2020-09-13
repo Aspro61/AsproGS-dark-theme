@@ -2978,26 +2978,31 @@ header.head h2 a.back::after {
   order: 4;
 }
 
-#profiles_show .cc-favourites .entry-67065 {
+#profiles_show .cc-favourites .entry-236 {
   order: 5;
 }
 
-#profiles_show .cc-favourites .entry-80 {
+#profiles_show .cc-favourites .entry-67065 {
   order: 6;
 }
 
-#profiles_show .cc-favourites .entry-425 {
+#profiles_show .cc-favourites .entry-80 {
   order: 7;
 }
 
-#profiles_show .cc-favourites .entry-10010 {
+#profiles_show .cc-favourites .entry-425 {
   order: 8;
+}
+
+#profiles_show .cc-favourites .entry-10010 {
+  order: 9;
 }
 
 #profiles_show .cc-favourites .c-column {
   margin: 0;
   margin-left: 1.5%;
   margin-bottom: 1.5%;
+  width: 9.6%;
 }
 
 #profiles_show .cc-favourites {
@@ -3048,7 +3053,6 @@ header.head h2 a.back::after {
 #profiles_show .cc-favourites .entry-9055,
 #profiles_show .cc-favourites .entry-4745,
 #profiles_show .cc-favourites .entry-76606,
-#profiles_show .cc-favourites .entry-236,
 #profiles_show .cc-favourites .entry-119763,
 #profiles_show .cc-favourites .entry-110743,
 #profiles_show .cc-favourites .entry-78361 {
