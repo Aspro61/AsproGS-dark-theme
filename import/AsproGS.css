@@ -3586,7 +3586,13 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   padding-right: 0;
 }
 
-#profiles_show .b-achievement.is-badge::before, #achievements_index .cc-authors .b-achievement.is-badge::before, .p-achievements.p-profiles-index .c-franchises .b-badge[original-title]::before, .p-achievements.p-profiles-index .c-franchises .b-badge[title]::before, #achievements_index .cc-achievements .b-achievement, #achievements_index .cc-franchises-genres .c-genres .b-achievement, #achievements_show .b-achievement.is-badge:before,
+#profiles_show .b-achievement.is-badge::before,
+#achievements_index .cc-authors .b-achievement.is-badge::before,
+.p-achievements.p-profiles-index .c-franchises .b-badge[original-title]::before,
+.p-achievements.p-profiles-index .c-franchises .b-badge[title]::before,
+#achievements_index .cc-achievements .b-achievement,
+#achievements_index .cc-franchises-genres .c-genres .b-achievement,
+#achievements_show .b-achievement.is-badge:before,
 #achievements_group .b-achievement.is-badge:before {
   border: 1px solid;
   color: var(--main-text-color);
@@ -3684,15 +3690,19 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   font-size: 10px;
 }
 
+.l-footer, .l-footer .links a {
+  color: var(--v2-sp-color);
+  -webkit-text-stroke: thin;
+}
+
 /* CSS Редактор */
-/* Редизайн кнопки свернуть/развернуть */
 .b-edit_styles .edit_style .style_css label,
 .b-edit_styles .new_style .style_css label {
   background: #0f1112;
   border: 1px solid #181c1f;
   padding: 4px 10px;
   color: #fafafa;
-  margin-top: 0px; /* возможно придётся настраивать вручную, что бы добиться эффекта единного интерфейса */
+  margin-top: 0px;
 }
 
 .b-edit_styles .edit_style .style_css .editor-expand,
@@ -6216,11 +6226,7 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
 /* Опросы end */
 /* Временные наработки end */
 
-.l-footer, .l-footer .links a {
-  color: var(--v2-sp-color);
-  -webkit-text-stroke: thin;
-}
-
+/* Новые спойлеры */
 .b-spoiler_block>div {
   border-left: 4px solid #232f3c;
   padding: 3px 3px 3px 14px;
@@ -6259,13 +6265,10 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   background-color: var(--v3-background-color);
 }
 
-.about .b-quote-v2 {
-  padding: 10px 5px 0 10px;
-}
-
 code.b-code_inline {
   border: 1px solid;
   background-color: var(--v3-background-color);
   border-color: var(--main-border-color);
   color: var(--red-color);
 }
+/* Новые спойлеры end */
