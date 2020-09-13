@@ -4594,8 +4594,12 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   }
      
   .p-profiles .profile-head .c-info .c-additionals {
-    margin-top: 12rem;
+    margin-top: 9rem;
     margin-bottom: 10px;
+  }
+  
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
+    margin-bottom: 0;
   }
    
   .b-stats_bar .stat_names {
@@ -4620,10 +4624,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   
   .b-options-floated.mobile-desktop a::before {
     margin: 2px -14px;
-  }
-  
-  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
-    margin-bottom: 30px;
   }
   
   #profiles_show .cc-2>.c-column {
