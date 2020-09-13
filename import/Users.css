@@ -2755,7 +2755,7 @@ header.head h2 a.back::after {
   justify-content: center;
 }
 
-@media (max-width: 480px) {  
+@media (max-width: 1023px) {  
   .u-tabs > div:not([data-tab]) {
    justify-content: left;
   }
@@ -4525,8 +4525,8 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   }
   
    ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+    width: 3px;
+    height: 2px;
   }
   
   .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility,
@@ -4828,6 +4828,30 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   .profile-actions .ban,
   .profile-actions .settings {
    margin-left: 0;
+  }
+}
+
+@media (max-width: 1023px) {  
+  .b-shiki_editor aside.buttons .editor-bold,
+  .b-shiki_editor aside.buttons .editor-italic,
+  .b-shiki_editor aside.buttons .editor-strike,
+  .b-shiki_editor aside.buttons .editor-underline,
+  .b-shiki_editor aside.buttons .editor-link,
+  .b-shiki_editor aside.buttons .editor-image,
+  .b-shiki_editor aside.buttons .editor-quote,
+  .b-shiki_editor aside.buttons .editor-spoiler,
+  .b-shiki_editor aside.buttons .editor-file,
+  .b-shiki_editor aside.buttons .editor-smiley {
+    display: inline-block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {  
+  .b-shiki_editor .buttons>div {
+    white-space: nowrap;
+    max-width: calc((130vw - 40px) / 2);
+    overflow-x: auto;
   }
 }
 /* МОБ ВЕРСИЯ КОНЕЦ */
