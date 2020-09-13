@@ -5794,7 +5794,7 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   }
   
   .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
    
   .b-stats_bar .stat_names {
@@ -5819,10 +5819,6 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   
   .b-options-floated.mobile-desktop a::before {
     margin: 2px -14px;
-  }
-  
-  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
-    margin-bottom: 30px;
   }
   
   #profiles_show .cc-2>.c-column {
