@@ -5720,8 +5720,8 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   }
   
    ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+    width: 3px;
+    height: 2px;
   }
   
   .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility,
