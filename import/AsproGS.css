@@ -5789,8 +5789,12 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   }
      
   .p-profiles .profile-head .c-info .c-additionals {
-    margin-top: 12rem;
+    margin-top: 9rem;
     margin-bottom: 10px;
+  }
+  
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
+    margin-bottom: 5px;
   }
    
   .b-stats_bar .stat_names {
