@@ -1,5 +1,3 @@
-/* AUTO=sticky_menu */ @media screen and (min-width: 1025px) { .l-top_menu-v2 { position: sticky; top: 0; } .l-top_menu-v2 .active .submenu { max-height: calc(100vh - 46px); overflow: auto; } }
-
 /* Ширина */
 .x1200 .l-top_menu-v2,
 .x1000 .l-top_menu-v2 {
@@ -3210,7 +3208,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 #profiles_show .achievements .cc-3 > .c-column:nth-child(3) {
   width: 100%;
-  margin-bottom: -3.5%;
+  margin-bottom: -2.2%;
 }
 
 #profiles_show .achievements .cc-achievements .b-achievement {
