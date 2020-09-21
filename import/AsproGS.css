@@ -205,6 +205,7 @@ span[style="background: #fff2f2; padding: 0 2px;"],
 span[style="background: #e6ffe6; padding: 0 2px;"],
 span[style="background: #ffe6e6; padding: 0 2px;"] {
   background: none !important;
+  padding: 0 !important;
 }
 
 /* Зеленый цвет */
@@ -3007,7 +3008,7 @@ header.head h2 a.back::after {
 
 #profiles_show .cc-favourites {
   margin-right: 1.5%;
-  margin-bottom: .5%;
+  margin-bottom: -3%;
 }
 
 .cc-favourites {
@@ -3371,7 +3372,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   margin: 0;
   left: 0.3%;
   margin-top: 0.5%;
-  margin-bottom: 2%;
 }
 
 #profiles_show .achievements .cc-3 > .c-column:first-child {
@@ -3387,6 +3387,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 #profiles_show .achievements .cc-3 > .c-column:nth-child(3) {
   width: 100%;
+  margin-bottom: -3.5%;
 }
 
 #profiles_show .achievements .cc-achievements .b-achievement {
@@ -3394,6 +3395,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   width: 24%;
   margin-left: .5%;
   margin-top: 1%;
+}
+
+#profiles_show .achievements .cc-achievements::after {
+  content: none;
 }
 
 #achievements_index .cc-authors .b-achievement:not([data-progress='100']):not(:hover) {
@@ -4370,10 +4375,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 /* Разное */
-#profiles_show .block {
-  margin-bottom: 0;
-}
-
 #profiles_show .about .red {
   color: inherit;
   width: 50%;
