@@ -1,5 +1,3 @@
-/* AUTO=sticky_menu */ @media screen and (min-width: 1025px) { .l-top_menu-v2 { position: sticky; top: 0; } .l-top_menu-v2 .active .submenu { max-height: calc(100vh - 46px); overflow: auto; } }
-
 /* Обложка */
 .p-profiles .profile-head[data-user-id="184680"] .c-brief:before {
   background-image: url(https://kawai.shikimori.one/system/user_images/original/184680/1081001.jpg);
@@ -2963,6 +2961,7 @@ header.head h2 a.back::after {
 }
 
 /* Избранное */
+/* Ж */
 #profiles_show .cc-favourites .entry-67067 {
   order: 1;
 }
@@ -2983,20 +2982,48 @@ header.head h2 a.back::after {
   order: 5;
 }
 
-#profiles_show .cc-favourites .entry-67065 {
+#profiles_show .cc-favourites .entry-4745 {
   order: 6;
 }
 
-#profiles_show .cc-favourites .entry-80 {
+#profiles_show .cc-favourites .entry-110743 {
   order: 7;
 }
 
-#profiles_show .cc-favourites .entry-425 {
+#profiles_show .cc-favourites .entry-78361 {
   order: 8;
 }
 
-#profiles_show .cc-favourites .entry-10010 {
+#profiles_show .cc-favourites .entry-3275 {
   order: 9;
+}
+/* М */
+#profiles_show .cc-favourites .entry-67065 {
+  order: 10;
+}
+
+#profiles_show .cc-favourites .entry-80 {
+  order: 11;
+}
+
+#profiles_show .cc-favourites .entry-425 {
+  order: 12;
+}
+
+#profiles_show .cc-favourites .entry-10010 {
+  order: 13;
+}
+
+#profiles_show .cc-favourites .entry-3096 {
+  order: 14;
+}
+
+#profiles_show .cc-favourites .entry-119763 {
+  order: 15;
+}
+
+#profiles_show .cc-favourites .entry-26802 {
+  order: 16;
 }
 
 #profiles_show .cc-favourites .c-column {
@@ -3033,30 +3060,7 @@ header.head h2 a.back::after {
 #profiles_show .cc-favourites.user_rates-minified .c-anime,
 #profiles_show .cc-favourites.user_rates-minified .c-manga,
 #profiles_show .cc-favourites.user_rates-minified .c-person,
-#profiles_show .cc-favourites .entry-3096,
-#profiles_show .cc-favourites .entry-63845,
-#profiles_show .cc-favourites .entry-69411,
-#profiles_show .cc-favourites .entry-69407,
-#profiles_show .cc-favourites .entry-4959,
-#profiles_show .cc-favourites .entry-497,
-#profiles_show .cc-favourites .entry-26802,
-#profiles_show .cc-favourites .entry-672,
-#profiles_show .cc-favourites .entry-2213,
-#profiles_show .cc-favourites .entry-2552,
-#profiles_show .cc-favourites .entry-506,
-#profiles_show .cc-favourites .entry-23602,
-#profiles_show .cc-favourites .entry-22037,
-#profiles_show .cc-favourites .entry-86,
-#profiles_show .cc-favourites .entry-14040,
-#profiles_show .cc-favourites .entry-434,
-#profiles_show .cc-favourites .entry-3275,
-#profiles_show .cc-favourites .entry-9028,
-#profiles_show .cc-favourites .entry-9055,
-#profiles_show .cc-favourites .entry-4745,
-#profiles_show .cc-favourites .entry-76606,
-#profiles_show .cc-favourites .entry-119763,
-#profiles_show .cc-favourites .entry-110743,
-#profiles_show .cc-favourites .entry-78361 {
+#profiles_show .cc-favourites .entry-63845 {
   display: none;
 }
 
