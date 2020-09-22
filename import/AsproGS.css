@@ -4485,16 +4485,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-recommendations-index .b-catalog_entry .edit:hover, .p-recommendations-index .b-catalog_entry .delete:hover, .p-recommendations-index .b-catalog_entry .drag-handle:hover, .p-recommendations-index .b-catalog_entry .confirm:hover, .p-recommendations-index .b-catalog_entry .cancel:hover, .p-recommendations-index .b-catalog_entry .move-left:hover, .p-recommendations-index .b-catalog_entry .move-right:hover, .p-recommendations-index .b-catalog_entry .mobile-edit:hover, .p-recommendations-favourites .b-catalog_entry .edit:hover, .p-recommendations-favourites .b-catalog_entry .delete:hover, .p-recommendations-favourites .b-catalog_entry .drag-handle:hover, .p-recommendations-favourites .b-catalog_entry .confirm:hover, .p-recommendations-favourites .b-catalog_entry .cancel:hover, .p-recommendations-favourites .b-catalog_entry .move-left:hover, .p-recommendations-favourites .b-catalog_entry .move-right:hover, .p-recommendations-favourites .b-catalog_entry .mobile-edit:hover, .p-recommendations-index .b-catalog_entry .edit:active, .p-recommendations-index .b-catalog_entry .delete:active, .p-recommendations-index .b-catalog_entry .drag-handle:active, .p-recommendations-index .b-catalog_entry .confirm:active, .p-recommendations-index .b-catalog_entry .cancel:active, .p-recommendations-index .b-catalog_entry .move-left:active, .p-recommendations-index .b-catalog_entry .move-right:active, .p-recommendations-index .b-catalog_entry .mobile-edit:active, .p-recommendations-favourites .b-catalog_entry .edit:active, .p-recommendations-favourites .b-catalog_entry .delete:active, .p-recommendations-favourites .b-catalog_entry .drag-handle:active, .p-recommendations-favourites .b-catalog_entry .confirm:active, .p-recommendations-favourites .b-catalog_entry .cancel:active, .p-recommendations-favourites .b-catalog_entry .move-left:active, .p-recommendations-favourites .b-catalog_entry .move-right:active, .p-recommendations-favourites .b-catalog_entry .mobile-edit:active {
   background-color: #313d46;
 }
-
-.b-news_wall-topic .status-line,
-.b-news_wall-topic .title {
-  margin: 10px 10px;
-}
-
-.b-news_wall-topic {
-  background: #0f1112;
-  border: 1px solid #181c1f;
-}
 /* Прочее end */
 
 
@@ -6106,6 +6096,16 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
 
 .p-dashboards-show .v2 .my-list {
   padding: 5px 10px 8px;
+  background: #0f1112;
+  border: 1px solid #181c1f;
+}
+
+.b-news_wall-topic .status-line,
+.b-news_wall-topic .title {
+  margin: 10px 10px;
+}
+
+.b-news_wall-topic {
   background: #0f1112;
   border: 1px solid #181c1f;
 }
