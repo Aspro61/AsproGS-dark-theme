@@ -4295,15 +4295,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   background-color: #313d46;
 }
 
-.b-news_wall-topic .status-line,
-.b-news_wall-topic .title {
-  margin: 10px 10px;
-}
-
-.b-news_wall-topic {
-  background: #0f1112;
-  border: 1px solid #181c1f;
-}
 /* Прочее end */
 
 /* МОБ ВЕРСИЯ */
@@ -4905,6 +4896,16 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 .p-dashboards-show .v2 .my-list {
   padding: 5px 10px 8px;
+  background: #0f1112;
+  border: 1px solid #181c1f;
+}
+
+.b-news_wall-topic .status-line,
+.b-news_wall-topic .title {
+  margin: 10px 10px;
+}
+
+.b-news_wall-topic {
   background: #0f1112;
   border: 1px solid #181c1f;
 }
