@@ -1,3 +1,5 @@
+/* AUTO=sticky_menu */ @media screen and (min-width: 1025px) { .l-top_menu-v2 { position: sticky; top: 0; } .l-top_menu-v2 .active .submenu { max-height: calc(100vh - 46px); overflow: auto; } }
+
 /* Ширина */
 .x1200 .l-top_menu-v2,
 .x1000 .l-top_menu-v2 {
@@ -9,78 +11,108 @@
 .x1000 .l-page {
   max-width: 1000px;
 }
-/* Ширина end */
 
 /* Цвета */
+/* Настройка переменных */
 :root {
-  --main-text-color: #aeb3b7;
-  --main-text-color-hover: #778998;
-  --main-text-color-active: #778998;
-  --main-sp-color: #4d6175;
-  --v1-sp-color: #7b9da2;
-  --v2-sp-color: #908d7e;
-  --v3-sp-color: #74a4c5;
-  --v4-sp-color: #a8cee8;
-  --green-color: #5a9861;
-  --red-color: #9e6360;
-  --main-background-color: rgb(14, 14, 14);
-  --headline-background-color: #1e2429;
-  --menu-background-color: #181c1f;
-  --submenu-background-color: #1d2125;
-  --background-color: #181c1f;
-  --background-color-hover: #1c2225;
-  --background-color-active: #343a3e;
-  --v1-background-color: #242a2f;
-  --v2-background-color: #908d7e;
-  --v3-background-color: #141719;
-  --v4-background-color: #0f1112;
-  --v5-background-color: #47505a;
-  --main-border-color: #181c1f;
-  --border-color: #293135;
-  --v1-border-color: #0f1112;
-  --watching-background-color: #2f4144;
-  --watching-border-color: #243538;
-  --completed-background-color: #364b37;
-  --completed-border-color: #253326;
-  --planned-background-color: #3e4a5b;
-  --planned-border-color: #2d3643;
-  --on_hold-background-color: #414141;
-  --on_hold-border-color: #2d2d2d;
-  --dropped-background-color: #573231;
-  --dropped-border-color: #3d2322;
-  --versions-background-color: #8a7f6a;
-  --comments-background-color: #aeb3b7;
-  --summaries-background-color: #435158;
+  /* Основной цвет текста */
+  --color-main-text: #aeb3b7;
+  --color-main-text-hover: #778998;
+  --color-main-text-active: #778998;
+
+  /* Цвет текста */
+  --color-text: #5f798c;
+  --color-auxiliary-text: #7b9da2;
+  --color-additional-text: #a8b3bd;
+  --color-auxiliary-text-hover: #a8cee8;
+  --color-auxiliary-text-active: #a8cee8;
+
+  /* Цвет ссылок */
+  --color-link: #4d6175;
+
+  /* Фоновые цвета */
+  --color-main-background: rgb(12, 13, 14);
+  --color-background: #181c1f;
+  --color-auxiliary-background: #7b9da2;
+  --color-additional-background: #47505a;
+  --color-background-hover: #1e2629;
+  --color-background-active: #343a3e;
+  --color-input-background: #141719;
+
+  /* Цвет заголовков */
+  --color-headline-background: #1e2429;
+  --color-headline-auxiliary-background: #202e35;
+
+  /* Цвет меню */
+  --color-menu-background: #181c1f;
+  --color-submenu-background: #1d2125;
+
+  /* Цвет обводки */
+  --color-main-border: #181c1f;
+  --color-border: #293135;
+  --color-auxiliary-border: #0f1112;
+
+  /* Разные цвета */
+  --color-green: #5a9861;
+  --color-red: #9e6360;
+  --color-beige: #908d7e;
+  --color-pink: #FFC0CB;
+  --color-purple: #8d6094;
+  --color-yellow: #FFFF00;
+  --color-blue: #477590;
+  --color-orange: #ad8766;
+  --color-dark: #0d0f10;
+
+  /* Цвет списков */
+  --color-watching-background: #2f4144;
+  --color-watching-border: #243538;
+  --color-completed-background: #364b37;
+  --color-completed-border: #253326;
+  --color-planned-background: #3e4a5b;
+  --color-planned-border: #2d3643;
+  --color-on_hold-background: #414141;
+  --color-on_hold-border: #2d2d2d;
+  --color-dropped-background: #573231;
+  --color-dropped-border: #3d2322;
+  --color-versions-background: #8a7f6a;
+  --color-comments-background: #8595a5;
+  --color-summaries-background: #435158;
+  
+  /* Столбики активности */
+  --color-s0-background: #181c1f;
+  --color-s1-background: #1e2429;
+  --color-s2-background: #303940;
+  --color-s3-background: #3b454c;
 }
 
 body {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
   font-size: 14px;
 }
 
 body, .l-page {
-  background: var(--main-background-color) !important;
+  background: var(--color-main-background) !important;
 }
 
 ::selection {
-  color: var(--main-sp-color);
+  color: var(--color-link);
 }
 
 a, h2, h3, h4 {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
   transition: 0.2s ease-in-out;
 }
 
-a:hover, .b-user16:hover a, .headline>a:hover, .subheadline>a:hover, .midheadline .misc-links>a:hover, .b-stats_bar .stat_names .stat_name a:hover, .p-profiles .profile-head .c-info .c-additionals div a:hover, .b-link:hover, .b-options-floated a:hover, .b-options-floated .link:hover, .b-options-floated.mobile-desktop a:hover, .p-profiles .profile-head .c-brief header .notice a:hover, .b-comment>.inner .name-date .name:hover, .b-user.named_avatar .name:hover, .b-js-link:hover, .b-stats_bar a.title:hover, .b-catalog_entry-tooltip .inner a.name:hover, .p-user_history-index .history-page .history-interval p a:hover, .b-lang_trigger span:hover, .p-profiles .profile-head .c-history .entry .title:hover, .b-achievement .c-about a.title:hover, .b-achievement .about a.title:hover, .b-ban a:hover, .b-ban .link:hover, .b-log_entry a:hover, .b-log_entry .link:hover, .b-topic>.inner .name-date .name:hover, .b-mention:hover, .b-ban .abuser:hover, .p-topics .l-menu .calendar .entry .title:hover, .p-topics .l-menu .reviews .entry .title:hover, .p-topics .l-menu .clubs .entry .title:hover, .b-forums .forum .link-with-input .link:hover, .p-user_rates-index .stat-categories .category:hover, .p-user_rates-index .l-content .order-control:hover, .b-message>.inner .name-date .name:hover, .p-profiles-edit .account .change-password a:hover, .b-dialog>.inner .name-date .name:hover, .headline .misc-links>a:hover, .subheadline .misc-links>a:hover, .b-js-action:hover, .p-animes_collection-index .pagination .link:hover, .p-mangas_collection-index .pagination .link:hover, .p-recommendations-index .pagination .link:hover, .p-userlist_comparer-show .pagination .link:hover, .b-user.detailed .info .image-name .name:hover, .b-user.moderation .info .image-name .name:hover, .b-user.detailed .history .line a .event:hover, .b-user.moderation .history .line a .event:hover, .b-user_rate_log a:hover, .b-user_rate_log .link:hover, .b-spoiler label:hover, .p-topics header h1 a.reload:hover, .p-profiles-show .about a:hover, .b-comment>.inner .was_updated:hover, .b-user16:hover, .p-translations .animes a:hover, .p-studios .studio .name:hover, .b-options-floated .action:hover, .p-contests-index .contest a:hover, .b-cosplay_gallery h3 a:hover, .b-bb_codes-examples .example a:hover, .b-bb_codes-examples .result a:hover, .b-feedback-inner .about a:hover, .b-forums .reload:hover, .b-contests-menu .results:hover, .b-contests-menu .grid a:hover, header.head a.misc:hover, header.head a.edit:hover, .p-animes-show .c-info-right .watch-online a.kind:hover, .p-mangas-show .c-info-right .watch-online a.kind:hover, .p-ranobe-show .c-info-right .watch-online a.kind:hover, .b-topic>.inner .was_updated:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover, .b-options-floated.mobile-phone a:hover, header.head h1 a.back:hover::before, header.head h2 a.back:hover::before, .p-profiles-edit .account .change-password a:hover, .p-profiles-edit .account .reset-password a:hover {
-  color: var(--main-text-color-hover);
+a:hover, .b-user16:hover a, .headline>a:hover, .subheadline>a:hover, .midheadline .misc-links>a:hover, .b-stats_bar .stat_names .stat_name a:hover, .p-profiles .profile-head .c-info .c-additionals div a:hover, .b-link:hover, .b-options-floated a:hover, .b-options-floated .link:hover, .b-options-floated.mobile-desktop a:hover, .p-profiles .profile-head .c-brief header .notice a:hover, .b-comment>.inner .name-date .name:hover, .b-user.named_avatar .name:hover, .b-js-link:hover, .b-stats_bar a.title:hover, .b-catalog_entry-tooltip .inner a.name:hover, .p-user_history-index .history-page .history-interval p a:hover, .b-lang_trigger span:hover, .p-profiles .profile-head .c-history .entry .title:hover, .b-achievement .c-about a.title:hover, .b-achievement .about a.title:hover, .b-ban a:hover, .b-ban .link:hover, .b-log_entry a:hover, .b-log_entry .link:hover, .b-topic>.inner .name-date .name:hover, .b-mention:hover, .b-ban .abuser:hover, .p-topics .l-menu .calendar .entry .title:hover, .p-topics .l-menu .reviews .entry .title:hover, .p-topics .l-menu .clubs .entry .title:hover, .b-forums .forum .link-with-input .link:hover, .p-user_rates-index .stat-categories .category:hover, .p-user_rates-index .l-content .order-control:hover, .b-message>.inner .name-date .name:hover, .p-profiles-edit .account .change-password a:hover, .b-dialog>.inner .name-date .name:hover, .headline .misc-links>a:hover, .subheadline .misc-links>a:hover, .b-js-action:hover, .p-animes_collection-index .pagination .link:hover, .p-mangas_collection-index .pagination .link:hover, .p-recommendations-index .pagination .link:hover, .p-userlist_comparer-show .pagination .link:hover, .b-user.detailed .info .image-name .name:hover, .b-user.moderation .info .image-name .name:hover, .b-user.detailed .history .line a .event:hover, .b-user.moderation .history .line a .event:hover, .b-user_rate_log a:hover, .b-user_rate_log .link:hover, .b-spoiler label:hover, .p-topics header h1 a.reload:hover, .p-profiles-show .about a:hover, .b-comment>.inner .was_updated:hover, .b-user16:hover, .p-translations .animes a:hover, .p-studios .studio .name:hover, .b-options-floated .action:hover, .p-contests-index .contest a:hover, .b-cosplay_gallery h3 a:hover, .b-bb_codes-examples .example a:hover, .b-bb_codes-examples .result a:hover, .b-feedback-inner .about a:hover, .b-forums .reload:hover, .b-contests-menu .results:hover, .b-contests-menu .grid a:hover, header.head a.misc:hover, header.head a.edit:hover, .p-animes-show .c-info-right .watch-online a.kind:hover, .p-mangas-show .c-info-right .watch-online a.kind:hover, .p-ranobe-show .c-info-right .watch-online a.kind:hover, .b-topic>.inner .was_updated:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover, .b-options-floated.mobile-phone a:hover, header.head h1 a.back:hover::before, header.head h2 a.back:hover::before, .p-profiles-edit .account .change-password a:hover, .p-profiles-edit .account .reset-password a:hover, .p-dashboards .user_list .list-change .title:hover {
+  color: var(--color-main-text-hover);
 }
 
 a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stats_bar .stat_names .stat_name a:active, .b-comment>.inner .was_updated:active, .b-comment>.inner .name-date .name:active, .b-link:active, .b-topic .footer-vote .vote-group .vote:active, .b-topic .footer-vote .vote-group .vote:active, .p-profiles .profile-head .c-brief header .notice a:active, .b-show_more:active, .b-spoiler label:active, .p-animes-show .c-info-right .watch-online a.kind:active, .p-mangas-show .c-info-right .watch-online a.kind:active, .p-ranobe-show .c-info-right .watch-online a.kind:active, .headline>a:active, .midheadline>a:active, .subheadline>a:active, .b-topic>.inner .was_updated:active, .p-profiles-edit .account .change-password a:active, .p-profiles-edit .account .reset-password a:active {
-  color: var(--main-text-color-active);
+  color: var(--color-main-text-active);
 }
 
 .b-link {
-  color: var(--main-sp-color);
+  color: var(--color-link);
 }
 
 hr {
@@ -88,50 +120,54 @@ hr {
 }
 
 .p-profiles .profile-head .c-brief header .notice a, .b-user.named_avatar .name, .p-user_history-index .history-page .history-interval p a, .b-topic>.inner .name-date .name, .p-user_rates-index .list-lines tr .name a, .p-contests-index .contest a, .b-comment>.inner .name-date .name, .b-catalog_entry-tooltip .inner a.name, .b-catalog_entry .cover .misc span, .p-profiles .profile-head .c-history .entry .title, .b-achievement .c-about a.title, .b-achievement .about a.title, .b-ban a, .b-ban .link, .b-log_entry a, .b-log_entry .link, .b-mention, .b-ban .abuser, .p-topics .l-menu .calendar .entry .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry .title, .b-forums .forum .link-with-input .link, .p-user_rates-index .stat-categories .category, .b-block_list li, .p-user_rates-index .list-lines tr td, .p-user_rates-index .l-content .order-control, .p-user_rates-index .list-lines tr .index, .b-message>.inner .name-date .name, .p-profiles-edit .account .change-password a, .b-dialog>.inner .name-date .name, .b-js-action, .p-animes_collection-index .pagination .link, .p-mangas_collection-index .pagination .link, .p-recommendations-index .pagination .link, .p-userlist_comparer-show .pagination .link, .b-user.detailed .info .image-name .name, .b-user.moderation .info .image-name .name, .b-user.detailed .history .line a .event, .b-user.moderation .history .line a .event, .b-user_rate_log a, .b-user_rate_log .link, .b-spoiler label, .p-profiles-show .about a, .b-comment>.inner .was_updated, .b-user16, .p-translations .animes a, .p-studios .studio .name, .b-cosplay_gallery h3 a,
-.b-bb_codes-examples .example a, .b-bb_codes-examples .result a, .b-feedback-inner .about a, header.head h1 a.back::before, header.head h2 a.back::before, .p-user_rates-index .list-lines tr td .episodes_total, .b-mention::before, .p-profiles-edit .account .change-password a, .p-profiles-edit .account .reset-password a {
-  color: var(--main-sp-color);
+.b-bb_codes-examples .example a, .b-bb_codes-examples .result a, .b-feedback-inner .about a, header.head h1 a.back::before, header.head h2 a.back::before, .p-user_rates-index .list-lines tr td .episodes_total, .b-mention::before, .p-profiles-edit .account .change-password a, .p-profiles-edit .account .reset-password a, .p-dashboards .user_list .list-change .title {
+  color: var(--color-text);
   transition: 0.2s ease-in-out;
 }
 
 header.head h1, header.head h2, .b-rate .text-score {
-  color: var(--v1-sp-color);
+  color: var(--color-auxiliary-text);
+}
+
+.b-comment>.inner .name-date .time, .b-entry-info .line .key, .b-source .contributors .key, .b-source .mal .key, .b-source .source .key, .p-dashboards .user_list .list-change .note, .b-user_rate_log .date, .b-options-floated.count, .p-achievements-global table.statistics td:first-child {
+  color: var(--color-additional-text);
 }
 
 .l-top_menu-v2, .l-top_menu-v2 .submenu>a, .l-top_menu-v2 .menu-dropdown>span a, .l-top_menu-v2 .global-search, .l-top_menu-v2 .global-search .search-results .nothing_found, .l-top_menu-v2 .global-search .search-results .search-mode,
 .l-top_menu-v2.is-search-focus .global-search .search-marker {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
 }
 
 .p-profiles .profile-head .c-info .c-additionals div a, .b-stats_bar .stat_names .stat_name a, .headline>a, .subheadline>a, .b-options-floated.mobile-desktop a, .b-options-floated .action, .p-profiles-show .achievements .header .title, .b-options-floated a, .b-options-floated .link, .p-profiles .profile-head .c-info .c-additionals b, .b-js-link, .p-topics header h1 a.reload, .b-stats_bar a.title, .headline .misc-links>a, .subheadline .misc-links>a, h3, .b-table th, .b-db_entry>.c-about .additional-links .line-container>.link, .b-db_entry>.c-about .additional-links .line-container>a, .b-user.detailed .history .line .event, .b-user.moderation .history .line .event, .p-userlist_comparer .comparer table .name a, .tooltip-details .b-nothing_here.centered, .b-forums .reload, .b-contests-menu .results, .b-contests-menu .grid a, .midheadline .misc-links>a, .b-stats_bar .title, header.head .notice, .bar.vertical .line .x_label, .b-achievement .c-about .percent, .b-achievement .about .percent, .b-entry-info .line .value, .bar.horizontal .line .x_label, .p-user_rates-index .list-groups .summary.lines, .p-profiles-edit .list .nickname-changes .link, .b-catalog_entry-tooltip .inner .additional-images .link .title, .b-db_entry-variant-list_item>.info .line .key, .b-catalog_entry-tooltip .inner .line .key, .b-catalog_entry-tooltip .inner .rating, .b-catalog_entry-tooltip .inner .rating .text, .b-comment>.inner .name-date a.name .normal, .b-animes-menu .total-rates, .b-rate .score-notice, .b-quote .quoteable::before, .b-club .info .number, .p-animes_collection-index .pagination, .p-mangas_collection-index .pagination, .p-recommendations-index .pagination, .p-userlist_comparer-show .pagination, .b-header_filters .filter-line .title, .b-header_filters .filter-line a.current, .b-status-line .section.additional .collection-size, .b-animes-menu .menu-topics-block .entry .time, .p-animes-show .c-info-right .watch-online .kind, .p-mangas-show .c-info-right .watch-online .kind, .p-ranobe-show .c-info-right .watch-online .kind, .p-animes-show .c-info-right .watch-online a.kind, .p-mangas-show .c-info-right .watch-online a.kind, .p-ranobe-show .c-info-right .watch-online a.kind, .b-nothing_here, .p-profiles .profile-head .c-mobile-actions a, .p-profiles .profile-head .c-mobile-actions span, .b-options-floated.mobile-phone a, header.head a.misc, header.head .misc, header.head a.edit {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
 }
 
 /* скобки */
 .b-ban .abuser::before, .b-ban .abuser::after, .p-moderations-show .b-list .size::before, .p-moderations-show .b-list .size::after {
-  color: var(--main-sp-color);
+  color: var(--color-text);
 }
 
 .p-profiles .profile-head .c-history .entry .misc, .b-comment header .hash, .b-log_entry .id-label, .b-ban .id-label, .p-topics .l-menu .calendar .entry .misc, .p-topics .l-menu .reviews .entry .misc, .p-topics .l-menu .clubs .entry .misc, .b-user_rate_log .id-label {
-  color: var(--main-text-color) !important;
+  color: var(--color-main-text) !important;
 }
 
 .b-club .name, .b-catalog_entry .cover .title, .b-mention s, .p-topics .l-menu .sticky-topics .topic .title,
 .p-topics .l-menu .sticky-topics .topic .title:after, header.head h1 a.back, header.head h2 a.back, .b-oauth_application .name-logo .name, .b-animes-menu .menu-topics-block .entry .name {
-  color: var(--main-sp-color) !important;
+  color: var(--color-text) !important;
   transition: 0.3s ease-in-out;
 }
 
 .b-catalog_entry .cover:hover .title, .b-club .name:hover, .b-catalog_entry .cover .title:hover, .p-topics .l-menu .sticky-topics .topic .title:hover, .p-topics .l-menu .sticky-topics .topic .title:hover:after, header.head h1 a.back:hover, header.head h2 a.back:hover, .b-oauth_application .name-logo .name:hover, .b-animes-menu .menu-topics-block .entry .name:hover {
-  color: var(--main-text-color-hover) !important;
+  color: var(--color-main-text-hover) !important;
 }
 
-.profile-actions>a, .buttons [class*='item-'], .buttons .editor-controls .b-tooltipped, .b-subposter-action, .p-profiles .item-back, .b-list_switchers .switcher, .l-top_menu-v2 .global-search .clear, .item-add, .p-user_history-index .history-page .history-interval p .destroy, .p-animes .item-new-review, .p-mangas .item-new-review, .item-sign, .p-profiles .item-edit, .p-animes .item-edit, .p-mangas .item-edit {
-  color: var(--main-sp-color) !important;
+.profile-actions>a, .buttons [class*='item-'], .buttons .editor-controls .b-tooltipped, .b-subposter-action, .p-profiles .item-back, .b-list_switchers .switcher, .l-top_menu-v2 .global-search .clear, .item-add, .p-user_history-index .history-page .history-interval p .destroy, .p-animes .item-new-review, .p-mangas .item-new-review, .item-sign, .p-profiles .item-edit, .p-animes .item-edit, .p-mangas .item-edit, .p-characters .item-edit {
+  color: var(--color-text) !important;
   transition: 0.3s ease-in-out;
 }
 
 .l-top_menu-v2 .global-search .clear, .tooltip-inner .close {
-  color: var(--main-text-color) !important;
+  color: var(--color-main-text) !important;
   transition: 0.2s ease-in-out;
 }
 
@@ -143,12 +179,13 @@ header.head h1, header.head h2, .b-rate .text-score {
 .item-add:hover, .p-user_history-index .history-page .history-interval p .destroy:hover,
 .p-animes .item-new-review:hover, .p-mangas .item-new-review:hover, 
 .p-animes .item-edit:hover, .p-mangas .item-edit:hover, .item-mobile:hover,
-.p-user_rates-index .stat-categories .category.active:hover, .item-sign:hover {
-  color: var(--main-text-color-hover) !important;
+.p-user_rates-index .stat-categories .category.active:hover, .item-sign:hover,
+.p-characters .item-edit:hover {
+  color: var(--color-main-text-hover) !important;
 }
 
 .b-list_switchers .switcher.selected:hover, .buttons .editor-controls .b-tooltipped.selected:hover, .misc-links>a.selected:hover, .b-subposter-action.fav-remove:hover, .item-mobile.selected:hover {
-  color: var(--main-text-color-hover) !important;
+  color: var(--color-main-text-hover) !important;
 }
 
 .profile-actions .fav-remove,
@@ -159,25 +196,25 @@ header.head h1, header.head h2, .b-rate .text-score {
 .buttons .editor-controls .b-tooltipped.selected,
 .p-user_rates-index .stat-categories .category.active,
 .misc-links>a.selected, .item-mobile.selected {
-  color: var(--v4-sp-color) !important;
+  color: var(--color-auxiliary-text) !important;
   transition: 0.2s ease-in-out;
 }
 
 .b-status-line .section.additional .comments::before, .b-status-line .section.created_at time::before, 
 .b-status-line .section.additional .collection-size::before, .b-review_votes::before,
 .b-status-line .section.changed_at time::before {
-  color: var(--main-sp-color);
+  color: var(--color-text);
 }
 
 /* Красный цвет */
 .b-ban .duration-ban, .b-comment>.inner .body .ban .resolution, .b-comment>.inner .body .ban .resolution a, .b-review_votes .votes-against, .b-topic .footer-vote .vote-group .vote.no.selected, .b-topic .footer-vote .vote-group .vote.no:hover, .b-review_votes .warn, .p-contests-show .voting-warning .red-warning, .p-contests .match-day .match-link .loser::before, .p-contests .rating .member .progress.negative, .b-log_entry .state.deleted, .b-log_entry .state.rejected, .b-log_entry .state.post_rejected, .b-log_entry .change-details .field-changes .diff del.diffmod, .b-log_entry .change-details .field-changes .diff del.diffdel, .b-abuse_request .remove, .b-abuse_request .resolution.rejected, .b-user_rate_log .action.destroy, .b-input .error, .p-contests .match-day .match-link.voted-left .started:last-child::before, .p-contests .match-day .match-link.voted-right .started:first-child::before, .b-review_votes .user-vote .voted-against, .b-catalog_entry .cover .misc span.released, .p-profiles header.head .misc .banned, .p-moderations_genres-index.p-studios-index .check.no::before, .p-profiles-edit .misc .profile-action .warn, .p-profiles-edit .misc .nickname-changes .warn, .p-profiles-edit .list .profile-action .warn, .p-profiles-edit .list .nickname-changes .warn {
-  color: var(--red-color);
+  color: var(--color-red);
 }
 
 .p-userlist_comparer .l-page div .head p.notice + p.notice > span,
 span[style="color: #ff4136;"],
 span[style="color: red;"] {
-  color: var(--red-color) !important;
+  color: var(--color-red) !important;
 }
 
 span[style="background: #f2fff2; padding: 0 2px;"],
@@ -190,74 +227,72 @@ span[style="background: #ffe6e6; padding: 0 2px;"] {
 
 /* Зеленый цвет */
 .b-review_votes .votes-for, .b-topic .footer-vote .vote-group .vote.yes.selected, .b-topic .footer-vote .vote-group .vote.yes:hover, .p-contests .match-day .match-link .winner::before, .p-contests .rating .member .progress.positive, .b-log_entry .state.accepted, .b-log_entry .change-details .field-changes .diff ins.diffmod, .b-log_entry .change-details .field-changes .diff ins.diffins, .b-abuse_request .resolution.accepted, .p-achievements .p-achievements-global .b-entry-info .value.thresholds>span .gained, .p-contests .match-day .match-link.voted-left .started:first-child::before, .p-contests .match-day .match-link.voted-right .started:last-child::before, .b-review_votes .user-vote .voted-for, .b-poll .poll-variants .poll-variant.result label .voted-for, .b-catalog_entry .cover .misc span.anons, .p-list_imports-show .b-entry-info .state.finished, .p-moderations_genres-index.p-studios-index .check.yes::before {
-  color: var(--green-color);
+  color: var(--color-green);
 }
 
 span[style="color: #44ff88;"],
 span[style="color: green;"],
 span[style="font-size:9px; color: green;"] {
-  color: var(--green-color) !important;
+  color: var(--color-green) !important;
 }
 
 /* Разные цвета */
 .b-ban .duration-warning, .b-log_entry .state.pending, .p-contests .match-day .match-link.voted-abstain .started:before, .p-list_imports-show .b-entry-info .state.pending, .b-abuse_request .outdated {
-  color: #ad8766;
+  color: var(--color-orange);
 }
 
 .b-log_entry .state.taken, .b-user_rate_log .action.create {
-  color: #6792b7;
+  color: var(--color-blue);
 }
 
 .b-user_rate_log .action.update {
-  color: #8d6094;
+  color: var(--color-purple);
 }
 
 /* Модерация и контент */
 .b-editable_grid thead th {
-  color: var(--main-text-color);
-  background-color: var(--v1-background-color);
+  color: var(--color-main-text);
+  background-color: var(--color-dark);
   font-weight: bold;
 }
 
 .b-editable_grid tbody tr:nth-child(odd) td {
-  background-color: var(--v4-background-color);
+  background-color: var(--color-background);
 }
 
 .b-table a, .b-editable_grid .catalog-link {
-  color: var(--main-sp-color);
+  color: var(--color-text);
 }
 
 .b-table a:hover, .b-table a:active, .b-editable_grid thead th a:hover, .b-editable_grid .catalog-link:hover, .b-editable_grid .catalog-link:active  {
-  color: var(--main-text-color-hover);
+  color: var(--color-main-text-hover);
 }
 
 .b-editable_grid thead th a {
-  color: var(--main-text-color);
+  color: var(--color-text);
 }
 
 .p-animes-show .other-names, .p-mangas-show .other-names, .p-ranobe-show .other-names, .p-animes-show .other-names:hover, .p-mangas-show .other-names:hover, .p-ranobe-show .other-names:hover, .p-animes-show .other-names:active, .p-mangas-show .other-names:active, .p-ranobe-show .other-names:active  {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
 }
 
 .p-animes-show .other-names, .p-mangas-show .other-names, .p-ranobe-show .other-names {
-  background-color: var(--background-color);
-  border-color: var(--main-border-color);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
 }
 
 .p-animes-show .other-names:hover, .p-mangas-show .other-names:hover, .p-ranobe-show .other-names:hover, .p-animes-show .other-names:active, .p-mangas-show .other-names:active, .p-ranobe-show .other-names:active {
-  background-color: var(--background-color-hover);
-  border-color: var(--main-border-color);
+  background-color: var(--color-background-hover);
+  border-color: var(--color-main-border);
 }
-
-/* Цвета end */
 
 /* Меню */
 .l-top_menu-v2 {
-  background: var(--menu-background-color);
+  background: var(--color-menu-background);
 }
 
 .l-top_menu-v2 .menu-dropdown>span, .l-top_menu-v2 .submenu, .l-top_menu-v2 .menu-icon.active, .l-top_menu-v2 .menu-icon:focus, .l-top_menu-v2 .menu-dropdown>span a:hover, .l-top_menu-v2 .menu-dropdown.active>span, .l-top_menu-v2 .menu-dropdown>span:focus {
-  background: var(--submenu-background-color);
+  background: var(--color-submenu-background);
   transition: 0.3s ease-in-out;
 }
 
@@ -267,27 +302,27 @@ span[style="font-size:9px; color: green;"] {
 
 .l-top_menu-v2 .submenu>a:hover {
   background: none;
-  color: var(--main-text-color-hover);
+  color: var(--color-main-text-hover);
   transition: 0.3s ease-in-out;
 }
 
 .l-top_menu-v2 .submenu>a.icon-mail span.unread span {
-  color: var(--main-text-color) !important;
+  color: var(--color-main-text) !important;
 }
 
 .l-top_menu-v2 .submenu>a.icon-mail span.unread span:not(:last-child):after {
-  background: var(--comments-background-color);
+  background: var(--color-comments-background);
 }
 
 .l-top_menu-v2 .menu-icon.active, .l-top_menu-v2 .menu-icon:focus,
 .l-top_menu-v2 .menu-dropdown>span a:hover, .l-top_menu-v2 .menu-dropdown.active>span,
 .l-top_menu-v2 .menu-dropdown>span:focus {
-  color: var(--main-text-color-hover);
+  color: var(--color-main-text-hover);
 }
 
 .l-top_menu-v2 .menu-icon:hover {
   background: none;
-  color: var(--main-text-color-hover);
+  color: var(--color-main-text-hover);
   transition: 0.3s ease-in-out;
 }
 
@@ -297,9 +332,9 @@ span[style="font-size:9px; color: green;"] {
   text-align: center;
   border-top: 1px solid;
   border-bottom: 1px solid;
-  color: var(--main-text-color);
-  background: var(--headline-background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text);
+  background: var(--color-headline-background);
+  border-color: var(--color-main-border);
 }
 
 .l-top_menu-v2 .logo-container .logo {
@@ -314,7 +349,7 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .l-top_menu-v2 .logo-container {
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .l-top_menu-v2 {
@@ -337,23 +372,27 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .l-top_menu-v2 .global-search input {
-  background: var(--v1-background-color);
+  background: var(--color-input-background);
   border-radius: 2px;
   border: 1px solid transparent;
   color: inherit;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 25px;
   width: 100%;
 }
 
 .l-top_menu-v2 .global-search .search-marker,
 .l-top_menu-v2 .global-search .clear {
-  font-size: 14px;
-  height: 25px;
-  line-height: 25px;
+  font-size: 16px;
+  height: 28px;
+  line-height: 28px;
 }
 
 .l-top_menu-v2 .global-search .hotkey-marker {
+  border-radius: 0px;
+  line-height: 20px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
   display: none;
 }
 
@@ -368,20 +407,24 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .l-top_menu-v2 .global-search .search-results {
-  top: 25px;
+  top: 28px;
   width: 100%;
   border-top: solid 1px;
   border-bottom: solid 1px;
-  border-color: var(--main-border-color);
-  background-color: var(--v4-background-color);
+  border-color: var(--color-main-border);
+  background-color: var(--color-input-background);
+}
+
+.l-top_menu-v2 .global-search .search-results .b-tag {
+  border-color: var(--color-auxiliary-border);
 }
 
 .l-top_menu-v2 .global-search .search-results .nothing_found,
 .l-top_menu-v2 .global-search .search-results .search-mode {
   font-size: 13px;
-  letter-spacing: 0.25px;
-  line-height: 25px;
-  padding-top: 1px;
+  letter-spacing: 0.50px;
+  line-height: 30px;
+  padding-top: 0;
 }
 
 .l-top_menu-v2 .global-search .clear:before {
@@ -399,8 +442,8 @@ span[style="font-size:9px; color: green;"] {
   right: 0;
   top: 0;
   font-weight: 700;
-  color: var(--main-text-color);
-  background: var(--submenu-background-color);
+  color: var(--color-main-text);
+  background: var(--color-submenu-background);
   border: 1px solid transparent;
 }
 
@@ -418,24 +461,24 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .l-top_menu-v2 .global-search .search-results .nothing_found.active, .l-top_menu-v2 .global-search .search-results .nothing_found:focus, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item.active, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:focus, .l-top_menu-v2 .global-search .search-results .search-mode.active, .l-top_menu-v2 .global-search .search-results .search-mode:focus {
-  background: var(--main-background-color);
+  background: var(--color-dark);
 }
 
 .l-top_menu-v2 .global-search .search-results .search-mode:hover {
-  background: var(--background-color-hover);
+  background: var(--color-dark);
 }
 
 .l-top_menu-v2 .global-search .search-results .nothing_found, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item, .l-top_menu-v2 .global-search .search-results .search-mode {
   border-top: 1px solid;
-  border-color: var(--main-border-color) !important;
+  border-color: var(--color-main-border) !important;
 }
 
 .l-top_menu-v2 .global-search .search-results .nothing_found.active::before, .l-top_menu-v2 .global-search .search-results .nothing_found:focus::before, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item.active::before, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:focus::before, .l-top_menu-v2 .global-search .search-results .search-mode.active::before, .l-top_menu-v2 .global-search .search-results .search-mode:focus::before, .l-top_menu-v2 .global-search .search-results .nothing_found:hover::before, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:hover::before, .l-top_menu-v2 .global-search .search-results .search-mode:hover::before {
-  background-color: var(--v5-background-color);
+  background-color: var(--color-additional-background);
 }
 
 .l-top_menu-v2 .global-search .search-results .nothing_found:before {
-  background: var(--dropped-background-color);
+  background: var(--color-dropped-background);
 }
 
 .l-top_menu-v2 .menu-dropdown.profile>span {
@@ -457,8 +500,6 @@ span[style="font-size:9px; color: green;"] {
   opacity: 1;
   pointer-events: auto;
 }
-/* Меню end */
-
 
 /* Основа */
 .p-profiles .profile-head .c-brief .avatar {
@@ -469,7 +510,10 @@ span[style="font-size:9px; color: green;"] {
 .p-profiles .profile-head .c-brief .avatar .profile-actions {
   margin-top: 10px;
   margin-bottom: 5px;
-  transform: scale(1.2);
+}
+
+.profile-actions .mail::before, .profile-actions .fav-remove::before, .profile-actions .settings::before, .profile-actions .ban::before, .profile-actions .ignore-add::before, .profile-actions .fav-add::before {
+  font-size: 16px;
 }
 
 .p-profiles .profile-head .c-brief header {
@@ -503,35 +547,38 @@ span[style="font-size:9px; color: green;"] {
   line-height: 1.2rem;
   margin: 5px;
   padding: 0 10px;
-  background: #181c1f;
-  border: 1px solid #1e2429 !important;
+  text-align: center;
+  border: 1px solid;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border) !important;
 }
 
 .p-user_rates-index header.head a.misc:hover {
-  background-color: #252f33;
-  color: #aeb3b7;
+  background-color: var(--color-background-hover);
+  color: var(--color-main-text);
 }
 
 .p-profiles header.head .misc .banned {
   display: block;
 }
 
-.p-profiles header.head .misc span:after,
-.p-profiles header.head .misc a:after {
+.p-profiles header.head .misc span::after,
+.p-profiles header.head .misc a::after {
   display: none;
 }
 
 .p-profiles .profile-head .c-info .c-additionals {
   text-align: center;
-  margin-top: -12rem;
+  margin-top: -11rem;
 }
 
 .p-profiles .profile-head .c-info .c-additionals b {
-  display: table;
+  display: block;
   margin: auto;
   padding-right: 0;
-  padding: 5px 100px;
+  padding: 5px 5px;
   font-size: 0;
+  width: 33%;
 }
 
 .p-profiles[data-locale='ru'] .profile-head .c-info .c-additionals b::before {
@@ -570,6 +617,7 @@ span[style="font-size:9px; color: green;"] {
   width: 100%;
   margin-top: 4.5rem;
   margin-left: 0;
+  margin-bottom: 0 !important;
 }
 
 .p-profiles .profile-head .c-history .entry {
@@ -581,7 +629,7 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .p-profiles .profile-head .c-history .entry {
-  border-color: var(--border-color);
+  border-color: var(--color-border);
   border-left-style: solid;
 }
 
@@ -602,52 +650,46 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .p-profiles-show .profile-content .c-right .cc-2a>.c-column:nth-child(2n+1) {
-  left: 75px;
   width: 24.5%;
   margin-top: -45rem;
+  left: 5rem;
 }
 
 .p-profiles-show .profile-content .c-right .cc-2a>.c-column:last-child {
-  right: 75px;
+  float: right;
   width: 24.5%;
   margin-top: -45rem;
-  float: right;
+  right: 5rem;
 }
 
 #profiles_show .m30 {
   margin-bottom: 0 !important;
 }
 
-#profiles_show .b-user.avatar img,
-#profiles_show .b-user.named_avatar img,
-#profiles_show .b-user.avatar_fixed_margin img {
-  display: block;
-  line-height: 0;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
 #profiles_show .cc-friends .b-user {
   float: none;
   display: table-cell;
+  vertical-align: middle;
 }
 
 #profiles_show .b-clubs.one-line .b-club {
-  left: 35%;
-  float: none;
-  display: table-cell;
+  width: 14%;
 }
 
 #profiles_show .b-club .logo {
-  line-height: 0;
-  margin-right: 0;
   width: 32px;
+}
+
+#profiles_show .b-clubs:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .b-user.named_avatar .name {
   margin: auto;
 }
-/* Основа end */
 
 /* Заголовки */
 .subheadline, .headline, .midheadline {
@@ -668,9 +710,9 @@ span[style="font-size:9px; color: green;"] {
 .red, .b-errors .subheadline, .midheadline {
   border: 1px solid;
   text-align: center;
-  color: var(--main-text-color);
-  background: var(--headline-background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text);
+  background: var(--color-headline-background);
+  border-color: var(--color-main-border);
 }
 
 .headline>a, .subheadline>a {
@@ -690,10 +732,9 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .headline>a:hover::before, .midheadline>a:hover::before, .subheadline>a:hover::before {
-  color: #778998;
+  color: var(--color-main-text-hover);
   opacity: 1;
 }
-/* Заголовки end */
 
 /* Cписки */
 .stat_names {
@@ -722,7 +763,7 @@ span[style="font-size:9px; color: green;"] {
   font-size: 11px;
   margin-top: 7px;
   right: 5px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .b-stats_bar .bar {
@@ -730,7 +771,7 @@ span[style="font-size:9px; color: green;"] {
   line-height: 0;
   margin-top: 5px;
   border: 1px solid;
-  border-color: var(--main-border-color);
+  border-color: var(--color-main-border);
 }
 
 .b-stats_bar .bar .first,
@@ -741,17 +782,17 @@ span[style="font-size:9px; color: green;"] {
 
 .b-stats_bar.anime .bar .first,
 .b-stats_bar.manga .bar .first {
-  background: var(--completed-background-color);
+  background: var(--color-completed-background);
 }
 
 .b-stats_bar.anime .bar .second,
 .b-stats_bar.manga .bar .second {
-  background: var(--planned-background-color);
+  background: var(--color-planned-background);
 }
 
 .b-stats_bar.anime .bar .third,
 .b-stats_bar.manga .bar .third {
-  background: var(--dropped-background-color);
+  background: var(--color-dropped-background);
 }
 
 .b-stats_bar .stat_names .stat_name:after,
@@ -764,27 +805,18 @@ span[style="font-size:9px; color: green;"] {
   float: left;
 }
 
-.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime .compatibility  {
-  margin-right: 30.3rem;
-}
-
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.manga {
   width: 49.5%;
   float: right;
 }
 
-.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.manga .compatibility {
-  right: 2%;
-}
-
 .p-profiles .profile-head .c-info {
   margin-bottom: -10px;
 }
-/* Cписки end */
 
 /* Всплывающие окна */
 .tooltip-inner {
-  background: #181c1f;
+  background: var(--color-background);
   border: 1px solid;
   border-image: 1 -webkit-linear-gradient(left, #181c1f, #1b232b, #181c1f);
   color: inherit;
@@ -817,8 +849,8 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .tipsy-inner {
-  color: #ddd;
-  background: #142123;
+  color: var(--color-main-text);
+  background: var(--color-background);
   border: 1px solid;
   font-weight: bold;
   text-transform: uppercase;
@@ -827,8 +859,12 @@ span[style="font-size:9px; color: green;"] {
   box-shadow: none;
 }
 
+.tipsy {
+  opacity: 1 !important;
+}
+
 .tipsy-arrow {
-  filter: brightness(5%);
+  filter: brightness(90%);
 }
 
 .tooltip.minified .tooltip-inner {
@@ -839,7 +875,6 @@ span[style="font-size:9px; color: green;"] {
   padding-bottom: 0;
   width: auto;
 }
-/* Всплывающие окна end */
 
 /* Теги, статусы */
 .b-message .b-anime_status_tag {
@@ -855,9 +890,9 @@ span[style="font-size:9px; color: green;"] {
   padding: 1px 4px !important;
   margin: 2px 4px 2px 0;
   border: 1px solid;
-  color: var(--main-text-color) !important;
-  background-color: var(--background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text) !important;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
   border-radius: 0;
   font-size: 13px !important;
   font-weight: normal;
@@ -866,26 +901,26 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .b-tag[href] {
-  background-color: var(--background-color);
-  border-color: var(--main-border-color) !important;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border) !important;
   border: 1px solid;
 }
 
 .tooltip-inner .b-tag[href] {
-  background-color: var(--v1-background-color);
-  border-color: var(--v1-border-color) !important;
+  background-color: var(----color-auxiliary-background);
+  border-color: var(--color-auxiliary-border) !important;
 }
 
 .b-tag[href]:hover, .b-tag[href]:focus, .b-tag[href].active,
 .b-db_entry>.c-about .additional-links .line-container>a:hover {
   margin: 2px 4px 2px 0;
-  color: var(--main-text-color);
-  background-color: var(--background-color-hover);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text);
+  background-color: var(--color-background-hover);
+  border-color: var(--color-main-border);
 }
 
 .b-tag[href]:active {
-  background-color: var(--background-color-active);
+  background-color: var(--color-background-active);
 }
 
 .b-tag:last-child {
@@ -894,8 +929,8 @@ span[style="font-size:9px; color: green;"] {
 
 .b-tag:hover {
   margin: 2px 4px 2px 0;
-  color: var(--main-text-color);
-  background-color: var(--background-color-hover);
+  color: var(--color-main-text);
+  background-color: var(--color-background-hover);
 }
 
 .b-anime_status_tag.released, .b-anime_status_tag.anons, .b-anime_status_tag.ongoing, .b-anime_status_tag.episode, .b-anime_status_tag.studio, .b-anime_status_tag.other, .b-anime_status_tag.summary, .b-anime_status_tag.news, .b-anime_status_tag.review, .b-anime_status_tag.collection, .b-anime_status_tag.cosplay, .b-anime_status_tag.offtopic, .b-anime_status_tag.ignored, .b-anime_status_tag.broadcast, body[data-locale] .b-abuse_marker, body[data-locale] .b-broadcast_marker, body[data-locale] .b-offtopic_marker, body[data-locale] .b-summary_marker, body[data-locale] .b-spoiler_marker, body[data-locale] .b-new_marker, .b-anime_status_tag.article, .b-anime_status_tag.contest {
@@ -909,6 +944,12 @@ span[style="font-size:9px; color: green;"] {
   line-height: 1.5;
   white-space: nowrap;
   transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.b-topic>.inner .prebody .b-anime_status_tag, .b-topic>.inner footer .b-anime_status_tag,
+.b-news_wall-topic .status-line .tags .b-anime_status_tag:not(:last-child),
+.p-dashboards-show .b-anime_status_tag.other {
+  padding: 3px 7px;
 }
 
 body[data-locale] .b-broadcast_marker,
@@ -945,7 +986,7 @@ body[data-locale] .b-offtopic_marker {
 }
 
 .off.b-anime_status_tag.released, .off.b-anime_status_tag.anons, .off.b-anime_status_tag.ongoing, .off.b-anime_status_tag.episode, .off.b-anime_status_tag.studio, .off.b-anime_status_tag.other, .off.b-anime_status_tag.summary, .off.b-anime_status_tag.news, .off.b-anime_status_tag.review, .off.b-anime_status_tag.collection, .off.b-anime_status_tag.cosplay, .off.b-anime_status_tag.offtopic, .off.b-anime_status_tag.ignored, .off.b-anime_status_tag.broadcast, body[data-locale] .off.b-abuse_marker, body[data-locale] .off.b-broadcast_marker, body[data-locale] .off.b-offtopic_marker, body[data-locale] .off.b-summary_marker, body[data-locale] .off.b-spoiler_marker, body[data-locale] .off.b-new_marker {
-  color: #566777;
+  color: var(--color-text);
 }
 
 .b-anime_status_tag {
@@ -964,53 +1005,53 @@ body[data-locale] .b-offtopic_marker {
 
 .b-anime_status_tag.released {
   background-color: transparent;
-  color: #4e7750;
+  color: var(--color-green);
 }
 
 .b-anime_status_tag.anons {
   background-color: transparent;
-  color: #9a7964;
+  color: var(--color-orange);
 }
 
 .b-anime_status_tag.ongoing {
   background-color: transparent;
-  color: #5e7ba0;
+  color: var(--color-blue);
 }
 
 .b-anime_status_tag.episode {
   background-color: transparent;
-  color: #8599b5;
+  color: var(--color-blue);
 }
 
 .b-anime_status_tag.article {
   background-color: transparent;
-  color: #ad887e;
+  color: var(--color-pink);
 }
 
 .b-anime_status_tag.contest {
   background-color: transparent;
-  color: #917ca0;
+  color: var(--color-purple);
 }
 
 .b-anime_status_tag.studio,
 .b-anime_status_tag.studio[href] {
-  background-color: #25303c;
-  border: 1px solid #181c1f;
-  color: inherit;
+  border: 1px solid;
   padding: 2px 4px;
+  color: var(--color-main-text);
+  background-color: var(--color-additional-background);
+  border-color: var(--color-auxiliary-border);
 }
 
 .b-anime_status_tag.episode[href]:hover,
 .b-anime_status_tag.studio[href]:hover {
-  background-color: #343a3e;
-  border-color: #181c1f;
+  background-color: var(--color-background-hover);
+  border-color: var(--color-main-border);
 }
 
 .b-anime_status_tag.other {
-  background-color: transparent;
-  border-color: #181c1f;
-  color: #aeb3b7;
-  background: #0f1112;
+  color: var(--color-main-text);
+  background-color: var(--color-background);
+  border-color: var(--color-auxiliary-border);
 }
 
 .b-anime_status_tag.summary {
@@ -1020,18 +1061,17 @@ body[data-locale] .b-offtopic_marker {
 
 .b-anime_status_tag.news {
   background-color: transparent;
-  color: #bd9175;
-  border-color: #906a53;
+  color: var(--color-orange);
 }
 
 .b-anime_status_tag.review {
   background-color: transparent;
-  color: #8e578a;
+  color: var(--color-purple);
 }
 
 .b-anime_status_tag.collection {
   background-color: transparent;
-  color: #aea593;
+  color: var(--color-beige);
 }
 
 .b-anime_status_tag.cosplay {
@@ -1041,7 +1081,7 @@ body[data-locale] .b-offtopic_marker {
 
 .b-anime_status_tag.offtopic {
   background-color: transparent;
-  color: #a07688;
+  color: var(--color-pink);
 }
 
 .b-anime_status_tag.ignored {
@@ -1081,18 +1121,18 @@ body[data-locale] .b-offtopic_marker {
 }
 
 .p-user_rates-index .list-lines tr td .ongoing {
-  color: #5e7ba0;
-  border: 1px solid #5e7ba0;
+  color: var(--color-blue);
+  border: 1px solid;
 }
 
 .p-user_rates-index .list-lines tr td .anons:not(:empty) {
-  color: #9a7964;
-  border: 1px solid #9a7964;
+  color: var(--color-orange);
+  border: 1px solid;
 }
 
 .p-user_rates-index .list-lines tr td .rewatches:not(:empty) {
-  color: #8a7f6a;
-  border: 1px solid #8a7f6a;
+  color: var(--color-beige);
+  border: 1px solid;
 }
 
 .b-entry-info .line .key, .b-db_entry>.c-about .additional-links .key, 
@@ -1107,7 +1147,6 @@ body[data-locale] .b-offtopic_marker {
 .p-animes-show .other-names, .p-mangas-show .other-names, .p-ranobe-show .other-names {
   border: 1px;
 }
-/* Теги, статусы end */
 
 /* Активность */
 .p-profiles-show .profile-content .activity .title {
@@ -1132,7 +1171,7 @@ body[data-locale] .b-offtopic_marker {
 
 .bar.vertical .line .bar-container .bar {
   border: 1px solid;
-  border-color: var(--main-border-color);
+  border-color: var(--color-main-border);
   position: absolute;
   width: 70%;
   margin: auto;
@@ -1142,34 +1181,34 @@ body[data-locale] .b-offtopic_marker {
 
 .bar.vertical {
   border-bottom: 1px solid;
-  border-color: var(--main-border-color);
+  border-color: var(--color-main-border);
   padding-left: 2px;
   padding-right: 0px;
 }
 
-.bar.simple .bar.s3 { background: var(--v1-background-color);}
-.bar.simple .bar:hover.s3 { background: var(--background-color-hover);}
-.bar.simple .bar.s2 { background: var(--v1-background-color);}
-.bar.simple .bar:hover.s2 { background: var(--background-color-hover);}
-.bar.simple .bar.s1 { background: var(--v1-background-color);}
-.bar.simple .bar:hover.s1 { background: var(--background-color-hover);}
-.bar.simple .bar.s0 { background: var(--v1-background-color);}
-.bar.simple .bar:hover.s0 { background: var(--background-color-hover);}
+.bar.simple .bar.s3 { background: var(--color-s3-background);}
+.bar.simple .bar:hover.s3 { background: var(--color-background-hover);}
+.bar.simple .bar.s2 { background: var(--color-s2-background);}
+.bar.simple .bar:hover.s2 { background: var(--color-background-hover);}
+.bar.simple .bar.s1 { background: var(--color-s1-background);}
+.bar.simple .bar:hover.s1 { background: var(--color-background-hover);}
+.bar.simple .bar.s0 { background: var(--color-s0-background);}
+.bar.simple .bar:hover.s0 { background: var(--color-background-hover);}
 
 .bar.horizontal .bar.s3,
 .bar.horizontal .bar.s2, 
 .bar.horizontal .bar.s1, 
 .bar.horizontal .bar.s0 {
   border: 1px solid;
-  background: var(--v1-background-color);
-  border-color: var(--main-border-color);
+  background: var(--color-background);
+  border-color: var(--color-dark);
 }
 
 .bar.horizontal .bar.s3:hover,
 .bar.horizontal .bar.s2:hover,
 .bar.horizontal .bar.s1:hover,
 .bar.horizontal .bar.s0:hover {
-  background: var(--background-color-hover);
+  background: var(--color-background-hover);
 }
 
 .bar.horizontal .line .bar-container .value,
@@ -1178,25 +1217,25 @@ body[data-locale] .b-offtopic_marker {
 }
 
 .b-stats_bar.lifetime .bar .first {
-  background: var(--v5-background-color);
+  background: var(--color-additional-background);
 }
 
 .b-stats_bar .bar .third {
-  background: var(--v1-background-color);
+  background: var(--color-background);
 }
 
-.p-profiles-show .lifetime .times .time.checked::before,
+.p-profiles-show .lifetime .times .time.checked:before,
 .p-profiles-show .lifetime .times .time.checked {
-  color: var(--main-text-color);
+  color: var(--color-beige);
   -webkit-text-stroke: thin;
 }
 
 .p-profiles-show .lifetime .cuts .cut.week,
 .p-profiles-show .lifetime .cuts .cut.month,
 .p-profiles-show .lifetime .cuts .cut.month_3 {
+  background: var(--color-versions-background);
   width: 2px;
 }
-/* Активность end */
 
 /* Переключатели */
 #profiles_edit header.head {
@@ -1354,13 +1393,13 @@ body[data-locale] .b-offtopic_marker {
 .b-options-floated.mobile-desktop a.selected::after,
 #messages_index .b-options-floated .selected::after,
 #profiles_edit .b-options-floated .selected::after {
-  background-color: #5e87a7;
+  background: var(--color-auxiliary-background);
 }
 
 .b-options-floated.mobile-desktop a::after {
   position: absolute;
   top: 85%;
-  background-color: #495c6b;
+  background: var(--color-additional-background);
   display: block;
   width: 100%;
   height: 2px;
@@ -1396,27 +1435,27 @@ body[data-locale] .b-offtopic_marker {
 }
 
 .b-options-floated.mobile-desktop a[data-id='planned']::before {
-  background: var(--planned-background-color);
+  background: var(--color-planned-background);
 }
 
 .b-options-floated.mobile-desktop a[data-id='watching']::before {
-  background: var(--watching-background-color);
+  background: var(--color-watching-background);
 }
 
 .b-options-floated.mobile-desktop a[data-id='rewatching']::before {
-  background: var(--watching-background-color);
+  background: var(--color-watching-background);
 }
 
 .b-options-floated.mobile-desktop a[data-id='completed']::before {
-  background: var(--completed-background-color);
+  background: var(--color-completed-background);
 }
 
 .b-options-floated.mobile-desktop a[data-id='on_hold']::before {
-  background: var(--on_hold-background-color);
+  background: var(--color-on_hold-background);
 }
 
 .b-options-floated.mobile-desktop a[data-id='dropped']::before {
-  background: var(--dropped-background-color);
+  background: var(--color-dropped-background);
 }
 
 .p-user_rates-index .l-content .b-options-floated span::before {
@@ -1440,7 +1479,8 @@ body[data-locale] .b-offtopic_marker {
 .p-user_rates-index .l-content .order-control,
 .p-user_rates-index .list-lines tr .index {
   padding: 2px 4px;
-  border: 1px solid #23272b;
+  border: 1px solid;
+  border-color: var(--color-border);
 }
 
 .p-user_rates-index .l-content .order-control.active {
@@ -1449,19 +1489,19 @@ body[data-locale] .b-offtopic_marker {
 
 .p-user_rates-index .list-lines .selectable:hover, .b-block_list li:active,
 .b-block_list li:hover, .b-block_list li.selected {
-  background-color: var(--v4-background-color);
-  color: var(--v1-sp-color);
+  background-color: var(--color-dark);
+  color: var(--color-text);
 }
 
 .p-user_rates-index .list-lines tr .name a:hover {
-  color: var(--main-text-color-hover);
+  color: var(--color-main-text-hover);
 }
 
 .p-user_rates-index .list-lines tr td .new-value input {
   border-radius: 0;
-  color: var(--main-text-color);
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
 }
 
 .b-separator, .p-user_rates-index .list-lines tr td .episodes_total:before,
@@ -1472,8 +1512,8 @@ body[data-locale] .b-offtopic_marker {
 .p-user_rates-index .list-groups .summary.posters,
 .p-user_rates-index .list-groups .summary.lines.library {
   border: 1px solid;
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
   padding: 0 10px 0 10px;
   font-weight: bold;
   font-family: inherit;
@@ -1481,12 +1521,25 @@ body[data-locale] .b-offtopic_marker {
 
 .p-user_rates-index .list-groups .summary.lines.list {
   border: 1px solid;
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
   padding: 2px 10px 2px 10px;
   text-align: center;
   font-weight: bold;
   font-family: inherit;
+}
+
+.p-user_rates-index .stat-categories .t4 {
+  font-size: 16px;
+}
+
+.p-user_rates-index .stat-categories .t3 {
+  font-size: 15px;
+}
+
+.p-user_rates-index .stat-categories .t2 {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .p-user_rates-index .list-lines tr td .rate-text,
@@ -1516,15 +1569,15 @@ body[data-locale] .b-offtopic_marker {
 }
 
 .c-additionals div[data-type='summaries']::before {
-  background: var(--summaries-background-color);
+  background: var(--color-summaries-background);
 }
 
 .c-additionals div[data-type='versions']::before {
-  background: var(--versions-background-color);
+  background: var(--color-versions-background);
 }
 
 .c-additionals div[data-type='comments']::before {
-  background: var(--comments-background-color);
+  background: var(--color-comments-background);
 }
 
 .p-profiles .profile-head .c-info .c-additionals div a {
@@ -1532,23 +1585,23 @@ body[data-locale] .b-offtopic_marker {
 }
 
 .b-stats_bar .stat_names .stat_name[data-type='planned']::before {
-  background: var(--planned-background-color);
+  background: var(--color-planned-background);
 }
 
 .b-stats_bar .stat_names .stat_name[data-type='watching,rewatching']::before {
-  background: var(--watching-background-color);
+  background: var(--color-watching-background);
 }
 
 .b-stats_bar .stat_names .stat_name[data-type='on_hold']::before {
-  background: var(--on_hold-background-color);
+  background: var(--color-on_hold-background);
 }
 
 .b-stats_bar .stat_names .stat_name[data-type='dropped']::before {
-  background: var(--dropped-background-color);
+  background: var(--color-dropped-background);
 }
 
 .b-stats_bar .stat_names .stat_name[data-type='completed']::before {
-  background: var(--completed-background-color);
+  background: var(--color-completed-background);
 }
 
 .b-stats_bar .stat_names .stat_name::before {
@@ -1561,8 +1614,6 @@ body[data-locale] .b-offtopic_marker {
   background: #435158;
   border-radius: 50%;
 }
-
-/* Переключатели end */
 
 /* Комментарии, цитаты */
 .b-comment>.inner header img {
@@ -1619,9 +1670,9 @@ body[data-locale] .b-offtopic_marker {
 .b-input textarea, .collapsed,
 .collapsed+.spoiler .hide-expanded,
 .b-comments .faye-loader {
-  color: var(--main-text-color);
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text);
+  background-color: var(--color-input-background);
+  border-color: var(--color-main-border);
   transition: 0.3s ease-in-out;
 }
 
@@ -1632,23 +1683,23 @@ body[data-locale] .b-offtopic_marker {
 .b-postloader:hover, .collapsed:hover,
 .collapsed+.spoiler .hide-expanded:hover,
 .b-comments .faye-loader:hover {
-  color: var(--main-text-color);
-  background-color: var(--background-color-hover);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text);
+  background-color: var(--color-background-hover);
+  border-color: var(--color-main-border);
 }
 
-.b-quote, .b-quote .b-quote {
+.b-quote, .b-quote .b-quote, .b-code-v2 {
   border: 1px solid;
-  color: var(--main-text-color);
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text);
+  background-color: var(--color-input-background);
+  border-color: var(--color-main-border);
 }
 
 .b-shiki_editor .body .editor textarea:focus, .b-collection_search .field input:focus,
 .subheadline-input:focus, .b-input textarea:focus, .b-input input:focus,
 .b-shiki_editor .links .link-value:focus, .b-shiki_editor .images .link-value:focus,
 .b-shiki_editor .quotes .link-value:focus, .b-shiki_editor .upload .link-value:focus {
-  border-color: var(--border-color);
+  border-color: var(--color-border);
 }
 
 .b-input input[type=file] {
@@ -1658,48 +1709,47 @@ body[data-locale] .b-offtopic_marker {
 }
 
 .noUi-target {
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
+  background-color: var(--color-input-background);
+  border-color: var(--color-main-border);
 }
 
 .noUi-handle {
-  background-color: var(--v1-background-color);
-  border-color: var(--main-border-color);
+  background-color: var(--color-auxiliary-background);
+  border-color: var(--color-main-border);
 }
 
 .noUi-handle:after,
 .noUi-handle:before {
-  background-color: var(--v3-background-color);
+  background-color: var(--color-background);
 }
 
 .b-modal>.inner {
-  background-color: var(--v4-background-color);
+  background-color: var(--color-dark);
 }
 
 .p-user_rates-index .list-lines tr.edit-form form {
-  background-color: var(--v4-background-color);
-  border-color: var(--main-border-color);
+  background-color: var(--color-additional-background);
+  border-color: var(--color-main-border);
 }
 
 .b-shiki_editor .body .preview {
   background: none;
-  border-color: var(--main-border-color);
+  border-color: var(--color-main-border);
 }
 
 #profiles_comments .subheadline-input[type=text], .subheadline-input[type=url] {
   margin-top: -2rem;
   margin-right: 0;
 }
-/* Комментарии, цитаты end */
 
 /* Кнопки */
 .b-form input[type=submit], .b-button,
 .b-shiki_editor.previewed footer .unpreview, 
 .buttons .cancel, .b-form a.remove {
   border: 1px solid;
-  color: var(--main-text-color) !important;
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text) !important;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
   line-height: 23px;
   padding: 0 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -1709,14 +1759,24 @@ body[data-locale] .b-offtopic_marker {
 .b-shiki_editor.previewed footer .unpreview:hover,
 .buttons .cancel:hover, .b-form .cancel:hover,
 .b-form a.remove:hover {
-  background-color: var(--background-color-hover);
+  background-color: var(--color-background-hover);
+}
+
+.b-form input[type=submit]:active,
+.b-comments .comments-loader:active,
+.b-comments .comments-hider:active,
+.b-comments .comments-expander:active,
+.collapsed:active, .b-forum .faye-loader:active {
+  background-color: var(--color-background-active);
+  color: var(--color-main-text);
+  border-color: var(--color-main-border);
 }
 
 .b-form .cancel {
   border: 1px solid;
-  color: var(--main-text-color) !important;
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text) !important;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
   line-height: 23px;
   padding: 3px 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -1737,17 +1797,16 @@ body[data-locale] .b-offtopic_marker {
 }
 
 .b-link_button.dark {
-  color: var(--main-text-color);
-  background-color: var(--v1-background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
 }
 
 .b-link_button.dark:hover {
-  color: var(--main-text-color);
-  background-color: var(--background-color-hover);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text);
+  background-color: var(--color-background-hover);
+  border-color: var(--color-main-border);
 }
-/* Кнопки end */
 
 /* Cвернуть/развернуть */
 .b-comments .comments-collapser {
@@ -1755,7 +1814,7 @@ body[data-locale] .b-offtopic_marker {
   padding: .4rem;
   margin: 0;
   border: 0;
-  color: var(--v1-sp-color);
+  color: var(--color-text);
   font-size: 0;
   line-height: 0;
   transition: 0.3s ease-in-out;
@@ -1763,7 +1822,7 @@ body[data-locale] .b-offtopic_marker {
 
 .b-comments .comments-collapser:hover,
 .b-comments .comments-collapser:active {
-  color: var(--main-text-color-hover);
+  color: var(--color-main-text-hover);
 }
 
 .b-comments .comments-collapser::before {
@@ -1786,7 +1845,7 @@ body[data-locale] .b-offtopic_marker {
   vertical-align: top;
   padding: 0 .5rem;
   border-radius: 0;
-  color: var(--main-sp-color);
+  color: var(--color-auxiliary-text);
   font-size: .875rem;
   line-height: 1.25rem;
   user-select: none;
@@ -1795,7 +1854,7 @@ body[data-locale] .b-offtopic_marker {
 
 .b-height_shortener .expand:hover,
 .b-height_shortener .expand:active {
-  color: var(--main-text-color-hover);
+  color: var(--color-main-text-hover);
 }
 
 .b-height_shortener .expand::before {
@@ -1821,7 +1880,7 @@ body[data-locale] .b-offtopic_marker {
   padding: 0 .5rem;
   margin: .25rem 0;
   border-radius: 0;
-  color: var(--main-sp-color);
+  color: var(--color-auxiliary-text);
   font-size: .875rem;
   font-weight: bold;
   line-height: 1.25rem;
@@ -1830,7 +1889,7 @@ body[data-locale] .b-offtopic_marker {
 
 .b-show_more:hover,
 .b-show_more-more .hide-more:hover {
-  color: var(--main-text-color-hover);
+  color: var(--color-main-text-hover);
 }
 
 .p-animes .b-db_entry > div:last-child {
@@ -1844,9 +1903,9 @@ body[data-locale] .b-offtopic_marker {
   padding: 1px 4px;
   margin-top: -5px;
   border: 1px solid;
-  color: var(--main-text-color) !important;
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color) !important;
+  color: var(--color-main-text) !important;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border) !important;
   font-size: 13px;
   line-height: 18px;
   text-transform: capitalize;
@@ -1857,9 +1916,9 @@ body[data-locale] .b-offtopic_marker {
   padding: 1px 4px;
   margin-top: 20px;
   border: 1px solid;
-  color: var(--main-text-color) !important;
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color) !important;
+  color: var(--color-main-text) !important;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border) !important;
   font-size: 13px;
   line-height: 18px;
   text-transform: capitalize;
@@ -1867,14 +1926,14 @@ body[data-locale] .b-offtopic_marker {
 }
 
 .b-options-floated .action:hover {
-  background-color: var(--background-color-hover);
+  background-color: var(--color-background-hover);
 }
 
 .b-user_rate_log .spoiler.collapsed,
 .b-user_rate_log .spoiler.collapse,
 .b-log_entry .spoiler.collapsed,
 .b-log_entry .spoiler.collapse {
-  background-color: var(--v3-background-color) !important;
+  background-color: var(--color-background) !important;
   padding: 0 5px;
   line-height: 1.5;
   transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
@@ -1884,16 +1943,17 @@ body[data-locale] .b-offtopic_marker {
 .b-user_rate_log .spoiler.collapse:hover,
 .b-log_entry .spoiler.collapsed:hover,
 .b-log_entry .spoiler.collapse:hover {
-  background-color: var(--background-color-hover) !important;
+  background-color: var(--color-background-hover) !important;
 }
 
 .b-user_rate_log .spoiler.collapse.triggered span,
 .b-user_rate_log .spoiler.collapsed span,
 .b-log_entry .spoiler.collapse.triggered span,
+.b-log_entry .spoiler.collapsed span,
+.b-log_entry .spoiler.collapse span,
 .b-log_entry .spoiler.collapsed span {
-  color: var(--main-text-color) !important;
+  color: var(--color-main-text) !important;
 }
-/* Cвернуть/развернуть end */
 
 /* Шрифт: Roboto Condensed */
 
@@ -1942,7 +2002,6 @@ body[data-locale] .b-offtopic_marker {
 body, input, select, button, textarea {
   font-family: var(--font-main);
 }
-/* Шрифт: Roboto Condensed end */
 
 /* MATERIAL ICON */
 
@@ -2047,11 +2106,11 @@ header.head h2 a.back::after {
 
 .b-collection-filters .b-block_list li.selected::before {
   content: 'check_box';
-  color: var(--v3-sp-color);
+  color: var(--color-auxiliary-text);
 }
 
 .b-collection-filters .b-block_list li.selected {
-  color: var(--v3-sp-color);
+  color: var(--color-auxiliary-text);
 }
 
 .b-collection-filters .b-block_list li.sub {
@@ -2082,11 +2141,11 @@ header.head h2 a.back::after {
   position: relative;
   right: 5px;
   margin: 0 0 0 .5rem;
-  color: #5e7388;
+  color: var(--color-text);
 }
 
 .b-collection-filters .b-block_list li .filter:hover {
-  color: #7b8084;
+  color: var(--color-main-text-hover);
 }
 
 .b-collection-filters .b-block_list li .filter::before {
@@ -2136,7 +2195,7 @@ header.head h2 a.back::after {
 .b-collection-filters > .block:nth-child(3) > .b-list > li {
   position: relative;
   margin-bottom: .5rem;
-  background-color: #000000;
+  background-color: var(--color-main-background);
   border-radius: 2px;
   font-size: .875rem;
   font-weight: bold;
@@ -2184,17 +2243,17 @@ header.head h2 a.back::after {
   padding: 6px 0px 3px 0px;
   line-height: 14px;
   border: 1px solid;
-  color: var(--main-text-color);
-  background-color: var(--v1-background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
   transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .p-user_rates .mylist-block + .block + .block + .block > .b-list > li > a:hover,
 .b-collection-filters > .block:nth-child(3) > .b-list > li > a:hover {
-  color: var(--main-text-color) !important;
-  background-color: var(--background-color-hover);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text) !important;
+  background-color: var(--color-background-hover);
+  border-color: var(--color-main-border);
   text-decoration: none;
 }
 
@@ -2210,9 +2269,9 @@ header.head h2 a.back::after {
   display: block;
   padding: 7px 0 7px 0;
   border: 1px solid;
-  color: var(--main-text-color) !important;
-  background-color: var(--v1-background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text) !important;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
   font-weight: bold;
   line-height: 10px;
   text-align: center;
@@ -2223,9 +2282,9 @@ header.head h2 a.back::after {
 .p-user_rates-index .block > .b-spoiler > label:hover,
 .p-userlist_comparer-show .block > .b-spoiler > label:hover,
 .p-animes_collection-index .block > .b-spoiler > label:hover {
-  color: var(--main-text-color) !important;
-  background-color: var(--background-color-hover);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text) !important;
+  background-color: var(--color-background-hover);
+  border-color: var(--color-main-border);
 }
 
 .b-input input[type=checkbox]:checked {
@@ -2241,7 +2300,7 @@ header.head h2 a.back::after {
   margin: .1875rem 1rem .1875rem 0;
   background: rgba(0, 0, 0, 0)!important;
   background-size: 14px!important;
-  border: 0.125rem solid #aeb3b7;
+  border: 0.125rem solid var(--color-main-text);
   border-radius: .125rem;
   box-sizing: border-box;
   transition: 0.24s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2304,7 +2363,7 @@ header.head h2 a.back::after {
 }
 
 .b-forums .forum input:disabled + .link::before {
-  color: black;
+  color: var(--color-dark)
 }
 
 .b-forums .forum .link-with-input .link {
@@ -2368,50 +2427,50 @@ header.head h2 a.back::after {
 
 .b-add_to_list.planned .trigger,
 .b-add_to_list.planned .option {
-  color: var(--main-text-color);
-  background: var(--planned-background-color);
-  border-color: var(--planned-border-color);
+  color: var(--color-main-text);
+  background: var(--color-planned-background);
+  border-color: var(--color-planned-border);
 }
 
 .b-add_to_list.on_hold .trigger,
 .b-add_to_list.on_hold .option {
-  color: var(--main-text-color);
-  background: var(--on_hold-background-color);
-  border-color: var(--on_hold-border-color);
+  color: var(--color-main-text);
+  background: var(--color-on_hold-background);
+  border-color: var(--color-on_hold-border);
 }
 
 .b-add_to_list.watching .trigger,
 .b-add_to_list.watching .option {
-  color: var(--main-text-color);
-  background: var(--watching-background-color);
-  border-color: var(--watching-border-color);
+  color: var(--color-main-text);
+  background: var(--color-watching-background);
+  border-color: var(--color-watching-border);
 }
 
 .b-add_to_list.rewatching .trigger,
 .b-add_to_list.rewatching .option {
-  color: var(--main-text-color);
-  background: var(--watching-background-color);
-  border-color: var(--watching-border-color);
+  color: var(--color-main-text);
+  background: var(--color-watching-background);
+  border-color: var(--color-watching-border);
 }
 
 .b-add_to_list.completed .trigger,
 .b-add_to_list.completed .option {
-  color: var(--main-text-color);
-  background: var(--completed-background-color);
-  border-color: var(--completed-border-color);
+  color: var(--color-main-text);
+  background: var(--color-completed-background);
+  border-color: var(--color-completed-border);
 }
 
 .b-add_to_list.dropped .trigger,
 .b-add_to_list.dropped .option {
-  color: var(--main-text-color);
-  background: var(--dropped-background-color);
-  border-color: var(--dropped-border-color);
+  color: var(--color-main-text);
+  background: var(--color-dropped-background);
+  border-color: var(--color-dropped-border);
 }
 
 .b-add_to_list .plus,
 .b-add_to_list .edit,
 .b-add_to_list .trigger-arrow {
-  color: var(--main-text-color) !important;
+  color: var(--color-main-text) !important;
 }
 
 .b-add_to_list .trigger-arrow:hover {
@@ -2433,7 +2492,7 @@ header.head h2 a.back::after {
 }
 
 .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger:hover .plus::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger:hover .edit::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger:hover .trigger-arrow::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger:active .plus::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger:active .edit::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger:active .trigger-arrow::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .option:hover .plus::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .option:hover .edit::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .option:hover .trigger-arrow::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .option:active .plus::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .option:active .edit::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .option:active .trigger-arrow::before {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
 }
 
 .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger .edit-trigger,
@@ -2449,7 +2508,7 @@ header.head h2 a.back::after {
 }
 
 .b-add_to_list .expanded-options .remove-trigger .text {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
 }
 
 .b-catalog_entry.planned .image-decor::before,
@@ -2476,33 +2535,33 @@ header.head h2 a.back::after {
 }
 
 .b-catalog_entry.completed .image-decor:before {
-  background: var(--completed-background-color);
-  border-color: var(--completed-border-color);
+  background: var(--color-completed-background);
+  border-color: var(--color-completed-border);
 }
 
 .b-catalog_entry.planned .image-decor:before {
-  background: var(--planned-background-color);
-  border-color: var(--planned-border-color);
+  background: var(--color-planned-background);
+  border-color: var(--color-planned-border);
 }
 
 .b-catalog_entry.on_hold .image-decor:before {
-  background: var(--on_hold-background-color);
-  border-color: var(--on_hold-border-color);
+  background: var(--color-on_hold-background);
+  border-color: var(--color-on_hold-border);
 }
 
 .b-catalog_entry.watching .image-decor:before {
-  background: var(--watching-background-color);
-  border-color: var(--watching-border-color);
+  background: var(--color-watching-background);
+  border-color: var(--color-watching-border);
 }
 
 .b-catalog_entry.rewatching .image-decor:before {
-  background: var(--watching-background-color);
-  border-color: var(--watching-border-color);
+  background: var(--color-watching-background);
+  border-color: var(--color-watching-border);
 }
 
 .b-catalog_entry.dropped .image-decor:before {
-  background: var(--dropped-background-color);
-  border-color: var(--dropped-border-color);
+  background: var(--color-dropped-background);
+  border-color: var(--color-dropped-border);
 }
 
 .b-catalog_entry.completed .image-decor:after,
@@ -2511,11 +2570,8 @@ header.head h2 a.back::after {
 .b-catalog_entry.watching .image-decor:after,
 .b-catalog_entry.rewatching .image-decor:after,
 .b-catalog_entry.dropped .image-decor:after {
-  color: #aeb3b7;
+  color: var(--color-main-text);
 }
-/* Кнопки добавить end */
-
-/* MATERIAL ICON END */
 
 /* TOAST */
 .toastify.notice {
@@ -2640,7 +2696,7 @@ header.head h2 a.back::after {
   margin-top: -.75rem;
   margin-left: -.75rem;
   background: transparent;
-  color: var(--v4-sp-color);
+  color: var(--color-auxiliary-text);
   border: .1875rem solid;
   border-right-color: transparent;
   border-radius: 50%;
@@ -2655,7 +2711,6 @@ header.head h2 a.back::after {
   opacity: .75;
   background: none;
 }
-/* Кружок загрузки end */
 
 /* Анимации */
 .b-spoiler .content .inner,
@@ -2739,7 +2794,6 @@ header.head h2 a.back::after {
 .b-catalog_entry .cover .title.two_lined, .b-news_wall-topic .title, .b-animes-menu .menu-topics-block .entry .name, .b-club .name, .b-lang_trigger span, .b-add_to_list .trigger .add-trigger, .b-add_to_list .trigger .edit-trigger, .b-add_to_list .option .text, .b-add_to_list .plus, .b-add_to_list .edit, .b-add_to_list .trigger-arrow, .b-db_entry-variant-list_item>.info .name .b-link {
   transition: 0.2s ease-in-out;
 }
-/* Анимации end */
 
 /* Вкладки */
 .u-tabs [data-tab] {
@@ -2775,21 +2829,21 @@ header.head h2 a.back::after {
   transition: .24s ease;
   user-select: none;
   border: 1px solid;
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
 }
 
 .u-tabs [data-tab-switch]:hover {
-  background-color: var(--background-color-hover);
+  background-color: var(--color-background-hover);
 }
 
 .u-tabs [data-tab-switch]:active {
-  background-color: var(--background-color-hover);
+  background-color: var(--color-background-active);
 }
 
 .u-tabs [data-tab-switch].active {
-  background-color: var(--v1-background-color);
-  border-color: var(--main-border-color);
+  background-color: var(--color-background-active);
+  border-color: var(--color-main-border);
   color: inherit;
   cursor: default;
 }
@@ -2847,14 +2901,13 @@ header.head h2 a.back::after {
     transform: translate3d(-50%, -50%, 0) scale(2.5);
   }
 }
-/* Вкладки end */
 
 /* Избранное */
 #profiles_show .cc-favourites .c-column {
   margin: 0;
   margin-left: 1.5%;
   margin-bottom: 1.5%;
-  width: 9.6%;
+  width: 10.6%;
 }
 
 #profiles_show .cc-favourites {
@@ -2892,18 +2945,18 @@ header.head h2 a.back::after {
 }
 
 .p-profiles-favorites .cc-favourites.sortable .b-catalog_entry::before {
-  background: #313c44;
+  background: var(--color-background);
   border-radius: 0;
-  color: #9da2a8;
+  color: var(--color-main-text);
+  transition: 0.2s ease-in-out;
 }
 
 .p-profiles-favorites .cc-favourites.sortable .b-catalog_entry:hover::before,
 .p-profiles-favorites .cc-favourites.sortable .b-catalog_entry:active::before {
-    color: #6f777d;
+  color: var(--color-main-text-hover);
 }
-/* Избранное end */
 
-/* Подчеркивание */
+/* Удаление подчеркиваний */
 .headline>a, .subheadline>a, .b-stats_bar a.title, .b-stats_bar .stat_names .stat_name a, .p-profiles .profile-head .c-history .entry .title, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a, .p-profiles .profile-head .c-info .c-additionals div a, .b-form .cancel, .b-catalog_entry-tooltip .inner a.name, .b-options-floated.mobile-desktop a, .p-user_rates-index .l-content .order-control.active, .p-user_rates-index .l-content .order-control:hover, .p-user_rates-index .stat-categories .category, .p-user_rates-index .list-lines tr .name a, .b-options-floated.mobile-desktop a, .b-block_list li, .b-topic>.inner header .name-date a.name, .b-catalog_entry .cover .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry:hover .title, .p-topics .l-menu .sticky-topics .topic .title, .name-date a.name, .b-club .name, .b-user.named_avatar .name, .b-shiki_editor footer .about-bb_codes, .b-animes-menu .menu-topics-block .entry .name, .p-user_history-index .history-page .history-interval p a, .b-achievement .c-about a.title, .b-achievement .about a.title, header.head a.misc, .b-forums .forum .link-with-input .link, .b-log_entry a, .b-log_entry .link, .b-log_entry .b-user16 span, .b-ban .b-user16 span, .b-ban a, .b-ban .link, .p-contests .results a, .p-dashboards .user_list .list-change .title:hover, .b-ban .abuser:hover, .b-db_entry-variant-list_item>.info .name .b-link, .b-options-floated .link:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover {
   text-decoration: none !important;
 }
@@ -2915,14 +2968,14 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .b-tooltipped.dotted, .p-topics header h1 a.reload, .b-options-floated .action, .b-height_shortener .expand span, .b-log_entry .spoiler.collapse span, .b-log_entry .spoiler.collapsed span, .p-dashboards .user_list .list-type>.title .switch, .p-dashboards .user_list .history>.title .switch, .p-dashboards .user_list .list-type>.title .link, .p-dashboards .user_list .history>.title .link, .b-contest_match .vs .actions .action span, .b-topic .footer-vote .vote-group .vote, .p-db_entries-edit .b-list .b-js-action, header.head h1 a.back:hover:after, header.head h2 a.back:hover:after, .b-user_rate_log .spoiler.collapse span, .b-user_rate_log .spoiler.collapsed span, .b-lang_trigger span, .p-animes_collection-index .pagination .no-hover .link-current:not(.active), .p-mangas_collection-index .pagination .no-hover .link-current:not(.active), .p-recommendations-index .pagination .no-hover .link-current:not(.active), .p-userlist_comparer-show .pagination .no-hover .link-current:not(.active), .b-log_entry .spoiler.collapse.triggered span, .b-user_rate_log .spoiler.collapse.triggered span, .b-js-link, .b-spoiler label, .b-spoiler .content .inner, .b-spoiler .content .inner-prgrph, .b-forums .reload {
   border-bottom: none;
 }
-/* Подчеркивание end */
 
 /* Cовместимость */
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility {
-  position: absolute;
+  position: relative;
   text-transform: uppercase;
-  right: 25px;
-  line-height: 25px;
+  font-weight: bold;
+  bottom: -22px;
+  right: 5px;
 }
 
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a,
@@ -2931,13 +2984,13 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   margin-top: 1px;
 }
 
-.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.full, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility span.link-replacement, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.high, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.moderate, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.weak, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.zero {
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility span.link-replacement, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.moderate, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.full, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.high, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.weak, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.zero {
   color: inherit;
 }
 
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.full:hover, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.high:hover, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.moderate:hover, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.weak:hover, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.zero:hover, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a:hover,
 .p-userlist_comparer .comparer table .name a:hover {
-  color: var(--main-text-color-hover);
+  color: var(--color-main-text-hover);
 }
 
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility span.link-replacement .text.zero,
@@ -2958,13 +3011,12 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate::before {
   content: '│';
   padding-right: 0;
-  line-height: 1.5rem;
   font-size: 11px;
   transition: 0.2s ease-in-out;
 }
 
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility:hover .rate::before {
-  color: var(--main-text-color-hover);
+  color: var(--color-main-text-hover);
 }
 
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate::after {
@@ -2974,7 +3026,8 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-userlist_comparer .comparer table .num, 
 .p-userlist_comparer .comparer table .name {
   padding: 2px 4px;
-  border: 1px solid #23272b;
+  border: 1px solid;
+  border-color: var(--color-border);
 }
 
 .p-userlist_comparer-show .b-table th {
@@ -3002,13 +3055,12 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .p-userlist_comparer .comparer table .selectable:hover {
-  background: #0c0e10;
+  background: var(--color-dark);
 }
 
 .b-collection-filters .block>.filter {
   margin-top: 0;
 }
-/* Cовместимость end */
 
 /* Турниры */
 .b-contest_match .vs .label, .b-contest_match .prev-match, .b-contest_match .next-match,
@@ -3018,77 +3070,76 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .p-contests .match-day .match-link .started:before, .p-contests .match-day .match-link .created:before, .p-contests .match-day .matches-num, .p-contests .match-day>.date .from, .p-contests .match-day>.date .to, .p-contests .rating .member .position {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
 }
 
 .p-contests .match-day .match-link a {
-  color: var(--green-color);
+  color: var(--color-green);
 }
 
 .p-contests .match-day .match-link .c-column.loser a {
-  color: var(--red-color);
+  color: var(--color-red);
 }
 
 .p-contests .match-day .match-link .c-column.created a, .p-contests .match-day .match-link.voted-none>.c-column a, .p-contests .match-day .match-link.voted-left>.c-column:last-child a, .p-contests .match-day .match-link.voted-right>.c-column:first-child a {
-  color: var(--main-sp-color);
+  color: var(--color-text);
 }
 
 .p-contests .rating .member a, .p-contests .results a,
 .p-contests .suggestion>a, .p-contests .variant>a {
-  color: var(--v1-sp-color);
+  color: var(--color-auxiliary-text);
 }
 
 .b-contest_match .prev-match:hover, .b-contest_match .next-match:hover, .p-contests .match-day .match-link a:hover, .p-contests .rating .member a:hover, .p-contests .match-day .match-link .c-column.loser a:hover, .p-contests .match-day .match-link .c-column.created a:hover, .p-contests .match-day .match-link.voted-none>.c-column a:hover, .p-contests .match-day .match-link.voted-left>.c-column:last-child a:hover, .p-contests .match-day .match-link.voted-right>.c-column:first-child a:hover, .p-contests .results a:hover, .p-contests .suggestion>a:hover, .p-contests .variant>a:hover {
-  color: var(--main-text-color-hover);
+  color: var(--color-main-text-hover);
 }
 
 .p-contests .match-day .match-link.active {
-  background-color: var(--v4-background-color);
+  background-color: var(--color-background);
   border: 1px solid;
-  border-color: var(--main-border-color);
+  border-color: var(--color-main-border);
 }
 
 .p-contests .match-day .match-link:hover,
 .p-contests .match-day .match-link:active {
-  background-color: var(--v4-background-color) !important;
+  background-color: var(--color-background-hover) !important;
 }
 
 .b-contest_match .vs .actions .action span {
   padding: 5px 10px;
   font-weight: bold;
   border: 1px solid;
-  background-color: var(--v1-background-color);
-  border-color: var(--main-border-color);
-  color: var(--main-text-color);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
+  color: var(--color-main-text);
   transition: background-color 0.25s ease, border-color 0.25s ease
 }
 
 .b-contest_match .vs .actions .action span:hover {
-  background-color: var(--background-color-hover);
-  border-color: var(--main-border-color);
-  color: var(--main-text-color);
+  background-color: var(--color-background-hover);
+  border-color: var(--color-main-border);
+  color: var(--color-main-text);
 }
 
 .b-contest_match .votes-percents .right-part,
 .b-contest_match .votes-percents .left-part {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
   font-weight: bold;
 }
 
 .b-contest_match .votes-percents .left-part,
 .b-contest_match .votes-percents .left-part:hover {
-  background: var(--completed-background-color);
+  background: var(--color-completed-background);
 }
 
 .b-contest_match .votes-percents .right-part,
 .b-contest_match .votes-percents .right-part:hover {
-  background: var(--dropped-background-color) !important;
+  background: var(--color-dropped-background) !important;
 }
 
 .b-contest_match .votes-percents .left-part .right-part::before {
   border-right: 30px solid #573231 !important;
 }
-/* Турниры end */
 
 /* Ачивки */
 .p-profiles-show .achievements .header {
@@ -3105,23 +3156,25 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-achievement .c-about .progress {
-  background: #394046;
+  background: var(--color-additional-background);
   height: 5px;
 }
 
 .b-achievement .c-about .progress .bar {
-  background: #557d57;
+  background: var(--color-green);
 }
 
 .b-achievement .gained {
   border-radius: 0;
-  color: var(--main-text-color);
-  background: #161f23;
-  border: 1px solid #181c1f;
+  height: 27px;
+  line-height: 27px;
+  color: var(--color-main-text);
+  background: var(--color-background);
+  border: var(--color-main-border);
 }
 
 .b-achievement .c-about .title {
-  color: #4d6175;
+  color: var(--color-text);
 }
 
 .b-achievement .c-image .inner {
@@ -3153,22 +3206,24 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-achievements_notifier .achievement.gained {
-  color: var(--main-text-color);
-  background: #0f1112;
-  border: 1px solid #181c1f;
+  border: 1px solid;
+  color: var(--color-main-text);
+  background: var(--color-background);
+  border: var(--color-main-border);
 }
 
 .b-achievements_notifier .achievement.lost {
-  color: #bcb1b1;
-  background: #573231;
-  border: 1px solid #3d2322;
+  border: 1px solid;
+  color: var(--color-main-text);
+  background: var(--color-dropped-background);
+  border: var(--color-dropped-border);
 }
 
 .b-achievements_notifier .achievement.gained .title a,
 .b-achievements_notifier .achievement.lost .title a,
 .b-achievements_notifier .achievement.gained .name a, 
 .b-achievements_notifier .achievement.lost .name a {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
   text-decoration: none;
 }
 
@@ -3176,7 +3231,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .b-achievements_notifier .achievement.lost .title a:hover,
 .b-achievements_notifier .achievement.gained .name a:hover, 
 .b-achievements_notifier .achievement.lost .name a:hover {
-  color: #6f777d;
+  color: var(--color-main-text-hover);
 }
 
 #profiles_show .cc-achievements,
@@ -3290,7 +3345,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   transition: box-shadow .16s ease;
   width: calc(26% - 36px);
   margin: 0 13px 15px !important;
-  min-height: 300px;
+  min-height: 330px;
 }
 
 #achievements_index .cc-franchises-genres .c-genres .cc-achievements {
@@ -3342,7 +3397,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   right: 0;
   line-height: 1.5;
   z-index: 1;
-  color: var(--main-text-color);
+  color: var(--color-main-text);
 }
 
 #achievements_index .c-franchises .cc {
@@ -3416,14 +3471,19 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   padding-right: 0;
 }
 
-#profiles_show .b-achievement.is-badge::before, #achievements_index .cc-authors .b-achievement.is-badge::before, .p-achievements.p-profiles-index .c-franchises .b-badge[original-title]::before, .p-achievements.p-profiles-index .c-franchises .b-badge[title]::before, #achievements_index .cc-achievements .b-achievement, #achievements_index .cc-franchises-genres .c-genres .b-achievement, #achievements_show .b-achievement.is-badge:before,
+#profiles_show .b-achievement.is-badge::before,
+#achievements_index .cc-authors .b-achievement.is-badge::before,
+.p-achievements.p-profiles-index .c-franchises .b-badge[original-title]::before,
+.p-achievements.p-profiles-index .c-franchises .b-badge[title]::before,
+#achievements_index .cc-achievements .b-achievement,
+#achievements_index .cc-franchises-genres .c-genres .b-achievement,
+#achievements_show .b-achievement.is-badge:before,
 #achievements_group .b-achievement.is-badge:before {
   border: 1px solid;
-  color: var(--main-text-color);
-  background: var(--background-color);
-  border-color: var(--main-border-color);
+  color: var(--color-main-text);
+  background: var(--color-background);
+  border-color: var(--color-main-border);
 }
-/* Ачивки end */
 
 /* Прочее */
 /* Убираем синий цвет при нажатии */
@@ -3490,8 +3550,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .l-footer {
   padding-top: 25px;
   text-align: center;
-  color: var(--v2-sp-color);
-  font-weight: bold;
 }
 
 .l-footer .links {
@@ -3501,16 +3559,11 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   text-align: center;
 }
 
-.l-footer .links a {
-    color: var(--v2-sp-color);
-}
-
 .l-footer .links,
 .l-footer .copyright {
   font-family: inherit;
-  color: var(--v2-sp-color);
-  -webkit-text-stroke: thin;
-  font-weight: bold;
+  color: inherit;
+  font-weight: 500;
 }
 
 .l-footer::after,
@@ -3521,20 +3574,37 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   font-size: 10px;
 }
 
+.l-footer, .l-footer .links a {
+  color: var(--color-beige);
+  -webkit-text-stroke: thin;
+}
+
 /* CSS Редактор */
+.b-edit_styles ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.b-edit_styles ::-webkit-scrollbar-track-piece {
+  background: var(--color-additional-background)
+}
+
+.b-edit_styles ::-webkit-scrollbar-thumb {
+    background: var(--color-dark);
+}
+
 .b-edit_styles .edit_style .style_css label,
 .b-edit_styles .new_style .style_css label {
-  background: #0f1112;
-  border: 1px solid #181c1f;
+  background: var(--color-background);
+  border: 1px solid var(--color-main-border);
+  color: var(--color-main-text);
   padding: 4px 10px;
-  color: #fafafa;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .b-edit_styles .edit_style .style_css .editor-expand,
 .b-edit_styles .edit_style .style_css .editor-collapse {
-  color: #fafafa;
-  background: #293135;
+  color: var(--color-main-text);
+  background: var(--color-dark);
   text-transform: uppercase;
   min-width: 5.5rem;
   font-size: .875rem !important;
@@ -3544,14 +3614,16 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-edit_styles .edit_style .style_css .editor-collapse:hover,
-.b-edit_styles .edit_style .style_css .editor-expand:hover {
-  color: #aeb3b7;
+.b-edit_styles .edit_style .style_css .editor-expand:hover,
+.b-edit_styles .edit_style .style_css .editor-expand:active,
+.b-edit_styles .edit_style .style_css .editor-collapse:active {
+  color: var(--color-main-text-hover);
   transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
 }
 
 .cm-s-solarized.cm-s-light {
-  background-color: #222225;
-  color: #fff;
+  background: var(--color-background);
+  color: var(--color-main-text);
   text-shadow: none;
 }
 
@@ -3561,8 +3633,8 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .cm-s-solarized.cm-s-light .CodeMirror-linenumber, .CodeMirror-gutter {
-  color: #ddd;
-  background-color: #2b2b31;
+  color: var(--color-main-text);
+  background: var(--color-headline-auxiliary-background);
 }
 
 .cm-searching {
@@ -3572,7 +3644,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .CodeMirror-search-field {
   width: 400px !important;
   background: #0009 !important;
-  color: #fff !important;
+  color: var(--color-main-text) !important;
 }
 
 .cm-s-solarized.cm-s-light div.CodeMirror-selected {
@@ -3636,9 +3708,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 /* CSS Редактор end */
 
-/* Цвет текста комментария */
+/* Chrome/Opera/Safari */
+/* текст комментария цвет */
 ::-webkit-input-placeholder {
-  color: #aeb3b7 !important;
+  color: var(--color-main-text) !important;
   transition:0.5s ease-out;
 }
 
@@ -3664,17 +3737,17 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 .history-page a[href ^= "/a"]:before {
   content: 'Аниме';
-  color: #9e6360;
+  color: var(--color-red);
 }
 
 .history-page a[href ^= "/m"]:before {
   content: 'Манга';
-  color: #477590;
+  color: var(--color-blue);
 }
 
 .history-page a[href ^= "/r"]:before {
   content: 'Ранобэ';
-  color: #5a9861;
+  color: var(--color-green);
 }
 
 [data-locale="en"] .history-page a[href ^= "/a"]:before {
@@ -3694,66 +3767,56 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 /* Скроллбар */
-
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(20,20,20,20.0); 
-  -webkit-border-radius: 0;
-}
-
 ::-webkit-scrollbar-thumb {
-  background: var(--v1-background-color);
-}
-
-::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(255,0,0,0.4); 
+  background: var(--color-additional-background);
 }
 
 ::-webkit-scrollbar-track-piece {
-  background: var(--main-background-color);
+  background: var(--color-main-background);
 }
 
-/* Ширина в меню и в обо мне */
+/* Ширина в меню и в "обо мне" */
 .about ::-webkit-scrollbar,
 .l-top_menu-v2 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
 }
 
-/* Скроллбар end */
-
 /* Стрелка */
-.b-to-top .slide:before {
+.b-to-top .slide::before {
   background: transparent;
 }
 
 .b-to-top.active .arrow {
-  color: #778998;
+  color: var(--color-auxiliary-text);
   font-size: 40px;
   height: 80px;
 }
 
-.b-to-top.active .arrow:before {
-  text-shadow: 0px 0px 1px #181c1f;
+.b-to-top.active .arrow::before {
+  text-shadow: 0px 0px 1px var(--color-background);
 }
-/* Стрелка end */
 
 /* Выравнивание постеров */
+/* Отмена работы скрипта */
 .b-catalog_entry .cover .image-cutter {
   max-width: none !important;
   max-height: none !important;
 }
 
+/* Единое регулирование размера обложек */
 .b-catalog_entry .cover .image-cutter::before {
   content: '';
   display: block;
   padding-bottom: 155.5%;
 }
 
+/* Позиционирование изображения */
 .b-catalog_entry .cover .image-decor img {
   position: absolute;
   top: 0;
@@ -3773,14 +3836,15 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   font-size: 11px;
   height: 12px;
   line-height: 12px;
-  color: #aeb3b7;
-  background: #181c1f;
-  border: 1px solid #181c1f;
+  border: 1px solid;
+  color: var(--color-main-text);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
 }
 
 .turbolinks-progress-bar {
   z-index: 9999 !important;
-  background: #293135 !important;
+  background: var(--color-additional-background) !important;
   -webkit-box-shadow: 0 0 10px rgba(119,182,255,0.7) !important;
   box-shadow: 0 0 20px rgba(0,0,0,0.7) !important;
 }
@@ -3791,7 +3855,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   top: 0;
   left: 0;
   height: 4px;
-  background: #293135;
+  background: var(--color-additional-background);
   z-index: 9999;
   transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
   transform: translate3d(0, 0, 0);
@@ -3799,18 +3863,22 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 /* Сообщить об ошибке */
 .b-feedback>.marker-positioner>.marker-text {
-  background: #181c1f;
-  border: 1px solid #1b2023;
   font-size: 12px;
   height: 28px;
   line-height: 1.65;
   padding: 3px 8px;
   opacity: 0;
+  border: 1px solid;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
+  background-image: none;
 }
 
 .b-feedback>.marker-positioner>.marker-text:hover {
-  background: #181c1f;
-  border: 1px solid #1b2023;
+  border: 1px solid;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
+  background-image: none;
   font-size: 12px;
   height: 28px;
   line-height: 1.65;
@@ -3831,7 +3899,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-feedback>.marker-positioner>.marker-text:after {
-  color: #acb1b4;
+  color: var(--color-main-text);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -3856,7 +3924,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .subheadline .count:hover::before {
-  color: #6f777d;
+  color: var(--color-main-text-hover);
 }
 
 .b-options-floated a span.brackets::before,
@@ -3872,7 +3940,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 .p-profiles .profile-head .c-brief header .notice span::after {
   content: '●';
-  color: #435158;
+  color: var(--color-beige);
 }
 
 .b-options-floated a::after, .b-options-floated .link::after, .p-user_rates-index .list-groups .summary .stat-value::after {
@@ -3882,7 +3950,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   height: .5rem;
   padding: 0;
   margin: 0 5px;
-  background: #435158;
+  background: var(--color-beige);
   border-radius: 50%;
 }
 
@@ -3894,7 +3962,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   padding: 0;
   margin-left: 7px;
   margin-right: 7px;
-  background: #435158;
+  background: var(--color-beige);
   border-radius: 50%;
 }
 
@@ -3909,26 +3977,27 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-topic {
-  border-top: 3px solid #293135;
+  border-top: 3px solid var(--color-additional-background);
 }
 
 .b-user.detailed, .b-user.moderation, h3 {
-  border-bottom: 1px solid #293135;
+  border-bottom: 1px solid var(--color-additional-background);
 }
 
 /* Коллекции, рецензии, жанры */
 .b-topic .footer-vote {
   padding: 0 10px 0 10px;
   line-height: 2;
-  background-color: #141719;
-  border: 1px solid #181c1f;
-  color: #aeb3b7;
+  border: 1px solid;
+  color: var(--color-main-text);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
 }
 
 .b-topic .footer-vote .star:before,
 .b-topic .footer-vote .vote-group .vote,
 .b-topic .footer-vote .vote-group .separator:before {
-  color: #6f859a;
+  color: var(--color-text);
 }
 
 .p-topics .b-forum .b-collection-topic>.inner .see-more,
@@ -3938,8 +4007,9 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 .b-collection-topic>.inner .see-more,
 .b-collection-topic>.inner .see-more:hover {
-  background: #0f1112;
-  border: 1px solid #181c1f;
+  border: 1px solid;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
 }
 
 .b-collection-topic>.inner .see-more .text .inner {
@@ -3950,17 +4020,17 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 /* Темы дня */
 .b-hot_topics-v2 {
   background-color: transparent;
-  border-bottom: 1px solid #293135;
+  border-bottom: 1px solid var(--color-additional-background);
 }
 
 .b-hot_topics-v2 .subject,
 .b-hot_topics-v2 .b-link {
-  color: #4d6175;
+  color: var(--color-text);
   font-weight: bold;
 }
 
 .b-hot_topics-v2 .b-link:hover {
-  color: #778998;
+  color: var(--color-main-text-hover);
 }
 
 /* Хлебные крошки */
@@ -3971,12 +4041,12 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 /* Cпойлеры */
 .b-spoiler .content .before,
 .b-spoiler .content .after {
-  color: #4d6175 !important;
+  color: var(--color-text) !important;
 }
 
 .b-spoiler .content .before:hover,
 .b-spoiler .content .after:hover {
-  color: #778998 !important;
+  color: var(--color-main-text-hover); !important;
 }
 
 .b-spoiler .content .before::before,
@@ -3996,39 +4066,92 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #121517;
-  border: 1px solid #181c1f;
-  color: #aeb3b7 !important;
+  border: 1px solid;
+  color: var(--color-main-text) !important;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #profiles_show .about .b-spoiler .content .before:hover::before {
-  background-color: #21282f;
+  background-color: var(--color-background-hover);
 }
 
 #profiles_show .about .b-spoiler .content .after {
   display: none;
 }
-/* Cпойлеры end */
 
-/* Звезды и награды на страницах аниме */
+/* Новые спойлеры */
+.b-spoiler_block>div {
+  border-left: 4px solid var(--color-border);
+  padding: 3px 3px 3px 14px;
+  background-color: var(--color-background);
+  background: transparent;
+}
+
+.b-spoiler_block>span {
+  line-height: 20px;
+  border: 1px solid;
+  margin-bottom: 5px;
+  color: var(--color-main-text);
+  background-color: var(--color-background);
+  border-color: var(--color-auxiliary-border);
+}
+
+.b-spoiler_block>span:hover,
+.b-spoiler_block>span:active {
+  background-color: var(--color-background-hover);
+}
+
+.b-spoiler_inline.is-opened {
+  background-color: var(--color-background);
+  color: var(--color-red);
+}
+
+.b-spoiler_inline:not(.is-opened) {
+  background-color: var(--color-background);
+}
+
+.b-spoiler_inline:not(.is-opened):hover,
+.b-spoiler_inline:not(.is-opened):active {
+  background-color: var(--color-background-hover);
+}
+
+.b-quote-v2 {
+  border-left: 4px solid var(--color-border);
+  background-color: var(--color-input-background);
+}
+
+code.b-code_inline {
+  border: 1px solid;
+  background-color: var(--color-background);
+  border-color: var(--color-auxiliary-border);
+  color: var(--color-red);
+}
+
+.tooltip-inner .b-spoiler_block>div {
+  width: 70%;
+  height: 5rem;
+}
+
+/* Звезды и награды на странице аниме */
 .b-rate .stars.background, .b-user_rate-history .score-time .stars-container .background {
-  color: #202b35;
+  color: var(--color-link);
 }
 
 .b-rate .stars.score, .b-rate .stars.hover,
 .b-db_entry>.c-about .contest_winners .medal::before,
 .b-user_rate-history .score-time .stars-container .score {
-  color: #7b9da2;
+  color: var(--color-auxiliary-text);
 }
 
 /* Импорт/экспорт */
 .p-profiles-edit .misc .profile-action a:not(.b-button), .p-profiles-edit .misc .profile-action .link, .p-profiles-edit .misc .nickname-changes a:not(.b-button), .p-profiles-edit .misc .nickname-changes .link, .p-profiles-edit .list .profile-action a:not(.b-button), .p-profiles-edit .list .profile-action .link, .p-profiles-edit .list .nickname-changes a:not(.b-button), .p-profiles-edit .list .nickname-changes .link {
-  color: #aeb3b7;
+  color: var(--color-main-text);
 }
 
 .p-profiles-edit .misc .profile-action a:not(.b-button):hover, .p-profiles-edit .misc .profile-action .link:hover, .p-profiles-edit .misc .nickname-changes a:not(.b-button):hover, .p-profiles-edit .misc .nickname-changes .link:hover, .p-profiles-edit .list .profile-action a:not(.b-button):hover, .p-profiles-edit .list .profile-action .link:hover, .p-profiles-edit .list .nickname-changes a:not(.b-button):hover, .p-profiles-edit .list .nickname-changes .link:hover {
-  color: #778998;
+  color: var(--color-main-text-hover);
 }
 
 /* CМАЙЛЫ */
@@ -4044,8 +4167,9 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   border-radius: 0;
   z-index: 9;
   overflow: auto;
-  background: #0f1112;
-  border: 1px solid #181c1f;
+  border: 1px solid;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
 }
 
 .b-shiki_editor .smileys {
@@ -4124,14 +4248,14 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-coub .tags .tag.matched {
-  color: #6884a0;
+  color: var(--color-text);
   font-weight: bold;
 }
 
 .b-coub .tags .tag.category {
-  background-color: #5983ad;
+  background-color: var(--color-auxiliary-background);
   border-radius: 0;
-  color: black;
+  color: var(--color-dark);
   font-weight: bold;
 }
 
@@ -4140,9 +4264,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   line-height: 22px;
   margin-bottom: 0;
   margin-right: 4px;
-  color: inherit;
-  background: #0f1112;
-  border: 1px solid #181c1f;
+  border: 1px solid;
+  color: var(--color-main-text);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
 }
 
 /* Видео, картинки */
@@ -4156,61 +4281,44 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   background: rgba(9, 13, 14, 0.5);
 }
 
-.b-video .video-link {
-  background: #181c1f;
+.mfp-iframe-holder .mfp-content {
+  max-width: 1300px;
 }
 
-.b-video .video-link:before {
+.b-video .video-link {
+  background: var(--color-background);
+}
+
+.b-video .video-link::before {
   background: none;
-  color: #825050;
+  color: var(--color-red);
 }
 
 .b-video .marker {
   background: rgba(10, 12, 14, 0.5);
   border-radius: 0;
-  color: #cad2d8;
+  color: var(--color-main-text);
   font-size: 9px;
 }
 
-.b-video .marker:before {
+.b-video .marker::before {
   font-size: 9px;
 }
 
-.b-video.youtube .marker:before {
-  color: #9e6360;
+.b-video.youtube .marker::before {
+  color: var(--color-red);
 }
 
 .b-image .marker {
   background: rgba(10, 12, 14, 0.5);
   border-radius: 0;
-  color: #cad2d8;
+  color: var(--color-main-text);
   font-size: 9px;
 }
 
-/* Прочее */
-#profiles_show .about .red {
-  color: inherit;
-  width: 50%;
-  font-weight: bold;
-  background: #202e35;
-}
-
+/* Разное */
 #profiles_show .about .b-catalog_entry .cover .title.two_lined {
   display: none;
-}
-
-#profiles_show .about .inline > .b-spoiler > label {
-  border: 1px solid;
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
-  padding: 2px 5px;
-  color: inherit;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#profiles_show .about .inline > .b-spoiler > label:hover {
-  background-color: var(--background-color-hover);
 }
 
 #profiles_show .about .cc-9-g15>.c-column {
@@ -4261,19 +4369,20 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .p-user_rates-index .list-posters .user_rate .edit-user_rate::before {
-  background: rgba(25, 40, 56, 0.9);
+  background: rgb(24 28 31 / 0.9);
 }
 
 .p-user_rates-index .list-posters .user_rate .edit-user_rate:hover,
 .p-user_rates-index .list-posters .user_rate .edit-user_rate:active {
-  background-color: #313d46;
+  background-color: var(--color-background-hover);
 }
 
 .p-user_rates-index .list-posters .user_rate>.text,
 .b-catalog_entry .cover .image-decor>.text {
-  color: #d0d0d0;
-  background: #0f1112;
-  border: 1px solid #181c1f;
+  border: 1px solid;
+  color: var(--color-main-text);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
 }
 
 .p-user_rates-index .list-posters .user_rate>.text::before,
@@ -4288,14 +4397,242 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 .p-recommendations-index .b-catalog_entry .edit, .p-recommendations-index .b-catalog_entry .delete, .p-recommendations-index .b-catalog_entry .drag-handle, .p-recommendations-index .b-catalog_entry .confirm, .p-recommendations-index .b-catalog_entry .cancel, .p-recommendations-index .b-catalog_entry .move-left, .p-recommendations-index .b-catalog_entry .move-right, .p-recommendations-index .b-catalog_entry .mobile-edit, .p-recommendations-favourites .b-catalog_entry .edit, .p-recommendations-favourites .b-catalog_entry .delete, .p-recommendations-favourites .b-catalog_entry .drag-handle, .p-recommendations-favourites .b-catalog_entry .confirm, .p-recommendations-favourites .b-catalog_entry .cancel, .p-recommendations-favourites .b-catalog_entry .move-left, .p-recommendations-favourites .b-catalog_entry .move-right, .p-recommendations-favourites .b-catalog_entry .mobile-edit {
   background: rgba(25, 40, 56, 0.9);
-  color: #d0d0d0;
+  color: var(--color-main-text);
 }
 
 .p-recommendations-index .b-catalog_entry .edit:hover, .p-recommendations-index .b-catalog_entry .delete:hover, .p-recommendations-index .b-catalog_entry .drag-handle:hover, .p-recommendations-index .b-catalog_entry .confirm:hover, .p-recommendations-index .b-catalog_entry .cancel:hover, .p-recommendations-index .b-catalog_entry .move-left:hover, .p-recommendations-index .b-catalog_entry .move-right:hover, .p-recommendations-index .b-catalog_entry .mobile-edit:hover, .p-recommendations-favourites .b-catalog_entry .edit:hover, .p-recommendations-favourites .b-catalog_entry .delete:hover, .p-recommendations-favourites .b-catalog_entry .drag-handle:hover, .p-recommendations-favourites .b-catalog_entry .confirm:hover, .p-recommendations-favourites .b-catalog_entry .cancel:hover, .p-recommendations-favourites .b-catalog_entry .move-left:hover, .p-recommendations-favourites .b-catalog_entry .move-right:hover, .p-recommendations-favourites .b-catalog_entry .mobile-edit:hover, .p-recommendations-index .b-catalog_entry .edit:active, .p-recommendations-index .b-catalog_entry .delete:active, .p-recommendations-index .b-catalog_entry .drag-handle:active, .p-recommendations-index .b-catalog_entry .confirm:active, .p-recommendations-index .b-catalog_entry .cancel:active, .p-recommendations-index .b-catalog_entry .move-left:active, .p-recommendations-index .b-catalog_entry .move-right:active, .p-recommendations-index .b-catalog_entry .mobile-edit:active, .p-recommendations-favourites .b-catalog_entry .edit:active, .p-recommendations-favourites .b-catalog_entry .delete:active, .p-recommendations-favourites .b-catalog_entry .drag-handle:active, .p-recommendations-favourites .b-catalog_entry .confirm:active, .p-recommendations-favourites .b-catalog_entry .cancel:active, .p-recommendations-favourites .b-catalog_entry .move-left:active, .p-recommendations-favourites .b-catalog_entry .move-right:active, .p-recommendations-favourites .b-catalog_entry .mobile-edit:active {
-  background-color: #313d46;
+  color: var(--color-main-text-hover);
 }
 
-/* Прочее end */
+/* VIP */
+.name-date a.name[title="AsproGS"], a.name[href*="/AsproGS"] {
+  color: var(--color-beige) !important;
+}
+
+.name-date a.name:hover[title="AsproGS"], a.name:hover[href*="/AsproGS"] {
+  color: var(--color-main-text-hover) !important;
+}
+
+.b-comment .b-user16 img[alt="AsproGS"] {
+  border: none !important;
+}
+
+.name-date a.name[title="AsproGS"]:hover::after,
+.name-date a.name[href*="/AsproGS"]:hover::after,
+.subheadline a[title="AsproGS"]:hover::after {
+  position: absolute;
+  content: "Автор";
+  font-size: 11px;
+  width: 100px;
+  line-height: 19px;
+  text-align: center;
+  margin-left: 10px;
+  padding: 3px 5px;
+  border-radius: 0;
+  z-index: 1;
+  color: var(--color-main-text);
+  background: var(--color-background) !important;
+  box-shadow: none;
+  font-family: 'Roboto Condensed', sans-serif !important;
+  animation: 0.54s fadeIn cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.subheadline a[title="AsproGS"]:hover::after {
+  line-height: 20px;
+  padding-top: 2px;
+  margin-top: -2px;
+}
+
+/* Главная */
+/* Новая */
+.linkheadline.subheadline {
+  font-size: 15px;
+  line-height: 2rem;
+  height: 2rem;
+}
+
+.headline .misc-links, .midheadline .misc-links, .subheadline .misc-links {
+  position: absolute;
+  right: 5px;
+  padding-left: 0;
+  line-height: 1.5rem;
+}
+
+.headline .misc-links>a, .midheadline .misc-links>a, .subheadline .misc-links>a {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.p-dashboards-show .v2 .my-list .label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.p-dashboards-show .v2 .my-list .label .misc-links a {
+  color: inherit;
+  line-height: 1;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.p-dashboards-show .v2 .my-list {
+  padding: 5px 10px 8px;
+  border: 1px solid;
+  background-color: var(--color-background);
+  border: var(--color-main-border);
+}
+
+.b-news_wall-topic .status-line,
+.b-news_wall-topic .title {
+  margin: 10px 10px;
+}
+
+.b-news_wall-topic {
+  border: 1px solid;
+  background-color: var(--color-background);
+  border: var(--color-main-border);
+}
+
+.b-user_rate-history img, .p-dashboards-show .v2 .db-update .poster img {
+  filter: brightness(80%) grayscale(30%);
+  transition: 0.3s ease-in-out;
+}
+
+.b-user_rate-history img:hover, .p-dashboards-show .v2 .db-update .poster img:hover {
+  filter: brightness(100%);
+}
+
+.b-user_rate-history .progress {
+  background: var(--color-green);
+  background: var(--color-additional-background);
+}
+
+.b-user_rate-history .progress .completed {
+  background: var(--color-green);
+}
+
+.b-news_wall-topic .title, .b-user_rate-history .title, .b-news_line-topic .title span, .p-dashboards-show .v2 .db-update .name {
+  color: var(--color-text) !important;
+  transition: 0.2s ease-in-out;
+}
+
+.b-user_rate-history .status-counter, .b-user_rate-history .score-time time, .b-news_line-topic .status-line, .p-dashboards-show .v2 .headline.orange a, .b-news_wall-topic .status-line .comments, .b-user_rate-history .action-time .action {
+  color: var(--color-main-text) !important;
+}
+
+.p-dashboards-show .v2 .my-list .label .misc-links a:hover, .b-news_line-topic .title span:hover, .p-dashboards-show .v2 .headline.orange a:hover, .b-user_rate-history .title:hover, .p-dashboards-show .v2 .db-update .name:hover {
+  color: var(--color-main-text-hover) !important;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-tags.ranobe-tags .forum-container .b-link_button {
+  max-width: 200px;
+}
+
+.headline>a, .midheadline>a, .subheadline>a {
+  padding-right: 0;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.red, .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag,
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag:hover {
+  color: var(--color-red);
+}
+
+.blue, .p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag,
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag:hover {
+  color: var(--color-blue);
+}
+
+.green, .p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag,
+.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag:hover {
+  color: var(--color-green);
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag,
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag,
+.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag {
+  border: 1px solid;
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag:hover,
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag:hover,
+.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag:hover {
+  background-color: var(--color-background-hover);
+  border-color: var(--color-main-border);
+}
+
+/* Старая */
+.p-dashboards-show .linkheadline>a:hover,
+.p-dashboards-show .linkheadline>a:hover::before {
+  color: var(--color-main-text-hover);
+}
+
+.b-link_button {
+  color: var(--color-main-text);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
+}
+
+.b-link_button:hover {
+  color: var(--color-main-text);
+  background-color: var(--color-background-hover);
+  border-color: var(--color-main-border);
+}
+
+.p-dashboards-show .c-content .options .option {
+  margin-right: 10px;
+  padding: 7px 40px;
+  text-transform: uppercase;
+  border: 1px solid;
+  background-color: var(--color-additional-background);
+  border-color: var(--color-main-border) !important;
+  color: var(--color-main-text) !important;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.p-dashboards-show .c-content .options .option:hover {
+  background-color: var(--color-background-hover);
+}
+
+.p-dashboards-show .c-content .options .option.active {
+  background-color: var(--color-auxiliary-background);
+  color: var(--color-dark) !important;
+}
+
+.p-dashboards-show .c-my_list {
+  border: 1px solid;
+  background-color: var(--color-background);
+  border: var(--color-main-border);
+}
+
+.p-dashboards .user_list .list-type>.title .switch, 
+.p-dashboards .user_list .history>.title .switch,
+.p-dashboards .user_list .list-type>.title .link,
+.p-dashboards .user_list .history>.title .link {
+  color: var(--color-text);
+}
+
+.p-dashboards .user_list .list-type>.title .switch:hover,
+.p-dashboards .user_list .history>.title .switch:hover,
+.p-dashboards .user_list .list-type>.title .link:hover,
+.p-dashboards .user_list .history>.title .link:hover {
+  color: var(--color-main-text-hover);
+}
+
+.p-dashboards-show .cc-news .c-generated_news .b-topic {
+  border-top-color: var(--color-additional-background);
+}
 
 /* МОБ ВЕРСИЯ */
 @media (max-width: 768px) { 
@@ -4377,10 +4714,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   #achievements_index .cc-achievements .b-achievement,
   #achievements_index .cc-franchises-genres .c-genres .b-achievement {
     width: calc(54% - 42px);
-    min-height: 0;
+    min-height: 180px;
   }
   
-  .b-achievement .c-about .text, .b-achievement .about .text {
+  #achievements_index .c-about .text, .b-achievement .about .text {
     display: none;
   }
   
@@ -4436,11 +4773,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     
   .block.avatar {
     margin-top: 0;
-  }
-    
-  .b-stats_bar .stat_names .stat_name::before {
-    margin-right: 5px;
-    margin-left: 5px;
   }
   
   .p-profiles .profile-head .c-info, .p-profiles .profile-head .c-history {
@@ -4499,10 +4831,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   #profiles_show .m0 {
     margin-bottom: 20px !important;
   }
-    
-  #profiles_show .b-clubs.one-line .b-club {
-    left: 32%;
-  }
       
   .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
     margin-bottom: 0;
@@ -4519,8 +4847,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     height: 2px;
   }
   
-  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility,
-  .p-profiles-show .lifetime .title .value, .l-footer .links,
   #profiles_favorites .b-catalog_entry .cover .title.two_lined,
   .p-achievements.p-profiles-index .c-franchises .b-badge[original-title]::before,
   .p-achievements.p-profiles-index .c-franchises .b-badge[title]::before {
@@ -4604,6 +4930,20 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     margin: 10px;
   }
   
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -17px;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .p-profiles-show .lifetime .title {
+    text-align: left;
+    padding: 0px 5px;
+  }
+  
   .b-options-floated.mobile-desktop {
     line-height: 1;
   }
@@ -4629,15 +4969,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     padding: 1px;
     left: 4%;
   }
-    
-  #profiles_show .b-clubs.one-line .b-club {
-    left: 20%;
-    width: 0;
-  }
-     
-  #profiles_show .b-club .logo {
-    width: 30px;
-  }
      
   #profiles_show .cc-8-g0>.c-column,
   #profiles_show .cc-9-g0>.c-column,
@@ -4646,6 +4977,15 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     margin-right: 1%;
     margin-bottom: 1%;
     width: 24%;
+  }
+  
+  .b-clubs.one-line .b-club:last-child {
+    display: inline-block !important;
+    margin-left: 5%;
+  }
+  
+  #profiles_show .b-club .logo {
+    max-width: 120%;
   }
 }
 
@@ -4686,24 +5026,32 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     margin: 4px 1%;
   }
 }
-  
+
 .l-page .menu-toggler .toggler {
   border-radius: 0;
   border: 1px solid;
-  color: var(--main-text-color);
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
+  background-color: var(--color-background);
+  border-color: var(--color-main-border);
+}
+
+.l-page .menu-toggler .toggler::before {
+  font-family: inherit;
+  color: var(--color-main-text);
 }
   
 .l-page .menu-toggler .toggler::after {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
 }
   
 .p-dashboards-show .v2 .mobile-slider-prev:active::after,
 .p-dashboards-show .v2 .mobile-slider-next:active::after,
 .p-dashboards-show .v2 .mobile-slider-prev::after,
 .p-dashboards-show .v2 .mobile-slider-next::after{
-  color: var(--main-text-color);
+  color: var(--color-main-text);
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-shadow: none;
 }
   
 .p-dashboards-show .v2 .mobile-slider-prev.bright::before,
@@ -4711,20 +5059,23 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-dashboards-show .v2 .mobile-slider-next::before,
 .p-dashboards-show .v2 .mobile-slider-prev::before,
 .p-dashboards-show .v2 .mobile-slider-next.bright:active::before {
-  background: none;
+  max-height: 25%;
+  background: rgb(24 28 31 / 0.9);
+  border-radius: 0;
 }
   
 .p-dashboards-show .v2 .mobile-slider-prev,
 .p-dashboards-show .v2 .mobile-slider-next {
   top: 5%;
+  width: 20px;
 }
 
-.l-top_menu-v2 .menu-dropdown>span[data-unread_count]:after {
+.l-top_menu-v2 .menu-dropdown>span[data-unread_count]::after {
   font-size: 15px;
   right: 10px;
   top: 12px;
   font-weight: 700;
-  color: var(--main-text-color);
+  color: var(--color-main-text);
   background: none;
   border: none;
 }
@@ -4760,30 +5111,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     width: 20%;
   }
      
-  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility {
-    position: relative;
-    right: 0;
-  }
-     
-  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime .compatibility {
-    margin-right: 0;
-  }
-     
-  .b-stats_bar .stat_names {
-    font-size: 12px;
-  }
-     
-  .stat_names {
-    display: inline-block;
-    text-align: center;
-  }
-     
-  .stat_names .stat_name::before {
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-     
-  .l-top_menu-v2 .menu-icon.search:before {
+  .l-top_menu-v2 .menu-icon.search::before {
     line-height: 29px;
     font-size: 23px;
   }
@@ -4800,13 +5128,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
      
   .subheadline-buttons {
     margin-top: -2px;
-  }
-     
-  #profiles_show .b-clubs.one-line .b-club {
-    left: 4%;
-    width: 17%;
-    float: none;
-    display: table-cell;
   }
 }
 
@@ -4839,205 +5160,30 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 @media (max-width: 480px) {  
   .b-shiki_editor .buttons>div {
-    white-space: nowrap;
     max-width: calc((130vw - 40px) / 2);
     overflow-x: auto;
   }
 }
 
 .b-options-floated.mobile-phone_portrait a {
-  color: var(--main-text-color);
+  color: var(--color-main-text);
 }
 
 .b-options-floated.mobile-phone_portrait a:hover,
 .b-options-floated.mobile-phone_portrait a:active {
-  color: var(--main-text-color-hover);
-}
-/* МОБ ВЕРСИЯ КОНЕЦ */
-
-/* Временные наработки */
-
-/* Главная */
-/* Новая */
-.linkheadline.subheadline {
-  font-size: 15px;
-  line-height: 2rem;
-  height: 2rem;
+  color: var(--color-main-text-hover);
 }
 
-.headline .misc-links, .midheadline .misc-links, .subheadline .misc-links {
-  position: absolute;
-  right: 5px;
-  padding-left: 0;
-  line-height: 1.5rem;
-}
-
-.headline .misc-links>a, .midheadline .misc-links>a, .subheadline .misc-links>a {
-  text-transform: uppercase;
-  font-size: 11px;
-}
-
-.p-dashboards-show .v2 .my-list .label {
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  color: inherit;
-}
-
-.p-dashboards-show .v2 .my-list .label .misc-links a {
-  color: inherit;
-  line-height: 1;
-  font-size: 12px;
-  text-transform: capitalize;
-}
-
-.p-dashboards-show .v2 .my-list {
-  padding: 5px 10px 8px;
-  background: #0f1112;
-  border: 1px solid #181c1f;
-}
-
-.b-news_wall-topic .status-line,
-.b-news_wall-topic .title {
-  margin: 10px 10px;
-}
-
-.b-news_wall-topic {
-  background: #0f1112;
-  border: 1px solid #181c1f;
-}
-
-.b-user_rate-history img, .p-dashboards-show .v2 .db-update .poster img {
-  filter: brightness(80%) grayscale(30%);
-  transition: 0.3s ease-in-out;
-}
-
-.b-user_rate-history img:hover, .p-dashboards-show .v2 .db-update .poster img:hover {
-  filter: brightness(100%);
-}
-
-.b-user_rate-history .progress {
-  background: #394046;
-}
-
-.b-user_rate-history .progress .completed {
-  background: #557d57;
-}
-
-.b-news_wall-topic .title, .b-user_rate-history .title, .b-news_line-topic .title span, .p-dashboards-show .v2 .db-update .name {
-  color: #4d6175 !important;
+.item-mobile::before {
+  color: var(--color-text);
   transition: 0.2s ease-in-out;
 }
 
-.b-user_rate-history .status-counter, .b-user_rate-history .score-time time, .b-news_line-topic .status-line, .p-dashboards-show .v2 .headline.orange a, .b-news_wall-topic .status-line .comments, .b-user_rate-history .action-time .action {
-  color: #aeb3b7;
+.item-mobile:hover::before {
+  color: var(--color-main-text-hover);
 }
 
-.p-dashboards-show .v2 .my-list .label .misc-links a:hover, .b-news_line-topic .title span:hover, .p-dashboards-show .v2 .headline.orange a:hover, .b-user_rate-history .title:hover, .p-dashboards-show .v2 .db-update .name:hover {
-  color: #778998 !important;
-}
-
-.p-dashboards-show .v2 .fc-user-sections .f-tags.ranobe-tags .forum-container .b-link_button {
-  max-width: 200px;
-}
-
-.headline>a, .midheadline>a, .subheadline>a {
-  padding-right: 0;
-}
-
-.p-dashboards-show .v2 .fc-user-sections .tag-link {
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-
-.red, .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag,
-.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag:hover {
-  color: #985b5d;
-}
-
-.blue, .p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag,
-.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag:hover {
-  color: #477590;
-}
-
-.green, .p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag,
-.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag:hover {
-  color: #5a9861;
-}
-
-.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag,
-.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag,
-.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag {
-  background-color: #0f1112;
-  border: 1px solid #181c1f;
-}
-
-.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag:hover,
-.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag:hover,
-.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag:hover {
-  border-color: #181c1f;
-  background-color: #1c2225;
-}
-
-/* Старая */
-.p-dashboards-show .linkheadline>a:hover,
-.p-dashboards-show .linkheadline>a:hover::before {
-  color: #778998;
-}
-
-.b-link_button {
-  background-color: #2d3c44;
-  border-color: #181c1f;
-  color: #aeb3b7;
-}
-
-.b-link_button:hover {
-  background-color: #20292d;
-  border-color: #181c1f;
-  color: #aeb3b7;
-}
-
-.p-dashboards-show .c-content .options .option {
-  margin-right: 10px;
-  padding: 5px 10px;
-  background-color: #2d3c44;
-  border: 1px solid #181c1f !important;
-  color: #aeb3b7 !important;
-  transition: background-color 0.25s ease, border-color 0.25s ease;
-}
-
-.p-dashboards-show .c-content .options .option:hover {
-  background-color: #20292d;
-}
-
-.p-dashboards-show .c-content .options .option.active {
-  background-color: #506f80;
-  color: black !important;
-}
-
-.p-dashboards-show .c-my_list {
-  background: #0f1112;
-  border: 1px solid #181c1f;
-}
-
-.p-dashboards .user_list .list-type>.title .switch, 
-.p-dashboards .user_list .history>.title .switch,
-.p-dashboards .user_list .list-type>.title .link,
-.p-dashboards .user_list .history>.title .link {
-  color: #4d6175;
-}
-
-.p-dashboards .user_list .list-type>.title .switch:hover,
-.p-dashboards .user_list .history>.title .switch:hover,
-.p-dashboards .user_list .list-type>.title .link:hover,
-.p-dashboards .user_list .history>.title .link:hover {
-  color: #778998;
-}
-/* Главная end */
-
+/* Временные наработки */
 /* Опросы */
 .b-poll .poll-variants .poll-variant.result .bar .line {
   background: #475663;
@@ -5065,52 +5211,3 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .b-poll .poll-actions .abstain:hover {
   background-color: #21282f;
 }
-/* Опросы end */
-/* Временные наработки end */
-
-/* Новые спойлеры */
-.b-spoiler_block>div {
-  border-left: 4px solid #232f3c;
-  padding: 3px 3px 3px 14px;
-  background-color: var(--v3-background-color);
-}
-
-.b-spoiler_block>span {
-  line-height: 20px;
-  border: 1px solid;
-  margin-bottom: 5px;
-  color: var(--main-text-color);
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
-}
-
-.b-spoiler_block>span:hover,
-.b-spoiler_block>span:active {
-  background-color: var(--background-color-hover);
-}
-
-.b-spoiler_inline.is-opened {
-  background-color: var(--v3-background-color);
-}
-
-.b-spoiler_inline:not(.is-opened) {
-  background-color: var(--v3-background-color);
-}
-
-.b-spoiler_inline:not(.is-opened):hover,
-.b-spoiler_inline:not(.is-opened):active {
-  background-color: var(--background-color-hover);
-}
-
-.b-quote-v2 {
-  border-left: 4px solid #232f3c;
-  background-color: var(--v3-background-color);
-}
-
-code.b-code_inline {
-  border: 1px solid;
-  background-color: var(--v3-background-color);
-  border-color: var(--main-border-color);
-  color: var(--red-color);
-}
-/* Новые спойлеры end */
