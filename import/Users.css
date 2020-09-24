@@ -3,7 +3,7 @@
 /* Ширина */
 .x1200 .l-top_menu-v2,
 .x1000 .l-top_menu-v2 {
-  max-width: 1020px;
+  max-width: 1040px;
   margin: auto;
 }
 
@@ -339,7 +339,7 @@ span[style="font-size:9px; color: green;"] {
 
 .l-top_menu-v2 .logo-container .logo {
   height: 0.7rem;
-  width: 95px;
+  width: 100px;
 }
 
 .l-top_menu-v2 .logo-container .glyph {
