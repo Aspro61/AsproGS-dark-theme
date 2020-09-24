@@ -1550,8 +1550,7 @@ body[data-locale] .b-offtopic_marker {
 
 /* Активность на сайте */
 .p-profiles .profile-head .c-info .c-additionals div {
-  padding: 8px 3px;
-  line-height: 1.5rem;
+  margin: 12px auto;
 }
 
 .p-profiles .profile-head .c-info .c-additionals div::after {
@@ -1563,7 +1562,7 @@ body[data-locale] .b-offtopic_marker {
   display: inline-block;
   width: .5rem;
   height: .5rem;
-  margin-right: 5px;
+  margin: 0 5px;
   border-radius: 50%;
   background: #435158;
 }
@@ -1578,10 +1577,6 @@ body[data-locale] .b-offtopic_marker {
 
 .c-additionals div[data-type='comments']::before {
   background: var(--color-comments-background);
-}
-
-.p-profiles .profile-head .c-info .c-additionals div a {
-  padding: 0 2px;
 }
 
 .b-stats_bar .stat_names .stat_name[data-type='planned']::before {
