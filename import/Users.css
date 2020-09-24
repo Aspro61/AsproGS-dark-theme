@@ -1609,8 +1609,7 @@ body[data-locale] .b-offtopic_marker {
   display: inline-block;
   width: .5rem;
   height: .5rem;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin: 0 5px;
   background: #435158;
   border-radius: 50%;
 }
