@@ -5247,10 +5247,6 @@ code.b-code_inline {
   color: var(--color-main-text-hover);
 }
 
-.l-top_menu-v2 .menu-icon.trigger::before {
-  filter: brightness(75%);
-}
-
 /* Временные наработки */
 /* Опросы */
 .b-poll .poll-variants .poll-variant.result .bar .line {
