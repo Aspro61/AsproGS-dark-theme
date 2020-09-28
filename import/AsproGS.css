@@ -1,5 +1,3 @@
-/* AUTO=sticky_menu */ @media screen and (min-width: 1025px) { .l-top_menu-v2 { position: sticky; top: 0; } .l-top_menu-v2 .active .submenu { max-height: calc(100vh - 46px); overflow: auto; } }
-
 /* Ширина */
 .x1200 .l-top_menu-v2,
 .x1000 .l-top_menu-v2 {
@@ -56,7 +54,7 @@
   --color-beige: #908d7e;
   --color-pink: #FFC0CB;
   --color-purple: #8d6094;
-  --color-yellow: #FFFF00;
+  --color-yellow: #a5a53a;
   --color-blue: #477590;
   --color-orange: #ad8766;
   --color-dark: #0d0f10;
@@ -73,9 +71,6 @@
   --color-on_hold-border: #2d2d2d;
   --color-dropped-background: #573231;
   --color-dropped-border: #3d2322;
-  --color-versions-background: #8a7f6a;
-  --color-comments-background: #8595a5;
-  --color-summaries-background: #435158;
   
   /* Столбики активности */
   --color-s0-background: #181c1f;
@@ -302,7 +297,7 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .l-top_menu-v2 .submenu>a.icon-mail span.unread span:not(:last-child):after {
-  background: var(--color-comments-background);
+  background: var(--color-main-text);
 }
 
 .l-top_menu-v2 .menu-icon.active, .l-top_menu-v2 .menu-icon:focus,
@@ -432,7 +427,6 @@ span[style="font-size:9px; color: green;"] {
   font-size: 14px;
 }
 
-.l-top_menu-v2 .menu-icon.forum::before,
 .l-top_menu-v2 .menu-icon.mail::before,
 .l-top_menu-v2 .menu-icon.contest::before {
   font-size: 18px;
@@ -578,7 +572,7 @@ span[style="font-size:9px; color: green;"] {
   padding-right: 0;
   padding: 5px 5px;
   font-size: 0;
-  width: 33%;
+  width: 35%;
 }
 
 .p-profiles[data-locale='ru'] .profile-head .c-info .c-additionals b::before {
@@ -718,10 +712,6 @@ span[style="font-size:9px; color: green;"] {
   padding-right: 0;
 }
 
-.subheadline-buttons {
-  margin-top: 4px;
-}
-
 .headline>a::before, .midheadline>a::before, .subheadline>a::before {
   color: inherit;
   opacity: 0;
@@ -731,6 +721,25 @@ span[style="font-size:9px; color: green;"] {
 .headline>a:hover::before, .midheadline>a:hover::before, .subheadline>a:hover::before {
   color: var(--color-main-text-hover);
   opacity: 1;
+}
+
+.subheadline-buttons {
+  position: absolute;
+  right: 3px;
+  margin-top: 2px;
+  z-index: 1;
+}
+
+#profiles_show .subheadline-buttons,
+#profiles_favorites .subheadline-buttons {
+  margin-top: 5px;
+}
+
+.p-profiles-favorites .item-back::before, 
+.p-profiles-favorites .item-back::after {
+  line-height: 1;
+  width: 24px;
+  font-size: 17px;
 }
 
 /* Cписки */
@@ -748,7 +757,7 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .b-stats_bar a.title:hover {
-  border-bottom-color: #181c1f;
+  border-bottom-color: var(--color-background);
 }
 
 .p-profiles-show .lifetime .title {
@@ -826,7 +835,7 @@ span[style="font-size:9px; color: green;"] {
   content: '⯇';
   position: relative;
   font-size: 40px;
-  color: #181c1f;
+  color: var(--color-background);
   right: 5px;
   top: -20px;
 }
@@ -835,7 +844,7 @@ span[style="font-size:9px; color: green;"] {
   content: '⯈';
   position: relative;
   font-size: 40px;
-  color: #181c1f;
+  color: var(--color-background);
   right: 10px;
   top: -20px;
 }
@@ -1215,16 +1224,19 @@ body[data-locale] .b-offtopic_marker {
   background: var(--color-background);
 }
 
-.p-profiles-show .lifetime .times .time.checked:before,
-.p-profiles-show .lifetime .times .time.checked {
+.p-profiles-show .b-stats_bar.lifetime .times .time.checked {
   color: var(--color-beige);
   -webkit-text-stroke: thin;
+}
+
+.p-profiles-show .b-stats_bar.lifetime .times .time.checked::before {
+  color: var(--color-beige);
 }
 
 .p-profiles-show .lifetime .cuts .cut.week,
 .p-profiles-show .lifetime .cuts .cut.month,
 .p-profiles-show .lifetime .cuts .cut.month_3 {
-  background: var(--color-versions-background);
+  background: var(--color-beige);
   width: 2px;
 }
 
@@ -1249,7 +1261,8 @@ body[data-locale] .b-offtopic_marker {
 #messages_index .b-options-floated a:hover::after,
 #messages_index .b-options-floated .selected::after,
 #messages_index .b-js-link:hover::after,
-#dialogs_index .b-options-floated a:hover::after {
+#dialogs_index .b-options-floated a:hover::after,
+#dialogs_index .b-options-floated .selected::after {
   opacity: 1;
 }
 
@@ -1396,7 +1409,8 @@ body[data-locale] .b-offtopic_marker {
 
 .b-options-floated.mobile-desktop a.selected::after,
 #messages_index .b-options-floated .selected::after,
-#profiles_edit .b-options-floated .selected::after {
+#profiles_edit .b-options-floated .selected::after,
+#dialogs_index .b-options-floated .selected::after {
   background: var(--color-auxiliary-background);
 }
 
@@ -1434,8 +1448,8 @@ body[data-locale] .b-offtopic_marker {
   height: .5rem;
   padding: 0;
   margin: 8px -13px;
-  background: #435158;
   border-radius: 50%;
+  background: var(--color-background);
 }
 
 .b-options-floated.mobile-desktop a[data-id='planned']::before {
@@ -1492,7 +1506,7 @@ body[data-locale] .b-offtopic_marker {
 
 .p-user_rates-index .list-lines .selectable:hover, .b-block_list li:active,
 .b-block_list li:hover, .b-block_list li.selected {
-  background-color: var(--color-dark);
+  background-color: var(--color-input-background);
   color: var(--color-text);
 }
 
@@ -1516,7 +1530,7 @@ body[data-locale] .b-offtopic_marker {
 .p-user_rates-index .list-groups .summary.lines.library {
   border: 1px solid var(--color-main-border);
   background-color: var(--color-background);
-  padding: 0 10px 0 10px;
+  padding: 4px 10px 4px 10px;
   font-weight: bold;
   font-family: inherit;
 }
@@ -1545,7 +1559,7 @@ body[data-locale] .b-offtopic_marker {
 
 .p-user_rates-index .list-lines tr td .rate-text,
 .b-user_rate .rate-show .note {
-  color: #8a7f6a;
+  color: var(--color-beige);
   font-size: 12px;
 }
 
@@ -1565,19 +1579,27 @@ body[data-locale] .b-offtopic_marker {
   height: .5rem;
   margin: 0 5px;
   border-radius: 50%;
-  background: #435158;
+  background: var(--color-background);
 }
 
 .c-additionals div[data-type='summaries']::before {
-  background: var(--color-summaries-background);
+  background: var(--color-mint);
 }
 
 .c-additionals div[data-type='versions']::before {
-  background: var(--color-versions-background);
+  background: var(--color-orange);
 }
 
 .c-additionals div[data-type='comments']::before {
-  background: var(--color-comments-background);
+  background: var(--color-blue);
+}
+
+.c-additionals div[data-type='video_changes']::before {
+  background: var(--color-yellow);
+}
+
+.c-additionals div[data-type='video_uploads']::before {
+  background: var(--color-purple);
 }
 
 .b-stats_bar .stat_names .stat_name[data-type='planned']::before {
@@ -1606,8 +1628,8 @@ body[data-locale] .b-offtopic_marker {
   width: .5rem;
   height: .5rem;
   margin: 0 5px;
-  background: #435158;
   border-radius: 50%;
+  background: var(--color-background);
 }
 
 /* Комментарии, цитаты */
@@ -2087,8 +2109,6 @@ body, input, select, button, textarea {
 .l-top_menu-v2 .icon-anime_list::before, .l-top_menu-v2 .icon-manga_list::before,
 .b-comments .comments-collapser::before, .b-height_shortener .expand::before,
 header.head h1 a.back::before, header.head h2 a.back::before,
-.b-add_to_list .trigger-arrow::before, .b-add_to_list.expanded .trigger-arrow::before,
-.b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger-arrow::before,
 .tooltip-inner .close::before, .l-top_menu-v2 .menu-icon.forum::before,
 .l-top_menu-v2 .icon-forum::before, .p-profiles-favorites .item-edit::before,
 .p-profiles-show .about .item-edit::before, .l-top_menu-v2 .icon-profile::before,
@@ -2340,26 +2360,35 @@ header.head h2 a.back::after,
   border-color: var(--color-main-border);
 }
 
-.b-input input[type=checkbox]:checked {
-  background-image: url("data\:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjE4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNOSAxNi4xN0w0LjgzIDEybC0xLjQyIDEuNDFMOSAxOSAyMSA3bC0xLjQxLTEuNDF6Ii8+PC9zdmc+")!important;
-}
-
 .b-input input[type=checkbox] {
   display: inline-block;
   vertical-align: top;
-  width: 1.125rem !important;
-  height: 1.125rem;
+  width: 18px !important;
+  height: 18px;
   padding: 0;
-  margin: .1875rem 1rem .1875rem 0;
+  margin: 0 8px 2px 0;
   background: rgba(0, 0, 0, 0)!important;
   background-size: 14px!important;
-  border: 0.125rem solid var(--color-main-text);
-  border-radius: .125rem;
+  border: 2px solid var(--color-auxiliary-text);
+  border-radius: 2px;
   box-sizing: border-box;
   transition: 0.24s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.b-input input[type=checkbox]:checked::before {
+  content: 'check_box';
+  color: var(--color-auxiliary-text);
+}
+
+.b-input input[type=checkbox]:checked::before {
+  font-family: 'Material Icons';
+  position: relative;
+  font-size: 22px;
+  right: 4px;
+  line-height: 0;
 }
 
 /* Список топиков */
@@ -2450,10 +2479,6 @@ header.head h2 a.back::after,
   padding: 0;
 }
 
-.b-add_to_list .trigger-arrow {
-  padding: 3px 3px;
-}
-
 .b-db_entry-variant-list_item>.info .b-user_rate .b-add_to_list .trigger, 
 .b-db_entry-variant-list_item>.info .b-user_rate .b-add_to_list .option {
   font-size: 12px;
@@ -2528,6 +2553,15 @@ header.head h2 a.back::after,
 
 .b-add_to_list .trigger-arrow:hover {
   background-color: rgba(255, 255, 255, 0.08);
+}
+
+.b-add_to_list .trigger-arrow::before, .b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger-arrow::before, .b-add_to_list.expanded .trigger-arrow::before {
+  font-family: 'Material Icons';
+  font-size: 18px;
+}
+
+.b-add_to_list .trigger-arrow {
+  padding: 0 3px;
 }
 
 .b-add_to_list .trigger-arrow::before {
@@ -3057,7 +3091,9 @@ header.head h2 a.back::after,
   display: none;
 }
 
-.b-catalog_entry .cover .title.two_lined {
+.b-catalog_entry .cover .title.two_lined,
+#dashboards_show .b-catalog_entry .cover .misc span,
+#dashboards_show .b-catalog_entry .cover .title {
   text-align: center;
 }
 
@@ -3077,19 +3113,6 @@ header.head h2 a.back::after,
 .p-profiles-favorites .cc-favourites.sortable .b-catalog_entry:hover::before,
 .p-profiles-favorites .cc-favourites.sortable .b-catalog_entry:active::before {
   color: var(--color-main-text-hover);
-}
-
-/* Удаление подчеркиваний */
-.headline>a, .subheadline>a, .b-stats_bar a.title, .b-stats_bar .stat_names .stat_name a, .p-profiles .profile-head .c-history .entry .title, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a, .p-profiles .profile-head .c-info .c-additionals div a, .b-form .cancel, .b-catalog_entry-tooltip .inner a.name, .b-options-floated.mobile-desktop a, .p-user_rates-index .l-content .order-control.active, .p-user_rates-index .l-content .order-control:hover, .p-user_rates-index .stat-categories .category, .p-user_rates-index .list-lines tr .name a, .b-options-floated.mobile-desktop a, .b-block_list li, .b-topic>.inner header .name-date a.name, .b-catalog_entry .cover .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry:hover .title, .p-topics .l-menu .sticky-topics .topic .title, .name-date a.name, .b-club .name, .b-user.named_avatar .name, .b-shiki_editor footer .about-bb_codes, .b-animes-menu .menu-topics-block .entry .name, .p-user_history-index .history-page .history-interval p a, .b-achievement .c-about a.title, .b-achievement .about a.title, header.head a.misc, .b-forums .forum .link-with-input .link, .b-log_entry a, .b-log_entry .link, .b-log_entry .b-user16 span, .b-ban .b-user16 span, .b-ban a, .b-ban .link, .p-contests .results a, .p-dashboards .user_list .list-change .title:hover, .b-ban .abuser:hover, .b-db_entry-variant-list_item>.info .name .b-link, .b-options-floated .link:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover {
-  text-decoration: none !important;
-}
-
-a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-history .subheadline:hover a, .m30 .subheadline:hover a, .block .subheadline:hover a, .b-user16:hover a {
-  text-decoration: none !important;
-}
-
-.b-tooltipped.dotted, .p-topics header h1 a.reload, .b-options-floated .action, .b-height_shortener .expand span, .b-log_entry .spoiler.collapse span, .b-log_entry .spoiler.collapsed span, .p-dashboards .user_list .list-type>.title .switch, .p-dashboards .user_list .history>.title .switch, .p-dashboards .user_list .list-type>.title .link, .p-dashboards .user_list .history>.title .link, .b-contest_match .vs .actions .action span, .b-topic .footer-vote .vote-group .vote, .p-db_entries-edit .b-list .b-js-action, header.head h1 a.back:hover:after, header.head h2 a.back:hover:after, .b-user_rate_log .spoiler.collapse span, .b-user_rate_log .spoiler.collapsed span, .b-lang_trigger span, .p-animes_collection-index .pagination .no-hover .link-current:not(.active), .p-mangas_collection-index .pagination .no-hover .link-current:not(.active), .p-recommendations-index .pagination .no-hover .link-current:not(.active), .p-userlist_comparer-show .pagination .no-hover .link-current:not(.active), .b-log_entry .spoiler.collapse.triggered span, .b-user_rate_log .spoiler.collapse.triggered span, .b-js-link, .b-spoiler label, .b-spoiler .content .inner, .b-spoiler .content .inner-prgrph, .b-forums .reload {
-  border-bottom: none;
 }
 
 /* Cовместимость */
@@ -3190,13 +3213,17 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 /* Турниры */
-.b-contest_match .vs .label, .b-contest_match .prev-match, .b-contest_match .next-match,
-.b-contest_match .vs .invitation, .b-contest_match .vs .vote-voted, .b-contest_match .vs .vote-abstained, .b-contest_match .vs .thanks, .b-contest_match .vs .hint, .b-contest_match .vs .action, .b-contest_match .vs .not-selected, .p-contests .results .cc-result .c-rounds .label {
+.b-contest_match .vs .label, .b-contest_match .prev-match, .b-contest_match .next-match, .b-contest_match .vs .invitation, .b-contest_match .vs .vote-voted, .b-contest_match .vs .vote-abstained, .b-contest_match .vs .thanks, .b-contest_match .vs .hint, .b-contest_match .vs .action, .b-contest_match .vs .not-selected, .p-contests .results .cc-result .c-rounds .label {
   color: inherit;
   transition: 0.3s ease-in-out;
 }
 
-.p-contests .match-day .match-link .started:before, .p-contests .match-day .match-link .created:before, .p-contests .match-day .matches-num, .p-contests .match-day>.date .from, .p-contests .match-day>.date .to, .p-contests .rating .member .position {
+.p-contests .match-day .match-link .started:before,
+.p-contests .match-day .match-link .created:before,
+.p-contests .match-day .matches-num,
+.p-contests .match-day>.date .from,
+.p-contests .match-day>.date .to,
+.p-contests .rating .member .position {
   color: var(--color-main-text);
 }
 
@@ -3208,7 +3235,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   color: var(--color-red);
 }
 
-.p-contests .match-day .match-link .c-column.created a, .p-contests .match-day .match-link.voted-none>.c-column a, .p-contests .match-day .match-link.voted-left>.c-column:last-child a, .p-contests .match-day .match-link.voted-right>.c-column:first-child a {
+.p-contests .match-day .match-link .c-column.created a,
+.p-contests .match-day .match-link.voted-none>.c-column a,
+.p-contests .match-day .match-link.voted-left>.c-column:last-child a,
+.p-contests .match-day .match-link.voted-right>.c-column:first-child a {
   color: var(--color-text);
 }
 
@@ -3223,12 +3253,12 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 .p-contests .match-day .match-link.active {
   background-color: var(--color-background);
-  border: 1px solid var(--color-main-border);
 }
 
 .p-contests .match-day .match-link:hover,
 .p-contests .match-day .match-link:active {
   background-color: var(--color-background-hover) !important;
+  transition: 0.2s ease-in;
 }
 
 .b-contest_match .vs .actions .action span {
@@ -3263,7 +3293,39 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-contest_match .votes-percents .left-part .right-part::before {
-  border-right: 30px solid #573231 !important;
+  border-right: 30px solid var(--color-dropped-background) !important;
+}
+
+.p-contests .match-day .match-link .started::before {
+  content: 'check_box_outline_blank';
+  font-family: 'Material Icons';
+  font-size: 18px;
+  line-height: 1.2;
+  vertical-align: middle;
+  color: var(--color-auxiliary-text);
+}
+
+.p-contests .match-day .match-link.voted-left .started:first-child::before,
+.p-contests .match-day .match-link.voted-right .started:last-child::before {
+  content: 'check_box';
+}
+
+.p-contests .match-day .match-link.voted-abstain .started::before {
+  content: 'indeterminate_check_box';
+}
+
+.p-contests .match-day .match-link .winner::before,
+.p-contests .match-day .match-link .loser::before {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.p-contests .match-day .matches-num {
+  font-size: 12px;
+  background: var(--color-headline-background);
+  padding: 4px;
+  padding-right: 3px;
+  margin-right: 6px;
 }
 
 /* Ачивки */
@@ -3276,8 +3338,8 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-profiles-show .achievements .header .size {
   position: absolute;
   font-size: 10px;
+  font-weight: bold;
   right: 5px;
-  top: 4%;
 }
 
 .b-achievement .c-about .progress {
@@ -3851,41 +3913,47 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   font-size: 16px;
 }
 
-.history-page a:before {
+.history-page a::before {
   display: inline-block;
   vertical-align: top;
   width: 72px;
 }
 
-.history-page a[href ^= "/a"]:before {
+.history-page a[href ^= "/a"]::before {
   content: 'Аниме';
   color: var(--color-red);
 }
 
-.history-page a[href ^= "/m"]:before {
+.history-page a[href ^= "/m"]::before {
   content: 'Манга';
   color: var(--color-blue);
 }
 
-.history-page a[href ^= "/r"]:before {
+.history-page a[href ^= "/r"]::before {
   content: 'Ранобэ';
   color: var(--color-green);
 }
 
-[data-locale="en"] .history-page a[href ^= "/a"]:before {
+[data-locale="en"] .history-page a[href ^= "/a"]::before {
   content: 'Anime';
 }
 
-[data-locale="en"] .history-page a[href ^= "/m"]:before {
+[data-locale="en"] .history-page a[href ^= "/m"]::before {
   content: 'Manga';
 }
 
-[data-locale="en"] .history-page a[href ^= "/r"]:before {
+[data-locale="en"] .history-page a[href ^= "/r"]::before {
   content: 'Ranobe';
 }
 
 .p-user_history-index .history-page .history-interval p .destroy {
   width: 40px;
+}
+
+@media (max-width: 768px) { 
+  .history-page a::before {
+    width: 50px;
+  }
 }
 
 /* Скроллбар */
@@ -4103,6 +4171,19 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   border-bottom: 1px solid var(--color-additional-background);
 }
 
+/* Удаление подчеркиваний */
+.headline>a, .subheadline>a, .b-stats_bar a.title, .b-stats_bar .stat_names .stat_name a, .p-profiles .profile-head .c-history .entry .title, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a, .p-profiles .profile-head .c-info .c-additionals div a, .b-form .cancel, .b-catalog_entry-tooltip .inner a.name, .b-options-floated.mobile-desktop a, .p-user_rates-index .l-content .order-control.active, .p-user_rates-index .l-content .order-control:hover, .p-user_rates-index .stat-categories .category, .p-user_rates-index .list-lines tr .name a, .b-options-floated.mobile-desktop a, .b-block_list li, .b-topic>.inner header .name-date a.name, .b-catalog_entry .cover .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry:hover .title, .p-topics .l-menu .sticky-topics .topic .title, .name-date a.name, .b-club .name, .b-user.named_avatar .name, .b-shiki_editor footer .about-bb_codes, .b-animes-menu .menu-topics-block .entry .name, .p-user_history-index .history-page .history-interval p a, .b-achievement .c-about a.title, .b-achievement .about a.title, header.head a.misc, .b-forums .forum .link-with-input .link, .b-log_entry a, .b-log_entry .link, .b-log_entry .b-user16 span, .b-ban .b-user16 span, .b-ban a, .b-ban .link, .p-contests .results a, .p-dashboards .user_list .list-change .title:hover, .b-ban .abuser:hover, .b-db_entry-variant-list_item>.info .name .b-link, .b-options-floated .link:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover {
+  text-decoration: none !important;
+}
+
+a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-history .subheadline:hover a, .m30 .subheadline:hover a, .block .subheadline:hover a, .b-user16:hover a {
+  text-decoration: none !important;
+}
+
+.b-tooltipped.dotted, .p-topics header h1 a.reload, .b-options-floated .action, .b-height_shortener .expand span, .b-log_entry .spoiler.collapse span, .b-log_entry .spoiler.collapsed span, .p-dashboards .user_list .list-type>.title .switch, .p-dashboards .user_list .history>.title .switch, .p-dashboards .user_list .list-type>.title .link, .p-dashboards .user_list .history>.title .link, .b-contest_match .vs .actions .action span, .b-topic .footer-vote .vote-group .vote, .p-db_entries-edit .b-list .b-js-action, header.head h1 a.back:hover:after, header.head h2 a.back:hover:after, .b-user_rate_log .spoiler.collapse span, .b-user_rate_log .spoiler.collapsed span, .b-lang_trigger span, .p-animes_collection-index .pagination .no-hover .link-current:not(.active), .p-mangas_collection-index .pagination .no-hover .link-current:not(.active), .p-recommendations-index .pagination .no-hover .link-current:not(.active), .p-userlist_comparer-show .pagination .no-hover .link-current:not(.active), .b-log_entry .spoiler.collapse.triggered span, .b-user_rate_log .spoiler.collapse.triggered span, .b-js-link, .b-spoiler label, .b-spoiler .content .inner, .b-spoiler .content .inner-prgrph, .b-forums .reload {
+  border-bottom: none;
+}
+
 /* Коллекции, рецензии, жанры */
 .b-topic .footer-vote {
   padding: 0 10px 0 10px;
@@ -4118,20 +4199,44 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   color: var(--color-text);
 }
 
-.p-topics .b-forum .b-collection-topic>.inner .see-more,
 .b-collection-topic>.inner .see-more {
-  height: 118px;
+  border: 1px solid var(--color-main-border);
+  background: var(--color-background);
+  border-width: 2px;
+  transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1) !important;
 }
 
-.b-collection-topic>.inner .see-more,
 .b-collection-topic>.inner .see-more:hover {
-  border: 1px solid var(--color-main-border);
-  background-color: var(--color-background);
+  border: 1px solid var(--color-blue);
+  border-width: 2px;
 }
 
 .b-collection-topic>.inner .see-more .text .inner {
-  display: inline-block;
-  margin-top: -9rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.b-collection-topic>.inner .see-more .text {
+  position: absolute;
+  top: 0;
+  color: var(--color-main-text);
+  transition: 0.2s ease-in-out;
+}
+
+.b-collection-topic>.inner .see-more .text:hover {
+  color: var(--color-main-text-hover);
+}
+
+.p-collections-index .b-catalog_entry .cover .image-decor .image-cutter {
+  height: 150px;
+}
+
+.b-forum .b-collection-topic>.inner .see-more {
+  height: 110px;
+}
+
+.p-db_entries-collections .b-collection-topic>.inner .see-more {
+  height: 119px;
 }
 
 /* Темы дня */
@@ -4207,6 +4312,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 .b-spoiler_block>span {
   line-height: 20px;
+  padding: 2px 10px;
   border: 1px solid var(--color-auxiliary-border);
   margin-bottom: 5px;
   color: var(--color-main-text);
@@ -4235,6 +4341,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .b-quote-v2 {
   border-left: 4px solid var(--color-border);
   background-color: var(--color-input-background);
+  background: transparent;
 }
 
 code.b-code_inline {
@@ -4283,6 +4390,10 @@ code.b-code_inline {
 }
 
 /* CМАЙЛЫ */
+.smiley {
+  height: 25px;
+}
+
 .b-shiki_editor .smileys {
   position: absolute;
   right: 0;
@@ -4292,18 +4403,41 @@ code.b-code_inline {
   height: 280px !important;
   padding: 0 8px;
   margin: auto;
-  border-radius: 0;
+  border-radius: 3px;
   z-index: 9;
   overflow: auto;
   border: 1px solid var(--color-main-border);
   background-color: var(--color-background);
 }
 
-.b-shiki_editor .smileys {
-  top: -19rem;
-  max-width: 300px;
-  height: 300px !important;
-  padding: 0 37px;
+@media (min-width: 380px) {
+  .b-shiki_editor .smileys {
+    top: -340px;
+    max-width: 360px;
+    height: 340px !important;
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 960px) {
+  .b-shiki_editor .smileys {
+    top: -380px;
+    max-width: 396px;
+    height: 380px !important;
+    padding: 0 24px;
+  }
+}
+
+.b-shiki_editor .smileys::-webkit-scrollbar {
+  width: 4px;
+  background-image: linear-gradient(var(--color-border), var(--color-border));
+  background-size: 1px calc(100% - 10px);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.b-shiki_editor .smileys::-webkit-scrollbar-thumb {
+  background: var(--color-additional-background);
 }
 
 .b-shiki_editor .smileys div {
@@ -4313,11 +4447,10 @@ code.b-code_inline {
 .b-shiki_editor .smileys div::before {
   display: block;
   margin-bottom: 4px;
-  color: inherit;
+  color: var(--color-main-text);
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
-  text-align: center;
 }
 
 .b-shiki_editor .smileys div:nth-child(1)::before {
@@ -4358,11 +4491,13 @@ code.b-code_inline {
 
 .b-shiki_editor .smileys img {
   height: 30px;
-  margin: 0 6px 6px 0;
+  margin: 0 4px 4px 0;
 }
 
-.smiley {
-  height: 25px;
+/* fix overflow bug */
+.b-message,
+.b-comment {
+  overflow: visible
 }
 
 /* Coub */
@@ -4511,7 +4646,7 @@ code.b-code_inline {
 }
 
 .p-user_rates-index .list-posters .user_rate>.text::before,
-.b-catalog_entry .cover .image-decor>.text:before {
+.b-catalog_entry .cover .image-decor>.text::before {
   background: transparent;
 }
 
@@ -4582,6 +4717,26 @@ code.b-code_inline {
   background: var(--color-headline-auxiliary-background);
 }
 
+@media (max-width: 480px) {
+  #profiles_show .about .red {
+    width: 90%;
+  }
+}
+
+#profiles_show .about .inline > .b-spoiler > label {
+  border: 1px solid var(--color-main-border);
+  background-color: var(--color-background);
+  padding: 2px 5px;
+  color: inherit;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#profiles_show .about .inline > .b-spoiler > label:hover {
+  background-color: var(--color-background-hover);
+}
+
+/* Теги */
 #profiles_show .about .blue {
   width: 22%;
   font-weight: bold;
@@ -4596,17 +4751,11 @@ code.b-code_inline {
   border: 1px solid var(--color-completed-border);
 }
 
-#profiles_show .about .inline > .b-spoiler > label {
-  border: 1px solid var(--color-main-border);
-  background-color: var(--color-background);
-  padding: 2px 5px;
-  color: inherit;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#profiles_show .about .inline > .b-spoiler > label:hover {
-  background-color: var(--color-background-hover);
+@media (max-width: 480px) {
+  #profiles_show .about .green,
+  #profiles_show .about .blue {
+    width: 70%;
+  }
 }
 
 /* Спойлер со всплывающим окном */
@@ -4787,7 +4936,7 @@ code.b-code_inline {
 .p-profiles-favourites .cc-favourites:last-child img[alt*="Shouko Nishimiya"],
 .b-catalog_entry-tooltip img[alt*="Shouko Nishimiya"],
 .p-profiles-show .about a img[alt*="Shouko Nishimiya"] {
-  content: url("https://moe.shikimori.one/system/user_images/original/184680/859097.jpg"); 
+  content: url("https://moe.shikimori.one/system/user_images/original/184680/1216452.jpg"); 
 }
 
 .b-catalog_entry .cover .image-decor img[alt*="Shinobu Oshino"],
@@ -4826,13 +4975,13 @@ code.b-code_inline {
   content: url("https://dere.shikimori.one/system/user_images/original/184680/859064.jpg"); 
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Edward Elric"],
-.b-db_entry > .c-image img[alt*="Edward Elric"],
-.p-profiles-show .cc-favourites img[alt*="Edward Elric"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Edward Elric"],
-.b-catalog_entry-tooltip img[alt*="Edward Elric"],
-.p-profiles-show .about a img[alt*="Edward Elric"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/859068.jpg"); 
+.b-catalog_entry .cover .image-decor img[alt*="Kaguya Shinomiya"],
+.b-db_entry > .c-image img[alt*="Kaguya Shinomiya"],
+.p-profiles-show .cc-favourites img[alt*="Kaguya Shinomiya"],
+.p-profiles-favourites .cc-favourites:last-child img[alt*="Kaguya Shinomiya"],
+.b-catalog_entry-tooltip img[alt*="Kaguya Shinomiya"],
+.p-profiles-show .about a img[alt*="Kaguya Shinomiya"] {
+  content: url("https://desu.shikimori.one/system/user_images/original/184680/1216453.jpg"); 
 }
 
 .b-catalog_entry .cover .image-decor img[alt*="Winry Rockbell"],
@@ -5576,72 +5725,6 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   content: "Без оценки";
 }
 
-/* Манга */
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after {
-  content: "9";
-}
-
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after {
-  content: "8";
-}
-
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after,
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after,
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after {
-  content: "7";
-}
-
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after,
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after,
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after {
-  content: "6";
-}
-
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after,
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after,
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after {
-  content: "5";
-}
-
-.about .b-catalog_entry > a[href*='mangas/-']::before,
-.about .b-catalog_entry > a[href*='mangas/-']::after {
-  content: "4";
-}
-
-.about .b-catalog_entry > a[href*='mangas/9711-']::before,
-.about .b-catalog_entry > a[href*='mangas/9711-']::after {
-  content: "16/20 томов";
-}
-
-.about .b-catalog_entry > a[href*='mangas/418-']::before,
-.about .b-catalog_entry > a[href*='mangas/418-']::after,
-.about .b-catalog_entry > a[href*='mangas/z39325-']::before,
-.about .b-catalog_entry > a[href*='mangas/z39325-']::after {
-  content: "5 томов";
-}
-
-.about .b-catalog_entry > a[href*='mangas/z37707-']::before,
-.about .b-catalog_entry > a[href*='mangas/z37707-']::after,
-.about .b-catalog_entry > a[href*='mangas/z113010-']::before,
-.about .b-catalog_entry > a[href*='mangas/z113010-']::after,
-.about .b-catalog_entry > a[href*='mangas/912-']::before,
-.about .b-catalog_entry > a[href*='mangas/912']::after,
-.about .b-catalog_entry > a[href*='mangas/107548-']::before,
-.about .b-catalog_entry > a[href*='mangas/107548-']::after {
-  content: "1 том";
-}
-
 /* Главная */
 /* Новая */
 .linkheadline.subheadline {
@@ -5660,6 +5743,7 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
 .headline .misc-links>a, .midheadline .misc-links>a, .subheadline .misc-links>a {
   text-transform: uppercase;
   font-size: 11px;
+  font-weight: bold;
 }
 
 .p-dashboards-show .v2 .my-list .label {
@@ -5691,8 +5775,14 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
 }
 
 .b-news_wall-topic {
-  border: 1px solid --color-main-border;
+  border: 1px solid var(--color-main-border);
   background-color: var(--color-background);
+  transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.b-news_wall-topic:hover {
+  background: rgb(14 17 19 / 0.5);
+  transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
 }
 
 .b-user_rate-history img, .p-dashboards-show .v2 .db-update .poster img {
@@ -5997,16 +6087,12 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   .bar.vertical .line .bar-container .value.mini {
     font-size: 0;
   }
-    
+  
   .p-profiles-show .about .item-edit::before,
   .p-profiles-show .about .item-edit::after {
     font-size: 15px;
     line-height: 30px;
-    width: 30px;
-  }
-    
-  .subheadline-buttons {
-    margin-top: -2px;
+    width: 10px;
   }
     
   #profiles_show .about .b-spoiler .content .before::before {
@@ -6069,10 +6155,6 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
     justify-content: center;
     margin-bottom: 3%;
   }
-    
-  .p-profiles-show .achievements .header .size {
-    top: 1%;
-  }
   
   .p-achievements.p-profiles-index .c-franchises .b-badge::after {
     top: 0;
@@ -6115,7 +6197,6 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
     margin: 4px 1%;
   }
 }
-
 
 @media (max-width: 480px) {
   .p-achievements-index .cc-authors .b-achievement {
@@ -6272,10 +6353,6 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   .block.avatar {
     margin-top: 0rem;
   }
-     
-  .subheadline-buttons {
-    margin-top: -2px;
-  }
 }
 
 @media (max-width: 1023px) {  
@@ -6291,6 +6368,40 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   .b-shiki_editor aside.buttons .editor-smiley {
     display: inline-block;
     margin: auto;
+  }
+}
+
+/* Переключатели */
+@media (max-width: 480px) {  
+  .subheadline-buttons {
+    margin-top: -1px;
+  }
+  
+  #profiles_show .subheadline-buttons {
+    margin-top: -1px;
+    right: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .subheadline-buttons {
+    margin-top: 0;
+  }
+  
+  #profiles_show .subheadline-buttons {
+    margin-top: -1px;
+    right: 8px;
+  }
+}
+
+@media (max-width: 480px) {  
+  #dialogs_index header.head,
+  #messages_index header.head {
+    margin-bottom: 3rem;
+  }
+  
+  #messages_index .b-js-link {
+    top: 3rem;
   }
 }
 
