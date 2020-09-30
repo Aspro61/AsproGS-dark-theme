@@ -5399,26 +5399,6 @@ code.b-code_inline {
 }
 
 /* ОЦЕНКИ */
-/*  Оценка сердце */
-tr[data-target_id="1453"] .num span[data-field="score"].current-value,
-tr[data-target_id="23273"] .num span[data-field="score"].current-value {
-  font-size: 0;
-}
-
-tr[data-target_id="1453"] .num span[data-field="score"].current-value::before,
-tr[data-target_id="23273"] .num span[data-field="score"].current-value::before {
-  background: url(https://vk.com/emoji/e/e29da4.png);
-  background-repeat: no-repeat;
-  content: " ";
-  height: 16px;
-  width: 16px;
-  margin-top: 4px;
-  right: 10.4rem;
-  display: inline-block;
-  position: absolute;
-  filter: brightness(50%);
-}
-
 /*  Оценки */
 tr[data-target_id=""] .num span[data-field="score"].current-value,
 tr[data-target_id=""] .num span[data-field="score"].current-value,
