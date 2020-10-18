@@ -100,14 +100,14 @@ hr {
   background-image: -webkit-linear-gradient(left, #202a31, #415c75, #202a31);
 }
 
-a, h2, h3, h4, .p-profiles .profile-head .c-info .c-additionals div a, .b-stats_bar .stat_names .stat_name a, .headline>a, .subheadline>a, .b-options-floated.mobile-desktop a, .b-options-floated .action, .p-profiles-show .achievements .header .title, .b-options-floated a, .b-options-floated .link, .p-profiles .profile-head .c-info .c-additionals b, .b-js-link, .b-stats_bar a.title, .headline .misc-links>a, .subheadline .misc-links>a, h3, .b-table th, .b-db_entry>.c-about .additional-links .line-container>.link, .b-db_entry>.c-about .additional-links .line-container>a, .b-user.detailed .history .line .event, .b-user.moderation .history .line .event, .p-userlist_comparer .comparer table .name a, .tooltip-details .b-nothing_here.centered, .b-forums .reload, .b-contests-menu .results, .b-contests-menu .grid a, .midheadline .misc-links>a, .b-stats_bar .title, header.head .notice, .bar.vertical .line .x_label, .b-achievement .c-about .percent, .b-achievement .about .percent, .b-entry-info .line .value, .bar.horizontal .line .x_label, .p-user_rates-index .list-groups .summary.lines, .p-profiles-edit .list .nickname-changes .link, .b-catalog_entry-tooltip .inner .additional-images .link .title, .b-db_entry-variant-list_item>.info .line .key, .b-catalog_entry-tooltip .inner .line .key, .b-catalog_entry-tooltip .inner .rating, .b-catalog_entry-tooltip .inner .rating .text, .b-comment>.inner .name-date a.name .normal, .b-animes-menu .total-rates, .b-rate .score-notice, .b-quote .quoteable::before, .b-club .info .number, .p-animes_collection-index .pagination, .p-mangas_collection-index .pagination, .p-recommendations-index .pagination, .p-userlist_comparer-show .pagination, .b-header_filters .filter-line .title, .b-header_filters .filter-line a.current, .b-status-line .section.additional .collection-size, .b-animes-menu .menu-topics-block .entry .time, .p-animes-show .c-info-right .watch-online .kind, .p-mangas-show .c-info-right .watch-online .kind, .p-ranobe-show .c-info-right .watch-online .kind, .p-animes-show .c-info-right .watch-online a.kind, .p-mangas-show .c-info-right .watch-online a.kind, .p-ranobe-show .c-info-right .watch-online a.kind, .b-nothing_here, .p-profiles .profile-head .c-mobile-actions a, .p-profiles .profile-head .c-mobile-actions span, .b-options-floated.mobile-phone a, header.head a.misc, header.head .misc, header.head a.edit, .l-top_menu-v2, .l-top_menu-v2 .submenu>a, .l-top_menu-v2 .menu-dropdown>span a, .l-top_menu-v2 .global-search, .l-top_menu-v2 .global-search .search-results .nothing_found, .l-top_menu-v2 .global-search .search-results .search-mode,
+a, h2, h3, h4, .p-profiles .profile-head .c-info .c-additionals div a, .b-stats_bar .stat_names .stat_name a, .headline>a, .subheadline>a, .b-options-floated.mobile-desktop a, .b-options-floated .action, .p-profiles-show .achievements .header .title, .b-options-floated a, .b-options-floated .link, .p-profiles .profile-head .c-info .c-additionals b, .b-js-link, .b-stats_bar a.title, .headline .misc-links>a, .subheadline .misc-links>a, h3, .b-table th, .b-db_entry>.c-about .additional-links .line-container>.link, .b-db_entry>.c-about .additional-links .line-container>a, .b-user.detailed .history .line .event, .b-user.moderation .history .line .event, .p-userlist_comparer .comparer table .name a, .tooltip-details .b-nothing_here.centered, .b-forums .reload, .b-contests-menu .results, .b-contests-menu .grid a, .midheadline .misc-links>a, .b-stats_bar .title, header.head .notice, .bar.vertical .line .x_label, .b-achievement .c-about .percent, .b-achievement .about .percent, .b-entry-info .line .value, .bar.horizontal .line .x_label, .p-user_rates-index .list-groups .summary.lines, .p-profiles-edit .list .nickname-changes .link, .b-catalog_entry-tooltip .inner .additional-images .link .title, .b-db_entry-variant-list_item>.info .line .key, .b-catalog_entry-tooltip .inner .line .key, .b-catalog_entry-tooltip .inner .rating, .b-catalog_entry-tooltip .inner .rating .text, .b-comment>.inner .name-date a.name .normal, .b-animes-menu .total-rates, .b-rate .score-notice, .b-quote .quoteable::before, .b-quote-v2 .quoteable::before, .b-club .info .number, .p-animes_collection-index .pagination, .p-mangas_collection-index .pagination, .p-recommendations-index .pagination, .p-userlist_comparer-show .pagination, .b-header_filters .filter-line .title, .b-header_filters .filter-line a.current, .b-status-line .section.additional .collection-size, .b-animes-menu .menu-topics-block .entry .time, .p-animes-show .c-info-right .watch-online .kind, .p-mangas-show .c-info-right .watch-online .kind, .p-ranobe-show .c-info-right .watch-online .kind, .p-animes-show .c-info-right .watch-online a.kind, .p-mangas-show .c-info-right .watch-online a.kind, .p-ranobe-show .c-info-right .watch-online a.kind, .b-nothing_here, .p-profiles .profile-head .c-mobile-actions a, .p-profiles .profile-head .c-mobile-actions span, .b-options-floated.mobile-phone a, header.head a.misc, header.head .misc, header.head a.edit, .l-top_menu-v2, .l-top_menu-v2 .submenu>a, .l-top_menu-v2 .menu-dropdown>span a, .l-top_menu-v2 .global-search, .l-top_menu-v2 .global-search .search-results .nothing_found, .l-top_menu-v2 .global-search .search-results .search-mode,
 .l-top_menu-v2.is-search-focus .global-search .search-marker {
   color: var(--color-main-text);
   transition: 0.2s ease-in-out;
 }
 
 .p-profiles .profile-head .c-brief header .notice a, .b-user.named_avatar .name, .p-user_history-index .history-page .history-interval p a, .b-topic>.inner .name-date .name, .p-user_rates-index .list-lines tr .name a, .p-contests-index .contest a, .b-comment>.inner .name-date .name, .b-catalog_entry-tooltip .inner a.name, .b-catalog_entry .cover .misc span, .p-profiles .profile-head .c-history .entry .title, .b-achievement .c-about a.title, .b-achievement .about a.title, .b-ban a, .b-ban .link, .b-log_entry a, .b-log_entry .link, .b-mention, .b-ban .abuser, .p-topics .l-menu .calendar .entry .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry .title, .b-forums .forum .link-with-input .link, .p-user_rates-index .stat-categories .category, .b-block_list li, .p-user_rates-index .list-lines tr td, .p-user_rates-index .l-content .order-control, .p-user_rates-index .list-lines tr .index, .b-message>.inner .name-date .name, .p-profiles-edit .account .change-password a, .b-dialog>.inner .name-date .name, .b-js-action, .p-animes_collection-index .pagination .link, .p-mangas_collection-index .pagination .link, .p-recommendations-index .pagination .link, .p-userlist_comparer-show .pagination .link, .b-user.detailed .info .image-name .name, .b-user.moderation .info .image-name .name, .b-user.detailed .history .line a .event, .b-user.moderation .history .line a .event, .b-user_rate_log a, .b-user_rate_log .link, .b-spoiler label, .p-profiles-show .about a, .b-comment>.inner .was_updated, .b-user16, .p-translations .animes a, .p-studios .studio .name, .b-cosplay_gallery h3 a,
-.b-bb_codes-examples .example a, .b-bb_codes-examples .result a, .b-feedback-inner .about a, header.head h1 a.back::before, header.head h2 a.back::before, .p-user_rates-index .list-lines tr td .episodes_total, .b-mention::before, .p-profiles-edit .account .change-password a, .p-profiles-edit .account .reset-password a, .p-dashboards .user_list .list-change .title {
+.b-bb_codes-examples .example a, .b-bb_codes-examples .result a, .b-feedback-inner .about a, header.head h1 a.back::before, header.head h2 a.back::before, .p-user_rates-index .list-lines tr td .episodes_total, .b-mention::before, a.b-mention, .p-profiles-edit .account .change-password a, .p-profiles-edit .account .reset-password a, .p-dashboards .user_list .list-change .title {
   color: var(--color-text);
   transition: 0.2s ease-in-out;
 }
@@ -120,11 +120,11 @@ header.head h1, header.head h2, .b-rate .text-score, .p-topics header h1 a.reloa
   color: var(--color-additional-text);
 }
 
-a:hover, .b-user16:hover a, .headline>a:hover, .subheadline>a:hover, .midheadline .misc-links>a:hover, .b-stats_bar .stat_names .stat_name a:hover, .p-profiles .profile-head .c-info .c-additionals div a:hover, .b-link:hover, .b-options-floated a:hover, .b-options-floated .link:hover, .b-options-floated.mobile-desktop a:hover, .p-profiles .profile-head .c-brief header .notice a:hover, .b-comment>.inner .name-date .name:hover, .b-user.named_avatar .name:hover, .b-js-link:hover, .b-stats_bar a.title:hover, .b-catalog_entry-tooltip .inner a.name:hover, .p-user_history-index .history-page .history-interval p a:hover, .b-lang_trigger span:hover, .p-profiles .profile-head .c-history .entry .title:hover, .b-achievement .c-about a.title:hover, .b-achievement .about a.title:hover, .b-ban a:hover, .b-ban .link:hover, .b-log_entry a:hover, .b-log_entry .link:hover, .b-topic>.inner .name-date .name:hover, .b-mention:hover, .b-ban .abuser:hover, .p-topics .l-menu .calendar .entry .title:hover, .p-topics .l-menu .reviews .entry .title:hover, .p-topics .l-menu .clubs .entry .title:hover, .b-forums .forum .link-with-input .link:hover, .p-user_rates-index .stat-categories .category:hover, .p-user_rates-index .l-content .order-control:hover, .b-message>.inner .name-date .name:hover, .p-profiles-edit .account .change-password a:hover, .b-dialog>.inner .name-date .name:hover, .headline .misc-links>a:hover, .subheadline .misc-links>a:hover, .b-js-action:hover, .p-animes_collection-index .pagination .link:hover, .p-mangas_collection-index .pagination .link:hover, .p-recommendations-index .pagination .link:hover, .p-userlist_comparer-show .pagination .link:hover, .b-user.detailed .info .image-name .name:hover, .b-user.moderation .info .image-name .name:hover, .b-user.detailed .history .line a .event:hover, .b-user.moderation .history .line a .event:hover, .b-user_rate_log a:hover, .b-user_rate_log .link:hover, .b-spoiler label:hover, .p-topics header h1 a.reload:hover, .p-profiles-show .about a:hover, .b-comment>.inner .was_updated:hover, .b-user16:hover, .p-translations .animes a:hover, .p-studios .studio .name:hover, .b-options-floated .action:hover, .p-contests-index .contest a:hover, .b-cosplay_gallery h3 a:hover, .b-bb_codes-examples .example a:hover, .b-bb_codes-examples .result a:hover, .b-feedback-inner .about a:hover, .b-forums .reload:hover, .b-contests-menu .results:hover, .b-contests-menu .grid a:hover, header.head a.misc:hover, header.head a.edit:hover, .p-animes-show .c-info-right .watch-online a.kind:hover, .p-mangas-show .c-info-right .watch-online a.kind:hover, .p-ranobe-show .c-info-right .watch-online a.kind:hover, .b-topic>.inner .was_updated:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover, .b-options-floated.mobile-phone a:hover, header.head h1 a.back:hover::before, header.head h2 a.back:hover::before, .p-profiles-edit .account .change-password a:hover, .p-profiles-edit .account .reset-password a:hover, .p-dashboards .user_list .list-change .title:hover {
+a:hover, .b-user16:hover a, .headline>a:hover, .subheadline>a:hover, .midheadline .misc-links>a:hover, .b-stats_bar .stat_names .stat_name a:hover, .p-profiles .profile-head .c-info .c-additionals div a:hover, .b-link:hover, .b-options-floated a:hover, .b-options-floated .link:hover, .b-options-floated.mobile-desktop a:hover, .p-profiles .profile-head .c-brief header .notice a:hover, .b-comment>.inner .name-date .name:hover, .b-user.named_avatar .name:hover, .b-js-link:hover, .b-stats_bar a.title:hover, .b-catalog_entry-tooltip .inner a.name:hover, .p-user_history-index .history-page .history-interval p a:hover, .b-lang_trigger span:hover, .p-profiles .profile-head .c-history .entry .title:hover, .b-achievement .c-about a.title:hover, .b-achievement .about a.title:hover, .b-ban a:hover, .b-ban .link:hover, .b-log_entry a:hover, .b-log_entry .link:hover, .b-topic>.inner .name-date .name:hover, .b-mention:hover, a.b-mention:hover, .b-ban .abuser:hover, .p-topics .l-menu .calendar .entry .title:hover, .p-topics .l-menu .reviews .entry .title:hover, .p-topics .l-menu .clubs .entry .title:hover, .b-forums .forum .link-with-input .link:hover, .p-user_rates-index .stat-categories .category:hover, .p-user_rates-index .l-content .order-control:hover, .b-message>.inner .name-date .name:hover, .p-profiles-edit .account .change-password a:hover, .b-dialog>.inner .name-date .name:hover, .headline .misc-links>a:hover, .subheadline .misc-links>a:hover, .b-js-action:hover, .p-animes_collection-index .pagination .link:hover, .p-mangas_collection-index .pagination .link:hover, .p-recommendations-index .pagination .link:hover, .p-userlist_comparer-show .pagination .link:hover, .b-user.detailed .info .image-name .name:hover, .b-user.moderation .info .image-name .name:hover, .b-user.detailed .history .line a .event:hover, .b-user.moderation .history .line a .event:hover, .b-user_rate_log a:hover, .b-user_rate_log .link:hover, .b-spoiler label:hover, .p-topics header h1 a.reload:hover, .p-profiles-show .about a:hover, .b-comment>.inner .was_updated:hover, .b-user16:hover, .p-translations .animes a:hover, .p-studios .studio .name:hover, .b-options-floated .action:hover, .p-contests-index .contest a:hover, .b-cosplay_gallery h3 a:hover, .b-bb_codes-examples .example a:hover, .b-bb_codes-examples .result a:hover, .b-feedback-inner .about a:hover, .b-forums .reload:hover, .b-contests-menu .results:hover, .b-contests-menu .grid a:hover, header.head a.misc:hover, header.head a.edit:hover, .p-animes-show .c-info-right .watch-online a.kind:hover, .p-mangas-show .c-info-right .watch-online a.kind:hover, .p-ranobe-show .c-info-right .watch-online a.kind:hover, .b-topic>.inner .was_updated:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover, .b-options-floated.mobile-phone a:hover, header.head h1 a.back:hover::before, header.head h2 a.back:hover::before, .p-profiles-edit .account .change-password a:hover, .p-profiles-edit .account .reset-password a:hover, .p-dashboards .user_list .list-change .title:hover {
   color: var(--color-main-text-hover);
 }
 
-a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stats_bar .stat_names .stat_name a:active, .b-comment>.inner .was_updated:active, .b-comment>.inner .name-date .name:active, .b-link:active, .b-topic .footer-vote .vote-group .vote:active, .b-topic .footer-vote .vote-group .vote:active, .p-profiles .profile-head .c-brief header .notice a:active, .b-show_more:active, .b-spoiler label:active, .p-animes-show .c-info-right .watch-online a.kind:active, .p-mangas-show .c-info-right .watch-online a.kind:active, .p-ranobe-show .c-info-right .watch-online a.kind:active, .headline>a:active, .midheadline>a:active, .subheadline>a:active, .b-topic>.inner .was_updated:active, .p-profiles-edit .account .change-password a:active, .p-profiles-edit .account .reset-password a:active {
+a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stats_bar .stat_names .stat_name a:active, .b-comment>.inner .was_updated:active, .b-comment>.inner .name-date .name:active, .b-link:active, .b-topic .footer-vote .vote-group .vote:active, .b-topic .footer-vote .vote-group .vote:active, .p-profiles .profile-head .c-brief header .notice a:active, .b-show_more:active, .b-spoiler label:active, .p-animes-show .c-info-right .watch-online a.kind:active, .p-mangas-show .c-info-right .watch-online a.kind:active, .p-ranobe-show .c-info-right .watch-online a.kind:active, .headline>a:active, .midheadline>a:active, .subheadline>a:active, .b-topic>.inner .was_updated:active, .p-profiles-edit .account .change-password a:active, .p-profiles-edit .account .reset-password a:active, a.b-mention:active {
   color: var(--color-main-text-active);
 }
 
@@ -2686,7 +2686,8 @@ header.head h2 a.back::after,
   clip-path: circle(0.875em at center);
 }
 
-.tooltip-details .ajax-loading::after, .tooltip-details .ajax-loading::before {
+.tooltip-details .ajax-loading::after,
+.tooltip-details .ajax-loading::before {
   content: '';
   position: absolute;
   width: 7em;
@@ -2755,7 +2756,7 @@ header.head h2 a.back::after,
   height: 1.5rem;
   margin-top: -.75rem;
   margin-left: -.75rem;
-  background: transparent;
+  background: transparent !important;
   color: var(--color-auxiliary-text);
   border: .1875rem solid;
   border-right-color: transparent;
@@ -5336,39 +5337,69 @@ code.b-code_inline {
   color: var(--color-main-text);
 }
 
-.menubar[data-v-6c153731] {
-  background: var(--color-headline-auxiliary-background);
+.ProseMirror:focus {
+  border-color: var(--color-border);
+  transition: 0.3s ease-in-out;
 }
 
-.menubar .icons[data-v-6c153731],
-.icon.is-button[data-v-6c0f4e7e],
-.icon[data-v-6c0f4e7e]:not(.is-disabled) {
-  color: var(--color-main-text);
+.menubar[data-v-b25c4362] {
+  background: transparent;
 }
 
-.icon[data-v-6c0f4e7e]:not(.is-disabled):active,
-.icon[data-v-6c0f4e7e]:not(.is-disabled):hover {
+.menu_group+.menu_group[data-v-b25c4362]::before,
+.menu_group .mobile_placeholder.is-active[data-v-b25c4362]::after {
+  border-right: 1px solid var(--color-border);
+}
+
+.icon[data-v-39840933]:not(.is-disabled) {
+  color: var(--color-auxiliary-text);
+  transition: 0.2s ease-in-out;
+}
+
+.icon[data-v-39840933]:not(.is-disabled):hover,
+.icon[data-v-39840933]:not(.is-disabled):active {
   color: var(--color-main-text-hover);
 }
 
-.icon.is-disabled[data-v-6c0f4e7e] {
-  color: var(--color-text);
+.menu_group .mobile_placeholder.is-active[data-v-b25c4362] {
+  color: var(--link-active-color,#ff0202);
 }
 
-.icon.is-active[data-v-6c0f4e7e] {
-  background: rgb(7 8 8 / 25%);
+.icon.is-disabled[data-v-39840933] {
+  color: var(--color-additional-background);
 }
 
-.menu_group+.menu_group[data-v-6c153731]:before {
-  border-right: 1px solid var(--color-auxiliary-border);
+.smileys[data-v-feda4542], .b-tip>[data-popper-arrow]::before {
+  background: var(--color-background);
 }
 
-.icon[data-v-6c0f4e7e] {
-  height: 23px;
+.smileys[data-v-feda4542] .smiley:hover {
+  outline: 2px solid var(--color-auxiliary-background);
+}
+
+.shade[data-v-feda4542] {
+  background: rgb(0 0 0 / 35%);
+}
+
+.icon[data-v-39840933] {
+  height: 22px;
   border-radius: 0;
 }
 
-.icon.is-active.is-button[data-v-6c0f4e7e] {
+.icon.is-active[data-v-39840933] {
+  background: var(--color-background);
+}
+
+.icon.is-active.is-button[data-v-39840933] {
+  border: 1px solid var(--color-main-border);
   color: var(--color-main-text);
   background-color: var(--color-background);
+}
+
+.menu_group .mobile_placeholder[data-v-b25c4362]:not(.is-disabled) {
+  color: var(--color-auxiliary-background);
+}
+
+.menu_group .mobile_placeholder[data-v-b25c4362]:not(.is-disabled):active {
+  color: var(--color-additional-background);
 }
