@@ -4331,7 +4331,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-spoiler_inline:not(.is-opened) {
-  background-color: var(--color-background);
+  background-color: var(--color-additional-background);
 }
 
 .b-spoiler_inline:not(.is-opened):hover,
