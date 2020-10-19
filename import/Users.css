@@ -4233,7 +4233,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-spoiler_inline:not(.is-opened) {
-  background-color: var(--color-background);
+  background-color: var(--color-additional-background);
 }
 
 .b-spoiler_inline:not(.is-opened):hover,
@@ -5342,11 +5342,11 @@ code.b-code_inline {
   transition: 0.3s ease-in-out;
 }
 
-.menubar[data-v-b25c4362] {
+.menubar[data-v-5fc13fb5] {
   background: transparent;
 }
 
-.menu_group+.menu_group[data-v-b25c4362]::before,
+.menu_group+.menu_group[data-v-5fc13fb5]::before,
 .menu_group .mobile_placeholder.is-active[data-v-b25c4362]::after {
   border-right: 1px solid var(--color-border);
 }
@@ -5391,15 +5391,98 @@ code.b-code_inline {
 }
 
 .icon.is-active.is-button[data-v-39840933] {
-  border: 1px solid var(--color-main-border);
   color: var(--color-main-text);
   background-color: var(--color-background);
 }
 
-.menu_group .mobile_placeholder[data-v-b25c4362]:not(.is-disabled) {
+.shiki-file_uploader-upload_progress .bar {
+  background-color: var(--color-auxiliary-background);
+  color: var(--color-dark);
+}
+
+.shiki-file_uploader-upload_progress::before {
+  color: var(--color-auxiliary-text);
+}
+[data-v-5fc13fb5] .ProseMirror [data-image].is-prosemirror-selected,
+[data-v-5fc13fb5] .ProseMirror [data-video].ProseMirror-selectednode {
+  outline: 2px solid var(--color-auxiliary-background);
+}
+
+[data-v-5fc13fb5] .ProseMirror [data-div]:hover::before,
+[data-v-5fc13fb5] .ProseMirror [data-image].is-prosemirror-selected::before,
+[data-v-5fc13fb5] .ProseMirror [data-image]:hover::before,
+[data-v-5fc13fb5] .ProseMirror [data-link]:hover::before,
+[data-v-5fc13fb5] .ProseMirror [data-span]:hover::before, 
+[data-v-5fc13fb5] .ProseMirror [data-video].ProseMirror-selectednode::before,
+[data-v-5fc13fb5] .ProseMirror [data-video]:hover::before {
+  background: var(--color-auxiliary-background);
+  color: var(--color-dark);
+  font-family: inherit;
+  padding: 1px 0;
+  text-shadow: none;
+}
+
+[data-v-5fc13fb5] .ProseMirror .b-image.is-prosemirror-selected::after,
+[data-v-5fc13fb5] .ProseMirror .b-image.ProseMirror-selectednode::after,
+[data-v-5fc13fb5] .ProseMirror .b-image:hover::after,
+[data-v-5fc13fb5] .ProseMirror .b-video:not(.b-ajax).is-prosemirror-selected::after,
+[data-v-5fc13fb5] .ProseMirror .b-video:not(.b-ajax).ProseMirror-selectednode::after,
+[data-v-5fc13fb5] .ProseMirror .b-video:not(.b-ajax):hover::after {
+  border: none;
+}
+
+.b-image .edit, .b-image .delete, .b-image .collapse, .b-image .drag-handle, .b-image .confirm, .b-image .cancel, .b-image .move-left, .b-image .move-right, .b-image .mobile-edit, .b-image .prosemirror-expand, .b-image .prosemirror-open {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-main-border);
+  color: var(--color-main-text);
+}
+
+.b-image .edit:hover, .b-image .delete:hover, .b-image .collapse:hover, .b-image .drag-handle:hover, .b-image .confirm:hover, .b-image .cancel:hover, .b-image .move-left:hover, .b-image .move-right:hover, .b-image .mobile-edit:hover, .b-image .prosemirror-expand:hover, .b-image .prosemirror-open:hover {
+  background-color: var(--color-background-hover);
+}
+
+.menu_group .mobile_placeholder[data-v-b25c4362]:not(.is-disabled),
+.menu_group .mobile_placeholder[data-v-b25c4362]:not(.is-disabled):active {
   color: var(--color-auxiliary-background);
 }
 
-.menu_group .mobile_placeholder[data-v-b25c4362]:not(.is-disabled):active {
-  color: var(--color-additional-background);
+.icon.is-active.is-button.is-disabled[data-v-39840933] {
+  color: var(--color-main-text);
+  background: var(--color-background-active);
+}
+
+.b-spoiler_block.is-opened>span>i.edit,
+.b-spoiler_block.is-opened>span>i.expand,
+.b-spoiler_block.is-opened>span>i.center {
+  color: var(--color-main-text);
+  transition: 0.2s ease-in-out;
+}
+
+.b-spoiler_block.is-opened>span>i.edit:hover, 
+.b-spoiler_block.is-opened>span>i.expand:hover,
+.b-spoiler_block.is-opened>span>i.center:hover,
+.b-spoiler_block.is-opened>span>i.edit:active,
+.b-spoiler_block.is-opened>span>i.expand:active,
+.b-spoiler_block.is-opened>span>i.center:active {
+  color: var(--color-main-text-hover);
+  background: none;
+}
+
+.editor-container.is-loading[data-v-5fc13fb5]::before {
+  background: transparent;
+}
+
+.b-tip--is-loading.b-tip--dark {
+  background: var(--color-background-active);
+  color: var(--color-main-text);
+}
+
+.b-tip--dark {
+  background: var(--color-background-active);
+  color: var(--color-main-text);
+}
+
+.b-tip {
+  background: var(--color-background-active);
+  color: var(--color-text);
 }
