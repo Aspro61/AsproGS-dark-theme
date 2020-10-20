@@ -4741,6 +4741,7 @@ code.b-code_inline {
 #profiles_show .about .blue {
   width: 22%;
   font-weight: bold;
+  text-align: center;
   background: var(--color-watching-background);
   border: 1px solid var(--color-watching-border);
 }
@@ -4748,6 +4749,7 @@ code.b-code_inline {
 #profiles_show .about .green {
   width: 22%;
   font-weight: bold;
+  text-align: center;
   background: var(--color-completed-background);
   border: 1px solid var(--color-completed-border);
 }
