@@ -1,0 +1,484 @@
+/* Статус */
+.p-profiles .profile-head[data-user-id="184680"] .c-brief header .notice::before {
+  content: "君といた景色";
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-beige);
+  -webkit-text-stroke: thin;
+}
+
+/* Никнейм */
+.p-profiles .profile-head[data-user-id="184680"] .c-brief header h1 {
+  font-size: 0;
+}
+
+.p-profiles .profile-head[data-user-id="184680"] .c-brief header h1::before {
+  content: 'Aspro';
+  font-size: 2rem;
+}
+
+.p-profiles .profile-head .c-brief header h1.aliases::after {
+  display: none;
+}
+
+/* Лого и глиф */
+.l-top_menu-v2 .logo-container .logo {
+  background: none;
+  height: 1.5rem;
+  width: 85px;
+  text-transform: uppercase;
+}
+
+.l-top_menu-v2 .logo-container .logo::after {
+  content: 'Aspromori';
+  color: inherit;
+  font-size: 20px;
+}
+
+.l-top_menu-v2 .logo-container {
+  margin-right: 25px;
+}
+
+/* Меняем "обо мне" на своё */
+.p-profiles .profile-content>.about>.subheadline {
+  font-size: 0px;
+  height: 28px;
+}
+
+.p-profiles[data-locale='ru'] .profile-content>.about>.subheadline::after {
+  content: 'Информация';
+  font-size: 14px;
+}
+
+.p-profiles[data-locale='en'] .profile-content>.about>.subheadline::after {
+  content: 'Information';
+  font-size: 14px;
+}
+
+/* Изменение в "обо мне" */
+#profiles_show .about .b-catalog_entry .cover .title.two_lined {
+  display: none;
+}
+
+.about .b-image.b-poster img {
+  filter: invert(1) brightness(70%);
+}
+
+#profiles_show .about .red {
+  color: inherit;
+  width: 50%;
+  font-weight: bold;
+  background: var(--color-headline-auxiliary-background);
+}
+
+@media (max-width: 480px) {
+  #profiles_show .about .red {
+    width: 90%;
+  }
+}
+
+#profiles_show .about .inline > .b-spoiler > label {
+  border: 1px solid var(--color-main-border);
+  background-color: var(--color-background);
+  padding: 2px 5px;
+  color: inherit;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#profiles_show .about .inline > .b-spoiler > label:hover {
+  background-color: var(--color-background-hover);
+}
+
+/* Теги */
+#profiles_show .about .blue {
+  width: 22%;
+  font-weight: bold;
+  text-align: center;
+  background: var(--color-watching-background);
+  border: 1px solid var(--color-watching-border);
+}
+
+#profiles_show .about .green {
+  width: 22%;
+  font-weight: bold;
+  text-align: center;
+  background: var(--color-completed-background);
+  border: 1px solid var(--color-completed-border);
+}
+
+@media (max-width: 480px) {
+  #profiles_show .about .green,
+  #profiles_show .about .blue {
+    width: 70%;
+  }
+}
+
+/* Спойлер со всплывающим окном */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.inline > .b-spoiler > label {
+  display: inline !important;
+}
+
+.inline > .b-spoiler > .content[style*='inline'] > .inner {
+  display: flex !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.48);
+  border: 0;
+  overflow-y: auto;
+  z-index: 99;
+}
+
+.inline > .b-spoiler > .content > .inner > .b-quote {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  padding: 2rem 1rem 1rem 2rem;
+  margin: auto;
+  font-style: normal;
+  cursor: default;
+  overflow: visible;
+  background-color: var(--color-background) !important;
+  border-color: var(--color-main-border);
+}
+
+.inline > .b-spoiler > .content > .inner > .b-quote::before {
+  content: '×';
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  width: 1em;
+  padding: 0;
+  margin: .5em;
+  border-radius: 50%;
+  color: var(--color-main-text);
+  font-size: 1.5em;
+  line-height: 1em;
+  text-align: center;
+  cursor: pointer;
+  opacity: .56;
+  pointer-events: none;
+  transition: .2s;
+  z-index: 100;
+}
+
+.inline > .b-spoiler > .content > .inner:hover > .b-quote:not(:hover)::before {
+  opacity: 1;
+}
+
+.inline > .b-spoiler > .content > .before,
+.inline > .b-spoiler > .content > .after {
+  display: none;
+}
+
+/* VIP */
+.name-date a.name[title="'~'"], a.name[href*="/'~'"] {
+  color: var(--color-green) !important;
+  font-family: Verdana, sans-serif !important;
+}
+
+.name-date a.name[title="AsproGS"], a.name[href*="/AsproGS"] {
+  color: var(--color-beige) !important;
+}
+
+.name-date a.name[title="Appalach1"], a.name[href*="/Appalach1"] {
+  color: var(--color-purple) !important;
+}
+
+.name-date a.name[title="pasha2142"], a.name[href*="/pasha2142"] {
+  color: var(--color-blue) !important;
+}
+
+.name-date a.name[title="Felzival"], a.name[href*="/Felzival"] {
+  color: var(--color-red) !important;
+}
+
+.name-date a.name:hover[title="AsproGS"], a.name:hover[href*="/AsproGS"],
+.name-date a.name:hover[title="'~'"], a.name:hover[href*="/'~'"],
+.name-date a.name:hover[title="Appalach1"], a.name:hover[href*="/Appalach1"],
+.name-date a.name:hover[title="pasha2142"], a.name:hover[href*="/pasha2142"],
+.name-date a.name:hover[title="Felzival"], a.name:hover[href*="/Felzival"] {
+  color: var(--color-main-text-hover) !important;
+}
+
+.b-comment .b-user16 img[alt="AsproGS"],
+.b-comment .b-user16 img[alt="Appalach1"],
+.b-user16 img[alt="'~'"] {
+  border: none !important;
+}
+
+.name-date a.name[title="'~'"]:hover::after,
+.name-date a.name[href*="/'~'"]:hover::after,
+.subheadline a[title='~']:hover::after {
+  position: absolute;
+  content: "Илитный моэфаг";
+  font-size: 11px;
+  width: 100px;
+  line-height: 19px;
+  text-align: center;
+  margin-left: 10px;
+  padding: 3px 5px;
+  border-radius: 0;
+  z-index: 1;
+  color: #aeb3b7;
+  background: #0f1112 !important;
+  box-shadow: none;
+  font-family: 'Roboto Condensed', sans-serif !important;
+  animation: 0.54s fadeIn cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.subheadline a[title='~']:hover::after {
+  line-height: 20px;
+  padding-top: 2px;
+  margin-top: -2px;
+}
+
+/* Имя персонажа */
+.p-profiles .cover[data-tooltip_url *= 'characters/497-'] .title > span,
+.b-catalog_entry-tooltip .inner a.name[href *= 'characters/497-'] > span {
+  display: none;
+}
+
+.p-profiles[data-locale='ru'] .cover[data-tooltip_url *= 'characters/497-'] .title:after,
+.b-catalog_entry-tooltip .inner a.name[href *= 'characters/497-']:after {
+  content: 'Артурия Пендрагон';
+}
+
+.p-profiles[data-locale='en'] .cover[data-tooltip_url *= 'characters/497-'] .title:after {
+  content: 'Arturia Pendragon';
+}
+
+/* ОЦЕНКИ */
+tr[data-target_id=""] .num span[data-field="score"].current-value,
+tr[data-target_id=""] .num span[data-field="score"].current-value,
+tr[data-target_id=""] .num span[data-field="score"].current-value,
+tr[data-target_id=""] .num span[data-field="score"].current-value,
+tr[data-target_id=""] .num span[data-field="score"].current-value,
+tr[data-target_id=""] .num span[data-field="score"].current-value,
+tr[data-target_id=""] .num span[data-field="score"].current-value,
+tr[data-target_id=""] .num span[data-field="score"].current-value,
+tr[data-target_id=""] .num span[data-field="score"].current-value,
+tr[data-target_id=""] .num span[data-field="score"].current-value,
+tr[data-target_id=""] .num span[data-field="score"].current-value {
+  font-size: 0;
+}
+
+tr[data-target_id=""] .num span[data-field="score"].current-value::before {
+  content: "8+";
+  font-size: 14px;
+}
+
+/* Стиль */
+.b-rate .score-notice { font-size: 0; }
+.score-notice::after { font-size: 11px; }
+
+/* Оценки */
+.score-10 + .score-notice::after { content: 'Нечто большее'; }
+.score-9 + .score-notice::after { content: 'Великолепно'; }
+.score-8 + .score-notice::after { content: 'Отлично'; }
+.score-7 + .score-notice::after { content: 'Хорошо'; }
+.score-6 + .score-notice::after { content: 'Нормально'; }
+.score-5 + .score-notice::after { content: 'Cредне'; }
+.score-4 + .score-notice::after { content: 'Проходняк'; }
+.score-3 + .score-notice::after { content: 'Плохо'; }
+.score-2 + .score-notice::after { content: 'Ужасно'; }
+.score-1 + .score-notice::after { content: 'Мусор'; }
+
+/* Избранное */
+/* Ж */
+#profiles_show .cc-favourites .entry-67067 {
+  order: 1;
+}
+
+#profiles_show .cc-favourites .entry-2756 {
+  order: 2;
+}
+
+#profiles_show .cc-favourites .entry-3105 {
+  order: 3;
+}
+
+#profiles_show .cc-favourites .entry-10285 {
+  order: 4;
+}
+
+#profiles_show .cc-favourites .entry-236 {
+  order: 5;
+}
+
+#profiles_show .cc-favourites .entry-4745 {
+  order: 6;
+}
+
+#profiles_show .cc-favourites .entry-110743 {
+  order: 7;
+}
+
+#profiles_show .cc-favourites .entry-78361 {
+  order: 8;
+}
+
+#profiles_show .cc-favourites .entry-3275 {
+  order: 9;
+}
+/* М */
+#profiles_show .cc-favourites .entry-67065 {
+  order: 10;
+}
+
+#profiles_show .cc-favourites .entry-80 {
+  order: 11;
+}
+
+#profiles_show .cc-favourites .entry-425 {
+  order: 12;
+}
+
+#profiles_show .cc-favourites .entry-10010 {
+  order: 13;
+}
+
+#profiles_show .cc-favourites .entry-3096 {
+  order: 14;
+}
+
+#profiles_show .cc-favourites .entry-119763 {
+  order: 15;
+}
+
+#profiles_show .cc-favourites .entry-26802 {
+  order: 16;
+}
+
+#profiles_show .cc-favourites.user_rates-minified .c-anime,
+#profiles_show .cc-favourites.user_rates-minified .c-manga,
+#profiles_show .cc-favourites.user_rates-minified .c-person,
+#profiles_show .cc-favourites .entry-63845 {
+  display: none;
+}
+
+/* Cмайлы */
+.smiley {
+  height: 25px;
+}
+
+.b-shiki_editor .smileys {
+  position: absolute;
+  right: 0;
+  top: -280px;
+  left: 0;
+  max-width: 360px;
+  height: 280px !important;
+  padding: 0 8px;
+  margin: auto;
+  border-radius: 3px;
+  z-index: 9;
+  overflow: auto;
+  border: 1px solid var(--color-main-border);
+  background-color: var(--color-background);
+}
+
+@media (min-width: 380px) {
+  .b-shiki_editor .smileys {
+    top: -340px;
+    max-width: 360px;
+    height: 340px !important;
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 960px) {
+  .b-shiki_editor .smileys {
+    top: -380px;
+    max-width: 396px;
+    height: 380px !important;
+    padding: 0 24px;
+  }
+}
+
+.b-shiki_editor .smileys::-webkit-scrollbar {
+  width: 4px;
+  background-image: linear-gradient(var(--color-border), var(--color-border));
+  background-size: 1px calc(100% - 10px);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.b-shiki_editor .smileys::-webkit-scrollbar-thumb {
+  background: var(--color-additional-background);
+}
+
+.b-shiki_editor .smileys div {
+  margin: 16px 0;
+}
+
+.b-shiki_editor .smileys div::before {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--color-main-text);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.b-shiki_editor .smileys div:nth-child(1)::before {
+  content: 'Группа 1';
+}
+
+.b-shiki_editor .smileys div:nth-child(2)::before {
+  content: 'Группа 2';
+}
+
+.b-shiki_editor .smileys div:nth-child(3)::before {
+  content: 'Группа 3';
+}
+
+.b-shiki_editor .smileys div:nth-child(4)::before {
+  content: 'Группа 4';
+}
+
+.b-shiki_editor .smileys div:nth-child(5)::before {
+  content: 'Группа 5';
+}
+
+.b-shiki_editor .smileys div:nth-child(6)::before {
+  content: 'Группа 6';
+}
+
+.b-shiki_editor .smileys div:nth-child(7)::before {
+  content: 'Группа 7';
+}
+
+.b-shiki_editor .smileys div:nth-child(8)::before {
+  content: 'Группа 8';
+}
+
+.b-shiki_editor .smileys div:nth-child(9)::before {
+  content: 'Группа 9';
+}
+
+.b-shiki_editor .smileys img {
+  height: 30px;
+  margin: 0 4px 4px 0;
+}
+
+/* fix overflow bug */
+.b-message,
+.b-comment {
+  overflow: visible
+}
