@@ -5440,7 +5440,6 @@ code.b-code_inline {
 }
 
 #user_rates_index .list-lines tr td .rewatches:not(:empty) {
-  border: 1px solid;
   color: var(--color-beige);
 }
 
