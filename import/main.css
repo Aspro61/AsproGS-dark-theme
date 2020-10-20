@@ -27,7 +27,7 @@
   --color-link: #4d6175;
 
   /* Фоновые цвета */
-  --color-main-background: rgb(12, 13, 14);
+  --color-main-background: rgb(15 17 19);
   --color-background: #181c1f;
   --color-auxiliary-background: #7b9da2;
   --color-additional-background: #47505a;
@@ -100,8 +100,7 @@ hr {
   background-image: -webkit-linear-gradient(left, #202a31, #415c75, #202a31);
 }
 
-a, h2, h3, h4, .p-profiles .profile-head .c-info .c-additionals div a, .b-stats_bar .stat_names .stat_name a, .headline>a, .subheadline>a, .b-options-floated.mobile-desktop a, .b-options-floated .action, .p-profiles-show .achievements .header .title, .b-options-floated a, .b-options-floated .link, .p-profiles .profile-head .c-info .c-additionals b, .b-js-link, .b-stats_bar a.title, .headline .misc-links>a, .subheadline .misc-links>a, h3, .b-table th, .b-db_entry>.c-about .additional-links .line-container>.link, .b-db_entry>.c-about .additional-links .line-container>a, .b-user.detailed .history .line .event, .b-user.moderation .history .line .event, .p-userlist_comparer .comparer table .name a, .tooltip-details .b-nothing_here.centered, .b-forums .reload, .b-contests-menu .results, .b-contests-menu .grid a, .midheadline .misc-links>a, .b-stats_bar .title, header.head .notice, .bar.vertical .line .x_label, .b-achievement .c-about .percent, .b-achievement .about .percent, .b-entry-info .line .value, .bar.horizontal .line .x_label, .p-user_rates-index .list-groups .summary.lines, .p-profiles-edit .list .nickname-changes .link, .b-catalog_entry-tooltip .inner .additional-images .link .title, .b-db_entry-variant-list_item>.info .line .key, .b-catalog_entry-tooltip .inner .line .key, .b-catalog_entry-tooltip .inner .rating, .b-catalog_entry-tooltip .inner .rating .text, .b-comment>.inner .name-date a.name .normal, .b-animes-menu .total-rates, .b-rate .score-notice, .b-quote .quoteable::before, .b-quote-v2 .quoteable::before, .b-club .info .number, .p-animes_collection-index .pagination, .p-mangas_collection-index .pagination, .p-recommendations-index .pagination, .p-userlist_comparer-show .pagination, .b-header_filters .filter-line .title, .b-header_filters .filter-line a.current, .b-status-line .section.additional .collection-size, .b-animes-menu .menu-topics-block .entry .time, .p-animes-show .c-info-right .watch-online .kind, .p-mangas-show .c-info-right .watch-online .kind, .p-ranobe-show .c-info-right .watch-online .kind, .p-animes-show .c-info-right .watch-online a.kind, .p-mangas-show .c-info-right .watch-online a.kind, .p-ranobe-show .c-info-right .watch-online a.kind, .b-nothing_here, .p-profiles .profile-head .c-mobile-actions a, .p-profiles .profile-head .c-mobile-actions span, .b-options-floated.mobile-phone a, header.head a.misc, header.head .misc, header.head a.edit, .l-top_menu-v2, .l-top_menu-v2 .submenu>a, .l-top_menu-v2 .menu-dropdown>span a, .l-top_menu-v2 .global-search, .l-top_menu-v2 .global-search .search-results .nothing_found, .l-top_menu-v2 .global-search .search-results .search-mode,
-.l-top_menu-v2.is-search-focus .global-search .search-marker {
+a, h2, h3, h4, .p-profiles .profile-head .c-info .c-additionals div a, .b-stats_bar .stat_names .stat_name a, .headline>a, .subheadline>a, .b-options-floated.mobile-desktop a, .b-options-floated .action, .p-profiles-show .achievements .header .title, .b-options-floated a, .b-options-floated .link, .p-profiles .profile-head .c-info .c-additionals b, .b-js-link, .b-stats_bar a.title, .headline .misc-links>a, .subheadline .misc-links>a, h3, .b-table th, .b-db_entry>.c-about .additional-links .line-container>.link, .b-db_entry>.c-about .additional-links .line-container>a, .b-user.detailed .history .line .event, .b-user.moderation .history .line .event, .p-userlist_comparer .comparer table .name a, .tooltip-details .b-nothing_here.centered, .b-forums .reload, .b-contests-menu .results, .b-contests-menu .grid a, .midheadline .misc-links>a, .b-stats_bar .title, header.head .notice, .bar.vertical .line .x_label, .b-achievement .c-about .percent, .b-achievement .about .percent, .b-entry-info .line .value, .bar.horizontal .line .x_label, .p-user_rates-index .list-groups .summary.lines, .p-profiles-edit .list .nickname-changes .link, .b-catalog_entry-tooltip .inner .additional-images .link .title, .b-db_entry-variant-list_item>.info .line .key, .b-catalog_entry-tooltip .inner .line .key, .b-catalog_entry-tooltip .inner .rating, .b-catalog_entry-tooltip .inner .rating .text, .b-comment>.inner .name-date a.name .normal, .b-animes-menu .total-rates, .b-rate .score-notice, .b-quote .quoteable::before, .b-quote-v2 .quoteable::before, .b-club .info .number, .p-animes_collection-index .pagination, .p-mangas_collection-index .pagination, .p-recommendations-index .pagination, .p-userlist_comparer-show .pagination, .b-header_filters .filter-line .title, .b-header_filters .filter-line a.current, .b-status-line .section.additional .collection-size, .b-animes-menu .menu-topics-block .entry .time, .p-animes-show .c-info-right .watch-online .kind, .p-mangas-show .c-info-right .watch-online .kind, .p-ranobe-show .c-info-right .watch-online .kind, .p-animes-show .c-info-right .watch-online a.kind, .p-mangas-show .c-info-right .watch-online a.kind, .p-ranobe-show .c-info-right .watch-online a.kind, .b-nothing_here, .p-profiles .profile-head .c-mobile-actions a, .p-profiles .profile-head .c-mobile-actions span, .b-options-floated.mobile-phone a, header.head a.misc, header.head .misc, header.head a.edit, .l-top_menu-v2, .l-top_menu-v2 .submenu>a, .l-top_menu-v2 .menu-dropdown>span a, .l-top_menu-v2 .global-search, .l-top_menu-v2 .global-search .search-results .nothing_found, .l-top_menu-v2 .global-search .search-results .search-mode, .l-top_menu-v2.is-search-focus .global-search .search-marker {
   color: var(--color-main-text);
   transition: 0.2s ease-in-out;
 }
@@ -170,7 +169,11 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
   color: var(--color-main-text-hover) !important;
 }
 
-.b-list_switchers .switcher.selected:hover, .buttons .editor-controls .b-tooltipped.selected:hover, .misc-links>a.selected:hover, .b-subposter-action.fav-remove:hover, .item-mobile.selected:hover {
+.b-list_switchers .switcher.selected:hover,
+.buttons .editor-controls .b-tooltipped.selected:hover,
+.misc-links>a.selected:hover,
+.b-subposter-action.fav-remove:hover,
+.item-mobile.selected:hover {
   color: var(--color-main-text-hover) !important;
 }
 
@@ -186,8 +189,10 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
   transition: 0.2s ease-in-out;
 }
 
-.b-status-line .section.additional .comments::before, .b-status-line .section.created_at time::before, 
-.b-status-line .section.additional .collection-size::before, .b-review_votes::before,
+.b-status-line .section.additional .comments::before,
+.b-status-line .section.created_at time::before, 
+.b-status-line .section.additional .collection-size::before,
+.b-review_votes::before,
 .b-status-line .section.changed_at time::before {
   color: var(--color-text);
 }
@@ -227,7 +232,8 @@ span[style="font-size:9px; color: green;"] {
   color: var(--color-orange);
 }
 
-.b-log_entry .state.taken, .b-user_rate_log .action.create {
+.b-log_entry .state.taken,
+.b-user_rate_log .action.create {
   color: var(--color-blue);
 }
 
@@ -258,7 +264,11 @@ span[style="font-size:9px; color: green;"] {
   color: var(--color-text);
 }
 
-.p-animes-show .other-names, .p-mangas-show .other-names, .p-ranobe-show .other-names, .p-animes-show .other-names:hover, .p-mangas-show .other-names:hover, .p-ranobe-show .other-names:hover, .p-animes-show .other-names:active, .p-mangas-show .other-names:active, .p-ranobe-show .other-names:active  {
+.p-animes-show .other-names, .p-mangas-show .other-names,
+.p-ranobe-show .other-names, .p-animes-show .other-names:hover,
+.p-mangas-show .other-names:hover, .p-ranobe-show .other-names:hover,
+.p-animes-show .other-names:active, .p-mangas-show .other-names:active,
+.p-ranobe-show .other-names:active  {
   color: var(--color-main-text);
 }
 
@@ -267,7 +277,9 @@ span[style="font-size:9px; color: green;"] {
   border-color: var(--color-main-border);
 }
 
-.p-animes-show .other-names:hover, .p-mangas-show .other-names:hover, .p-ranobe-show .other-names:hover, .p-animes-show .other-names:active, .p-mangas-show .other-names:active, .p-ranobe-show .other-names:active {
+.p-animes-show .other-names:hover, .p-mangas-show .other-names:hover,
+.p-ranobe-show .other-names:hover, .p-animes-show .other-names:active,
+.p-mangas-show .other-names:active, .p-ranobe-show .other-names:active {
   background-color: var(--color-background-hover);
   border-color: var(--color-main-border);
 }
@@ -277,7 +289,10 @@ span[style="font-size:9px; color: green;"] {
   background: var(--color-menu-background);
 }
 
-.l-top_menu-v2 .menu-dropdown>span, .l-top_menu-v2 .submenu, .l-top_menu-v2 .menu-icon.active, .l-top_menu-v2 .menu-icon:focus, .l-top_menu-v2 .menu-dropdown>span a:hover, .l-top_menu-v2 .menu-dropdown.active>span, .l-top_menu-v2 .menu-dropdown>span:focus {
+.l-top_menu-v2 .menu-dropdown>span, .l-top_menu-v2 .submenu,
+.l-top_menu-v2 .menu-icon.active, .l-top_menu-v2 .menu-icon:focus,
+.l-top_menu-v2 .menu-dropdown>span a:hover, .l-top_menu-v2 .menu-dropdown.active>span,
+.l-top_menu-v2 .menu-dropdown>span:focus {
   background: var(--color-submenu-background);
   transition: 0.3s ease-in-out;
 }
@@ -324,28 +339,18 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .l-top_menu-v2 .logo-container .logo {
-  background: none;
-  height: 1.5rem;
-  width: 85px;
-  text-transform: uppercase;
+  height: 0.7rem;
+  width: 100px;
 }
 
-.l-top_menu-v2 .logo-container .logo::after {
-  content: 'Aspromori';
-  color: inherit;
-  font-size: 20px;
+.l-top_menu-v2 .logo-container {
+  margin-right: 5px;
 }
 
 .l-top_menu-v2 .logo-container .glyph {
   margin-right: 10px;
   height: 18px;
   width: 18px;
-  filter: brightness(75%);
-  transition: 0.3s ease-in-out;
-}
-
-.l-top_menu-v2 .logo-container .glyph:hover {
-  filter: brightness(100%);
 }
 
 .l-top_menu-v2 {
@@ -459,7 +464,12 @@ span[style="font-size:9px; color: green;"] {
   margin-right: 15px;
 }
 
-.l-top_menu-v2 .global-search .search-results .nothing_found.active, .l-top_menu-v2 .global-search .search-results .nothing_found:focus, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item.active, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:focus, .l-top_menu-v2 .global-search .search-results .search-mode.active, .l-top_menu-v2 .global-search .search-results .search-mode:focus {
+.l-top_menu-v2 .global-search .search-results .nothing_found.active,
+.l-top_menu-v2 .global-search .search-results .nothing_found:focus,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item.active,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:focus,
+.l-top_menu-v2 .global-search .search-results .search-mode.active,
+.l-top_menu-v2 .global-search .search-results .search-mode:focus {
   background: var(--color-dark);
 }
 
@@ -472,11 +482,19 @@ span[style="font-size:9px; color: green;"] {
   border-color: var(--color-main-border) !important;
 }
 
-.l-top_menu-v2 .global-search .search-results .nothing_found.active::before, .l-top_menu-v2 .global-search .search-results .nothing_found:focus::before, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item.active::before, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:focus::before, .l-top_menu-v2 .global-search .search-results .search-mode.active::before, .l-top_menu-v2 .global-search .search-results .search-mode:focus::before, .l-top_menu-v2 .global-search .search-results .nothing_found:hover::before, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:hover::before, .l-top_menu-v2 .global-search .search-results .search-mode:hover::before {
+.l-top_menu-v2 .global-search .search-results .nothing_found.active::before,
+.l-top_menu-v2 .global-search .search-results .nothing_found:focus::before,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item.active::before,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:focus::before,
+.l-top_menu-v2 .global-search .search-results .search-mode.active::before,
+.l-top_menu-v2 .global-search .search-results .search-mode:focus::before,
+.l-top_menu-v2 .global-search .search-results .nothing_found:hover::before, 
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:hover::before,
+.l-top_menu-v2 .global-search .search-results .search-mode:hover::before {
   background-color: var(--color-additional-background);
 }
 
-.l-top_menu-v2 .global-search .search-results .nothing_found:before {
+.l-top_menu-v2 .global-search .search-results .nothing_found::before {
   background: var(--color-dropped-background);
 }
 
@@ -936,7 +954,28 @@ span[style="font-size:9px; color: green;"] {
   background-color: var(--color-background-hover);
 }
 
-.b-anime_status_tag.released, .b-anime_status_tag.anons, .b-anime_status_tag.ongoing, .b-anime_status_tag.episode, .b-anime_status_tag.studio, .b-anime_status_tag.other, .b-anime_status_tag.summary, .b-anime_status_tag.news, .b-anime_status_tag.review, .b-anime_status_tag.collection, .b-anime_status_tag.cosplay, .b-anime_status_tag.offtopic, .b-anime_status_tag.ignored, .b-anime_status_tag.broadcast, body[data-locale] .b-abuse_marker, body[data-locale] .b-broadcast_marker, body[data-locale] .b-offtopic_marker, body[data-locale] .b-summary_marker, body[data-locale] .b-spoiler_marker, body[data-locale] .b-new_marker, .b-anime_status_tag.article, .b-anime_status_tag.contest {
+.b-anime_status_tag.released,
+.b-anime_status_tag.anons,
+.b-anime_status_tag.ongoing,
+.b-anime_status_tag.episode, 
+.b-anime_status_tag.studio, 
+.b-anime_status_tag.other,
+.b-anime_status_tag.summary, 
+.b-anime_status_tag.news, 
+.b-anime_status_tag.review,
+.b-anime_status_tag.collection,
+.b-anime_status_tag.cosplay,
+.b-anime_status_tag.offtopic,
+.b-anime_status_tag.ignored,
+.b-anime_status_tag.broadcast, 
+.b-anime_status_tag.article,
+.b-anime_status_tag.contest,
+body[data-locale] .b-abuse_marker,
+body[data-locale] .b-broadcast_marker,
+body[data-locale] .b-offtopic_marker,
+body[data-locale] .b-summary_marker, 
+body[data-locale] .b-spoiler_marker,
+body[data-locale] .b-new_marker {
   width: auto;
   margin: 0;
   padding: 0 4px;
@@ -949,7 +988,8 @@ span[style="font-size:9px; color: green;"] {
   transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
 }
 
-.b-topic>.inner .prebody .b-anime_status_tag, .b-topic>.inner footer .b-anime_status_tag,
+.b-topic>.inner .prebody .b-anime_status_tag,
+.b-topic>.inner footer .b-anime_status_tag,
 .b-news_wall-topic .status-line .tags .b-anime_status_tag:not(:last-child),
 .p-dashboards-show .b-anime_status_tag.other {
   padding: 3px 7px;
@@ -1113,28 +1153,6 @@ body[data-locale] .b-offtopic_marker {
 .b-lang_trigger::before,
 .b-lang_trigger::after {
   display: none;
-}
-
-.p-user_rates-index .list-lines tr td .ongoing,
-.p-user_rates-index .list-lines tr td .rewatches:not(:empty),
-.p-user_rates-index .list-lines tr td .anons:not(:empty) {
-  padding: 1px 4px;
-  margin-left: 5px;
-}
-
-.p-user_rates-index .list-lines tr td .ongoing {
-  border: 1px solid;
-  color: var(--color-blue);
-}
-
-.p-user_rates-index .list-lines tr td .anons:not(:empty) {
-  border: 1px solid;
-  color: var(--color-orange);
-}
-
-.p-user_rates-index .list-lines tr td .rewatches:not(:empty) {
-  border: 1px solid;
-  color: var(--color-beige);
 }
 
 .b-entry-info .line .key, .b-db_entry>.c-about .additional-links .key, 
@@ -1373,7 +1391,7 @@ body[data-locale] .b-offtopic_marker {
   padding-right: 0;
 }
 
-/* Аниме и манги в профиле */
+/* Аниме и манга в профиле */
 .b-stats_bar .stat_names .stat_name .size::before {
   color: inherit;
   content: '–';
@@ -2621,42 +2639,42 @@ header.head h2 a.back::after,
   font-size: 15px;
 }
 
-.b-catalog_entry.completed .image-decor:before {
+.b-catalog_entry.completed .image-decor::before {
   background: var(--color-completed-background);
   border-color: var(--color-completed-border);
 }
 
-.b-catalog_entry.planned .image-decor:before {
+.b-catalog_entry.planned .image-decor::before {
   background: var(--color-planned-background);
   border-color: var(--color-planned-border);
 }
 
-.b-catalog_entry.on_hold .image-decor:before {
+.b-catalog_entry.on_hold .image-decor::before {
   background: var(--color-on_hold-background);
   border-color: var(--color-on_hold-border);
 }
 
-.b-catalog_entry.watching .image-decor:before {
+.b-catalog_entry.watching .image-decor::before {
   background: var(--color-watching-background);
   border-color: var(--color-watching-border);
 }
 
-.b-catalog_entry.rewatching .image-decor:before {
+.b-catalog_entry.rewatching .image-decor::before {
   background: var(--color-watching-background);
   border-color: var(--color-watching-border);
 }
 
-.b-catalog_entry.dropped .image-decor:before {
+.b-catalog_entry.dropped .image-decor::before {
   background: var(--color-dropped-background);
   border-color: var(--color-dropped-border);
 }
 
-.b-catalog_entry.completed .image-decor:after,
-.b-catalog_entry.planned .image-decor:after,
-.b-catalog_entry.on_hold .image-decor:after,
-.b-catalog_entry.watching .image-decor:after,
-.b-catalog_entry.rewatching .image-decor:after,
-.b-catalog_entry.dropped .image-decor:after {
+.b-catalog_entry.completed .image-decor::after,
+.b-catalog_entry.planned .image-decor::after,
+.b-catalog_entry.on_hold .image-decor::after,
+.b-catalog_entry.watching .image-decor::after,
+.b-catalog_entry.rewatching .image-decor::after,
+.b-catalog_entry.dropped .image-decor::after {
   color: var(--color-main-text);
 }
 
@@ -2989,71 +3007,6 @@ header.head h2 a.back::after,
 }
 
 /* Избранное */
-/* Ж */
-#profiles_show .cc-favourites .entry-67067 {
-  order: 1;
-}
-
-#profiles_show .cc-favourites .entry-2756 {
-  order: 2;
-}
-
-#profiles_show .cc-favourites .entry-3105 {
-  order: 3;
-}
-
-#profiles_show .cc-favourites .entry-10285 {
-  order: 4;
-}
-
-#profiles_show .cc-favourites .entry-236 {
-  order: 5;
-}
-
-#profiles_show .cc-favourites .entry-4745 {
-  order: 6;
-}
-
-#profiles_show .cc-favourites .entry-110743 {
-  order: 7;
-}
-
-#profiles_show .cc-favourites .entry-78361 {
-  order: 8;
-}
-
-#profiles_show .cc-favourites .entry-3275 {
-  order: 9;
-}
-/* М */
-#profiles_show .cc-favourites .entry-67065 {
-  order: 10;
-}
-
-#profiles_show .cc-favourites .entry-80 {
-  order: 11;
-}
-
-#profiles_show .cc-favourites .entry-425 {
-  order: 12;
-}
-
-#profiles_show .cc-favourites .entry-10010 {
-  order: 13;
-}
-
-#profiles_show .cc-favourites .entry-3096 {
-  order: 14;
-}
-
-#profiles_show .cc-favourites .entry-119763 {
-  order: 15;
-}
-
-#profiles_show .cc-favourites .entry-26802 {
-  order: 16;
-}
-
 #profiles_show .cc-favourites .c-column {
   margin: 0;
   margin-left: 1.5%;
@@ -3083,13 +3036,6 @@ header.head h2 a.back::after,
   right: 5px;
   position: relative;
   width: 10%;
-}
-
-#profiles_show .cc-favourites.user_rates-minified .c-anime,
-#profiles_show .cc-favourites.user_rates-minified .c-manga,
-#profiles_show .cc-favourites.user_rates-minified .c-person,
-#profiles_show .cc-favourites .entry-63845 {
-  display: none;
 }
 
 .b-catalog_entry .cover .title.two_lined,
@@ -3641,7 +3587,7 @@ header.head h2 a.back::after,
   display: grid;
 }
 
-.p-achievements-index .block2:nth-of-type(1) {
+#achievements_index .block2:nth-of-type(1) {
   order: 1;
 }
 
@@ -3764,7 +3710,7 @@ header.head h2 a.back::after,
   -webkit-text-stroke: thin;
 }
 
-/* CSS Редактор */
+/* Ксс редактор */
 .b-edit_styles ::-webkit-scrollbar {
   width: 10px;
 }
@@ -4390,117 +4336,6 @@ code.b-code_inline {
   margin: 2px 2px;
 }
 
-/* CМАЙЛЫ */
-.smiley {
-  height: 25px;
-}
-
-.b-shiki_editor .smileys {
-  position: absolute;
-  right: 0;
-  top: -280px;
-  left: 0;
-  max-width: 360px;
-  height: 280px !important;
-  padding: 0 8px;
-  margin: auto;
-  border-radius: 3px;
-  z-index: 9;
-  overflow: auto;
-  border: 1px solid var(--color-main-border);
-  background-color: var(--color-background);
-}
-
-@media (min-width: 380px) {
-  .b-shiki_editor .smileys {
-    top: -340px;
-    max-width: 360px;
-    height: 340px !important;
-    padding: 0 16px;
-  }
-}
-
-@media (min-width: 960px) {
-  .b-shiki_editor .smileys {
-    top: -380px;
-    max-width: 396px;
-    height: 380px !important;
-    padding: 0 24px;
-  }
-}
-
-.b-shiki_editor .smileys::-webkit-scrollbar {
-  width: 4px;
-  background-image: linear-gradient(var(--color-border), var(--color-border));
-  background-size: 1px calc(100% - 10px);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.b-shiki_editor .smileys::-webkit-scrollbar-thumb {
-  background: var(--color-additional-background);
-}
-
-.b-shiki_editor .smileys div {
-  margin: 16px 0;
-}
-
-.b-shiki_editor .smileys div::before {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--color-main-text);
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 24px;
-}
-
-.b-shiki_editor .smileys div:nth-child(1)::before {
-  content: 'Группа 1';
-}
-
-.b-shiki_editor .smileys div:nth-child(2)::before {
-  content: 'Группа 2';
-}
-
-.b-shiki_editor .smileys div:nth-child(3)::before {
-  content: 'Группа 3';
-}
-
-.b-shiki_editor .smileys div:nth-child(4)::before {
-  content: 'Группа 4';
-}
-
-.b-shiki_editor .smileys div:nth-child(5)::before {
-  content: 'Группа 5';
-}
-
-.b-shiki_editor .smileys div:nth-child(6)::before {
-  content: 'Группа 6';
-}
-
-.b-shiki_editor .smileys div:nth-child(7)::before {
-  content: 'Группа 7';
-}
-
-.b-shiki_editor .smileys div:nth-child(8)::before {
-  content: 'Группа 8';
-}
-
-.b-shiki_editor .smileys div:nth-child(9)::before {
-  content: 'Группа 9';
-}
-
-.b-shiki_editor .smileys img {
-  height: 30px;
-  margin: 0 4px 4px 0;
-}
-
-/* fix overflow bug */
-.b-message,
-.b-comment {
-  overflow: visible
-}
-
 /* Coub */
 .b-coub .content .video-link {
   max-width: 500px;
@@ -4579,10 +4414,6 @@ code.b-code_inline {
 }
 
 /* Разное */
-#profiles_show .about .b-catalog_entry .cover .title.two_lined {
-  display: none;
-}
-
 #profiles_show .about .cc-9-g15>.c-column {
   margin-bottom: 15px;
 }
@@ -4664,779 +4495,6 @@ code.b-code_inline {
 .p-recommendations-index .b-catalog_entry .edit:hover, .p-recommendations-index .b-catalog_entry .delete:hover, .p-recommendations-index .b-catalog_entry .drag-handle:hover, .p-recommendations-index .b-catalog_entry .confirm:hover, .p-recommendations-index .b-catalog_entry .cancel:hover, .p-recommendations-index .b-catalog_entry .move-left:hover, .p-recommendations-index .b-catalog_entry .move-right:hover, .p-recommendations-index .b-catalog_entry .mobile-edit:hover, .p-recommendations-favourites .b-catalog_entry .edit:hover, .p-recommendations-favourites .b-catalog_entry .delete:hover, .p-recommendations-favourites .b-catalog_entry .drag-handle:hover, .p-recommendations-favourites .b-catalog_entry .confirm:hover, .p-recommendations-favourites .b-catalog_entry .cancel:hover, .p-recommendations-favourites .b-catalog_entry .move-left:hover, .p-recommendations-favourites .b-catalog_entry .move-right:hover, .p-recommendations-favourites .b-catalog_entry .mobile-edit:hover, .p-recommendations-index .b-catalog_entry .edit:active, .p-recommendations-index .b-catalog_entry .delete:active, .p-recommendations-index .b-catalog_entry .drag-handle:active, .p-recommendations-index .b-catalog_entry .confirm:active, .p-recommendations-index .b-catalog_entry .cancel:active, .p-recommendations-index .b-catalog_entry .move-left:active, .p-recommendations-index .b-catalog_entry .move-right:active, .p-recommendations-index .b-catalog_entry .mobile-edit:active, .p-recommendations-favourites .b-catalog_entry .edit:active, .p-recommendations-favourites .b-catalog_entry .delete:active, .p-recommendations-favourites .b-catalog_entry .drag-handle:active, .p-recommendations-favourites .b-catalog_entry .confirm:active, .p-recommendations-favourites .b-catalog_entry .cancel:active, .p-recommendations-favourites .b-catalog_entry .move-left:active, .p-recommendations-favourites .b-catalog_entry .move-right:active, .p-recommendations-favourites .b-catalog_entry .mobile-edit:active {
   color: var(--color-main-text-hover);
 }
-
-/* Личное */
-/* Статус */
-.p-profiles .profile-head[data-user-id="184680"] .c-brief header .notice::before {
-  content: "君といた景色";
-  display: block;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--color-beige);
-  -webkit-text-stroke: thin;
-}
-
-/* Никнейм */
-.p-profiles .profile-head[data-user-id="184680"] .c-brief header h1 {
-  font-size: 0;
-}
-
-.p-profiles .profile-head[data-user-id="184680"] .c-brief header h1::before {
-  content: 'Aspro';
-  font-size: 2rem;
-}
-
-.p-profiles .profile-head .c-brief header h1.aliases:after {
-  display: none;
-}
-
-/* Меняем "обо мне" на своё */
-.p-profiles .profile-content>.about>.subheadline {
-  font-size: 0px;
-  height: 28px;
-}
-
-.p-profiles[data-locale='ru'] .profile-content>.about>.subheadline::after {
-  content: 'Информация';
-  font-size: 14px;
-}
-
-.p-profiles[data-locale='en'] .profile-content>.about>.subheadline::after {
-  content: 'Information';
-  font-size: 14px;
-}
-
-/* Изменение в "обо мне" */
-.about .b-image.b-poster img {
-  filter: invert(1) brightness(70%);
-}
-
-#profiles_show .about .red {
-  color: inherit;
-  width: 50%;
-  font-weight: bold;
-  background: var(--color-headline-auxiliary-background);
-}
-
-@media (max-width: 480px) {
-  #profiles_show .about .red {
-    width: 90%;
-  }
-}
-
-#profiles_show .about .inline > .b-spoiler > label {
-  border: 1px solid var(--color-main-border);
-  background-color: var(--color-background);
-  padding: 2px 5px;
-  color: inherit;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#profiles_show .about .inline > .b-spoiler > label:hover {
-  background-color: var(--color-background-hover);
-}
-
-/* Теги */
-#profiles_show .about .blue {
-  width: 22%;
-  font-weight: bold;
-  text-align: center;
-  background: var(--color-watching-background);
-  border: 1px solid var(--color-watching-border);
-}
-
-#profiles_show .about .green {
-  width: 22%;
-  font-weight: bold;
-  text-align: center;
-  background: var(--color-completed-background);
-  border: 1px solid var(--color-completed-border);
-}
-
-@media (max-width: 480px) {
-  #profiles_show .about .green,
-  #profiles_show .about .blue {
-    width: 70%;
-  }
-}
-
-/* Спойлер со всплывающим окном */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.inline > .b-spoiler > label {
-  display: inline !important;
-}
-
-.inline > .b-spoiler > .content[style*='inline'] > .inner {
-  display: flex !important;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 4rem 0;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.48);
-  border: 0;
-  overflow-y: auto;
-  z-index: 99;
-}
-
-.inline > .b-spoiler > .content > .inner > .b-quote {
-  position: relative;
-  width: 90%;
-  max-width: 900px;
-  padding: 2rem 1rem 1rem 2rem;
-  margin: auto;
-  font-style: normal;
-  cursor: default;
-  overflow: visible;
-  background-color: var(--color-background) !important;
-  border-color: var(--color-main-border);
-}
-
-.inline > .b-spoiler > .content > .inner > .b-quote::before {
-  content: '×';
-  position: absolute;
-  right: 0;
-  bottom: 100%;
-  width: 1em;
-  padding: 0;
-  margin: .5em;
-  border-radius: 50%;
-  color: var(--color-main-text);
-  font-size: 1.5em;
-  line-height: 1em;
-  text-align: center;
-  cursor: pointer;
-  opacity: .56;
-  pointer-events: none;
-  transition: .2s;
-  z-index: 100;
-}
-
-.inline > .b-spoiler > .content > .inner:hover > .b-quote:not(:hover)::before {
-  opacity: 1;
-}
-
-.inline > .b-spoiler > .content > .before,
-.inline > .b-spoiler > .content > .after {
-  display: none;
-}
-
-/* Постеры */
-/* Персонажи */
-.b-catalog_entry .cover .image-decor img[alt*="Hachiman Hikigaya"],
-.b-db_entry > .c-image img[alt*="Hachiman Hikigaya"],
-.p-profiles-show .cc-favourites img[alt*="Hachiman Hikigaya"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Hachiman Hikigaya"],
-.b-catalog_entry-tooltip img[alt*="Hachiman Hikigaya"],
-.p-profiles-show .about a img[alt*="Hachiman Hikigaya"] {
-  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/1176145.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Yukino Yukinoshita"],
-.b-db_entry > .c-image img[alt*="Yukino Yukinoshita"],
-.p-profiles-show .cc-favourites img[alt*="Yukino Yukinoshita"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Yukino Yukinoshita"],
-.b-catalog_entry-tooltip img[alt*="Yukino Yukinoshita"],
-.p-profiles-show .about a img[alt*="Yukino Yukinoshita"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/1212949.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Ginko"],
-.b-db_entry > .c-image img[alt*="Ginko"],
-.p-profiles-show .cc-favourites img[alt*="Ginko"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Ginko"],
-.b-catalog_entry-tooltip img[alt*="Ginko"],
-.p-profiles-show .about a img[alt*="Ginko"] {
-  content: url("https://moe.shikimori.one/system/user_images/original/184680/889652.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Sayo Yasuda"],
-.b-db_entry > .c-image img[alt*="Sayo Yasuda"],
-.p-profiles-show .cc-favourites img[alt*="Sayo Yasuda"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Sayo Yasuda"],
-.b-catalog_entry-tooltip img[alt*="Sayo Yasuda"],
-.p-profiles-show .about a img[alt*="Sayo Yasuda"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/100971/676418.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Kousei Arima"],
-.b-db_entry > .c-image img[alt*="Kousei Arima"],
-.p-profiles-show .cc-favourites img[alt*="Kousei Arima"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kousei Arima"],
-.b-catalog_entry-tooltip img[alt*="Kousei Arima"],
-.p-profiles-show .about a img[alt*="Kousei Arima"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1176108.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Kiritsugu Emiya"],
-.b-db_entry > .c-image img[alt*="Kiritsugu Emiya"],
-.p-profiles-show .cc-favourites img[alt*="Kiritsugu Emiya"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kiritsugu Emiya"],
-.b-catalog_entry-tooltip img[alt*="Kiritsugu Emiya"],
-.p-profiles-show .about a img[alt*="Kiritsugu Emiya"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/859071.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Light Yagami"],
-.b-db_entry > .c-image img[alt*="Light Yagami"],
-.p-profiles-show .cc-favourites img[alt*="Light Yagami"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Light Yagami"],
-.b-catalog_entry-tooltip img[alt*="Light Yagami"],
-.p-profiles-show .about a img[alt*="Light Yagami"] {
-  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/859050.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Shizuka Hiratsuka"],
-.b-db_entry > .c-image img[alt*="Shizuka Hiratsuka"],
-.p-profiles-show .cc-favourites img[alt*="Shizuka Hiratsuka"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Shizuka Hiratsuka"],
-.b-catalog_entry-tooltip img[alt*="Shizuka Hiratsuka"],
-.p-profiles-show .about a img[alt*="Shizuka Hiratsuka"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859074.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Iroha Isshiki"],
-.b-db_entry > .c-image img[alt*="Iroha Isshiki"],
-.p-profiles-show .cc-favourites img[alt*="Iroha Isshiki"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Iroha Isshiki"],
-.b-catalog_entry-tooltip img[alt*="Iroha Isshiki"],
-.p-profiles-show .about a img[alt*="Iroha Isshiki"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/1176116.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Yumiko Miura"],
-.b-db_entry > .c-image img[alt*="Yumiko Miura"],
-.p-profiles-show .cc-favourites img[alt*="Yumiko Miura"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Yumiko Miura"],
-.b-catalog_entry-tooltip img[alt*="Yumiko Miura"],
-.p-profiles-show .about a img[alt*="Yumiko Miura"] {
-  content: url("https://moe.shikimori.one/system/user_images/original/184680/859077.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Kaori Miyazono"],
-.b-db_entry > .c-image img[alt*="Kaori Miyazono"],
-.p-profiles-show .cc-favourites img[alt*="Kaori Miyazono"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kaori Miyazono"],
-.b-catalog_entry-tooltip img[alt*="Kaori Miyazono"],
-.p-profiles-show .about a img[alt*="Kaori Miyazono"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/859051.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Shouko Nishimiya"],
-.b-db_entry > .c-image img[alt*="Shouko Nishimiya"],
-.p-profiles-show .cc-favourites img[alt*="Shouko Nishimiya"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Shouko Nishimiya"],
-.b-catalog_entry-tooltip img[alt*="Shouko Nishimiya"],
-.p-profiles-show .about a img[alt*="Shouko Nishimiya"] {
-  content: url("https://moe.shikimori.one/system/user_images/original/184680/1216452.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Shinobu Oshino"],
-.b-db_entry > .c-image img[alt*="Shinobu Oshino"],
-.p-profiles-show .cc-favourites img[alt*="Shinobu Oshino"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Shinobu Oshino"],
-.b-catalog_entry-tooltip img[alt*="Shinobu Oshino"],
-.p-profiles-show .about a img[alt*="Shinobu Oshino"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/859098.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Gintoki Sakata"],
-.b-db_entry > .c-image img[alt*="Gintoki Sakata"],
-.p-profiles-show .cc-favourites img[alt*="Gintoki Sakata"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Gintoki Sakata"],
-.b-catalog_entry-tooltip img[alt*="Gintoki Sakata"],
-.p-profiles-show .about a img[alt*="Gintoki Sakata"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859069.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Shirou Emiya"],
-.b-db_entry > .c-image img[alt*="Shirou Emiya"],
-.p-profiles-show .cc-favourites img[alt*="Shirou Emiya"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Shirou Emiya"],
-.b-catalog_entry-tooltip img[alt*="Shirou Emiya"],
-.p-profiles-show .about a img[alt*="Shirou Emiya"] {
-  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/859070.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Shiki Toono"],
-.b-db_entry > .c-image img[alt*="Shiki Toono"],
-.p-profiles-show .cc-favourites img[alt*="Shiki Toono"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Shiki Toono"],
-.b-catalog_entry-tooltip img[alt*="Shiki Toono"],
-.p-profiles-show .about a img[alt*="Shiki Toono"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859064.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Kaguya Shinomiya"],
-.b-db_entry > .c-image img[alt*="Kaguya Shinomiya"],
-.p-profiles-show .cc-favourites img[alt*="Kaguya Shinomiya"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kaguya Shinomiya"],
-.b-catalog_entry-tooltip img[alt*="Kaguya Shinomiya"],
-.p-profiles-show .about a img[alt*="Kaguya Shinomiya"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1216453.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Winry Rockbell"],
-.b-db_entry > .c-image img[alt*="Winry Rockbell"],
-.p-profiles-show .cc-favourites img[alt*="Winry Rockbell"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Winry Rockbell"],
-.b-catalog_entry-tooltip img[alt*="Winry Rockbell"],
-.p-profiles-show .about a img[alt*="Winry Rockbell"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859079.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Kyouko Kirigiri"],
-.b-db_entry > .c-image img[alt*="Kyouko Kirigiri"],
-.p-profiles-show .cc-favourites img[alt*="Kyouko Kirigiri"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kyouko Kirigiri"],
-.b-catalog_entry-tooltip img[alt*="Kyouko Kirigiri"],
-.p-profiles-show .about a img[alt*="Kyouko Kirigiri"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/859061.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Beatrice"],
-.b-db_entry > .c-image img[alt*="Beatrice"],
-.p-profiles-show .cc-favourites img[alt*="Beatrice"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Beatrice"],
-.b-catalog_entry-tooltip img[alt*="Beatrice"],
-.p-profiles-show .about a img[alt*="Beatrice"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/859058.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Arcueid Brunestud"],
-.b-db_entry > .c-image img[alt*="Arcueid Brunestud"],
-.p-profiles-show .cc-favourites img[alt*="Arcueid Brunestud"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Arcueid Brunestud"],
-.b-catalog_entry-tooltip img[alt*="Arcueid Brunestud"],
-.p-profiles-show .about a img[alt*="Arcueid Brunestud"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/859063.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Rin Tohsaka"],
-.b-db_entry > .c-image img[alt*="Rin Tohsaka"],
-.p-profiles-show .cc-favourites img[alt*="Rin Tohsaka"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Rin Tohsaka"],
-.b-catalog_entry-tooltip img[alt*="Rin Tohsaka"],
-.p-profiles-show .about a img[alt*="Rin Tohsaka"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/859053.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Claire Stanfield"],
-.b-db_entry > .c-image img[alt*="Claire Stanfield"],
-.p-profiles-show .cc-favourites img[alt*="Claire Stanfield"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Claire Stanfield"],
-.b-catalog_entry-tooltip img[alt*="Claire Stanfield"],
-.p-profiles-show .about a img[alt*="Claire Stanfield"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859054.jpg"); 
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Chane Laforet"],
-.b-db_entry > .c-image img[alt*="Chane Laforet"],
-.p-profiles-show .cc-favourites img[alt*="Chane Laforet"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Chane Laforet"],
-.b-catalog_entry-tooltip img[alt*="Chane Laforet"],
-.p-profiles-show .about a img[alt*="Chane Laforet"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/859056.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Yakumo Yuurakutei"],
-.b-db_entry > .c-image img[alt*="Yakumo Yuurakutei"],
-.p-profiles-show .cc-favourites img[alt*="Yakumo Yuurakutei"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Yakumo Yuurakutei"],
-.b-catalog_entry-tooltip img[alt*="Yakumo Yuurakutei"],
-.p-profiles-show .about a img[alt*="Yakumo Yuurakutei"] {
-  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/880140.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Kansai"],
-.b-db_entry > .c-image img[alt*="Kansai"],
-.p-profiles-show .cc-favourites img[alt*="Kansai"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kansai"],
-.b-catalog_entry-tooltip img[alt*="Kansai"],
-.p-profiles-show .about a img[alt*="Kansai"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/947889.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Kyouko Otonashi"],
-.b-db_entry > .c-image img[alt*="Kyouko Otonashi"],
-.p-profiles-show .cc-favourites img[alt*="Kyouko Otonashi"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kyouko Otonashi"],
-.b-catalog_entry-tooltip img[alt*="Kyouko Otonashi"],
-.p-profiles-show .about a img[alt*="Kyouko Otonashi"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/1094924.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Youzou Ooba"],
-.b-db_entry > .c-image img[alt*="Youzou Ooba"],
-.p-profiles-show .cc-favourites img[alt*="Youzou Ooba"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Youzou Ooba"],
-.b-catalog_entry-tooltip img[alt*="Youzou Ooba"],
-.p-profiles-show .about a img[alt*="Youzou Ooba"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1185168.jpg"); 
-}
-
-/* Манга и ранобэ */
-.b-catalog_entry .cover .image-decor img[alt*="Sekai no Owari to Yoakemae"],
-.b-db_entry > .c-image img[alt*="Sekai no Owari to Yoakemae"],
-.p-profiles-show .cc-favourites img[alt*="Sekai no Owari to Yoakemae"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Sekai no Owari to Yoakemae"],
-.b-catalog_entry-tooltip img[alt*="Sekai no Owari to Yoakemae"],
-.p-profiles-show .about a img[alt*="Sekai no Owari to Yoakemae"] {
-  content: url("https://moe.shikimori.one/system/user_images/original/184680/859082.jpg"); 
-}
-
-/* Аниме */
-.b-catalog_entry .cover .image-decor img[alt*="Mobile Suit Gundam SEED"],
-.b-db_entry > .c-image img[alt*="Mobile Suit Gundam SEED"],
-.p-profiles-show .cc-favourites img[alt*="Mobile Suit Gundam SEED"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Mobile Suit Gundam SEED"],
-.b-catalog_entry-tooltip img[alt*="Mobile Suit Gundam SEED"],
-.p-profiles-show .about a img[alt*="Mobile Suit Gundam SEED"] {
-  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/859090.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Mobile Suit Gundam SEED Destiny"],
-.b-db_entry > .c-image img[alt*="Mobile Suit Gundam SEED Destiny"],
-.p-profiles-show .cc-favourites img[alt*="Mobile Suit Gundam SEED Destiny"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Mobile Suit Gundam SEED Destiny"],
-.b-catalog_entry-tooltip img[alt*="Mobile Suit Gundam SEED Destiny"],
-.p-profiles-show .about a img[alt*="Mobile Suit Gundam SEED Destiny"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859089.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Hunter x Hunter (2011)"],
-.b-db_entry > .c-image img[alt*="Hunter x Hunter (2011)"],
-.p-profiles-show .cc-favourites img[alt*="Hunter x Hunter (2011)"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Hunter x Hunter (2011)"],
-.b-catalog_entry-tooltip img[alt*="Hunter x Hunter (2011)"],
-.p-profiles-show .about a img[alt*="Hunter x Hunter (2011)"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/859088.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"],
-.b-db_entry > .c-image img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"],
-.p-profiles-show .cc-favourites img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"],
-.b-catalog_entry-tooltip img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"],
-.p-profiles-show .about a img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/859086.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
-.b-db_entry > .c-image img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
-.p-profiles-show .cc-favourites img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
-.b-catalog_entry-tooltip img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
-.p-profiles-show .about a img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/100971/464293.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Ergo Proxy"],
-.b-db_entry > .c-image img[alt*="Ergo Proxy"],
-.p-profiles-show .cc-favourites img[alt*="Ergo Proxy"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Ergo Proxy"],
-.b-catalog_entry-tooltip img[alt*="Ergo Proxy"],
-.p-profiles-show .about a img[alt*="Ergo Proxy"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/1088424.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Texhnolyze"],
-.b-db_entry > .c-image img[alt*="Texhnolyze"],
-.p-profiles-show .cc-favourites img[alt*="Texhnolyze"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Texhnolyze"],
-.b-catalog_entry-tooltip img[alt*="Texhnolyze"],
-.p-profiles-show .about a img[alt*="Texhnolyze"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859084.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Innocence"],
-.b-db_entry > .c-image img[alt*="Innocence"],
-.p-profiles-show .cc-favourites img[alt*="Innocence"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Innocence"],
-.b-catalog_entry-tooltip img[alt*="Innocence"],
-.p-profiles-show .about a img[alt*="Innocence"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/880101.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Kidou Keisatsu Patlabor: On Television"],
-.b-db_entry > .c-image img[alt*="Kidou Keisatsu Patlabor: On Television"],
-.p-profiles-show .cc-favourites img[alt*="Kidou Keisatsu Patlabor: On Television"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kidou Keisatsu Patlabor: On Television"],
-.b-catalog_entry-tooltip img[alt*="Kidou Keisatsu Patlabor: On Television"],
-.p-profiles-show .about a img[alt*="Kidou Keisatsu Patlabor: On Television"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1088423.jpg");
-}
-
-/* Cпособ 2 */
-/* Общие настройки обложек */
-.b-catalog_entry .cover .image-cutter,
-.b-catalog_entry-tooltip > a,
-.entry-tooltip_container > .image-link {
-  background-size: cover;
-  background-position: top center;
-}
-
-/* Изменение контейнера во всплывающей подсказке */
-.b-catalog_entry-tooltip > a,
-.entry-tooltip_container > .image-link {
-  float: left;
-  width: 160px;
-  height: 249.34px;
-}
-
-/* Общие настройки обложек на станицах тайтлов */
-.p-db_entries .b-db_entry .c-poster center {
-  position: relative;
-}
-
-.p-db_entries .b-db_entry .c-poster center::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  max-width: 225px;
-  margin: auto;
-  background-position: top center;
-  background-size: cover;
-}
-
-.p-db_entries .b-db_entry .c-poster img {
-  vertical-align: top;
-}
-
-.p-db_entries .b-db_entry .c-poster {
-  margin-bottom: 5px;
-}
-
-/* Для аниме, манги и ранобэ */
-.b-catalog_entry > a[href *= 'animes/457-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/457-'] img,
-.b-catalog_entry > a[href *= 'animes/z1535-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/z1535-'] img,
-.b-catalog_entry > a[href *= 'animes/205-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/205-'] img,
-.b-catalog_entry > a[href *= 'animes/1088-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/1088-'] img,
-.b-catalog_entry > a[href *= 'animes/z918-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/z918-'] img,
-.b-catalog_entry > a[href *= 'mangas/z24705-'] img,
-.entry-tooltip_container > .image-link[href *= 'mangas/z24705-'] img,
-.b-catalog_entry > a[href *= 'animes/861-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/861-'] img {
-  opacity: 0;
-}
-
-/* Смена обложки – Mushishi */
-.b-catalog_entry a[href *= 'animes/457-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/457-'],
-.b-catalog_entry a[href *= 'animes/457-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/457-'],
-.p-db_entries meta[content *= 'animes/457-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://dere.shikimori.one/system/user_images/original/184680/859049.jpg);
-}
-
-/* Смена обложки – Death Note */
-.b-catalog_entry a[href *= 'animes/z1535-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/z1535-'],
-.b-catalog_entry a[href *= 'animes/z1535-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/z1535-'],
-.p-db_entries meta[content *= 'animes/z1535-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://desu.shikimori.one/system/user_images/original/184680/859093.jpg);
-}
-
-/* Смена обложки – Samurai Champloo */
-.b-catalog_entry a[href *= 'animes/205-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/205-'],
-.b-catalog_entry a[href *= 'animes/205-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/205-'],
-.p-db_entries meta[content *= 'animes/205-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/859100.jpg);
-}
-
-/* Смена обложки – Macross */
-.b-catalog_entry a[href *= 'animes/1088-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/1088-'],
-.b-catalog_entry a[href *= 'animes/1088-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/1088-'],
-.p-db_entries meta[content *= 'animes/1088-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/880105.jpg);
-}
-
-/* Смена обложки – Gintama */
-.b-catalog_entry a[href *= 'animes/z918-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/z918-'],
-.b-catalog_entry a[href *= 'animes/z918-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/z918-'],
-.p-db_entries meta[content *= 'animes/z918-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://kawai.shikimori.one/system/user_images/original/184680/881846.jpg);
-}
-
-/* Смена обложки – Aku no Hana */
-.b-catalog_entry a[href *= 'mangas/z24705-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'mangas/z24705-'],
-.b-catalog_entry a[href *= 'mangas/z24705-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'mangas/z24705-'],
-.p-db_entries meta[content *= 'mangas/z24705-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/1019705.jpg);
-}
-
-/* Смена обложки – xxxHOLiC */
-.b-catalog_entry a[href *= 'animes/861-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/861-'],
-.b-catalog_entry a[href *= 'animes/861-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/861-'],
-.p-db_entries meta[content *= 'animes/861-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://kawai.shikimori.one/system/user_images/original/184680/1080961.jpg);
-}
-
-/* Имя персонажа */
-.p-profiles .cover[data-tooltip_url *= 'characters/497-'] .title > span,
-.b-catalog_entry-tooltip .inner a.name[href *= 'characters/497-'] > span {
-  display: none;
-}
-
-.p-profiles[data-locale='ru'] .cover[data-tooltip_url *= 'characters/497-'] .title:after,
-.b-catalog_entry-tooltip .inner a.name[href *= 'characters/497-']:after {
-  content: 'Артурия Пендрагон';
-}
-
-.p-profiles[data-locale='en'] .cover[data-tooltip_url *= 'characters/497-'] .title:after {
-  content: 'Arturia Pendragon';
-}
-
-/*** Ачивки замена картинок ***/
-.p-profiles .b-achievement > .c-image > .inner::after {
-  display: block;
-  content: '';
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: visible !important;
-  z-index: -1;
-}
-
-/*** Общие ***/
-.p-profiles .b-achievement[data-hint^='666 просмотренных аниме'] .inner img {visibility: hidden;}
-.p-profiles .b-achievement[data-hint^='666 просмотренных аниме'] .inner .border {border-color: #3F888F !important;}
-.p-profiles .b-achievement[data-hint^='666 просмотренных аниме'] .inner::after {
-  background: url(https://i.imgur.com/tCQwPfO.gif);
-}
-
-/* VIP */
-.name-date a.name[title="'~'"], a.name[href*="/'~'"] {
-  color: var(--color-green) !important;
-  font-family: Verdana, sans-serif !important;
-}
-
-.name-date a.name[title="AsproGS"], a.name[href*="/AsproGS"] {
-  color: var(--color-beige) !important;
-}
-
-.name-date a.name[title="Appalach1"], a.name[href*="/Appalach1"] {
-  color: var(--color-purple) !important;
-}
-
-.name-date a.name[title="pasha2142"], a.name[href*="/pasha2142"] {
-  color: var(--color-blue) !important;
-}
-
-.name-date a.name[title="Felzival"], a.name[href*="/Felzival"] {
-  color: var(--color-red) !important;
-}
-
-.name-date a.name:hover[title="AsproGS"], a.name:hover[href*="/AsproGS"],
-.name-date a.name:hover[title="'~'"], a.name:hover[href*="/'~'"],
-.name-date a.name:hover[title="Appalach1"], a.name:hover[href*="/Appalach1"],
-.name-date a.name:hover[title="pasha2142"], a.name:hover[href*="/pasha2142"],
-.name-date a.name:hover[title="Felzival"], a.name:hover[href*="/Felzival"] {
-  color: var(--color-main-text-hover) !important;
-}
-
-.b-comment .b-user16 img[alt="AsproGS"],
-.b-comment .b-user16 img[alt="Appalach1"],
-.b-user16 img[alt="'~'"] {
-  border: none !important;
-}
-
-.name-date a.name[title="'~'"]:hover::after,
-.name-date a.name[href*="/'~'"]:hover::after,
-.subheadline a[title='~']:hover::after {
-  position: absolute;
-  content: "Илитный моэфаг";
-  font-size: 11px;
-  width: 100px;
-  line-height: 19px;
-  text-align: center;
-  margin-left: 10px;
-  padding: 3px 5px;
-  border-radius: 0;
-  z-index: 1;
-  color: #aeb3b7;
-  background: #0f1112 !important;
-  box-shadow: none;
-  font-family: 'Roboto Condensed', sans-serif !important;
-  animation: 0.54s fadeIn cubic-bezier(0.4, 0, 0.6, 1);
-}
-
-.subheadline a[title='~']:hover::after {
-  line-height: 20px;
-  padding-top: 2px;
-  margin-top: -2px;
-}
-
-/* ОЦЕНКИ */
-/*  Оценки */
-tr[data-target_id=""] .num span[data-field="score"].current-value,
-tr[data-target_id=""] .num span[data-field="score"].current-value,
-tr[data-target_id=""] .num span[data-field="score"].current-value,
-tr[data-target_id=""] .num span[data-field="score"].current-value,
-tr[data-target_id=""] .num span[data-field="score"].current-value,
-tr[data-target_id=""] .num span[data-field="score"].current-value,
-tr[data-target_id=""] .num span[data-field="score"].current-value,
-tr[data-target_id=""] .num span[data-field="score"].current-value,
-tr[data-target_id=""] .num span[data-field="score"].current-value,
-tr[data-target_id=""] .num span[data-field="score"].current-value,
-tr[data-target_id=""] .num span[data-field="score"].current-value {
-  font-size: 0;
-}
-
-tr[data-target_id=""] .num span[data-field="score"].current-value::before {
-  content: "8+";
-  font-size: 14px;
-}
-
-/* Стиль */
-.b-rate .score-notice { font-size: 0; }
-.score-notice::after { font-size: 11px; }
-
-/* Оценки */
-.score-10 + .score-notice::after { content: 'Нечто большее'; }
-.score-9 + .score-notice::after { content: 'Великолепно'; }
-.score-8 + .score-notice::after { content: 'Отлично'; }
-.score-7 + .score-notice::after { content: 'Хорошо'; }
-.score-6 + .score-notice::after { content: 'Нормально'; }
-.score-5 + .score-notice::after { content: 'Cредне'; }
-.score-4 + .score-notice::after { content: 'Проходняк'; }
-.score-3 + .score-notice::after { content: 'Плохо'; }
-.score-2 + .score-notice::after { content: 'Ужасно'; }
-.score-1 + .score-notice::after { content: 'Мусор'; }
 
 /* Главная */
 /* Новая */
@@ -6192,7 +5250,6 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   filter: brightness(75%);
 }
 
-/* Временные наработки */
 /* Опросы */
 .b-poll .poll-variants .poll-variant.result .bar .line {
   background: var(--color-additional-background);
@@ -6272,4 +5329,274 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
 .b-poll .poll-variants .poll-variant.result label .voted-for::before,
 .b-poll .poll-variants .poll-variant.result label .voted-for::after {
   display: none;
+}
+
+/* Теги в свисках аниме и манги */
+#user_rates_index .p-user_rates-index .list-lines tr td .rate-text div,
+#user_rates_index .list-lines tr td .rate-text div {
+  margin-bottom: 0;
+}
+
+#user_rates_index .tag-heart,
+#user_rates_index .tag-goodrep,
+#user_rates_index .tag-badrep,
+#user_rates_index .tag-indifferent,
+#user_rates_index .tag-rewatch,
+#user_rates_index .tag-pause,
+#user_rates_index .tag-forgotten,
+#user_rates_index .tag-star {
+  width: 20px;
+  margin-top: -21px;
+  float: right;
+}
+
+#user_rates_index .tag-heart::after,
+#user_rates_index .tag-goodrep::after,
+#user_rates_index .tag-badrep::after,
+#user_rates_index .tag-indifferent::after,
+#user_rates_index .tag-rewatch::after,
+#user_rates_index .tag-pause::after,
+#user_rates_index .tag-forgotten::after,
+#user_rates_index .tag-star::after {
+  font-family: 'Material Icons';
+  display: block;
+  font-size: 17px;
+  padding: 2px 0;
+}
+
+#user_rates_index .tag-heart::after {
+  content: "favorite";
+  color: var(--color-red);
+}
+
+#user_rates_index .tag-goodrep::after {
+  content: "thumb_up";
+  color: var(--color-green);
+}
+
+#user_rates_index .tag-badrep::after {
+  content: "thumb_down";
+  color: var(--color-red);
+}
+
+#user_rates_index .tag-indifferent::after {
+  content: "thumbs_up_down";
+  color: var(--color-orange);
+}
+
+#user_rates_index .tag-rewatch::after {
+  content: "loop";
+  color: var(--color-blue);
+}
+
+#user_rates_index .tag-pause::after {
+  content: "pause";
+  color: var(--color-orange);
+}
+
+#user_rates_index .tag-forgotten::after {
+  content: "av_timer";
+  color: var(--color-blue);
+}
+
+#user_rates_index .tag-star::after {
+  content: "star_rate";
+  color: var(--color-yellow);
+}
+
+#user_rates_index .list-lines tr td .ongoing,
+#user_rates_index .list-lines tr td .rewatches:not(:empty),
+#user_rates_index .list-lines tr td .anons:not(:empty) {
+  position: relative;
+  padding: 1px 7px;
+  margin-left: 10px;
+  top: -1px;
+}
+
+#user_rates_index .list-lines tr td .rewatches:not(:empty) {
+  position: relative;
+  top: -1px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+#user_rates_index .list-lines tr td .rewatches:not(:empty)::before {
+  font-family: 'Material Icons';
+  content: "loop";
+  position: relative;
+  top: 2px;
+  margin: 5px;
+}
+
+#user_rates_index .list-lines tr td .ongoing {
+  border: 1px solid;
+  color: var(--color-blue);
+}
+
+#user_rates_index .list-lines tr td .anons:not(:empty) {
+  border: 1px solid;
+  color: var(--color-orange);
+}
+
+#user_rates_index .list-lines tr td .rewatches:not(:empty) {
+  border: 1px solid;
+  color: var(--color-beige);
+}
+
+/* Новый текстовый редактор */
+.ProseMirror {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-main-border);
+  color: var(--color-main-text);
+}
+
+.ProseMirror:focus {
+  border-color: var(--color-border);
+  transition: 0.3s ease-in-out;
+}
+
+.menubar[data-v-ceda23b8] {
+  background: transparent;
+}
+
+.menu_group+.menu_group[data-v-ceda23b8]::before,
+.menu_group .mobile_placeholder.is-active[data-v-ceda23b8]::after {
+  border-right: 1px solid var(--color-border);
+}
+
+.icon[data-v-39840933]:not(.is-disabled) {
+  color: var(--color-auxiliary-text);
+  transition: 0.2s ease-in-out;
+}
+
+.icon[data-v-39840933]:not(.is-disabled):hover,
+.icon[data-v-39840933]:not(.is-disabled):active {
+  color: var(--color-main-text-hover);
+}
+
+.menu_group .mobile_placeholder.is-active[data-v-b25c4362] {
+  color: var(--link-active-color,#ff0202);
+}
+
+.icon.is-disabled[data-v-39840933] {
+  color: var(--color-additional-background);
+}
+
+.smileys[data-v-feda4542], .b-tip>[data-popper-arrow]::before {
+  background: var(--color-background);
+}
+
+.smileys[data-v-feda4542] .smiley:hover {
+  outline: 2px solid var(--color-auxiliary-background);
+}
+
+.shade[data-v-feda4542] {
+  background: rgb(0 0 0 / 35%);
+}
+
+.icon[data-v-39840933] {
+  height: 22px;
+  border-radius: 0;
+}
+
+.icon.is-active[data-v-39840933] {
+  background: var(--color-background);
+}
+
+.icon.is-active.is-button[data-v-39840933] {
+  color: var(--color-main-text);
+  background-color: var(--color-background);
+}
+
+.shiki-file_uploader-upload_progress .bar {
+  background-color: var(--color-auxiliary-background);
+  color: var(--color-dark);
+}
+
+.shiki-file_uploader-upload_progress::before {
+  color: var(--color-auxiliary-text);
+}
+[data-v-ceda23b8] .ProseMirror [data-image].is-prosemirror-selected,
+[data-v-ceda23b8] .ProseMirror [data-video].ProseMirror-selectednode {
+  outline: 2px solid var(--color-auxiliary-background);
+}
+
+[data-v-ceda23b8] .ProseMirror [data-div]:hover::before,
+[data-v-ceda23b8] .ProseMirror [data-image].is-prosemirror-selected::before,
+[data-v-ceda23b8] .ProseMirror [data-image]:hover::before,
+[data-v-ceda23b8] .ProseMirror [data-link]:hover::before,
+[data-v-ceda23b8] .ProseMirror [data-span]:hover::before, 
+[data-v-ceda23b8] .ProseMirror [data-video].ProseMirror-selectednode::before,
+[data-v-ceda23b8] .ProseMirror [data-video]:hover::before {
+  background: var(--color-auxiliary-background);
+  color: var(--color-dark);
+  font-family: inherit;
+  padding: 1px 0;
+  text-shadow: none;
+}
+
+[data-v-ceda23b8] .ProseMirror .b-image.is-prosemirror-selected::after,
+[data-v-ceda23b8] .ProseMirror .b-image.ProseMirror-selectednode::after,
+[data-v-ceda23b8] .ProseMirror .b-image:hover::after,
+[data-v-ceda23b8] .ProseMirror .b-video:not(.b-ajax).is-prosemirror-selected::after,
+[data-v-ceda23b8] .ProseMirror .b-video:not(.b-ajax).ProseMirror-selectednode::after,
+[data-v-ceda23b8] .ProseMirror .b-video:not(.b-ajax):hover::after {
+  border: none;
+}
+
+.editor-container.is-loading[data-v-ceda23b8]::before {
+  background: transparent;
+}
+
+.b-image .edit, .b-image .delete, .b-image .collapse, .b-image .drag-handle, .b-image .confirm, .b-image .cancel, .b-image .move-left, .b-image .move-right, .b-image .mobile-edit, .b-image .prosemirror-expand, .b-image .prosemirror-open {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-main-border);
+  color: var(--color-main-text);
+}
+
+.b-image .edit:hover, .b-image .delete:hover, .b-image .collapse:hover, .b-image .drag-handle:hover, .b-image .confirm:hover, .b-image .cancel:hover, .b-image .move-left:hover, .b-image .move-right:hover, .b-image .mobile-edit:hover, .b-image .prosemirror-expand:hover, .b-image .prosemirror-open:hover {
+  background-color: var(--color-background-hover);
+}
+
+.menu_group .mobile_placeholder[data-v-ceda23b8]:not(.is-disabled),
+.menu_group .mobile_placeholder[data-v-ceda23b8]:not(.is-disabled):active {
+  color: var(--color-auxiliary-background);
+}
+
+.icon.is-active.is-button.is-disabled[data-v-39840933] {
+  color: var(--color-main-text);
+  background: var(--color-background-active);
+}
+
+.b-spoiler_block.is-opened>span>i.edit,
+.b-spoiler_block.is-opened>span>i.expand,
+.b-spoiler_block.is-opened>span>i.center {
+  color: var(--color-main-text);
+  transition: 0.2s ease-in-out;
+}
+
+.b-spoiler_block.is-opened>span>i.edit:hover, 
+.b-spoiler_block.is-opened>span>i.expand:hover,
+.b-spoiler_block.is-opened>span>i.center:hover,
+.b-spoiler_block.is-opened>span>i.edit:active,
+.b-spoiler_block.is-opened>span>i.expand:active,
+.b-spoiler_block.is-opened>span>i.center:active {
+  color: var(--color-main-text-hover);
+  background: none;
+}
+
+.b-tip--is-loading.b-tip--dark {
+  background: var(--color-background-active);
+  color: var(--color-main-text);
+}
+
+.b-tip--dark {
+  background: var(--color-background-active);
+  color: var(--color-main-text);
+}
+
+.b-tip {
+  background: var(--color-background-active);
+  color: var(--color-text);
 }
