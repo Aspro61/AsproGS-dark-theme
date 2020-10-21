@@ -5455,13 +5455,13 @@ code.b-code_inline {
   transition: 0.3s ease-in-out;
 }
 
-.menubar[data-v-ceda23b8] {
-  background: transparent;
+.menubar {
+  background: transparent !important;
 }
 
-.menu_group+.menu_group[data-v-ceda23b8]::before,
-.menu_group .mobile_placeholder.is-active[data-v-ceda23b8]::after {
-  border-right: 1px solid var(--color-border);
+.menu_group+.menu_group::before,
+.menu_group .mobile_placeholder.is-active::after {
+  border-right: 1px solid var(--color-border) !important;
 }
 
 .icon[data-v-39840933]:not(.is-disabled) {
@@ -5472,10 +5472,6 @@ code.b-code_inline {
 .icon[data-v-39840933]:not(.is-disabled):hover,
 .icon[data-v-39840933]:not(.is-disabled):active {
   color: var(--color-main-text-hover);
-}
-
-.menu_group .mobile_placeholder.is-active[data-v-b25c4362] {
-  color: var(--link-active-color,#ff0202);
 }
 
 .icon.is-disabled[data-v-39840933] {
@@ -5516,36 +5512,36 @@ code.b-code_inline {
 .shiki-file_uploader-upload_progress::before {
   color: var(--color-auxiliary-text);
 }
-[data-v-ceda23b8] .ProseMirror [data-image].is-prosemirror-selected,
-[data-v-ceda23b8] .ProseMirror [data-video].ProseMirror-selectednode {
-  outline: 2px solid var(--color-auxiliary-background);
+.ProseMirror [data-image].is-prosemirror-selected,
+.ProseMirror [data-video].ProseMirror-selectednode {
+  outline: 2px solid var(--color-auxiliary-background) !important;
 }
 
-[data-v-ceda23b8] .ProseMirror [data-div]:hover::before,
-[data-v-ceda23b8] .ProseMirror [data-image].is-prosemirror-selected::before,
-[data-v-ceda23b8] .ProseMirror [data-image]:hover::before,
-[data-v-ceda23b8] .ProseMirror [data-link]:hover::before,
-[data-v-ceda23b8] .ProseMirror [data-span]:hover::before, 
-[data-v-ceda23b8] .ProseMirror [data-video].ProseMirror-selectednode::before,
-[data-v-ceda23b8] .ProseMirror [data-video]:hover::before {
-  background: var(--color-auxiliary-background);
-  color: var(--color-dark);
-  font-family: inherit;
-  padding: 1px 0;
-  text-shadow: none;
+.ProseMirror [data-div]:hover::before,
+.ProseMirror [data-image].is-prosemirror-selected::before,
+.ProseMirror [data-image]:hover::before,
+.ProseMirror [data-link]:hover::before,
+.ProseMirror [data-span]:hover::before, 
+.ProseMirror [data-video].ProseMirror-selectednode::before,
+.ProseMirror [data-video]:hover::before {
+  background: var(--color-auxiliary-background) !important;
+  color: var(--color-dark) !important;
+  font-family: inherit !important;
+  padding: 1px 0 !important;
+  text-shadow: none !important;
 }
 
-[data-v-ceda23b8] .ProseMirror .b-image.is-prosemirror-selected::after,
-[data-v-ceda23b8] .ProseMirror .b-image.ProseMirror-selectednode::after,
-[data-v-ceda23b8] .ProseMirror .b-image:hover::after,
-[data-v-ceda23b8] .ProseMirror .b-video:not(.b-ajax).is-prosemirror-selected::after,
-[data-v-ceda23b8] .ProseMirror .b-video:not(.b-ajax).ProseMirror-selectednode::after,
-[data-v-ceda23b8] .ProseMirror .b-video:not(.b-ajax):hover::after {
-  border: none;
+.ProseMirror .b-image.is-prosemirror-selected::after,
+.ProseMirror .b-image.ProseMirror-selectednode::after,
+.ProseMirror .b-image:hover::after,
+.ProseMirror .b-video:not(.b-ajax).is-prosemirror-selected::after,
+.ProseMirror .b-video:not(.b-ajax).ProseMirror-selectednode::after,
+.ProseMirror .b-video:not(.b-ajax):hover::after {
+  border: none !important;;
 }
 
-.editor-container.is-loading[data-v-ceda23b8]::before {
-  background: transparent;
+.editor-container.is-loading::before {
+  background: transparent !important;
 }
 
 .b-image .edit, .b-image .delete, .b-image .collapse, .b-image .drag-handle, .b-image .confirm, .b-image .cancel, .b-image .move-left, .b-image .move-right, .b-image .mobile-edit, .b-image .prosemirror-expand, .b-image .prosemirror-open {
@@ -5558,9 +5554,9 @@ code.b-code_inline {
   background-color: var(--color-background-hover);
 }
 
-.menu_group .mobile_placeholder[data-v-ceda23b8]:not(.is-disabled),
-.menu_group .mobile_placeholder[data-v-ceda23b8]:not(.is-disabled):active {
-  color: var(--color-auxiliary-background);
+.menu_group .mobile_placeholder:not(.is-disabled),
+.menu_group .mobile_placeholder:not(.is-disabled):active {
+  color: var(--color-auxiliary-background) !important;
 }
 
 .icon.is-active.is-button.is-disabled[data-v-39840933] {
