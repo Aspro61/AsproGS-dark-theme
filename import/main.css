@@ -5354,6 +5354,18 @@ code.b-code_inline {
   float: right;
 }
 
+#user_rates_index .list-posters .tag-heart,
+#user_rates_index .list-posters .tag-goodrep,
+#user_rates_index .list-posters .tag-badrep,
+#user_rates_index .list-posters .tag-indifferent,
+#user_rates_index .list-posters .tag-rewatch,
+#user_rates_index .list-posters .tag-pause,
+#user_rates_index .list-posters .tag-forgotten,
+#user_rates_index .list-posters .tag-star {
+  width: 20px;
+  float: right;
+}
+
 #user_rates_index .tag-heart::after,
 #user_rates_index .tag-goodrep::after,
 #user_rates_index .tag-badrep::after,
