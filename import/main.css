@@ -1949,9 +1949,14 @@ body[data-locale] .b-offtopic_marker {
   transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
 }
 
-.p-pages-ongoings .b-options-floated .action {
+#pages_ongoings .m15 {
+  margin-bottom: 3rem !important;
+}
+
+#pages_ongoings .b-options-floated .action {
+  position: relative;
   padding: 1px 4px;
-  margin-top: 20px;
+  top: -2rem;
   border: 1px solid var(--color-main-border) !important;
   color: var(--color-main-text) !important;
   background-color: var(--color-background);
