@@ -4478,6 +4478,9 @@ code.b-code_inline {
   border: 1px solid var(--color-main-border);
   color: var(--color-main-text);
   background-color: var(--color-background);
+}
+
+.p-user_rates-index .list-posters .user_rate>.text {
   bottom: 41px;
 }
 
