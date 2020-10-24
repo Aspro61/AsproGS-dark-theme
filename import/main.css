@@ -5496,15 +5496,15 @@ code.b-code_inline {
   color: var(--color-additional-background);
 }
 
-.smileys[data-v-feda4542], .b-tip>[data-popper-arrow]::before {
+.smileys[data-v-4b5cfd20], .b-tip>[data-popper-arrow]::before {
   background: var(--color-background);
 }
 
-.smileys[data-v-feda4542] .smiley:hover {
+.smileys[data-v-4b5cfd20] .smiley:hover {
   outline: 2px solid var(--color-auxiliary-background);
 }
 
-.shade[data-v-feda4542] {
+.shade[data-v-4b5cfd20] {
   background: rgb(0 0 0 / 35%);
 }
 
@@ -5597,19 +5597,4 @@ code.b-code_inline {
 .b-spoiler_block.is-opened>span>i.center:active {
   color: var(--color-main-text-hover);
   background: none;
-}
-
-.b-tip--is-loading.b-tip--dark {
-  background: var(--color-background-active);
-  color: var(--color-main-text);
-}
-
-.b-tip--dark {
-  background: var(--color-background-active);
-  color: var(--color-main-text);
-}
-
-.b-tip {
-  background: var(--color-background-active);
-  color: var(--color-text);
 }
