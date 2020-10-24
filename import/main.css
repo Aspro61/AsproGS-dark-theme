@@ -4476,7 +4476,7 @@ code.b-code_inline {
 .p-user_rates-index .list-posters .user_rate>.text,
 .b-catalog_entry .cover .image-decor>.text {
   color: var(--color-main-text);
-  background-color: var(--color-background);
+  background: var(--color-background);
 }
 
 .p-user_rates-index .list-posters .user_rate>.text {
