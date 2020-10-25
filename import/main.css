@@ -5512,6 +5512,25 @@ code.b-code_inline {
   top: 29rem;
 }
 
+@media (min-width: 480px) and (max-width: 1024px) {
+  .smileys.b-tip {
+    top: -30rem !important;
+  }
+  
+  .b-tip--large[data-popper-placement^='bottom']>[data-popper-arrow] {
+    top: 26.75rem;
+  }
+}
+
+.close[data-v-4b5cfd20] {
+  background: var(--color-auxiliary-background);
+  border-radius: 2px;
+}
+
+.close[data-v-4b5cfd20]:not(.is-disabled) {
+  color: var(--color-dark);
+}
+
 .shade[data-v-4b5cfd20] {
   background: rgb(0 0 0 / 35%);
 }
