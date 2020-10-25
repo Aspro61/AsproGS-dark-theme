@@ -5461,6 +5461,157 @@ code.b-code_inline {
   color: var(--color-beige);
 }
 
+/* Cмайлы */
+.smiley {
+  height: 25px;
+}
+
+.b-shiki_editor .smileys {
+  position: absolute;
+  right: 0;
+  top: -280px;
+  left: 0;
+  max-width: 360px;
+  height: 280px !important;
+  padding: 0 8px;
+  margin: auto;
+  border-radius: 3px;
+  z-index: 9;
+  overflow: auto;
+  border: 1px solid var(--color-main-border);
+  background-color: var(--color-background);
+}
+
+@media (min-width: 380px) {
+  .b-shiki_editor .smileys {
+    top: -340px;
+    max-width: 360px;
+    height: 340px !important;
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 960px) {
+  .b-shiki_editor .smileys {
+    top: -380px;
+    max-width: 396px;
+    height: 380px !important;
+    padding: 0 24px;
+  }
+}
+
+.b-shiki_editor .smileys::-webkit-scrollbar {
+  width: 4px;
+  background-image: linear-gradient(var(--color-border), var(--color-border));
+  background-size: 1px calc(100% - 10px);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.b-shiki_editor .smileys::-webkit-scrollbar-thumb {
+  background: var(--color-additional-background);
+}
+
+.b-shiki_editor .smileys div {
+  margin: 16px 0;
+}
+
+.b-shiki_editor .smileys div::before {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--color-main-text);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.b-shiki_editor .smileys div:nth-child(1)::before {
+  content: 'Группа 1';
+}
+
+.b-shiki_editor .smileys div:nth-child(2)::before {
+  content: 'Группа 2';
+}
+
+.b-shiki_editor .smileys div:nth-child(3)::before {
+  content: 'Группа 3';
+}
+
+.b-shiki_editor .smileys div:nth-child(4)::before {
+  content: 'Группа 4';
+}
+
+.b-shiki_editor .smileys div:nth-child(5)::before {
+  content: 'Группа 5';
+}
+
+.b-shiki_editor .smileys div:nth-child(6)::before {
+  content: 'Группа 6';
+}
+
+.b-shiki_editor .smileys div:nth-child(7)::before {
+  content: 'Группа 7';
+}
+
+.b-shiki_editor .smileys div:nth-child(8)::before {
+  content: 'Группа 8';
+}
+
+.b-shiki_editor .smileys div:nth-child(9)::before {
+  content: 'Группа 9';
+}
+
+.b-shiki_editor .smileys img {
+  height: 30px;
+  margin: 0 4px 4px 0;
+}
+
+/* fix overflow bug */
+.b-message,
+.b-comment {
+  overflow: visible;
+}
+
+/* Новый редактор */
+.smileys[data-v-4b5cfd20], .b-tip>[data-popper-arrow]::before {
+  background: var(--color-background);
+}
+
+.smileys[data-v-4b5cfd20] .smiley:hover {
+  outline: 2px solid var(--color-auxiliary-background);
+}
+
+.smileys.b-tip {
+  top: -32rem !important;
+}
+
+.b-tip--large[data-popper-placement^='bottom']>[data-popper-arrow] {
+  top: 29rem;
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+  .smileys.b-tip {
+    top: -30rem !important;
+  }
+  
+  .b-tip--large[data-popper-placement^='bottom']>[data-popper-arrow] {
+    top: 26.75rem;
+  }
+}
+
+.close[data-v-4b5cfd20] {
+  background: var(--color-auxiliary-background);
+  border-radius: 2px;
+}
+
+.close[data-v-4b5cfd20]:not(.is-disabled) {
+  color: var(--color-dark);
+}
+
+.shade[data-v-4b5cfd20] {
+  background: rgb(0 0 0 / 35%);
+}
+
 /* Новый текстовый редактор */
 .ProseMirror {
   background-color: var(--color-background);
@@ -5494,45 +5645,6 @@ code.b-code_inline {
 
 .icon.is-disabled[data-v-39840933] {
   color: var(--color-additional-background);
-}
-
-.smileys[data-v-4b5cfd20], .b-tip>[data-popper-arrow]::before {
-  background: var(--color-background);
-}
-
-.smileys[data-v-4b5cfd20] .smiley:hover {
-  outline: 2px solid var(--color-auxiliary-background);
-}
-
-.smileys.b-tip {
-  top: -32rem !important;
-}
-
-.b-tip--large[data-popper-placement^='bottom']>[data-popper-arrow] {
-  top: 29rem;
-}
-
-@media (min-width: 480px) and (max-width: 1024px) {
-  .smileys.b-tip {
-    top: -30rem !important;
-  }
-  
-  .b-tip--large[data-popper-placement^='bottom']>[data-popper-arrow] {
-    top: 26.75rem;
-  }
-}
-
-.close[data-v-4b5cfd20] {
-  background: var(--color-auxiliary-background);
-  border-radius: 2px;
-}
-
-.close[data-v-4b5cfd20]:not(.is-disabled) {
-  color: var(--color-dark);
-}
-
-.shade[data-v-4b5cfd20] {
-  background: rgb(0 0 0 / 35%);
 }
 
 .icon[data-v-39840933] {
