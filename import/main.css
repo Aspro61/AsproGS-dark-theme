@@ -5504,6 +5504,14 @@ code.b-code_inline {
   outline: 2px solid var(--color-auxiliary-background);
 }
 
+.smileys.b-tip {
+  top: -32rem !important;
+}
+
+.b-tip--large[data-popper-placement^='bottom']>[data-popper-arrow] {
+  top: 29rem;
+}
+
 .shade[data-v-4b5cfd20] {
   background: rgb(0 0 0 / 35%);
 }
