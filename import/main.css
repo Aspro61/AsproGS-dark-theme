@@ -1109,11 +1109,6 @@ body {
   z-index: 1;
 }
 
-#profiles_show .subheadline-buttons,
-#profiles_favorites .subheadline-buttons {
-  margin-top: 5px;
-}
-
 #profiles_favorites .item-back::before, 
 #profiles_favorites .item-back::after {
   line-height: 1;
