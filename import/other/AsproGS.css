@@ -1,3 +1,4 @@
+/*** ЛИЧНЫЕ НАСТРОЙКИ ***/
 /* Статус */
 .p-profiles .profile-head[data-user-id="184680"] .c-brief header .notice::before {
   content: "君といた景色";
@@ -65,57 +66,7 @@
   filter: invert(1) brightness(70%);
 }
 
-#profiles_show .about .red {
-  color: inherit;
-  width: 50%;
-  font-weight: bold;
-  background: var(--color-headline-auxiliary-background);
-}
-
-@media (max-width: 480px) {
-  #profiles_show .about .red {
-    width: 90%;
-  }
-}
-
-#profiles_show .about .inline > .b-spoiler > label {
-  border: 1px solid var(--color-main-border);
-  background-color: var(--color-background);
-  padding: 2px 5px;
-  color: inherit;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#profiles_show .about .inline > .b-spoiler > label:hover {
-  background-color: var(--color-background-hover);
-}
-
-/* Теги */
-#profiles_show .about .blue {
-  width: 22%;
-  font-weight: bold;
-  text-align: center;
-  background: var(--color-watching-background);
-  border: 1px solid var(--color-watching-border);
-}
-
-#profiles_show .about .green {
-  width: 22%;
-  font-weight: bold;
-  text-align: center;
-  background: var(--color-completed-background);
-  border: 1px solid var(--color-completed-border);
-}
-
-@media (max-width: 480px) {
-  #profiles_show .about .green,
-  #profiles_show .about .blue {
-    width: 70%;
-  }
-}
-
-/* Спойлер со всплывающим окном */
+/*** СПОЙЛЕР СО ВСПЛЫВАЮЩИМ ОКНОМ ***/
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -186,7 +137,7 @@
   display: none;
 }
 
-/* VIP */
+/*** VIP ***/
 .name-date a.name[title="'~'"], a.name[href*="/'~'"] {
   color: var(--color-green) !important;
   font-family: Verdana, sans-serif !important;
@@ -263,7 +214,7 @@
   content: 'Arturia Pendragon';
 }
 
-/* ОЦЕНКИ */
+/*** ОЦЕНКИ ***/
 tr[data-target_id=""] .num span[data-field="score"].current-value,
 tr[data-target_id=""] .num span[data-field="score"].current-value,
 tr[data-target_id=""] .num span[data-field="score"].current-value,
@@ -299,8 +250,8 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
 .score-2 + .score-notice::after { content: 'Ужасно'; }
 .score-1 + .score-notice::after { content: 'Мусор'; }
 
-/* Избранное */
-/* Ж */
+/*** ИЗБРАННОЕ ***/
+/* Женские персонажи */
 #profiles_show .cc-favourites .entry-67067 {
   order: 1;
 }
@@ -336,7 +287,8 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
 #profiles_show .cc-favourites .entry-3275 {
   order: 9;
 }
-/* М */
+
+/* Мужские персонажи */
 #profiles_show .cc-favourites .entry-67065 {
   order: 10;
 }
