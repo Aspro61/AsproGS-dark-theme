@@ -5690,7 +5690,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   }
 }
 
-@media (min-width: 480px) and (max-width: 680px) { 
+@media (min-width: 481px) and (max-width: 680px) { 
   #profiles_show .cc-favourites .c-column {
     width: calc(24% - 7px);
   }
@@ -5995,10 +5995,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 /** Постеры **/
 @media (max-width: 768px) { 
-  #profiles_favorites .cc-favourites>.c-anime,
-  #profiles_favorites .cc-favourites>.c-manga,
-  #profiles_favorites .cc-favourites>.c-character,
-  #profiles_favorites .cc-favourites>.c-person {
+  #profiles_favorites .cc-favourites > .c-anime,
+  #profiles_favorites .cc-favourites > .c-manga,
+  #profiles_favorites .cc-favourites > .c-character,
+  #profiles_favorites .cc-favourites > .c-person {
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 0;
@@ -6006,17 +6006,69 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     width: 13%;
   }
   
-  #profiles_show .cc-8-g0>.c-column,
-  #profiles_show .cc-9-g0>.c-column,
-  #profiles_show .cc-8-g15>.c-column,
-  #profiles_show .cc-9-g15>.c-column {
+  #profiles_show .cc-8-g0 > .c-column,
+  #profiles_show .cc-9-g0 > .c-column,
+  #profiles_show .cc-8-g15 > .c-column,
+  #profiles_show .cc-9-g15 > .c-column {
     margin-right: 1%;
     margin-bottom: 1%;
     width: 15%;
+    left: 10px;
   }
   
+  .cc-5>.c-column:nth-child(2n+1) {
+    clear: right;
+  }
+  
+  .p-user_rates-index .cc-5>.c-column {
+    width: 23%;
+    left: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  #profiles_show .cc-8-g0 > .c-column, 
+  #profiles_show .cc-9-g0 > .c-column,
+  #profiles_show .cc-8-g15 > .c-column,
+  #profiles_show .cc-9-g15 > .c-column {
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: calc(26% - 6px);
+    left: 10px;
+  }
+  
+  #profiles_favorites .cc-favourites > .c-anime,
+  #profiles_favorites .cc-favourites > .c-manga,
+  #profiles_favorites .cc-favourites > .c-character,
+  #profiles_favorites .cc-favourites > .c-person {
+    width: 23%;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+  #profiles_show .cc-8-g0 > .c-column, 
+  #profiles_show .cc-9-g0 > .c-column,
+  #profiles_show .cc-8-g15 > .c-column,
+  #profiles_show .cc-9-g15 > .c-column {
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: calc(25% - 6px);
+    left: 10px;
+  } 
+}
+
+@media (max-width: 768px) {  
   .bar.vertical .line .bar-container .value,
   .bar.vertical .line .bar-container .value.mini {
     font-size: 0;
+  }
+  
+  .b-input input {
+    line-height: 26px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
   }
 }
