@@ -1,4 +1,4 @@
-/* Постеры */
+/*** ПОСТЕРЫ ***/
 /* Персонажи */
 .b-catalog_entry .cover .image-decor img[alt*="Hachiman Hikigaya"],
 .b-db_entry > .c-image img[alt*="Hachiman Hikigaya"],
@@ -344,7 +344,7 @@
   content: url("https://desu.shikimori.one/system/user_images/original/184680/1088423.jpg");
 }
 
-/* Cпособ 2 */
+/*** ПОСТЕРЫ ВТОРОЙ СПОСОБ ***/
 /* Общие настройки обложек */
 .b-catalog_entry .cover .image-cutter,
 .b-catalog_entry-tooltip > a,
@@ -468,7 +468,7 @@
   background-image: url(https://kawai.shikimori.one/system/user_images/original/184680/1080961.jpg);
 }
 
-/*** Ачивки замена картинок ***/
+/*** ДОСТИЖЕНИЯ ЗАМЕНА КАРТИНОК ***/
 .p-profiles .b-achievement > .c-image > .inner::after {
   display: block;
   content: '';
