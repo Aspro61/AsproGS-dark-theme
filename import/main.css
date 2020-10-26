@@ -5851,3 +5851,21 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .item-mobile:hover::before {
   color: var(--color-main-text-hover);
 }
+
+@media (max-width: 768px) {
+  .p-profiles .profile-content > .cc-2 > .c-right > .cc-2a > .c-column {
+    float: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-profiles-show .profile-content .c-right .cc-2a > .c-column:last-child {
+    right: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .p-profiles-show .profile-content .c-right .cc-2a > .c-column:last-child {
+    right: -14px;
+  }
+}
