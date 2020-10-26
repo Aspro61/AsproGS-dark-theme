@@ -968,6 +968,7 @@ body {
 
 /* Друзья и клубы */
 .p-profiles-show .profile-content .c-right .cc-2a>.c-column:nth-child(2n+1) {
+  float: left;
   width: 24.5%;
   margin-top: -45rem;
   left: 5rem;
