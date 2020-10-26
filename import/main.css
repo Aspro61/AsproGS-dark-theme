@@ -42,7 +42,6 @@
   --color-main-border: #181c1f;
   --color-border: #293135;
   --color-auxiliary-border: #0f1112;
-  --color-image-border: 1 -webkit-linear-gradient(left, #334a5a, #5b6e82, #334a5a);
 
   /* Разные цвета */
   --color-green: #5a9861;
@@ -3601,7 +3600,7 @@ header.head h2 a.back::after,
 .l-top_menu-v2 .menu-dropdown.profile>span img,
 .l-top_menu-v2 .icon-avatar img,
 .p-profiles .profile-head .c-brief .avatar img{
-  filter: brightness(80%) grayscale(30%);
+  filter: brightness(80%);
   transition: 0.2s ease-in-out;
 }
 
@@ -5050,15 +5049,15 @@ header.head h2 a.back::after,
 .p-topics .l-menu .clubs .entry,
 .p-topics .l-menu .sticky-topics .topic,
 .b-db_entry-variant-list_item {
-  border-image: var(--color-image-border);
+  border-top: 1px solid var(--color-border);
 }
 
 .b-topic {
-  border-top: 3px solid var(--color-image-border);
+  border-top: 3px solid var(--color-border);
 }
 
 .b-user.detailed, .b-user.moderation, h3 {
-  border-bottom: 1px solid var(--color-image-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 /* Удаление подчеркивания */
