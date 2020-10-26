@@ -99,7 +99,7 @@ a, h2, h3, h4, .p-profiles .profile-head .c-info .c-additionals div a, .b-stats_
 }
 
 .p-profiles .profile-head .c-brief header .notice a, .b-user.named_avatar .name, .p-user_history-index .history-page .history-interval p a, .b-topic>.inner .name-date .name, .p-user_rates-index .list-lines tr .name a, .p-contests-index .contest a, .b-comment>.inner .name-date .name, .b-catalog_entry-tooltip .inner a.name, .b-catalog_entry .cover .misc span, .p-profiles .profile-head .c-history .entry .title, .b-achievement .c-about a.title, .b-achievement .about a.title, .b-ban a, .b-ban .link, .b-log_entry a, .b-log_entry .link, .b-mention, .b-ban .abuser, .p-topics .l-menu .calendar .entry .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry .title, .b-forums .forum .link-with-input .link, .p-user_rates-index .stat-categories .category, .b-block_list li, .p-user_rates-index .list-lines tr td, .p-user_rates-index .l-content .order-control, .p-user_rates-index .list-lines tr .index, .b-message>.inner .name-date .name, .p-profiles-edit .account .change-password a, .b-dialog>.inner .name-date .name, .b-js-action, .p-animes_collection-index .pagination .link, .p-mangas_collection-index .pagination .link, .p-recommendations-index .pagination .link, .p-userlist_comparer-show .pagination .link, .b-user.detailed .info .image-name .name, .b-user.moderation .info .image-name .name, .b-user.detailed .history .line a .event, .b-user.moderation .history .line a .event, .b-user_rate_log a, .b-user_rate_log .link, .b-spoiler label, .p-profiles-show .about a, .b-comment>.inner .was_updated, .b-user16, .p-translations .animes a, .p-studios .studio .name, .b-cosplay_gallery h3 a,
-.b-bb_codes-examples .example a, .b-bb_codes-examples .result a, .b-feedback-inner .about a, header.head h1 a.back::before, header.head h2 a.back::before, .p-user_rates-index .list-lines tr td .episodes_total, .b-mention::before, a.b-mention, .p-profiles-edit .account .change-password a, .p-profiles-edit .account .reset-password a, .p-dashboards .user_list .list-change .title {
+.b-bb_codes-examples .example a, .b-bb_codes-examples .result a, .b-feedback-inner .about a, header.head h1 a.back::before, header.head h2 a.back::before, .p-user_rates-index .list-lines tr td .episodes_total, .b-mention::before, .ProseMirror .b-mention::before, a.b-mention, .p-profiles-edit .account .change-password a, .p-profiles-edit .account .reset-password a, .p-dashboards .user_list .list-change .title {
   color: var(--color-text);
   transition: 0.2s ease-in-out;
 }
@@ -1069,10 +1069,52 @@ body {
   background: var(--color-headline-background);
 }
 
+#profiles_show .about .red,
+#profiles_show .about .green,
+#profiles_show .about .blue,
+#profiles_show .about .orange,
+#profiles_show .about .pink,
+#profiles_show .about .purple,
+#profiles_show .about .yellow {
+  width: max-content;
+  padding: 0 10px;
+  margin: 2px;
+}
+
+.red, .b-errors, .green, .blue, .orange, .pink, .purple, .yellow {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid var(--color-main-border);
+  background: var(--color-headline-background);
+}
+
+.green {
+  color: var(--color-green);
+}
+
 .red, .b-errors {
   color: var(--color-red);
-  background: var(--color-dropped-background);
-  border: 1px solid var(--color-dropped-border);
+}
+
+.pink {
+  color: var(--color-pink);
+}
+
+.blue {
+  color: var(--color-blue);
+}
+
+.orange {
+  color: var(--color-orange);
+}
+
+.yellow {
+  color: var(--color-yellow);
+}
+
+.purple {
+  color: var(--color-purple);
 }
 
 .subheadline, .headline, .midheadline {
@@ -1582,17 +1624,17 @@ body {
   border-radius: 0;
 }
 
-.red, .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag,
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag,
 .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag:hover {
   color: var(--color-red);
 }
 
-.blue, .p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag,
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag,
 .p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag:hover {
   color: var(--color-blue);
 }
 
-.green, .p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag,
+.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag,
 .p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag:hover {
   color: var(--color-green);
 }
@@ -2459,6 +2501,20 @@ body[data-locale] .b-offtopic_marker {
   text-transform: uppercase;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.b-shiki_editor-v2 footer .cancel,
+.b-shiki_editor-v2 footer .hide {
+  border-bottom: 1px dotted transparent;
+  height: 25px;
+  line-height: 18px;
+}
+
+.b-shiki_editor-v2 footer .cancel:hover,
+.b-shiki_editor-v2 footer .hide:hover,
+.b-shiki_editor-v2 footer .cancel:active,
+.b-shiki_editor-v2 footer .hide:active {
+  border-bottom-color: transparent;
 }
 
 .buttons span, .buttons label, .buttons a:not(.b-button) {
