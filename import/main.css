@@ -9,7 +9,7 @@
 
 :root {
   /* Основной цвет текста */
-  --color-main-text: #aeb3b7;
+  --color-main-text: #c3c8cc;
   --color-main-text-hover: #778998;
   --color-main-text-active: #778998;
 
@@ -288,6 +288,8 @@ span[style="font-size:9px; color: green;"] {
 
 /*** МЕНЮ ***/
 .l-top_menu-v2 {
+  position: sticky;
+  top: 0;
   background: var(--color-menu-background);
 }
 
@@ -703,7 +705,7 @@ body {
 }
 
 .b-stats_bar .bar {
-  height: 7px;
+  height: 10px;
   line-height: 0;
   margin-top: 5px;
   border: 1px solid var(--color-main-border);
@@ -1144,10 +1146,7 @@ body {
 }
 
 .subheadline-buttons {
-  position: absolute;
-  right: 3px;
   margin-top: 2px;
-  z-index: 1;
 }
 
 #profiles_favorites .item-back::before, 
@@ -1155,6 +1154,16 @@ body {
   line-height: 1;
   width: 24px;
   font-size: 17px;
+}
+
+.caption {
+  width: max-content;
+  padding: 0 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-main-text);
+  border: 1px solid var(--color-main-border);
+  background: var(--color-headline-auxiliary-background);
 }
 
 /*** СОВМЕСТИМОСТЬ ***/
@@ -2688,7 +2697,9 @@ body[data-locale] .b-offtopic_marker {
 .b-log_entry .spoiler.collapse.triggered span,
 .b-log_entry .spoiler.collapsed span,
 .b-log_entry .spoiler.collapse span,
-.b-log_entry .spoiler.collapsed span {
+.b-log_entry .spoiler.collapsed span,
+.b-user_rate_log .spoiler.collapse span,
+.b-user_rate_log .spoiler.collapsed span {
   color: var(--color-main-text) !important;
 }
 
@@ -3600,6 +3611,7 @@ header.head h2 a.back::after,
 .l-top_menu-v2 .menu-dropdown.profile>span img,
 .l-top_menu-v2 .icon-avatar img,
 .p-profiles .profile-head .c-brief .avatar img{
+  border-radius: var(--border-radius);
   filter: brightness(80%);
   transition: 0.2s ease-in-out;
 }
@@ -3972,12 +3984,13 @@ header.head h2 a.back::after,
 }
 
 .b-achievement .c-image .inner {
-  filter: brightness(80%) grayscale(30%);
+  filter: brightness(80%);
   transition: 0.2s ease-in-out;
 }
 
 .b-badge img {
-  filter: brightness(80%) grayscale(30%);
+  border-radius: var(--border-radius);
+  filter: brightness(80%);
 }
 
 .b-badge img:hover, .b-achievement .c-image .inner:hover {
@@ -4274,6 +4287,12 @@ header.head h2 a.back::after,
   border: 1px solid var(--color-main-border);
   color: var(--color-main-text);
   background: var(--color-background);
+}
+
+.b-badge::before {
+  background: var(--color-background);
+  color: var(--color-maun-text);
+  border-radius: var(--border-radius);
 }
 
 /*** КСС РЕДАКТОР ***/
@@ -5348,10 +5367,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 /*** МОБИЛЬНАЯ ВЕРСИЯ ***/
 @media (max-width: 768px) { 
-  .l-top_menu-v2 .menu-icon.search {
-    margin-top: -7px;
-  }
-  
   .l-top_menu-v2.is-search-mobile .global-search {
     background: var(--color-background);
     display: block;
