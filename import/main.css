@@ -967,14 +967,14 @@ body {
 }
 
 /* Друзья и клубы */
-.p-profiles-show .profile-content .c-right .cc-2a>.c-column:nth-child(2n+1) {
+.p-profiles-show .profile-content .c-right .cc-2a > .c-column:nth-child(2n+1) {
   float: left;
   width: 24.5%;
   margin-top: -45rem;
   left: 5rem;
 }
 
-.p-profiles-show .profile-content .c-right .cc-2a>.c-column:last-child {
+.p-profiles-show .profile-content .c-right .cc-2a > .c-column:last-child {
   float: right;
   width: 24.5%;
   margin-top: -45rem;
@@ -1022,15 +1022,12 @@ body {
   align-content: center;
 }
 
-#profiles_favorites .cc-favourites>.c-anime,
-#profiles_favorites .cc-favourites>.c-manga,
-#profiles_favorites .cc-favourites>.c-character,
-#profiles_favorites .cc-favourites>.c-person {
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 0;
-  right: 5px;
-  position: relative;
+#profiles_favorites .cc-favourites > .c-anime,
+#profiles_favorites .cc-favourites > .c-manga,
+#profiles_favorites .cc-favourites > .c-character,
+#profiles_favorites .cc-favourites > .c-person {
+  margin: 0;
+  padding: 4px;
   width: 10%;
 }
 
@@ -5288,7 +5285,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 /* Постеры, колонки и т.д */
-#profiles_show .about .cc-9-g15>.c-column {
+#profiles_show .about .cc-9-g15 > .c-column {
   margin-bottom: 15px;
 }
 
@@ -5301,34 +5298,20 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   width: 10%;
 }
 
-.p-user_rates-index .cc-5>.c-column {
+.p-user_rates-index .cc-5 > .c-column {
   margin-right: 1%;
   margin-left: 1%;
   margin-bottom: 1%;
-  left: 1%;
   width: 12%;
 }
 
-.p-user_rates-index .cc-5>.c-column:nth-child(5n) {
+.p-user_rates-index .cc-5 > .c-column:nth-child(5n) {
   margin-right: 1%;
 }
 
-.p-user_rates-index .cc-5>.c-column:nth-child(3n+1),
-.p-user_rates-index .cc-5>.c-column:nth-child(5n+1) {
+.p-user_rates-index .cc-5 > .c-column:nth-child(3n+1),
+.p-user_rates-index .cc-5 > .c-column:nth-child(5n+1) {
   clear: none;
-}
-
-@media (max-width: 768px) {  
-  .p-user_rates-index .cc-5>.c-column {
-    width: 30.6666666667%;
-  }
-}
-
-@media (max-width: 480px) { 
-  .p-user_rates-index .cc-5>.c-column {
-    width: 45%;
-    left: 3%;
-  }
 }
 
 .p-user_rates-index .list-posters .user_rate .edit-user_rate {
@@ -6021,9 +6004,8 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     clear: right;
   }
   
-  .p-user_rates-index .cc-5>.c-column {
+  .p-user_rates-index .cc-5 > .c-column {
     width: 23%;
-    left: 0;
   }
 }
 
