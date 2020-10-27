@@ -5993,7 +5993,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     margin-right: 1%;
     margin-bottom: 1%;
     width: 15%;
-    left: 10px;
   }
   
   .cc-5>.c-column:nth-child(2n+1) {
@@ -6013,7 +6012,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     margin-right: 1%;
     margin-bottom: 1%;
     width: calc(26% - 6px);
-    left: 10px;
   }
   
   #profiles_favorites .cc-favourites > .c-anime,
@@ -6032,7 +6030,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     margin-right: 1%;
     margin-bottom: 1%;
     width: calc(25% - 6px);
-    left: 10px;
   } 
 }
 
