@@ -5285,14 +5285,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 /* Постеры, колонки и т.д */
-#profiles_show .about .cc-9-g15 > .c-column {
-  margin-bottom: 15px;
-}
-
-.cc-8-g0>.c-column,
-.cc-9-g0>.c-column,
-.cc-8-g15>.c-column,
-.cc-9-g15>.c-column {
+.cc-8-g0 > .c-column,
+.cc-9-g0 > .c-column,
+.cc-8-g15 > .c-column,
+.cc-9-g15 > .c-column {
   margin-right: 1%;
   margin-bottom: 1%;
   width: 10%;
