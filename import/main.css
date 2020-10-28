@@ -587,16 +587,13 @@ body {
 }
 
 .p-profiles .profile-head .c-history .entry {
-  display: inline-block;
-  width: 31%;
-  margin: 0 1%;
-  border: 1px;
+  width: 33%;
+  margin: 0;
+  padding-right: 2%;
   text-align: center;
-}
-
-.p-profiles .profile-head .c-history .entry {
-  border-color: var(--color-border);
+  border: 1px;
   border-left-style: solid;
+  border-color: var(--color-border);
 }
 
 .p-profiles .profile-head .c-history .entry:first-child {
@@ -604,7 +601,9 @@ body {
 }
 
 #profiles_show .b-block_list {
-  padding-left: 0%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .p-profiles .profile-head .c-history .entry img {
@@ -1003,23 +1002,21 @@ body {
 }
 
 /* Избранное */
-#profiles_show .cc-favourites .c-column {
-  margin: 0;
-  margin-left: 1.5%;
-  margin-bottom: 1.5%;
-  width: 9.6%;
-}
-
-#profiles_show .cc-favourites {
-  margin-right: 1.5%;
-  margin-bottom: -2%;
-}
-
 .cc-favourites {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+}
+
+#profiles_show .cc-favourites .c-column {
+  margin: 0;
+  padding: 4px;
+  width: 10.7%;
+}
+
+#profiles_show .cc-favourites {
+  margin-bottom: -1%;
 }
 
 #profiles_favorites .cc-favourites > .c-anime,
@@ -1365,6 +1362,11 @@ body {
   text-align: center;
   font-weight: bold;
   font-family: inherit;
+}
+
+.p-user_rates-index .list-groups .summary.posters.list {
+  display: block;
+  text-align: center;
 }
 
 .p-user_rates-index .stat-categories .t4 {
@@ -5285,19 +5287,131 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 /* Постеры, колонки и т.д */
+.cc-entries, .list-posters, .align-posters, #profiles_show .d-cutted_covers,
+#recommendations_favourites .cc-8, .p-db_entries .cc-characters .d-cutted_covers,
+#characters_show .d-cutted_covers, .p-db_entries .cc-similar, .p-db_entries .two-videos .cc,
+.p-animes-characters .cc-characters, .p-mangas-characters .cc-characters,
+.p-people-show .c-works, .p-people-show .c-characters, .p-db_entries .cc-5,
+#achievements_show .cc-8 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
 .cc-8-g0 > .c-column,
 .cc-9-g0 > .c-column,
 .cc-8-g15 > .c-column,
-.cc-9-g15 > .c-column {
-  margin-right: 1%;
-  margin-bottom: 1%;
+.cc-9-g15 > .c-column,
+.cc-8 > .c-column {
+  margin: 0;
+  padding: 4px;
   width: 10%;
+}
+
+.cc-4a > .c-column {
+  margin: 0;
+  padding: 4px;
+  width: 25%;
+}
+
+.cc-5 > .c-column {
+  display: inline-block;
+  float: none;
+  margin: 0;
+  padding: 4px;
+  width: 14%;
+}
+
+.b-clubs-menu .b-catalog_entry,
+.b-contests-menu .b-catalog_entry {
+  margin-bottom: 0 !important;
+}
+
+.p-recommendations-favourites .cc-entries > .c-column {
+  margin: 0;
+  padding: 4px;
+  width: 11%;
+}
+
+.p-animes .cc-characters .c-character,
+.p-animes .cc-characters .c-person,
+.p-mangas .cc-characters .c-character,
+.p-mangas .cc-characters .c-person,
+.p-characters-show .c-anime,
+.p-characters-show .c-manga,
+.p-animes-show .cc .c-anime,
+.p-animes-show .cc .c-manga,
+.p-mangas-show .cc .c-anime,
+.p-mangas-show .cc .c-manga,
+.p-ranobe-show .cc .c-anime,
+.p-ranobe-show .cc .c-manga {
+  margin: 0;
+  padding: 4px;
+  width: 12%;
+}
+
+.p-people-show .c-works .c-anime,
+.p-people-show .c-works .c-manga,
+.p-people-show .c-works .c-character,
+.p-people-show .c-characters .c-anime,
+.p-people-show .c-characters .c-manga,
+.p-people-show .c-characters .c-character {
+  margin: 0;
+  padding: 4px;
+  width: 15%;
+}
+
+.p-animes-show .cc.two-videos .c-screenshot,
+.p-animes-show .cc.two-videos .c-video,
+.p-mangas-show .cc.two-videos .c-screenshot,
+.p-mangas-show .cc.two-videos .c-video,
+.p-ranobe-show .cc.two-videos .c-screenshot,
+.p-ranobe-show .cc.two-videos .c-video {
+  margin: 0;
+  padding: 4px;
+}
+
+.p-animes_collection-index.x1200 .cc-entries > .c-column,
+.p-mangas_collection-index.x1200 .cc-entries > .c-column,
+.p-recommendations-index.x1200 .cc-entries > .c-column,
+.p-userlist_comparer-show.x1200 .cc-entries > .c-column,
+.p-animes_collection-index.x1000 .cc-entries > .c-column,
+.p-mangas_collection-index.x1000 .cc-entries > .c-column,
+.p-recommendations-index.x1000 .cc-entries > .c-column,
+.p-userlist_comparer-show.x1000 .cc-entries > .c-column {
+  margin: 0;
+  padding: 4px;
+  width: 10%;
+}
+
+.p-animes_collection-index .b-catalog_entry,
+.p-mangas_collection-index .b-catalog_entry,
+.p-recommendations-index .b-catalog_entry,
+.p-userlist_comparer-show .b-catalog_entry {
+  margin-bottom: 5px !important;
+}
+
+
+.p-dashboards-show .v2 .fc-ongoings .inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.p-dashboards-show .v2 .fc-ongoings .inner > .b-catalog_entry {
+  margin: 0;
+  padding: 4px;
+  width: calc(13% - 15px);
 }
 
 .p-user_rates-index .cc-5 > .c-column {
   margin-right: 1%;
   margin-left: 1%;
   margin-bottom: 1%;
+  padding: 0;
   width: 12%;
 }
 
@@ -5364,11 +5478,11 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     height: 40px;
   }
   
-  .l-top_menu-v2 .menu-dropdown.profile>span img {
+  .l-top_menu-v2 .menu-dropdown.profile > span img {
     height: 30px;
   }
   
-  .l-top_menu-v2 .submenu>a {
+  .l-top_menu-v2 .submenu > a {
     font-size: 15px;
     height: 30px;
     line-height: 30px;
@@ -5420,11 +5534,17 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     width: auto;
     margin: 0;
   }
+  
   .p-profiles .profile-head .c-history .b-block_list {
     display: flex;
     margin-top: -.5em;
     overflow-x: auto;
   }
+  
+  #profiles_show .b-block_list {
+    justify-content: left;
+  }
+  
   .p-profiles .profile-head .c-history .entry:nth-child(n) {
     flex-shrink: 0;
     min-width: 200px;
@@ -5571,15 +5691,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     margin: 0;
   }
   
-  .p-profiles .profile-content > .cc-2 > .c-right > .cc-2a > .c-column {
-    float: left;
-  }
-  
   .p-profiles-show .profile-content .c-right .cc-2a>.c-column:last-child {
     width: 48%;
     right: 0;
     margin: 0;
-    float: right;
   }
   
   #profiles_show .cc-friends .b-user {
@@ -5597,15 +5712,13 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 @media (min-width: 681px) and (max-width: 768px) { 
-  .p-profiles .profile-content > .cc-2 > .c-right > .cc-2a {
-    float: none;
-  }
-  
   .p-profiles-show .cc-friends .b-user {
     width: 20%;
   }
   
-  .b-user.avatar img, .b-user.named_avatar img, .b-user.avatar_fixed_margin img {
+  .b-user.avatar img,
+  .b-user.named_avatar img,
+  .b-user.avatar_fixed_margin img {
     max-width: 95%;
   }
   
@@ -5645,7 +5758,9 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 @media (max-width: 360px) {
-  .b-user.avatar img, .b-user.named_avatar img, .b-user.avatar_fixed_margin img {
+  .b-user.avatar img,
+  .b-user.named_avatar img,
+  .b-user.avatar_fixed_margin img {
     max-width: 90%;
   }
   
@@ -5672,7 +5787,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 @media (min-width: 481px) and (max-width: 680px) { 
   #profiles_show .cc-favourites .c-column {
-    width: calc(24% - 7px);
+    width: calc(17% - 4px);
   }
 }
 
@@ -5758,7 +5873,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   }
   
   #profiles_show .cc-franchises {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
   }
   
   #profiles_show .achievements .cc-achievements .b-achievement {
@@ -5779,10 +5897,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     margin: 8px;
   }
   
-  #profiles_show .cc-achievements {
-    display: inline-block;
-  }
-  
   #profiles_show .achievements .cc-achievements .b-achievement {
     width: 47%;
     margin-left: 2%;
@@ -5801,10 +5915,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   #profiles_show .achievements .cc-franchises .b-badge {
     width: calc(33% - 15px);
     margin: 8px;
-  }
-  
-  #profiles_show .cc-achievements {
-    display: inline-block;
   }
   
   #profiles_show .achievements .cc-achievements .b-achievement {
@@ -5979,19 +6089,13 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   #profiles_favorites .cc-favourites > .c-manga,
   #profiles_favorites .cc-favourites > .c-character,
   #profiles_favorites .cc-favourites > .c-person {
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 0;
-    right: 2px;
-    width: 13%;
+    width: 14%;
   }
   
   #profiles_show .cc-8-g0 > .c-column,
   #profiles_show .cc-9-g0 > .c-column,
   #profiles_show .cc-8-g15 > .c-column,
   #profiles_show .cc-9-g15 > .c-column {
-    margin-right: 1%;
-    margin-bottom: 1%;
     width: 15%;
   }
   
@@ -6002,16 +6106,51 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   .p-user_rates-index .cc-5 > .c-column {
     width: 23%;
   }
+  
+  .p-recommendations-favourites .cc-entries > .c-column,
+  .cc-8 > .c-column, .cc-5 > .c-column {
+    width: 20%;
+  }
+  
+  .p-animes-show .cc .c-anime,
+  .p-animes-show .cc .c-manga,
+  .p-mangas-show .cc .c-anime,
+  .p-mangas-show .cc .c-manga,
+  .p-ranobe-show .cc .c-anime,
+  .p-ranobe-show .cc .c-manga,
+  .p-animes .cc-characters .c-character,
+  .p-animes .cc-characters .c-person,
+  .p-mangas .cc-characters .c-character,
+  .p-mangas .cc-characters .c-person,
+  .p-characters-show .c-anime,
+  .p-characters-show .c-manga,
+  .p-people-show .c-works .c-anime,
+  .p-people-show .c-works .c-manga,
+  .p-people-show .c-works .c-character,
+  .p-people-show .c-characters .c-anime,
+  .p-people-show .c-characters .c-manga,
+  .p-people-show .c-characters .c-character {
+    width: 24%;
+  }
+  
+  .p-animes_collection-index.x1200 .cc-entries > .c-column,
+  .p-mangas_collection-index.x1200 .cc-entries > .c-column,
+  .p-recommendations-index.x1200 .cc-entries > .c-column,
+  .p-userlist_comparer-show.x1200 .cc-entries > .c-column, 
+  .p-animes_collection-index.x1000 .cc-entries > .c-column,
+  .p-mangas_collection-index.x1000 .cc-entries > .c-column, 
+  .p-recommendations-index.x1000 .cc-entries > .c-column,
+  .p-userlist_comparer-show.x1000 .cc-entries > .c-column {
+    width: 20%;
+  }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   #profiles_show .cc-8-g0 > .c-column, 
   #profiles_show .cc-9-g0 > .c-column,
   #profiles_show .cc-8-g15 > .c-column,
   #profiles_show .cc-9-g15 > .c-column {
-    margin-right: 1%;
-    margin-bottom: 1%;
-    width: calc(26% - 6px);
+    width: 23%;
   }
   
   #profiles_favorites .cc-favourites > .c-anime,
@@ -6020,17 +6159,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   #profiles_favorites .cc-favourites > .c-person {
     width: 23%;
   }
-}
-
-@media (min-width: 360px) and (max-width: 480px) {
-  #profiles_show .cc-8-g0 > .c-column, 
-  #profiles_show .cc-9-g0 > .c-column,
-  #profiles_show .cc-8-g15 > .c-column,
-  #profiles_show .cc-9-g15 > .c-column {
-    margin-right: 1%;
-    margin-bottom: 1%;
-    width: calc(25% - 6px);
-  } 
 }
 
 @media (max-width: 768px) {  
@@ -6046,5 +6174,9 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   ::-webkit-scrollbar {
     width: 3px;
     height: 3px;
+  }
+  
+  .l-footer .links {
+    display: none;
   }
 }
