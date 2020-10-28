@@ -587,6 +587,7 @@ body {
 }
 
 .p-profiles .profile-head .c-history .entry {
+  display: inline-block;
   width: 33%;
   margin: 0;
   padding-right: 2%;
