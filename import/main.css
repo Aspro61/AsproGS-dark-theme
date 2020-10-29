@@ -5,6 +5,10 @@
   --font-alt-text-letter-spacing: normal;
   --top-menu-height: 40px;
   --border-radius: 2px;
+  --font-weight: bold;
+  --text-transform: uppercase;
+  --transition: 0.2s ease-in-out;
+  --animation: 0.2s fadeIn cubic-bezier(0.4, 0, 0.6, 1);
 }
 
 :root {
@@ -1863,8 +1867,12 @@ code.b-code_inline {
   opacity: 1 !important;
 }
 
+.tipsy-arrow-s {
+  border-top-color: var(--color-background);
+}
+
 .tipsy-arrow {
-  filter: brightness(90%);
+  border: 5px dashed var(--color-background);
 }
 
 .tooltip.minified .tooltip-inner {
@@ -3992,11 +4000,12 @@ header.head h2 a.back::after,
 
 .b-achievement .c-image .inner {
   filter: brightness(80%);
-  transition: 0.2s ease-in-out;
+  transition: var(--transition);
 }
 
 .b-badge img {
   border-radius: var(--border-radius);
+  transition: var(--transition);
   filter: brightness(80%);
 }
 
@@ -4300,6 +4309,19 @@ header.head h2 a.back::after,
   background: var(--color-background);
   color: var(--color-maun-text);
   border-radius: var(--border-radius);
+}
+
+#achievements_franchise .b-options-floated,
+#achievements_index .b-options-floated {
+  margin-top: 8px;
+  right: 5px;
+  font-weight: var(--font-weight);
+}
+
+#achievements_franchise .subheadline-buttons,
+#achievements_index .subheadline-buttons {
+  margin-top: 2px;
+  right: 4rem;
 }
 
 /*** КСС РЕДАКТОР ***/
@@ -4764,6 +4786,92 @@ header.head h2 a.back::after,
 .b-spoiler_block.is-opened>span>i.center:active {
   color: var(--color-main-text-hover);
   background: none;
+}
+
+/*** СОРТИРОВКА ТАЙТЛОВ В КОЛЛЕКЦИЯХ ПО НАЛИЧИЮ В ЛИЧНЫХ СПИСКАХ ***/
+.b-collection-topic .collection-groups .cc-collection-groups {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 30px 15px;
+}
+
+.b-collection-topic .collection-groups .cc-collection-groups > .c-column {
+  width: 100%;
+  margin: 0;
+}
+
+.b-collection-topic .collection-groups .cc-collection-groups > .b-catalog_entry.completed {
+  order: -6;
+}
+
+.b-collection-topic .collection-groups .cc-collection-groups > .b-catalog_entry.watching {
+  order: -5;
+}
+
+.b-collection-topic .collection-groups .cc-collection-groups > .b-catalog_entry.rewatching {
+  order: -4;
+}
+
+.b-collection-topic .collection-groups .cc-collection-groups > .b-catalog_entry.on_hold {
+  order: -3;
+}
+
+.b-collection-topic .collection-groups .cc-collection-groups > .b-catalog_entry.planned {
+  order: -2;
+}
+
+.b-collection-topic .collection-groups .cc-collection-groups > .b-catalog_entry {
+  order: -1;
+}
+
+.b-collection-topic .collection-groups .cc-collection-groups > .b-catalog_entry.dropped {
+  order: 0;
+}
+
+/*** ОТКЛЮЧЕНИЕПОСТЕРОВ И ИМЕН В СПОЙЛЕРНЫХ КОЛЛЕКЦИЯХ ***/
+/* Отключаем всплывающие подсказки */
+meta[itemid*='spoyler'] ~ .inner .collection-row > article {
+  pointer-events: none;
+}
+
+/* Скрываем постеры и названия тайтлов/персонажей */
+meta[itemid*='spoyler'] ~ .inner .collection-row > article img,
+meta[itemid*='spoyler'] ~ .inner .collection-row > article .title {
+  display: none;
+}
+
+/* Заменяем постер персонажа/тайтла на другую картинку */
+meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
+  background: url(/assets/globals/missing_preview.jpg) center top / cover;
+}
+
+/*** БОЛЕЕ КОМПАКТНАЯ СОРТИРОВКА УВЕДОМЛЕНИЙ ОБ ЭПИЗОДАХ ***/
+@media (min-width: 1000px) {
+  .p-messages.x1000 .b-topic > .b-comments,
+  .p-messages.x1200 .b-topic > .b-comments {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+
+  .p-messages .b-topic > .b-comments > .b-message {
+    overflow: hidden;
+  }
+
+  .p-messages .b-topic > .b-comments > .b-message:not(.b-generated_news) {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-messages.x1200 .b-topic > .b-comments {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .p-messages.x1200 .b-topic > .b-comments > .b-message:not(.b-generated_news) {
+    grid-column: 1 / 4;
+  }
 }
 
 /*** РАЗНЫЕ ИЗМЕНЕНИЯ ***/
@@ -5292,7 +5400,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 #characters_show .d-cutted_covers, .p-db_entries .cc-similar, .p-db_entries .two-videos .cc,
 .p-animes-characters .cc-characters, .p-mangas-characters .cc-characters,
 .p-people-show .c-works, .p-people-show .c-characters, .p-db_entries .cc-5,
-#achievements_show .cc-8 {
+#achievements_show .cc-8, .c-videos .cc, .no-video .cc {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -5372,6 +5480,20 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   padding: 4px;
 }
 
+.p-animes .cc .c-video,
+.p-mangas .cc .c-video {
+  margin: 0;
+  padding: 4px;
+  width: 23%;
+}
+
+.p-animes .cc .c-screenshot,
+.p-mangas .cc .c-screenshot {
+  margin: 0;
+  padding: 4px;
+  width: 20%;
+}
+
 .p-animes_collection-index.x1200 .cc-entries > .c-column,
 .p-mangas_collection-index.x1200 .cc-entries > .c-column,
 .p-recommendations-index.x1200 .cc-entries > .c-column,
@@ -5381,15 +5503,15 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-recommendations-index.x1000 .cc-entries > .c-column,
 .p-userlist_comparer-show.x1000 .cc-entries > .c-column {
   margin: 0;
-  padding: 4px;
-  width: 10%;
+  padding: 14px;
+  width: 17%;
 }
 
 .p-animes_collection-index .b-catalog_entry,
 .p-mangas_collection-index .b-catalog_entry,
 .p-recommendations-index .b-catalog_entry,
 .p-userlist_comparer-show .b-catalog_entry {
-  margin-bottom: 5px !important;
+  margin-bottom: 0 !important;
 }
 
 
@@ -5457,13 +5579,60 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   left: 0;
 }
 
-.p-recommendations-index .b-catalog_entry .edit, .p-recommendations-index .b-catalog_entry .delete, .p-recommendations-index .b-catalog_entry .drag-handle, .p-recommendations-index .b-catalog_entry .confirm, .p-recommendations-index .b-catalog_entry .cancel, .p-recommendations-index .b-catalog_entry .move-left, .p-recommendations-index .b-catalog_entry .move-right, .p-recommendations-index .b-catalog_entry .mobile-edit, .p-recommendations-favourites .b-catalog_entry .edit, .p-recommendations-favourites .b-catalog_entry .delete, .p-recommendations-favourites .b-catalog_entry .drag-handle, .p-recommendations-favourites .b-catalog_entry .confirm, .p-recommendations-favourites .b-catalog_entry .cancel, .p-recommendations-favourites .b-catalog_entry .move-left, .p-recommendations-favourites .b-catalog_entry .move-right, .p-recommendations-favourites .b-catalog_entry .mobile-edit {
-  background: rgba(25, 40, 56, 0.9);
+.p-recommendations-index .b-catalog_entry .edit,
+.p-recommendations-index .b-catalog_entry .delete,
+.p-recommendations-index .b-catalog_entry .drag-handle,
+.p-recommendations-index .b-catalog_entry .confirm,
+.p-recommendations-index .b-catalog_entry .cancel, 
+.p-recommendations-index .b-catalog_entry .move-left, 
+.p-recommendations-index .b-catalog_entry .move-right,
+.p-recommendations-index .b-catalog_entry .mobile-edit,
+.p-recommendations-favourites .b-catalog_entry .edit,
+.p-recommendations-favourites .b-catalog_entry .delete,
+.p-recommendations-favourites .b-catalog_entry .drag-handle,
+.p-recommendations-favourites .b-catalog_entry .confirm,
+.p-recommendations-favourites .b-catalog_entry .cancel, 
+.p-recommendations-favourites .b-catalog_entry .move-left,
+.p-recommendations-favourites .b-catalog_entry .move-right,
+.p-recommendations-favourites .b-catalog_entry .mobile-edit {
   color: var(--color-main-text);
+  background: var(--color-background);
 }
 
-.p-recommendations-index .b-catalog_entry .edit:hover, .p-recommendations-index .b-catalog_entry .delete:hover, .p-recommendations-index .b-catalog_entry .drag-handle:hover, .p-recommendations-index .b-catalog_entry .confirm:hover, .p-recommendations-index .b-catalog_entry .cancel:hover, .p-recommendations-index .b-catalog_entry .move-left:hover, .p-recommendations-index .b-catalog_entry .move-right:hover, .p-recommendations-index .b-catalog_entry .mobile-edit:hover, .p-recommendations-favourites .b-catalog_entry .edit:hover, .p-recommendations-favourites .b-catalog_entry .delete:hover, .p-recommendations-favourites .b-catalog_entry .drag-handle:hover, .p-recommendations-favourites .b-catalog_entry .confirm:hover, .p-recommendations-favourites .b-catalog_entry .cancel:hover, .p-recommendations-favourites .b-catalog_entry .move-left:hover, .p-recommendations-favourites .b-catalog_entry .move-right:hover, .p-recommendations-favourites .b-catalog_entry .mobile-edit:hover, .p-recommendations-index .b-catalog_entry .edit:active, .p-recommendations-index .b-catalog_entry .delete:active, .p-recommendations-index .b-catalog_entry .drag-handle:active, .p-recommendations-index .b-catalog_entry .confirm:active, .p-recommendations-index .b-catalog_entry .cancel:active, .p-recommendations-index .b-catalog_entry .move-left:active, .p-recommendations-index .b-catalog_entry .move-right:active, .p-recommendations-index .b-catalog_entry .mobile-edit:active, .p-recommendations-favourites .b-catalog_entry .edit:active, .p-recommendations-favourites .b-catalog_entry .delete:active, .p-recommendations-favourites .b-catalog_entry .drag-handle:active, .p-recommendations-favourites .b-catalog_entry .confirm:active, .p-recommendations-favourites .b-catalog_entry .cancel:active, .p-recommendations-favourites .b-catalog_entry .move-left:active, .p-recommendations-favourites .b-catalog_entry .move-right:active, .p-recommendations-favourites .b-catalog_entry .mobile-edit:active {
-  color: var(--color-main-text-hover);
+.p-recommendations-index .b-catalog_entry .edit:hover,
+.p-recommendations-index .b-catalog_entry .delete:hover,
+.p-recommendations-index .b-catalog_entry .drag-handle:hover,
+.p-recommendations-index .b-catalog_entry .confirm:hover,
+.p-recommendations-index .b-catalog_entry .cancel:hover,
+.p-recommendations-index .b-catalog_entry .move-left:hover,
+.p-recommendations-index .b-catalog_entry .move-right:hover,
+.p-recommendations-index .b-catalog_entry .mobile-edit:hover, 
+.p-recommendations-favourites .b-catalog_entry .edit:hover,
+.p-recommendations-favourites .b-catalog_entry .delete:hover, 
+.p-recommendations-favourites .b-catalog_entry .drag-handle:hover,
+.p-recommendations-favourites .b-catalog_entry .confirm:hover,
+.p-recommendations-favourites .b-catalog_entry .cancel:hover, 
+.p-recommendations-favourites .b-catalog_entry .move-left:hover,
+.p-recommendations-favourites .b-catalog_entry .move-right:hover,
+.p-recommendations-favourites .b-catalog_entry .mobile-edit:hover, 
+.p-recommendations-index .b-catalog_entry .edit:active,
+.p-recommendations-index .b-catalog_entry .delete:active,
+.p-recommendations-index .b-catalog_entry .drag-handle:active,
+.p-recommendations-index .b-catalog_entry .confirm:active,
+.p-recommendations-index .b-catalog_entry .cancel:active,
+.p-recommendations-index .b-catalog_entry .move-left:active,
+.p-recommendations-index .b-catalog_entry .move-right:active,
+.p-recommendations-index .b-catalog_entry .mobile-edit:active,
+.p-recommendations-favourites .b-catalog_entry .edit:active,
+.p-recommendations-favourites .b-catalog_entry .delete:active,
+.p-recommendations-favourites .b-catalog_entry .drag-handle:active, 
+.p-recommendations-favourites .b-catalog_entry .confirm:active,
+.p-recommendations-favourites .b-catalog_entry .cancel:active,
+.p-recommendations-favourites .b-catalog_entry .move-left:active,
+.p-recommendations-favourites .b-catalog_entry .move-right:active,
+.p-recommendations-favourites .b-catalog_entry .mobile-edit:active {
+  color: var(--color-main-text);
+  background-color: var(--color-background-hover);
 }
 
 /*** МОБИЛЬНАЯ ВЕРСИЯ ***/
@@ -6136,12 +6305,13 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   .p-animes_collection-index.x1200 .cc-entries > .c-column,
   .p-mangas_collection-index.x1200 .cc-entries > .c-column,
   .p-recommendations-index.x1200 .cc-entries > .c-column,
-  .p-userlist_comparer-show.x1200 .cc-entries > .c-column, 
+  .p-userlist_comparer-show.x1200 .cc-entries > .c-column,
   .p-animes_collection-index.x1000 .cc-entries > .c-column,
   .p-mangas_collection-index.x1000 .cc-entries > .c-column, 
-  .p-recommendations-index.x1000 .cc-entries > .c-column,
+  .p-recommendations-index.x1000 .cc-entries > .c-column, 
   .p-userlist_comparer-show.x1000 .cc-entries > .c-column {
-    width: 20%;
+    width: 25%;
+    padding: 10px;
   }
 }
 
@@ -6178,5 +6348,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   
   .l-footer .links {
     display: none;
+  }
+  
+  @media (min-width: 900px) and (max-width: 1200px) {
+  .bar.vertical .line .bar-container .bar {
+    width: 60%;
   }
 }
