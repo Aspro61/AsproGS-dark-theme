@@ -5415,20 +5415,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   margin-bottom: 0 !important;
 }
 
-.p-dashboards-show .v2 .fc-ongoings .inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  margin: 0;
-}
-
-.p-dashboards-show .v2 .fc-ongoings .inner > .b-catalog_entry {
-  margin: 0;
-  padding: 4px;
-  width: calc(13% - 15px);
-}
-
 .p-user_rates-index .cc-5 > .c-column {
   margin-right: 1%;
   margin-left: 1%;
