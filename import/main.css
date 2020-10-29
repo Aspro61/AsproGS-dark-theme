@@ -5507,7 +5507,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-recommendations-index.x1000 .cc-entries > .c-column,
 .p-userlist_comparer-show.x1000 .cc-entries > .c-column {
   margin: 0;
-  padding: 14px;
+  padding: 10px;
 }
 
 .p-animes_collection-index .b-catalog_entry,
