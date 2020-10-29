@@ -6153,21 +6153,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 /** Постеры **/
-@media (max-width: 768px) { 
-  #profiles_favorites .cc-favourites > .c-anime,
-  #profiles_favorites .cc-favourites > .c-manga,
-  #profiles_favorites .cc-favourites > .c-character,
-  #profiles_favorites .cc-favourites > .c-person {
-    width: 14%;
-  }
-  
-  #profiles_show .cc-8-g0 > .c-column,
-  #profiles_show .cc-9-g0 > .c-column,
-  #profiles_show .cc-8-g15 > .c-column,
-  #profiles_show .cc-9-g15 > .c-column {
-    width: 15%;
-  }
-  
+@media (max-width: 768px) {  
   .cc-5>.c-column:nth-child(2n+1) {
     clear: right;
   }
@@ -6212,22 +6198,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   .p-userlist_comparer-show.x1000 .cc-entries > .c-column {
     width: 25%;
     padding: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  #profiles_show .cc-8-g0 > .c-column, 
-  #profiles_show .cc-9-g0 > .c-column,
-  #profiles_show .cc-8-g15 > .c-column,
-  #profiles_show .cc-9-g15 > .c-column {
-    width: 23%;
-  }
-  
-  #profiles_favorites .cc-favourites > .c-anime,
-  #profiles_favorites .cc-favourites > .c-manga,
-  #profiles_favorites .cc-favourites > .c-character,
-  #profiles_favorites .cc-favourites > .c-person {
-    width: 23%;
   }
 }
 
