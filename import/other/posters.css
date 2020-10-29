@@ -235,12 +235,12 @@
 }
 
 .b-catalog_entry .cover .image-decor img[alt*="Kyouko Otonashi"],
-.b-db_entry > .c-image img[alt*="Kyouko Otonashi"],
-.p-profiles-show .cc-favourites img[alt*="Kyouko Otonashi"],
+.b-db_entry > .c-image img[alt*="Kyouko Otonashi"], 
+.p-profiles-show .cc-favourites img[alt*="Kyouko Otonashi"], 
 .p-profiles-favourites .cc-favourites:last-child img[alt*="Kyouko Otonashi"],
-.b-catalog_entry-tooltip img[alt*="Kyouko Otonashi"],
+.b-catalog_entry-tooltip img[alt*="Kyouko Otonashi"], 
 .p-profiles-show .about a img[alt*="Kyouko Otonashi"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/1094924.jpg");
+  content: url(https://dere.shikimori.one/system/user_images/original/184680/1250224.jpg);
 }
 
 .b-catalog_entry .cover .image-decor img[alt*="Youzou Ooba"],
@@ -250,6 +250,24 @@
 .b-catalog_entry-tooltip img[alt*="Youzou Ooba"],
 .p-profiles-show .about a img[alt*="Youzou Ooba"] {
   content: url("https://desu.shikimori.one/system/user_images/original/184680/1185168.jpg"); 
+}
+
+.b-catalog_entry .cover .image-decor img[alt*="Aya Tokiwa"],
+.b-db_entry > .c-image img[alt*="Aya Tokiwa"], 
+.p-profiles-show .cc-favourites img[alt*="Aya Tokiwa"], 
+.p-profiles-favourites .cc-favourites:last-child img[alt*="Aya Tokiwa"],
+.b-catalog_entry-tooltip img[alt*="Aya Tokiwa"], 
+.p-profiles-show .about a img[alt*="Aya Tokiwa"] {
+  content: url(https://shikimori.one/system/user_images/original/184680/1250236.jpg);
+}
+
+.b-catalog_entry .cover .image-decor img[alt*="Misa Hayase"],
+.b-db_entry > .c-image img[alt*="Misa Hayase"], 
+.p-profiles-show .cc-favourites img[alt*="Misa Hayase"], 
+.p-profiles-favourites .cc-favourites:last-child img[alt*="Misa Hayase"],
+.b-catalog_entry-tooltip img[alt*="Misa Hayase"], 
+.p-profiles-show .about a img[alt*="Misa Hayase"] {
+  content: url(https://shikimori.one/system/user_images/original/184680/1250240.jpg);
 }
 
 /* Манга и ранобэ */
