@@ -6331,6 +6331,12 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   }
 }
 
+@media (min-width: 900px) and (max-width: 1200px) {
+  .bar.vertical .line .bar-container .bar {
+    width: 60%;
+  }
+}
+
 @media (max-width: 768px) {  
   .bar.vertical .line .bar-container .value,
   .bar.vertical .line .bar-container .value.mini {
@@ -6348,10 +6354,5 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   
   .l-footer .links {
     display: none;
-  }
-  
-  @media (min-width: 900px) and (max-width: 1200px) {
-  .bar.vertical .line .bar-container .bar {
-    width: 60%;
   }
 }
