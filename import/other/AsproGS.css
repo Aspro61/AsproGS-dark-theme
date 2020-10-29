@@ -4,9 +4,8 @@
   content: "君といた景色";
   display: block;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-beige);
-  -webkit-text-stroke: thin;
 }
 
 /* Никнейм */
