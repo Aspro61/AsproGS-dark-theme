@@ -96,13 +96,12 @@ hr {
   background-image: -webkit-linear-gradient(left, #202a31, #415c75, #202a31);
 }
 
-a, h2, h3, h4, .p-profiles .profile-head .c-info .c-additionals div a, .b-stats_bar .stat_names .stat_name a, .headline>a, .subheadline>a, .b-options-floated.mobile-desktop a, .b-options-floated .action, .p-profiles-show .achievements .header .title, .b-options-floated a, .b-options-floated .link, .p-profiles .profile-head .c-info .c-additionals b, .b-js-link, .b-stats_bar a.title, .headline .misc-links>a, .subheadline .misc-links>a, h3, .b-table th, .b-db_entry>.c-about .additional-links .line-container>.link, .b-db_entry>.c-about .additional-links .line-container>a, .b-user.detailed .history .line .event, .b-user.moderation .history .line .event, .p-userlist_comparer .comparer table .name a, .tooltip-details .b-nothing_here.centered, .b-forums .reload, .b-contests-menu .results, .b-contests-menu .grid a, .midheadline .misc-links>a, .b-stats_bar .title, header.head .notice, .bar.vertical .line .x_label, .b-achievement .c-about .percent, .b-achievement .about .percent, .b-entry-info .line .value, .bar.horizontal .line .x_label, .p-user_rates-index .list-groups .summary.lines, .p-profiles-edit .list .nickname-changes .link, .b-catalog_entry-tooltip .inner .additional-images .link .title, .b-db_entry-variant-list_item>.info .line .key, .b-catalog_entry-tooltip .inner .line .key, .b-catalog_entry-tooltip .inner .rating, .b-catalog_entry-tooltip .inner .rating .text, .b-comment>.inner .name-date a.name .normal, .b-animes-menu .total-rates, .b-rate .score-notice, .b-quote .quoteable::before, .b-quote-v2 .quoteable::before, .b-club .info .number, .p-animes_collection-index .pagination, .p-mangas_collection-index .pagination, .p-recommendations-index .pagination, .p-userlist_comparer-show .pagination, .b-header_filters .filter-line .title, .b-header_filters .filter-line a.current, .b-status-line .section.additional .collection-size, .b-animes-menu .menu-topics-block .entry .time, .p-animes-show .c-info-right .watch-online .kind, .p-mangas-show .c-info-right .watch-online .kind, .p-ranobe-show .c-info-right .watch-online .kind, .p-animes-show .c-info-right .watch-online a.kind, .p-mangas-show .c-info-right .watch-online a.kind, .p-ranobe-show .c-info-right .watch-online a.kind, .b-nothing_here, .p-profiles .profile-head .c-mobile-actions a, .p-profiles .profile-head .c-mobile-actions span, .b-options-floated.mobile-phone a, header.head a.misc, header.head .misc, header.head a.edit, .l-top_menu-v2, .l-top_menu-v2 .submenu>a, .l-top_menu-v2 .menu-dropdown>span a, .l-top_menu-v2 .global-search, .l-top_menu-v2 .global-search .search-results .nothing_found, .l-top_menu-v2 .global-search .search-results .search-mode, .l-top_menu-v2.is-search-focus .global-search .search-marker {
+a, h2, h3, h4, .p-profiles .profile-head .c-info .c-additionals div a, .b-stats_bar .stat_names .stat_name a, .headline > a, .subheadline > a, .b-options-floated.mobile-desktop a, .b-options-floated .action, .p-profiles-show .achievements .header .title, .b-options-floated a, .b-options-floated .link, .p-profiles .profile-head .c-info .c-additionals b, .b-js-link, .b-stats_bar a.title, .headline .misc-links > a, .subheadline .misc-links > a, h3, .b-table th, .b-db_entry > .c-about .additional-links .line-container > .link, .b-db_entry > .c-about .additional-links .line-container > a, .b-user.detailed .history .line .event, .b-user.moderation .history .line .event, .p-userlist_comparer .comparer table .name a, .tooltip-details .b-nothing_here.centered, .b-forums .reload, .b-contests-menu .results, .b-contests-menu .grid a, .midheadline .misc-links > a, .b-stats_bar .title, header.head .notice, .bar.vertical .line .x_label, .b-achievement .c-about .percent, .b-achievement .about .percent, .b-entry-info .line .value, .bar.horizontal .line .x_label, .p-user_rates-index .list-groups .summary.lines, .p-profiles-edit .list .nickname-changes .link, .b-catalog_entry-tooltip .inner .additional-images .link .title, .b-db_entry-variant-list_item > .info .line .key, .b-catalog_entry-tooltip .inner .line .key, .b-catalog_entry-tooltip .inner .rating, .b-catalog_entry-tooltip .inner .rating .text, .b-comment > .inner .name-date a.name .normal, .b-animes-menu .total-rates, .b-rate .score-notice, .b-quote .quoteable::before, .b-quote-v2 .quoteable::before, .b-club .info .number, .p-animes_collection-index .pagination, .p-mangas_collection-index .pagination, .p-recommendations-index .pagination, .p-userlist_comparer-show .pagination, .b-header_filters .filter-line .title, .b-header_filters .filter-line a.current, .b-status-line .section.additional .collection-size, .b-animes-menu .menu-topics-block .entry .time, .p-animes-show .c-info-right .watch-online .kind, .p-mangas-show .c-info-right .watch-online .kind, .p-ranobe-show .c-info-right .watch-online .kind, .p-animes-show .c-info-right .watch-online a.kind, .p-mangas-show .c-info-right .watch-online a.kind, .p-ranobe-show .c-info-right .watch-online a.kind, .b-nothing_here, .p-profiles .profile-head .c-mobile-actions a, .p-profiles .profile-head .c-mobile-actions span, .b-options-floated.mobile-phone a, header.head a.misc, header.head .misc, header.head a.edit, .l-top_menu-v2, .l-top_menu-v2 .submenu > a, .l-top_menu-v2 .menu-dropdown > span a, .l-top_menu-v2 .global-search, .l-top_menu-v2 .global-search .search-results .nothing_found, .l-top_menu-v2 .global-search .search-results .search-mode, .l-top_menu-v2.is-search-focus .global-search .search-marker {
   color: var(--color-main-text);
   transition: 0.2s ease-in-out;
 }
 
-.p-profiles .profile-head .c-brief header .notice a, .b-user.named_avatar .name, .p-user_history-index .history-page .history-interval p a, .b-topic>.inner .name-date .name, .p-user_rates-index .list-lines tr .name a, .p-contests-index .contest a, .b-comment>.inner .name-date .name, .b-catalog_entry-tooltip .inner a.name, .b-catalog_entry .cover .misc span, .p-profiles .profile-head .c-history .entry .title, .b-achievement .c-about a.title, .b-achievement .about a.title, .b-ban a, .b-ban .link, .b-log_entry a, .b-log_entry .link, .b-mention, .b-ban .abuser, .p-topics .l-menu .calendar .entry .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry .title, .b-forums .forum .link-with-input .link, .p-user_rates-index .stat-categories .category, .b-block_list li, .p-user_rates-index .list-lines tr td, .p-user_rates-index .l-content .order-control, .p-user_rates-index .list-lines tr .index, .b-message>.inner .name-date .name, .p-profiles-edit .account .change-password a, .b-dialog>.inner .name-date .name, .b-js-action, .p-animes_collection-index .pagination .link, .p-mangas_collection-index .pagination .link, .p-recommendations-index .pagination .link, .p-userlist_comparer-show .pagination .link, .b-user.detailed .info .image-name .name, .b-user.moderation .info .image-name .name, .b-user.detailed .history .line a .event, .b-user.moderation .history .line a .event, .b-user_rate_log a, .b-user_rate_log .link, .b-spoiler label, .p-profiles-show .about a, .b-comment>.inner .was_updated, .b-user16, .p-translations .animes a, .p-studios .studio .name, .b-cosplay_gallery h3 a,
-.b-bb_codes-examples .example a, .b-bb_codes-examples .result a, .b-feedback-inner .about a, header.head h1 a.back::before, header.head h2 a.back::before, .p-user_rates-index .list-lines tr td .episodes_total, .b-mention::before, .ProseMirror .b-mention::before, a.b-mention, .p-profiles-edit .account .change-password a, .p-profiles-edit .account .reset-password a, .p-dashboards .user_list .list-change .title {
+.p-profiles .profile-head .c-brief header .notice a, .b-user.named_avatar .name, .p-user_history-index .history-page .history-interval p a, .b-topic > .inner .name-date .name, .p-user_rates-index .list-lines tr .name a, .p-contests-index .contest a, .b-comment > .inner .name-date .name, .b-catalog_entry-tooltip .inner a.name, .b-catalog_entry .cover .misc span, .p-profiles .profile-head .c-history .entry .title, .b-achievement .c-about a.title, .b-achievement .about a.title, .b-ban a, .b-ban .link, .b-log_entry a, .b-log_entry .link, .b-mention, .b-ban .abuser, .p-topics .l-menu .calendar .entry .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry .title, .b-forums .forum .link-with-input .link, .p-user_rates-index .stat-categories .category, .b-block_list li, .p-user_rates-index .list-lines tr td, .p-user_rates-index .l-content .order-control, .p-user_rates-index .list-lines tr .index, .b-message > .inner .name-date .name, .p-profiles-edit .account .change-password a, .b-dialog > .inner .name-date .name, .b-js-action, .p-animes_collection-index .pagination .link, .p-mangas_collection-index .pagination .link, .p-recommendations-index .pagination .link, .p-userlist_comparer-show .pagination .link, .b-user.detailed .info .image-name .name, .b-user.moderation .info .image-name .name, .b-user.detailed .history .line a .event, .b-user.moderation .history .line a .event, .b-user_rate_log a, .b-user_rate_log .link, .b-spoiler label, .p-profiles-show .about a, .b-comment > .inner .was_updated, .b-user16, .p-translations .animes a, .p-studios .studio .name, .b-cosplay_gallery h3 a, .b-bb_codes-examples .example a, .b-bb_codes-examples .result a, .b-feedback-inner .about a, header.head h1 a.back::before, header.head h2 a.back::before, .p-user_rates-index .list-lines tr td .episodes_total, .b-mention::before, .ProseMirror .b-mention::before, a.b-mention, .p-profiles-edit .account .change-password a, .p-profiles-edit .account .reset-password a, .p-dashboards .user_list .list-change .title {
   color: var(--color-text);
   transition: 0.2s ease-in-out;
 }
@@ -111,15 +110,15 @@ header.head h1, header.head h2, .b-rate .text-score, .p-topics header h1 a.reloa
   color: var(--color-auxiliary-text);
 }
 
-.b-comment>.inner .name-date .time, .b-entry-info .line .key, .b-source .contributors .key, .b-source .mal .key, .b-source .source .key, .p-dashboards .user_list .list-change .note, .b-user_rate_log .date, .b-options-floated.count, .p-achievements-global table.statistics td:first-child, .b-db_entry>.c-about .additional-links .key {
+.b-comment > .inner .name-date .time, .b-entry-info .line .key, .b-source .contributors .key, .b-source .mal .key, .b-source .source .key, .p-dashboards .user_list .list-change .note, .b-user_rate_log .date, .b-options-floated.count, .p-achievements-global table.statistics td:first-child, .b-db_entry > .c-about .additional-links .key {
   color: var(--color-additional-text);
 }
 
-a:hover, .b-user16:hover a, .headline>a:hover, .subheadline>a:hover, .midheadline .misc-links>a:hover, .b-stats_bar .stat_names .stat_name a:hover, .p-profiles .profile-head .c-info .c-additionals div a:hover, .b-link:hover, .b-options-floated a:hover, .b-options-floated .link:hover, .b-options-floated.mobile-desktop a:hover, .p-profiles .profile-head .c-brief header .notice a:hover, .b-comment>.inner .name-date .name:hover, .b-user.named_avatar .name:hover, .b-js-link:hover, .b-stats_bar a.title:hover, .b-catalog_entry-tooltip .inner a.name:hover, .p-user_history-index .history-page .history-interval p a:hover, .b-lang_trigger span:hover, .p-profiles .profile-head .c-history .entry .title:hover, .b-achievement .c-about a.title:hover, .b-achievement .about a.title:hover, .b-ban a:hover, .b-ban .link:hover, .b-log_entry a:hover, .b-log_entry .link:hover, .b-topic>.inner .name-date .name:hover, .b-mention:hover, a.b-mention:hover, .b-ban .abuser:hover, .p-topics .l-menu .calendar .entry .title:hover, .p-topics .l-menu .reviews .entry .title:hover, .p-topics .l-menu .clubs .entry .title:hover, .b-forums .forum .link-with-input .link:hover, .p-user_rates-index .stat-categories .category:hover, .p-user_rates-index .l-content .order-control:hover, .b-message>.inner .name-date .name:hover, .p-profiles-edit .account .change-password a:hover, .b-dialog>.inner .name-date .name:hover, .headline .misc-links>a:hover, .subheadline .misc-links>a:hover, .b-js-action:hover, .p-animes_collection-index .pagination .link:hover, .p-mangas_collection-index .pagination .link:hover, .p-recommendations-index .pagination .link:hover, .p-userlist_comparer-show .pagination .link:hover, .b-user.detailed .info .image-name .name:hover, .b-user.moderation .info .image-name .name:hover, .b-user.detailed .history .line a .event:hover, .b-user.moderation .history .line a .event:hover, .b-user_rate_log a:hover, .b-user_rate_log .link:hover, .b-spoiler label:hover, .p-topics header h1 a.reload:hover, .p-profiles-show .about a:hover, .b-comment>.inner .was_updated:hover, .b-user16:hover, .p-translations .animes a:hover, .p-studios .studio .name:hover, .b-options-floated .action:hover, .p-contests-index .contest a:hover, .b-cosplay_gallery h3 a:hover, .b-bb_codes-examples .example a:hover, .b-bb_codes-examples .result a:hover, .b-feedback-inner .about a:hover, .b-forums .reload:hover, .b-contests-menu .results:hover, .b-contests-menu .grid a:hover, header.head a.misc:hover, header.head a.edit:hover, .p-animes-show .c-info-right .watch-online a.kind:hover, .p-mangas-show .c-info-right .watch-online a.kind:hover, .p-ranobe-show .c-info-right .watch-online a.kind:hover, .b-topic>.inner .was_updated:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover, .b-options-floated.mobile-phone a:hover, header.head h1 a.back:hover::before, header.head h2 a.back:hover::before, .p-profiles-edit .account .change-password a:hover, .p-profiles-edit .account .reset-password a:hover, .p-dashboards .user_list .list-change .title:hover {
+a:hover, .b-user16:hover a, .headline > a:hover, .subheadline > a:hover, .midheadline .misc-links > a:hover, .b-stats_bar .stat_names .stat_name a:hover, .p-profiles .profile-head .c-info .c-additionals div a:hover, .b-link:hover, .b-options-floated a:hover, .b-options-floated .link:hover, .b-options-floated.mobile-desktop a:hover, .p-profiles .profile-head .c-brief header .notice a:hover, .b-comment > .inner .name-date .name:hover, .b-user.named_avatar .name:hover, .b-js-link:hover, .b-stats_bar a.title:hover, .b-catalog_entry-tooltip .inner a.name:hover, .p-user_history-index .history-page .history-interval p a:hover, .b-lang_trigger span:hover, .p-profiles .profile-head .c-history .entry .title:hover, .b-achievement .c-about a.title:hover, .b-achievement .about a.title:hover, .b-ban a:hover, .b-ban .link:hover, .b-log_entry a:hover, .b-log_entry .link:hover, .b-topic > .inner .name-date .name:hover, .b-mention:hover, a.b-mention:hover, .b-ban .abuser:hover, .p-topics .l-menu .calendar .entry .title:hover, .p-topics .l-menu .reviews .entry .title:hover, .p-topics .l-menu .clubs .entry .title:hover, .b-forums .forum .link-with-input .link:hover, .p-user_rates-index .stat-categories .category:hover, .p-user_rates-index .l-content .order-control:hover, .b-message > .inner .name-date .name:hover, .p-profiles-edit .account .change-password a:hover, .b-dialog > .inner .name-date .name:hover, .headline .misc-links > a:hover, .subheadline .misc-links > a:hover, .b-js-action:hover, .p-animes_collection-index .pagination .link:hover, .p-mangas_collection-index .pagination .link:hover, .p-recommendations-index .pagination .link:hover, .p-userlist_comparer-show .pagination .link:hover, .b-user.detailed .info .image-name .name:hover, .b-user.moderation .info .image-name .name:hover, .b-user.detailed .history .line a .event:hover, .b-user.moderation .history .line a .event:hover, .b-user_rate_log a:hover, .b-user_rate_log .link:hover, .b-spoiler label:hover, .p-topics header h1 a.reload:hover, .p-profiles-show .about a:hover, .b-comment > .inner .was_updated:hover, .b-user16:hover, .p-translations .animes a:hover, .p-studios .studio .name:hover, .b-options-floated .action:hover, .p-contests-index .contest a:hover, .b-cosplay_gallery h3 a:hover, .b-bb_codes-examples .example a:hover, .b-bb_codes-examples .result a:hover, .b-feedback-inner .about a:hover, .b-forums .reload:hover, .b-contests-menu .results:hover, .b-contests-menu .grid a:hover, header.head a.misc:hover, header.head a.edit:hover, .p-animes-show .c-info-right .watch-online a.kind:hover, .p-mangas-show .c-info-right .watch-online a.kind:hover, .p-ranobe-show .c-info-right .watch-online a.kind:hover, .b-topic > .inner .was_updated:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover, .b-options-floated.mobile-phone a:hover, header.head h1 a.back:hover::before, header.head h2 a.back:hover::before, .p-profiles-edit .account .change-password a:hover, .p-profiles-edit .account .reset-password a:hover, .p-dashboards .user_list .list-change .title:hover {
   color: var(--color-main-text-hover);
 }
 
-a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stats_bar .stat_names .stat_name a:active, .b-comment>.inner .was_updated:active, .b-comment>.inner .name-date .name:active, .b-link:active, .b-topic .footer-vote .vote-group .vote:active, .b-topic .footer-vote .vote-group .vote:active, .p-profiles .profile-head .c-brief header .notice a:active, .b-show_more:active, .b-spoiler label:active, .p-animes-show .c-info-right .watch-online a.kind:active, .p-mangas-show .c-info-right .watch-online a.kind:active, .p-ranobe-show .c-info-right .watch-online a.kind:active, .headline>a:active, .midheadline>a:active, .subheadline>a:active, .b-topic>.inner .was_updated:active, .p-profiles-edit .account .change-password a:active, .p-profiles-edit .account .reset-password a:active, a.b-mention:active {
+a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stats_bar .stat_names .stat_name a:active, .b-comment > .inner .was_updated:active, .b-comment > .inner .name-date .name:active, .b-link:active, .b-topic .footer-vote .vote-group .vote:active, .b-topic .footer-vote .vote-group .vote:active, .p-profiles .profile-head .c-brief header .notice a:active, .b-show_more:active, .b-spoiler label:active, .p-animes-show .c-info-right .watch-online a.kind:active, .p-mangas-show .c-info-right .watch-online a.kind:active, .p-ranobe-show .c-info-right .watch-online a.kind:active, .headline > a:active, .midheadline > a:active, .subheadline > a:active, .b-topic > .inner .was_updated:active, .p-profiles-edit .account .change-password a:active, .p-profiles-edit .account .reset-password a:active, a.b-mention:active {
   color: var(--color-main-text-active);
 }
 
@@ -142,7 +141,7 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
   color: var(--color-main-text-hover) !important;
 }
 
-.profile-actions>a, .buttons [class*='item-'], .buttons .editor-controls .b-tooltipped, .b-subposter-action, .p-profiles .item-back, .b-list_switchers .switcher, .l-top_menu-v2 .global-search .clear, .item-add, .p-user_history-index .history-page .history-interval p .destroy, .p-animes .item-new-review, .p-mangas .item-new-review, .item-sign, .p-profiles .item-edit, .p-animes .item-edit, .p-mangas .item-edit, .p-characters .item-edit {
+.profile-actions > a, .buttons [class*='item-'], .buttons .editor-controls .b-tooltipped, .b-subposter-action, .p-profiles .item-back, .b-list_switchers .switcher, .l-top_menu-v2 .global-search .clear, .item-add, .p-user_history-index .history-page .history-interval p .destroy, .p-animes .item-new-review, .p-mangas .item-new-review, .item-sign, .p-profiles .item-edit, .p-animes .item-edit, .p-mangas .item-edit, .p-characters .item-edit {
   color: var(--color-text) !important;
   transition: 0.3s ease-in-out;
 }
@@ -152,7 +151,7 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
   transition: 0.2s ease-in-out;
 }
 
-.profile-actions>a:hover, .buttons [class*='item-']:hover,  
+.profile-actions > a:hover, .buttons [class*='item-']:hover,  
 .buttons .editor-controls .b-tooltipped:hover, .b-subposter-action:hover,
 .profile-actions .fav-remove:hover, .p-profiles .item-edit:hover,
 .p-profiles .item-back:hover, .tooltip-inner .close:hover,
@@ -167,7 +166,7 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
 
 .b-list_switchers .switcher.selected:hover,
 .buttons .editor-controls .b-tooltipped.selected:hover,
-.misc-links>a.selected:hover,
+.misc-links > a.selected:hover,
 .b-subposter-action.fav-remove:hover,
 .item-mobile.selected:hover {
   color: var(--color-main-text-hover) !important;
@@ -180,7 +179,7 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
 .b-options-floated .selected,
 .buttons .editor-controls .b-tooltipped.selected,
 .p-user_rates-index .stat-categories .category.active,
-.misc-links>a.selected, .item-mobile.selected {
+.misc-links > a.selected, .item-mobile.selected {
   color: var(--color-auxiliary-text) !important;
   transition: 0.2s ease-in-out;
 }
@@ -194,7 +193,7 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
 }
 
 /* Красный цвет */
-.b-ban .duration-ban, .b-comment>.inner .body .ban .resolution, .b-comment>.inner .body .ban .resolution a, .b-review_votes .votes-against, .b-topic .footer-vote .vote-group .vote.no.selected, .b-topic .footer-vote .vote-group .vote.no:hover, .b-review_votes .warn, .p-contests-show .voting-warning .red-warning, .p-contests .match-day .match-link .loser::before, .p-contests .rating .member .progress.negative, .b-log_entry .state.deleted, .b-log_entry .state.rejected, .b-log_entry .state.post_rejected, .b-log_entry .change-details .field-changes .diff del.diffmod, .b-log_entry .change-details .field-changes .diff del.diffdel, .b-abuse_request .remove, .b-abuse_request .resolution.rejected, .b-user_rate_log .action.destroy, .b-input .error, .p-contests .match-day .match-link.voted-left .started:last-child::before, .p-contests .match-day .match-link.voted-right .started:first-child::before, .b-review_votes .user-vote .voted-against, .b-catalog_entry .cover .misc span.released, .p-profiles header.head .misc .banned, .p-moderations_genres-index.p-studios-index .check.no::before, .p-profiles-edit .misc .profile-action .warn, .p-profiles-edit .misc .nickname-changes .warn, .p-profiles-edit .list .profile-action .warn, .p-profiles-edit .list .nickname-changes .warn {
+.b-ban .duration-ban, .b-comment > .inner .body .ban .resolution, .b-comment > .inner .body .ban .resolution a, .b-review_votes .votes-against, .b-topic .footer-vote .vote-group .vote.no.selected, .b-topic .footer-vote .vote-group .vote.no:hover, .b-review_votes .warn, .p-contests-show .voting-warning .red-warning, .p-contests .match-day .match-link .loser::before, .p-contests .rating .member .progress.negative, .b-log_entry .state.deleted, .b-log_entry .state.rejected, .b-log_entry .state.post_rejected, .b-log_entry .change-details .field-changes .diff del.diffmod, .b-log_entry .change-details .field-changes .diff del.diffdel, .b-abuse_request .remove, .b-abuse_request .resolution.rejected, .b-user_rate_log .action.destroy, .b-input .error, .p-contests .match-day .match-link.voted-left .started:last-child::before, .p-contests .match-day .match-link.voted-right .started:first-child::before, .b-review_votes .user-vote .voted-against, .b-catalog_entry .cover .misc span.released, .p-profiles header.head .misc .banned, .p-moderations_genres-index.p-studios-index .check.no::before, .p-profiles-edit .misc .profile-action .warn, .p-profiles-edit .misc .nickname-changes .warn, .p-profiles-edit .list .profile-action .warn, .p-profiles-edit .list .nickname-changes .warn {
   color: var(--color-red);
 }
 
@@ -213,7 +212,7 @@ span[style="background: #ffe6e6; padding: 0 2px;"] {
 }
 
 /* Зеленый цвет */
-.b-review_votes .votes-for, .b-topic .footer-vote .vote-group .vote.yes.selected, .b-topic .footer-vote .vote-group .vote.yes:hover, .p-contests .match-day .match-link .winner::before, .p-contests .rating .member .progress.positive, .b-log_entry .state.accepted, .b-log_entry .change-details .field-changes .diff ins.diffmod, .b-log_entry .change-details .field-changes .diff ins.diffins, .b-abuse_request .resolution.accepted, .p-achievements .p-achievements-global .b-entry-info .value.thresholds>span .gained, .p-contests .match-day .match-link.voted-left .started:first-child::before, .p-contests .match-day .match-link.voted-right .started:last-child::before, .b-review_votes .user-vote .voted-for, .b-poll .poll-variants .poll-variant.result label .voted-for, .b-catalog_entry .cover .misc span.anons, .p-list_imports-show .b-entry-info .state.finished, .p-moderations_genres-index.p-studios-index .check.yes::before {
+.b-review_votes .votes-for, .b-topic .footer-vote .vote-group .vote.yes.selected, .b-topic .footer-vote .vote-group .vote.yes:hover, .p-contests .match-day .match-link .winner::before, .p-contests .rating .member .progress.positive, .b-log_entry .state.accepted, .b-log_entry .change-details .field-changes .diff ins.diffmod, .b-log_entry .change-details .field-changes .diff ins.diffins, .b-abuse_request .resolution.accepted, .p-achievements .p-achievements-global .b-entry-info .value.thresholds > span .gained, .p-contests .match-day .match-link.voted-left .started:first-child::before, .p-contests .match-day .match-link.voted-right .started:last-child::before, .b-review_votes .user-vote .voted-for, .b-poll .poll-variants .poll-variant.result label .voted-for, .b-catalog_entry .cover .misc span.anons, .p-list_imports-show .b-entry-info .state.finished, .p-moderations_genres-index.p-studios-index .check.yes::before {
   color: var(--color-green);
 }
 
@@ -224,7 +223,7 @@ span[style="font-size:9px; color: green;"] {
 }
 
 /* Разные цвета */
-.b-ban .duration-warning, .b-log_entry .state.pending, .p-contests .match-day .match-link.voted-abstain .started:before, .p-list_imports-show .b-entry-info .state.pending, .b-abuse_request .outdated {
+.b-ban .duration-warning, .b-log_entry .state.pending, .p-contests .match-day .match-link.voted-abstain .started::before, .p-list_imports-show .b-entry-info .state.pending, .b-abuse_request .outdated {
   color: var(--color-orange);
 }
 
@@ -297,11 +296,11 @@ span[style="font-size:9px; color: green;"] {
   background: var(--color-menu-background);
 }
 
-.l-top_menu-v2 .menu-dropdown>span, .l-top_menu-v2 .submenu,
+.l-top_menu-v2 .menu-dropdown > span, .l-top_menu-v2 .submenu,
 .l-top_menu-v2 .menu-icon.active, .l-top_menu-v2 .menu-icon:focus,
-.l-top_menu-v2 .menu-dropdown>span a:hover,
+.l-top_menu-v2 .menu-dropdown > span a:hover,
 .l-top_menu-v2 .menu-dropdown.active>span,
-.l-top_menu-v2 .menu-dropdown>span:focus {
+.l-top_menu-v2 .menu-dropdown > span:focus {
   background: var(--color-submenu-background);
   transition: 0.3s ease-in-out;
 }
@@ -310,25 +309,25 @@ span[style="font-size:9px; color: green;"] {
   border: none;
 }
 
-.l-top_menu-v2 .submenu>a:hover {
+.l-top_menu-v2 .submenu > a:hover {
   background: none;
   color: var(--color-main-text-hover);
   transition: 0.3s ease-in-out;
 }
 
-.l-top_menu-v2 .submenu>a.icon-mail span.unread span {
+.l-top_menu-v2 .submenu > a.icon-mail span.unread span {
   color: var(--color-main-text) !important;
 }
 
-.l-top_menu-v2 .submenu>a.icon-mail span.unread span:not(:last-child):after {
+.l-top_menu-v2 .submenu > a.icon-mail span.unread span:not(:last-child):after {
   background: var(--color-main-text);
 }
 
 .l-top_menu-v2 .menu-icon.active,
 .l-top_menu-v2 .menu-icon:focus,
-.l-top_menu-v2 .menu-dropdown>span a:hover,
-.l-top_menu-v2 .menu-dropdown.active>span,
-.l-top_menu-v2 .menu-dropdown>span:focus {
+.l-top_menu-v2 .menu-dropdown > span a:hover,
+.l-top_menu-v2 .menu-dropdown.active > span,
+.l-top_menu-v2 .menu-dropdown > span:focus {
   color: var(--color-main-text-hover);
 }
 
@@ -338,7 +337,7 @@ span[style="font-size:9px; color: green;"] {
   transition: 0.3s ease-in-out;
 }
 
-.l-top_menu-v2 .submenu>.legend {
+.l-top_menu-v2 .submenu > .legend {
   font-size: 11px;
   line-height: 23px;
   text-align: center;
@@ -364,16 +363,16 @@ span[style="font-size:9px; color: green;"] {
   width: 18px;
 }
 
-.l-top_menu-v2 .menu-icon, .l-top_menu-v2 .menu-dropdown>span {
+.l-top_menu-v2 .menu-icon, .l-top_menu-v2 .menu-dropdown > span {
   height: 30px;
 }
 
-.l-top_menu-v2 .menu-dropdown.profile>span img {
+.l-top_menu-v2 .menu-dropdown.profile > span img {
   height: 21px;
   pointer-events: none;
 }
 
-.l-top_menu-v2 .submenu>a {
+.l-top_menu-v2 .submenu > a {
   font-size: 13px;
   height: 25px;
   line-height: 25px;
@@ -459,11 +458,11 @@ span[style="font-size:9px; color: green;"] {
 }
 
 .l-top_menu-v2 .menu-icon,
-.l-top_menu-v2 .menu-dropdown>span {
+.l-top_menu-v2 .menu-dropdown > span {
   padding: 0 10px;
 }
 
-.l-top_menu-v2 .menu-dropdown.main>span:not(.mobile) {
+.l-top_menu-v2 .menu-dropdown.main > span:not(.mobile) {
   min-width: 160px;
 }
 
@@ -507,7 +506,7 @@ span[style="font-size:9px; color: green;"] {
   background: var(--color-dropped-background);
 }
 
-.l-top_menu-v2 .menu-dropdown.profile>span {
+.l-top_menu-v2 .menu-dropdown.profile > span {
   min-width: 160px;
 }
 
@@ -540,10 +539,6 @@ span[style="font-size:9px; color: green;"] {
   width: auto;
   float: none;
   margin-right: 0;
-}
-
-.p-profiles .profile-content > .cc-2 > .c-right > .cc-2a {
-  float: right;
 }
 
 .p-profiles .profile-content > .cc-2 > .c-right {
@@ -970,11 +965,12 @@ body {
 }
 
 /* Друзья и клубы */
-.p-profiles-show .profile-content .c-right .cc-2a > .c-column:nth-child(2n+1) {
+.p-profiles-show .profile-content .c-right .cc-2a > .c-column:nth-child(2n + 1) {
   float: left;
   width: 24.5%;
   margin-top: -45rem;
   left: 5rem;
+  overflow: hidden;
 }
 
 .p-profiles-show .profile-content .c-right .cc-2a > .c-column:last-child {
@@ -984,10 +980,13 @@ body {
   right: 5rem;
 }
 
-#profiles_show .cc-friends .b-user {
-  float: none;
-  display: table-cell;
-  vertical-align: middle;
+.p-profiles-show .cc-friends {
+  display: flex;
+  width: 195%;
+}
+
+.p-profiles-show .cc-friends .b-user {
+  margin: 0 -3px 0 7px;
 }
 
 #profiles_show .b-clubs.one-line .b-club {
@@ -1126,17 +1125,17 @@ body {
   line-height: 25px;
 }
 
-.headline>a, .subheadline>a {
+.headline > a, .subheadline > a {
   padding-right: 0;
 }
 
-.headline>a::before, .midheadline>a::before, .subheadline>a::before {
+.headline > a::before, .midheadline > a::before, .subheadline > a::before {
   color: inherit;
   opacity: 0;
   transition: 0.2s ease-in-out;
 }
 
-.headline>a:hover::before, .midheadline>a:hover::before, .subheadline>a:hover::before {
+.headline > a:hover::before, .midheadline > a:hover::before, .subheadline > a:hover::before {
   color: var(--color-main-text-hover);
   opacity: 1;
 }
@@ -1255,7 +1254,7 @@ body {
   background: var(--color-dark);
 }
 
-.b-collection-filters .block>.filter {
+.b-collection-filters .block > .filter {
   margin-top: 0;
 }
 
@@ -1543,7 +1542,7 @@ body {
   line-height: 1.5rem;
 }
 
-.headline .misc-links>a, .midheadline .misc-links>a, .subheadline .misc-links>a {
+.headline .misc-links > a, .midheadline .misc-links > a, .subheadline .misc-links > a {
   text-transform: uppercase;
   font-size: 11px;
   font-weight: bold;
@@ -1624,7 +1623,7 @@ body {
   text-transform: uppercase;
 }
 
-.headline>a, .midheadline>a, .subheadline>a {
+.headline > a, .midheadline > a, .subheadline > a {
   padding-right: 0;
 }
 
@@ -1663,8 +1662,8 @@ body {
 }
 
 /* Старая */
-.p-dashboards-show .linkheadline>a:hover,
-.p-dashboards-show .linkheadline>a:hover::before {
+.p-dashboards-show .linkheadline > a:hover,
+.p-dashboards-show .linkheadline > a:hover::before {
   color: var(--color-main-text-hover);
 }
 
@@ -1704,17 +1703,17 @@ body {
   background-color: var(--color-background);
 }
 
-.p-dashboards .user_list .list-type>.title .switch, 
-.p-dashboards .user_list .history>.title .switch,
-.p-dashboards .user_list .list-type>.title .link,
-.p-dashboards .user_list .history>.title .link {
+.p-dashboards .user_list .list-type > .title .switch, 
+.p-dashboards .user_list .history > .title .switch,
+.p-dashboards .user_list .list-type > .title .link,
+.p-dashboards .user_list .history > .title .link {
   color: var(--color-text);
 }
 
-.p-dashboards .user_list .list-type>.title .switch:hover,
-.p-dashboards .user_list .history>.title .switch:hover,
-.p-dashboards .user_list .list-type>.title .link:hover,
-.p-dashboards .user_list .history>.title .link:hover {
+.p-dashboards .user_list .list-type > .title .switch:hover,
+.p-dashboards .user_list .history > .title .switch:hover,
+.p-dashboards .user_list .list-type > .title .link:hover,
+.p-dashboards .user_list .history > .title .link:hover {
   color: var(--color-main-text-hover);
 }
 
@@ -1766,14 +1765,14 @@ body {
 }
 
 /* Новые спойлеры */
-.b-spoiler_block>div {
+.b-spoiler_block > div {
   border-left: 4px solid var(--color-border);
   padding: 3px 3px 3px 14px;
   background-color: var(--color-background);
   background: transparent;
 }
 
-.b-spoiler_block>span {
+.b-spoiler_block > span {
   line-height: 20px;
   padding: 2px 10px;
   border: 1px solid var(--color-auxiliary-border);
@@ -1782,8 +1781,8 @@ body {
   background-color: var(--color-background);
 }
 
-.b-spoiler_block>span:hover,
-.b-spoiler_block>span:active {
+.b-spoiler_block > span:hover,
+.b-spoiler_block > span:active {
   background-color: var(--color-background-hover);
 }
 
@@ -1813,7 +1812,7 @@ code.b-code_inline {
   color: var(--color-red);
 }
 
-.tooltip-inner .b-spoiler_block>div {
+.tooltip-inner .b-spoiler_block > div {
   width: 70%;
   height: 5rem;
 }
@@ -1889,12 +1888,12 @@ code.b-code_inline {
   margin-right: 10px !important;
 }
 
-.b-db_entry>.c-about .additional-links .line-container>.link::after,
-.b-db_entry>.c-about .additional-links .line-container>a::after {
+.b-db_entry > .c-about .additional-links .line-container > .link::after,
+.b-db_entry > .c-about .additional-links .line-container > a::after {
   display: none;
 }
 
-.b-tag, .b-db_entry>.c-about .additional-links .line-container>a {
+.b-tag, .b-db_entry > .c-about .additional-links .line-container > a {
   padding: 1px 4px !important;
   margin: 2px 4px 2px 0;
   border: 1px solid var(--color-main-border);
@@ -1918,7 +1917,7 @@ code.b-code_inline {
 }
 
 .b-tag[href]:hover, .b-tag[href]:focus, .b-tag[href].active,
-.b-db_entry>.c-about .additional-links .line-container>a:hover {
+.b-db_entry > .c-about .additional-links .line-container > a:hover {
   margin: 2px 4px 2px 0;
   color: var(--color-main-text);
   background-color: var(--color-background-hover);
@@ -1973,8 +1972,8 @@ body[data-locale] .b-new_marker {
   transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
 }
 
-.b-topic>.inner .prebody .b-anime_status_tag,
-.b-topic>.inner footer .b-anime_status_tag,
+.b-topic > .inner .prebody .b-anime_status_tag,
+.b-topic > .inner footer .b-anime_status_tag,
 .b-news_wall-topic .status-line .tags .b-anime_status_tag:not(:last-child),
 .p-dashboards-show .b-anime_status_tag.other {
   padding: 3px 7px;
@@ -2140,7 +2139,7 @@ body[data-locale] .b-offtopic_marker {
   display: none;
 }
 
-.b-entry-info .line .key, .b-db_entry>.c-about .additional-links .key, 
+.b-entry-info .line .key, .b-db_entry > .c-about .additional-links .key, 
 .b-source .contributors .key, .b-source .mal .key, .b-source .source .key {
   font-weight: bold;
 }
@@ -2341,7 +2340,7 @@ body[data-locale] .b-offtopic_marker {
 }
 
 /*** КОММЕНТАРИИ И ЦИТАТЫ ***/
-.b-comment>.inner header img {
+.b-comment > .inner header img {
   width: 35px;
 }
 
@@ -2349,18 +2348,18 @@ body[data-locale] .b-offtopic_marker {
   margin-top: 3px;
 }
 
-.b-comment>.inner .name-date,
-.b-comment>.inner .body,
-.b-message>.inner .name-date,
-.b-message>.inner .body,
-.b-dialog>.inner .name-date,
-.b-dialog>.inner .body{
+.b-comment > .inner .name-date,
+.b-comment > .inner .body,
+.b-message > .inner .name-date,
+.b-message > .inner .body,
+.b-dialog > .inner .name-date,
+.b-dialog > .inner .body{
   margin-left: 0;
 }
 
-.b-comment>.inner .name-date, 
-.b-message>.inner .name-date .name,
-.b-dialog>.inner .name-date .name {
+.b-comment > .inner .name-date, 
+.b-message > .inner .name-date .name,
+.b-dialog > .inner .name-date .name {
   font-size: 16px;
 }
 
@@ -2369,7 +2368,7 @@ body[data-locale] .b-offtopic_marker {
 .b-comments .comments-expander,
 .b-forum .faye-loader,
 .b-postloader, .collapsed,
-.collapsed+.spoiler .hide-expanded,
+.collapsed + .spoiler .hide-expanded,
 .b-comments .faye-loader {
   padding: 2px 4px;
 }
@@ -2393,7 +2392,7 @@ body[data-locale] .b-offtopic_marker {
 .b-shiki_editor .quotes .link-value,
 .b-shiki_editor .upload .link-value,
 .b-input textarea, .collapsed,
-.collapsed+.spoiler .hide-expanded,
+.collapsed + .spoiler .hide-expanded,
 .b-comments .faye-loader {
   color: var(--color-main-text);
   background-color: var(--color-input-background);
@@ -2406,7 +2405,7 @@ body[data-locale] .b-offtopic_marker {
 .b-comments .comments-expander:hover,
 .b-forum .faye-loader:hover,
 .b-postloader:hover, .collapsed:hover,
-.collapsed+.spoiler .hide-expanded:hover,
+.collapsed + .spoiler .hide-expanded:hover,
 .b-comments .faye-loader:hover {
   color: var(--color-main-text);
   background-color: var(--color-background-hover);
@@ -2447,12 +2446,12 @@ body[data-locale] .b-offtopic_marker {
   border-color: var(--color-main-border);
 }
 
-.noUi-handle:after,
-.noUi-handle:before {
+.noUi-handle::after,
+.noUi-handle::before {
   background-color: var(--color-background);
 }
 
-.b-modal>.inner {
+.b-modal > .inner {
   background-color: var(--color-main-background);
 }
 
@@ -2721,7 +2720,7 @@ body[data-locale] .b-offtopic_marker {
   font-style: normal;
   font-weight: 400;
   src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19a7DRs5.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  unicode-range: U + 0400-045F, U + 0490-0491, U + 04B0-04B1, U + 2116;
 }
 
 @font-face {
@@ -2730,7 +2729,7 @@ body[data-locale] .b-offtopic_marker {
   font-style: normal;
   font-weight: 700;
   src: local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCAYb8td.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  unicode-range: U + 0400-045F, U + 0490-0491, U + 04B0-04B1, U + 2116;
 }
 
 @font-face {
@@ -2739,7 +2738,7 @@ body[data-locale] .b-offtopic_marker {
   font-style: normal;
   font-weight: 400;
   src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQ.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U + 0000-00FF, U + 0131, U + 0152-0153, U + 02BB-02BC, U + 02C6, U + 02DA, U + 02DC, U + 2000-206F, U + 2074, U + 20AC, U + 2122, U + 2191, U + 2193, U + 2212, U + 2215, U + FEFF, U + FFFD;
 }
 
 @font-face {
@@ -2748,7 +2747,7 @@ body[data-locale] .b-offtopic_marker {
   font-style: normal;
   font-weight: 700;
   src: local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCQYbw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U + 0000-00FF, U + 0131, U + 0152-0153, U + 02BB-02BC, U + 02C6, U + 02DA, U + 02DC, U + 2000-206F, U + 2074, U+20AC, U + 2122, U + 2191, U + 2193, U + 2212, U + 2215, U + FEFF, U + FFFD;
 }
 
 /*** MATERIAL ICON ***/
@@ -3240,7 +3239,7 @@ header.head h2 a.back::after,
 }
 
 .b-add_to_list .trigger, .b-add_to_list .option,
-.b-db_entry-variant-list_item>.info .b-user_rate .b-add_to_list .trigger {
+.b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger {
   border-left-width: 1px;
   font-size: 14px;
   font-weight: bold;
@@ -3249,8 +3248,8 @@ header.head h2 a.back::after,
   padding: 0;
 }
 
-.b-db_entry-variant-list_item>.info .b-user_rate .b-add_to_list .trigger, 
-.b-db_entry-variant-list_item>.info .b-user_rate .b-add_to_list .option {
+.b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger, 
+.b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .option {
   font-size: 12px;
   max-width: 180px;
   padding: 0;
@@ -3606,20 +3605,20 @@ header.head h2 a.back::after,
 .b-catalog_entry .cover .image-decor .image-cutter,
 .b-user.avatar img, .b-club .logo, .b-video img, .b-image img,
 .p-profiles .profile-head .c-history .entry img, .b-user.named_avatar img,
-.b-status-line .section.about .author .b-user16 img, .b-comment>.inner header img,
-.b-topic>.inner header img, .p-topics .l-menu .reviews .entry img,
-.p-topics .l-menu .clubs .entry img, .b-menu_logo img, .b-db_entry>.c-image img,
+.b-status-line .section.about .author .b-user16 img, .b-comment > .inner header img,
+.b-topic > .inner header img, .p-topics .l-menu .reviews .entry img,
+.p-topics .l-menu .clubs .entry img, .b-menu_logo img, .b-db_entry > .c-image img,
 .b-db_entry-variant-list_item .image img, .b-hot_topics-v2 .b-link .poster, 
 .b-user16 img, .smiley, .p-animes-show .studio-logo,
 .p-mangas-show .studio-logo, .p-ranobe-show .studio-logo,
 .p-user_rates-index .l-menu .avatar img, .p-profiles-edit .account .avatar-edit img,
 .b-catalog_entry-tooltip .inner .additional-images .link img, .b-user.named_avatar img,
-.b-user.avatar_fixed_margin img, .b-message>.inner header img,
-.b-comment>.inner header img, .b-dialog>.inner header img,
+.b-user.avatar_fixed_margin img, .b-message > .inner header img,
+.b-comment > .inner header img, .b-dialog > .inner header img,
 .b-user.detailed .info .image-name .image,
 .b-user.moderation .info .image-name .image,
 .p-dashboards-show .generated-news-line .poster img,
-.l-top_menu-v2 .menu-dropdown.profile>span img,
+.l-top_menu-v2 .menu-dropdown.profile > span img,
 .l-top_menu-v2 .icon-avatar img,
 .p-profiles .profile-head .c-brief .avatar img{
   border-radius: var(--border-radius);
@@ -3629,15 +3628,15 @@ header.head h2 a.back::after,
 
 .b-catalog_entry .cover .image-decor .image-cutter:hover,
 .b-user.avatar img:hover, .b-club .logo:hover, .b-user.named_avatar img:hover,
-.b-status-line .section.about .author .b-user16 img:hover, .b-comment>.inner header img:hover,
-.b-topic>.inner header img:hover, .p-topics .l-menu .reviews .entry img:hover,
-.p-topics .l-menu .clubs .entry img:hover, .b-menu_logo img:hover, .b-db_entry>.c-image img:hover,
+.b-status-line .section.about .author .b-user16 img:hover, .b-comment > .inner header img:hover,
+.b-topic > .inner header img:hover, .p-topics .l-menu .reviews .entry img:hover,
+.p-topics .l-menu .clubs .entry img:hover, .b-menu_logo img:hover, .b-db_entry > .c-image img:hover,
 .b-db_entry-variant-list_item .image img:hover, .b-hot_topics-v2 .b-link .poster:hover,
 .p-profiles .profile-head .c-history .entry img:hover, .b-user16 img:hover, .smiley:hover,
 .p-animes-show .studio-logo:hover, .p-mangas-show .studio-logo:hover, .p-ranobe-show .studio-logo:hover,
 .p-user_rates-index .l-menu .avatar img:hover, .p-profiles-edit .account .avatar-edit img:hover,
-.b-catalog_entry-tooltip .inner .additional-images .link img:hover, .b-message>.inner header img:hover,
-.b-comment>.inner header img:hover, .b-dialog>.inner header img:hover, .b-user.detailed .info .image-name .image:hover, .b-user.moderation .info .image-name .image:hover,
+.b-catalog_entry-tooltip .inner .additional-images .link img:hover, .b-message > .inner header img:hover,
+.b-comment > .inner header img:hover, .b-dialog > .inner header img:hover, .b-user.detailed .info .image-name .image:hover, .b-user.moderation .info .image-name .image:hover,
 .p-dashboards-show .generated-news-line .poster img:hover {
     filter: brightness(100%);
 }
@@ -3651,7 +3650,7 @@ header.head h2 a.back::after,
   transition: 0.2s ease-in-out;
 }
 
-.b-catalog_entry .cover .title.two_lined, .b-news_wall-topic .title, .b-animes-menu .menu-topics-block .entry .name, .b-club .name, .b-lang_trigger span, .b-add_to_list .trigger .add-trigger, .b-add_to_list .trigger .edit-trigger, .b-add_to_list .option .text, .b-add_to_list .plus, .b-add_to_list .edit, .b-add_to_list .trigger-arrow, .b-db_entry-variant-list_item>.info .name .b-link {
+.b-catalog_entry .cover .title.two_lined, .b-news_wall-topic .title, .b-animes-menu .menu-topics-block .entry .name, .b-club .name, .b-lang_trigger span, .b-add_to_list .trigger .add-trigger, .b-add_to_list .trigger .edit-trigger, .b-add_to_list .option .text, .b-add_to_list .plus, .b-add_to_list .edit, .b-add_to_list .trigger-arrow, .b-db_entry-variant-list_item > .info .name .b-link {
   transition: 0.2s ease-in-out;
 }
 
@@ -3770,8 +3769,8 @@ header.head h2 a.back::after,
 .p-contests .match-day .match-link .started:before,
 .p-contests .match-day .match-link .created:before,
 .p-contests .match-day .matches-num,
-.p-contests .match-day>.date .from,
-.p-contests .match-day>.date .to,
+.p-contests .match-day > .date .from,
+.p-contests .match-day > .date .to,
 .p-contests .rating .member .position {
   color: var(--color-main-text);
 }
@@ -3785,18 +3784,18 @@ header.head h2 a.back::after,
 }
 
 .p-contests .match-day .match-link .c-column.created a,
-.p-contests .match-day .match-link.voted-none>.c-column a,
-.p-contests .match-day .match-link.voted-left>.c-column:last-child a,
-.p-contests .match-day .match-link.voted-right>.c-column:first-child a {
+.p-contests .match-day .match-link.voted-none > .c-column a,
+.p-contests .match-day .match-link.voted-left > .c-column:last-child a,
+.p-contests .match-day .match-link.voted-right > .c-column:first-child a {
   color: var(--color-text);
 }
 
 .p-contests .rating .member a, .p-contests .results a,
-.p-contests .suggestion>a, .p-contests .variant>a {
+.p-contests .suggestion > a, .p-contests .variant > a {
   color: var(--color-auxiliary-text);
 }
 
-.b-contest_match .prev-match:hover, .b-contest_match .next-match:hover, .p-contests .match-day .match-link a:hover, .p-contests .rating .member a:hover, .p-contests .match-day .match-link .c-column.loser a:hover, .p-contests .match-day .match-link .c-column.created a:hover, .p-contests .match-day .match-link.voted-none>.c-column a:hover, .p-contests .match-day .match-link.voted-left>.c-column:last-child a:hover, .p-contests .match-day .match-link.voted-right>.c-column:first-child a:hover, .p-contests .results a:hover, .p-contests .suggestion>a:hover, .p-contests .variant>a:hover {
+.b-contest_match .prev-match:hover, .b-contest_match .next-match:hover, .p-contests .match-day .match-link a:hover, .p-contests .rating .member a:hover, .p-contests .match-day .match-link .c-column.loser a:hover, .p-contests .match-day .match-link .c-column.created a:hover, .p-contests .match-day .match-link.voted-none > .c-column a:hover, .p-contests .match-day .match-link.voted-left > .c-column:last-child a:hover, .p-contests .match-day .match-link.voted-right > .c-column:first-child a:hover, .p-contests .results a:hover, .p-contests .suggestion > a:hover, .p-contests .variant > a:hover {
   color: var(--color-main-text-hover);
 }
 
@@ -3891,12 +3890,12 @@ header.head h2 a.back::after,
   border: none;
 }
 
-.b-radio input[type="radio"]+.radio-label::before {
+.b-radio input[type="radio"] + .radio-label::before {
   border-radius: 2px;
   border: 2px solid var(--color-text);
 }
 
-.b-radio input[type="radio"]:checked+.radio-label::before {
+.b-radio input[type="radio"]:checked + .radio-label::before {
   content: 'check_box';
   color: var(--color-auxiliary-text);
   font-family: 'Material Icons';
@@ -4629,7 +4628,7 @@ header.head h2 a.back::after,
 }
 
 /* Новый редактор */
-.smileys[data-v-4b5cfd20], .b-tip>[data-popper-arrow]::before {
+.smileys[data-v-4b5cfd20], .b-tip > [data-popper-arrow]::before {
   background: var(--color-background);
 }
 
@@ -4641,7 +4640,7 @@ header.head h2 a.back::after,
   top: -32rem !important;
 }
 
-.b-tip--large[data-popper-placement^='bottom']>[data-popper-arrow] {
+.b-tip--large[data-popper-placement^='bottom'] > [data-popper-arrow] {
   top: 29rem;
 }
 
@@ -4650,7 +4649,7 @@ header.head h2 a.back::after,
     top: -30rem !important;
   }
   
-  .b-tip--large[data-popper-placement^='bottom']>[data-popper-arrow] {
+  .b-tip--large[data-popper-placement^='bottom'] > [data-popper-arrow] {
     top: 26.75rem;
   }
 }
@@ -4684,7 +4683,7 @@ header.head h2 a.back::after,
   background: transparent !important;
 }
 
-.menu_group+.menu_group::before,
+.menu_group + .menu_group::before,
 .menu_group .mobile_placeholder.is-active::after {
   border-right: 1px solid var(--color-border) !important;
 }
@@ -4777,19 +4776,19 @@ header.head h2 a.back::after,
   background: var(--color-background-active);
 }
 
-.b-spoiler_block.is-opened>span>i.edit,
-.b-spoiler_block.is-opened>span>i.expand,
-.b-spoiler_block.is-opened>span>i.center {
+.b-spoiler_block.is-opened > span > i.edit,
+.b-spoiler_block.is-opened > span > i.expand,
+.b-spoiler_block.is-opened > span > i.center {
   color: var(--color-main-text);
   transition: 0.2s ease-in-out;
 }
 
-.b-spoiler_block.is-opened>span>i.edit:hover, 
-.b-spoiler_block.is-opened>span>i.expand:hover,
-.b-spoiler_block.is-opened>span>i.center:hover,
-.b-spoiler_block.is-opened>span>i.edit:active,
-.b-spoiler_block.is-opened>span>i.expand:active,
-.b-spoiler_block.is-opened>span>i.center:active {
+.b-spoiler_block.is-opened > span > i.edit:hover, 
+.b-spoiler_block.is-opened > span > i.expand:hover,
+.b-spoiler_block.is-opened > span > i.center:hover,
+.b-spoiler_block.is-opened > span > i.edit:active,
+.b-spoiler_block.is-opened > span > i.expand:active,
+.b-spoiler_block.is-opened > span > i.center:active {
   color: var(--color-main-text-hover);
   background: none;
 }
@@ -4982,12 +4981,13 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
 
 /* Скроллбар */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 9px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--color-additional-background);
+  border-radius: var(--border-radius);
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -5075,7 +5075,7 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
 }
 
 /* Сообщить об ошибке */
-.b-feedback>.marker-positioner>.marker-text {
+.b-feedback > .marker-positioner > .marker-text {
   font-size: 12px;
   height: 28px;
   line-height: 1.65;
@@ -5086,7 +5086,7 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
   background-image: none;
 }
 
-.b-feedback>.marker-positioner>.marker-text:hover {
+.b-feedback > .marker-positioner > .marker-text:hover {
   border: 1px solid var(--color-main-border);
   background-color: var(--color-background);
   background-image: none;
@@ -5109,18 +5109,18 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
   transition-timing-function: ease-in-out;
 }
 
-.b-feedback>.marker-positioner>.marker-text:after {
+.b-feedback > .marker-positioner > .marker-text:after {
   color: var(--color-main-text);
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.b-feedback>.hover-activator {
+.b-feedback > .hover-activator {
   background: none;
 }
 
-.x1000 .b-modal>.inner,
-.x1200 .b-modal>.inner {
+.x1000 .b-modal > .inner,
+.x1200 .b-modal > .inner {
   max-width: 980px;
   left: 0;
   right: 0;
@@ -5168,9 +5168,9 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
 }
 
 .p-dashboards-show .v2 .my-list .label .misc-links a::after,
-.headline .misc-links>a::after,
-.midheadline .misc-links>a::after,
-.subheadline .misc-links>a::after {
+.headline .misc-links > a::after,
+.midheadline .misc-links > a::after,
+.subheadline .misc-links > a::after {
   content: '';
   display: inline-block;
   width: .5rem;
@@ -5201,7 +5201,7 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
 }
 
 /* Удаление подчеркивания */
-.headline>a, .subheadline>a, .b-stats_bar a.title, .b-stats_bar .stat_names .stat_name a, .p-profiles .profile-head .c-history .entry .title, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a, .p-profiles .profile-head .c-info .c-additionals div a, .b-form .cancel, .b-catalog_entry-tooltip .inner a.name, .b-options-floated.mobile-desktop a, .p-user_rates-index .l-content .order-control.active, .p-user_rates-index .l-content .order-control:hover, .p-user_rates-index .stat-categories .category, .p-user_rates-index .list-lines tr .name a, .b-options-floated.mobile-desktop a, .b-block_list li, .b-topic>.inner header .name-date a.name, .b-catalog_entry .cover .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry:hover .title, .p-topics .l-menu .sticky-topics .topic .title, .name-date a.name, .b-club .name, .b-user.named_avatar .name, .b-shiki_editor footer .about-bb_codes, .b-animes-menu .menu-topics-block .entry .name, .p-user_history-index .history-page .history-interval p a, .b-achievement .c-about a.title, .b-achievement .about a.title, header.head a.misc, .b-forums .forum .link-with-input .link, .b-log_entry a, .b-log_entry .link, .b-log_entry .b-user16 span, .b-ban .b-user16 span, .b-ban a, .b-ban .link, .p-contests .results a, .p-dashboards .user_list .list-change .title:hover, .b-ban .abuser:hover, .b-db_entry-variant-list_item>.info .name .b-link, .b-options-floated .link:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover {
+.headline > a, .subheadline > a, .b-stats_bar a.title, .b-stats_bar .stat_names .stat_name a, .p-profiles .profile-head .c-history .entry .title, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a, .p-profiles .profile-head .c-info .c-additionals div a, .b-form .cancel, .b-catalog_entry-tooltip .inner a.name, .b-options-floated.mobile-desktop a, .p-user_rates-index .l-content .order-control.active, .p-user_rates-index .l-content .order-control:hover, .p-user_rates-index .stat-categories .category, .p-user_rates-index .list-lines tr .name a, .b-options-floated.mobile-desktop a, .b-block_list li, .b-topic > .inner header .name-date a.name, .b-catalog_entry .cover .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry:hover .title, .p-topics .l-menu .sticky-topics .topic .title, .name-date a.name, .b-club .name, .b-user.named_avatar .name, .b-shiki_editor footer .about-bb_codes, .b-animes-menu .menu-topics-block .entry .name, .p-user_history-index .history-page .history-interval p a, .b-achievement .c-about a.title, .b-achievement .about a.title, header.head a.misc, .b-forums .forum .link-with-input .link, .b-log_entry a, .b-log_entry .link, .b-log_entry .b-user16 span, .b-ban .b-user16 span, .b-ban a, .b-ban .link, .p-contests .results a, .p-dashboards .user_list .list-change .title:hover, .b-ban .abuser:hover, .b-db_entry-variant-list_item > .info .name .b-link, .b-options-floated .link:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover {
   text-decoration: none !important;
 }
 
@@ -5209,7 +5209,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   text-decoration: none !important;
 }
 
-.b-tooltipped.dotted, .p-topics header h1 a.reload, .b-options-floated .action, .b-height_shortener .expand span, .b-log_entry .spoiler.collapse span, .b-log_entry .spoiler.collapsed span, .p-dashboards .user_list .list-type>.title .switch, .p-dashboards .user_list .history>.title .switch, .p-dashboards .user_list .list-type>.title .link, .p-dashboards .user_list .history>.title .link, .b-contest_match .vs .actions .action span, .b-topic .footer-vote .vote-group .vote, .p-db_entries-edit .b-list .b-js-action, header.head h1 a.back:hover:after, header.head h2 a.back:hover:after, .b-user_rate_log .spoiler.collapse span, .b-user_rate_log .spoiler.collapsed span, .b-lang_trigger span, .p-animes_collection-index .pagination .no-hover .link-current:not(.active), .p-mangas_collection-index .pagination .no-hover .link-current:not(.active), .p-recommendations-index .pagination .no-hover .link-current:not(.active), .p-userlist_comparer-show .pagination .no-hover .link-current:not(.active), .b-log_entry .spoiler.collapse.triggered span, .b-user_rate_log .spoiler.collapse.triggered span, .b-js-link, .b-spoiler label, .b-spoiler .content .inner, .b-spoiler .content .inner-prgrph, .b-forums .reload {
+.b-tooltipped.dotted, .p-topics header h1 a.reload, .b-options-floated .action, .b-height_shortener .expand span, .b-log_entry .spoiler.collapse span, .b-log_entry .spoiler.collapsed span, .p-dashboards .user_list .list-type > .title .switch, .p-dashboards .user_list .history > .title .switch, .p-dashboards .user_list .list-type > .title .link, .p-dashboards .user_list .history > .title .link, .b-contest_match .vs .actions .action span, .b-topic .footer-vote .vote-group .vote, .p-db_entries-edit .b-list .b-js-action, header.head h1 a.back:hover:after, header.head h2 a.back:hover:after, .b-user_rate_log .spoiler.collapse span, .b-user_rate_log .spoiler.collapsed span, .b-lang_trigger span, .p-animes_collection-index .pagination .no-hover .link-current:not(.active), .p-mangas_collection-index .pagination .no-hover .link-current:not(.active), .p-recommendations-index .pagination .no-hover .link-current:not(.active), .p-userlist_comparer-show .pagination .no-hover .link-current:not(.active), .b-log_entry .spoiler.collapse.triggered span, .b-user_rate_log .spoiler.collapse.triggered span, .b-js-link, .b-spoiler label, .b-spoiler .content .inner, .b-spoiler .content .inner-prgrph, .b-forums .reload {
   border-bottom: none;
 }
 
@@ -5228,31 +5228,31 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   color: var(--color-text);
 }
 
-.b-collection-topic>.inner .see-more {
+.b-collection-topic > .inner .see-more {
   border: 1px solid var(--color-main-border);
   background: var(--color-background);
   border-width: 2px;
   transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1) !important;
 }
 
-.b-collection-topic>.inner .see-more:hover {
+.b-collection-topic > .inner .see-more:hover {
   border: 1px solid var(--color-blue);
   border-width: 2px;
 }
 
-.b-collection-topic>.inner .see-more .text .inner {
+.b-collection-topic > .inner .see-more .text .inner {
   display: table-cell;
   vertical-align: middle;
 }
 
-.b-collection-topic>.inner .see-more .text {
+.b-collection-topic > .inner .see-more .text {
   position: absolute;
   top: 0;
   color: var(--color-main-text);
   transition: 0.2s ease-in-out;
 }
 
-.b-collection-topic>.inner .see-more .text:hover {
+.b-collection-topic > .inner .see-more .text:hover {
   color: var(--color-main-text-hover);
 }
 
@@ -5260,11 +5260,11 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   height: 150px;
 }
 
-.b-forum .b-collection-topic>.inner .see-more {
+.b-forum .b-collection-topic > .inner .see-more {
   height: 110px;
 }
 
-.p-db_entries-collections .b-collection-topic>.inner .see-more {
+.p-db_entries-collections .b-collection-topic > .inner .see-more {
   height: 119px;
 }
 
@@ -5295,7 +5295,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-rate .stars.score, .b-rate .stars.hover,
-.b-db_entry>.c-about .contest_winners .medal::before,
+.b-db_entry > .c-about .contest_winners .medal::before,
 .b-user_rate-history .score-time .stars-container .score {
   color: var(--color-auxiliary-text);
 }
@@ -5548,18 +5548,18 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   background-color: var(--color-background-hover);
 }
 
-.p-user_rates-index .list-posters .user_rate>.text,
-.b-catalog_entry .cover .image-decor>.text {
+.p-user_rates-index .list-posters .user_rate > .text,
+.b-catalog_entry .cover .image-decor > .text {
   color: var(--color-main-text);
   background: var(--color-background);
 }
 
-.p-user_rates-index .list-posters .user_rate>.text {
+.p-user_rates-index .list-posters .user_rate > .text {
   bottom: 41px;
 }
 
-.p-user_rates-index .list-posters .user_rate>.text::before,
-.b-catalog_entry .cover .image-decor>.text::before {
+.p-user_rates-index .list-posters .user_rate > .text::before,
+.b-catalog_entry .cover .image-decor > .text::before {
   background: transparent;
 }
 
@@ -5646,7 +5646,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     line-height: 30px;
   }
   
-  .l-top_menu-v2 .menu-dropdown>span[data-unread_count]::after {
+  .l-top_menu-v2 .menu-dropdown > span[data-unread_count]::after {
     position: static;
   }
   
@@ -5814,116 +5814,85 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 /* Активность */
-@media (max-width: 680px) {
-  .p-profiles .profile-head .c-info .c-additionals {
-    margin-top: 10rem;
-    margin-bottom: 5px;
+@media (max-width: 768px) {
+  .p-profiles .profile-head .c-brief header {
+    margin-bottom: 6rem;
   }
   
+  .p-profiles .profile-head .c-info .c-additionals {
+    margin-top: -6rem;
+  }
+  
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
+    margin-bottom: 3%;
+  }
+  
+  .p-profiles .profile-head .c-info .c-additionals b {
+    width: 55%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 920px) {
+  .p-profiles .profile-head .c-info .c-additionals b {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
   .p-profiles .profile-head .c-info .c-additionals b {
     width: auto;
   }
 }
 
-@media (min-width: 680px) and (max-width: 768px) { 
-  .p-profiles .profile-head .c-brief header {
-    margin-bottom: 14%;
-  }
-  
-  .p-profiles .profile-head .c-info .c-additionals {
-    margin-top: -5rem;
-  }
-}
-
-@media (min-width: 680px) and (max-width: 1024px) { 
-  .p-profiles .profile-head .c-info .c-additionals b {
-    width: 50%;
-  }
-}
-
 /* Друзья и клубы */
-@media (max-width: 680px) {
-  .p-profiles-show .profile-content .c-right .cc-2a>.c-column:nth-child(2n+1) {
-    width: 48%;
-    left: 0;
-    margin: 0;
+@media (max-width: 360px) {
+  .p-profiles-show .cc-friends {
+    width: 241%;
   }
   
-  .p-profiles-show .profile-content .c-right .cc-2a>.c-column:last-child {
-    width: 48%;
-    right: 0;
-    margin: 0;
-  }
-  
-  #profiles_show .cc-friends .b-user {
-    width: 16.6%;
-  }
-  
-  .b-clubs.one-line .b-club:last-child {
-    display: inline-block !important;
-    margin-left: 5%;
-  }
-  
-  #profiles_show .b-club .logo {
-    max-width: 120%;
-  }
-}
-
-@media (min-width: 681px) and (max-width: 768px) { 
-  .p-profiles-show .cc-friends .b-user {
+  #profiles_show .b-clubs.one-line .b-club {
     width: 20%;
   }
-  
-  .b-user.avatar img,
-  .b-user.named_avatar img,
-  .b-user.avatar_fixed_margin img {
-    max-width: 95%;
+}
+
+@media (max-width: 680px) {
+  .p-profiles-show .profile-content .c-right .cc-2a > .c-column:nth-child(2n + 1) {
+    width: 48%;
+    margin-top: 0;
+    left: 0;
   }
   
-  .p-profiles-show .profile-content .c-right .cc-2a>.c-column:nth-child(2n+1) {
-    float: left;
-    width: 29%;
-    margin-top: -41rem;
-    left: 1.5rem;
+  .p-profiles-show .profile-content .c-right .cc-2a > .c-column:last-child {
+    width: 48%;
+    margin-top: 0;
+    right: 0;
   }
   
-  .p-profiles-show .profile-content .c-right .cc-2a>.c-column:last-child {
-    float: right;
-    width: 29%;
-    margin-top: -41rem;
-    right: 1.5rem;
+  .b-clubs.one-line .b-club:nth-child(4) {
+    display: inline-block !important;
+  }
+  
+  #profiles_show .b-clubs.one-line .b-club {
+    margin: auto;
   }
 }
 
-@media (min-width: 768px) and (max-width: 920px) { 
-  .p-profiles-show .profile-content .c-right .cc-2a>.c-column:nth-child(2n+1) {
+@media (min-width: 680px) and (max-width: 920px) {
+  .p-profiles-show .profile-content .c-right .cc-2a > .c-column:nth-child(2n + 1) {
     width: 28%;
-    margin-top: -45rem;
-    left: 2rem;
+    left: 1rem;
   }
   
-  .p-profiles-show .profile-content .c-right .cc-2a>.c-column:last-child {
-    float: right;
+  .p-profiles-show .profile-content .c-right .cc-2a > .c-column:last-child {
     width: 28%;
-    margin-top: -45rem;
-    right: 2rem;
-  }
-  
-  .p-profiles-show .cc-friends .b-user {
-    width: 17%;
-    left: -2px;
+    right: 1rem;
   }
 }
 
-@media (max-width: 360px) {
-  .b-user.avatar img,
-  .b-user.named_avatar img,
-  .b-user.avatar_fixed_margin img {
-    max-width: 90%;
-  }
-  
-  #profiles_show .cc-friends .b-user {
-    width: 20.29%;
+@media (min-width: 681px) and (max-width: 768px) {
+  .p-profiles-show .profile-content .c-right .cc-2a > .c-column:nth-child(2n + 1),
+  .p-profiles-show .profile-content .c-right .cc-2a > .c-column:last-child {
+    margin-top: -42rem;
   }
 }
 
@@ -5946,7 +5915,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 @media (max-width: 1024px) {
-  .b-clubs.one-line .b-club {
+  .p-db_entries-show .b-clubs.one-line .b-club {
     width: 21%;
   }
 }
@@ -5973,9 +5942,27 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   }
 }
 
-@media (min-width: 681px) and (max-width: 920px) {  
+@media (min-width: 681px) and (max-width: 768px) {  
   #profiles_show .cc-favourites .c-column {
-    width: 11%;
+    width: calc(14% - 1px);
+  }
+}
+
+@media (max-width: 600px) {
+  #profiles_favorites .cc-favourites > .c-anime,
+  #profiles_favorites .cc-favourites > .c-manga,
+  #profiles_favorites .cc-favourites > .c-character,
+  #profiles_favorites .cc-favourites > .c-person {
+    width: 20%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  #profiles_favorites .cc-favourites > .c-anime,
+  #profiles_favorites .cc-favourites > .c-manga,
+  #profiles_favorites .cc-favourites > .c-character,
+  #profiles_favorites .cc-favourites > .c-person {
+    width: 14%;
   }
 }
 
@@ -6013,8 +6000,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 /* Переключатели */
-@media (max-width: 1024px) {  
-  .subheadline-buttons {
+@media (max-width: 1024px) {
+  .subheadline-buttons,
+  #achievements_franchise .subheadline-buttons,
+  #achievements_index .subheadline-buttons {
     margin-top: 0;
     right: 0;
   }
@@ -6201,7 +6190,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   width: 20px;
 }
 
-.l-top_menu-v2 .menu-dropdown>span[data-unread_count]::after {
+.l-top_menu-v2 .menu-dropdown > span[data-unread_count]::after {
   font-size: 15px;
   right: 10px;
   top: 12px;
@@ -6257,7 +6246,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 /** Постеры **/
 @media (max-width: 768px) {  
-  .cc-5>.c-column:nth-child(2n+1) {
+  .cc-5>.c-column:nth-child(2n + 1) {
     clear: right;
   }
   
