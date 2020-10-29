@@ -42,17 +42,17 @@
 }
 
 /* Меняем "обо мне" на своё */
-.p-profiles .profile-content>.about>.subheadline {
+.p-profiles .profile-content > .about > .subheadline {
   font-size: 0px;
   height: 28px;
 }
 
-.p-profiles[data-locale='ru'] .profile-content>.about>.subheadline::after {
+.p-profiles[data-locale='ru'] .profile-content > .about > .subheadline::after {
   content: 'Информация';
   font-size: 14px;
 }
 
-.p-profiles[data-locale='en'] .profile-content>.about>.subheadline::after {
+.p-profiles[data-locale='en'] .profile-content > .about > .subheadline::after {
   content: 'Information';
   font-size: 14px;
 }
