@@ -4063,22 +4063,17 @@ header.head h2 a.back::after,
 #profiles_show .cc-achievements,
 #profiles_show .cc-franchises {
   display: inline-flex;
-  justify-content: space-around;
-  align-content: space-around;
+  justify-content: center;
+  align-content: center;
   flex-wrap: nowrap;
   width: 100%;
 }
 
-#profiles_show .achievements .cc-franchises .b-badge {
-  width: 7.5%;
-  margin: 0;
-  left: 0.3%;
-  margin-top: 0.5%;
-}
-
 #profiles_show .achievements .cc-3 > .c-column:first-child {
-  position: absolute;
+  position: relative;
   width: 49.5%;
+  margin-right: 0;
+  float: left;
 }
 
 #profiles_show .achievements .cc-3 > .c-column:nth-child(2) {
@@ -4093,10 +4088,13 @@ header.head h2 a.back::after,
 }
 
 #profiles_show .achievements .cc-achievements .b-achievement {
-  margin: 0;
-  width: 24%;
-  margin-left: .5%;
-  margin-top: 1%;
+  width: 25%;
+  margin: 5px 2px 0 2px;
+}
+
+#profiles_show .achievements .cc-franchises .b-badge {
+  width: 8%;
+  margin: 5px 2px 0 2px;
 }
 
 #profiles_show .achievements .cc-achievements::after {
@@ -6191,9 +6189,8 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 .l-top_menu-v2 .menu-dropdown > span[data-unread_count]::after {
   font-size: 15px;
-  right: 10px;
-  top: 12px;
   font-weight: 700;
+  padding-left: 7px;
   color: var(--color-main-text);
   background: none;
   border: none;
