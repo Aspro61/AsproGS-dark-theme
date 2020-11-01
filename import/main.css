@@ -997,11 +997,25 @@ body {
   width: 32px;
 }
 
-#profiles_show .b-clubs:last-child {
+#profiles_show .b-clubs:last-child,
+.b-favoured .cc:last-child,
+.p-profiles-friends .cc:last-child,
+.p-db_entries-show .b-clubs:last-child {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-content: center;
+  justify-content: center;
+}
+
+.p-profiles-friends .b-user,
+.p-db_entries-show .b-clubs.one-line .b-club,
+.b-favoured .b-user {
+  margin: 0;
+  padding: 4px;
+}
+
+.b-clubs-menu .admin .b-user {
+  width: 25%;
 }
 
 /* Избранное */
@@ -3643,9 +3657,9 @@ header.head h2 a.back::after,
   justify-content: center;
 }
 
-@media (max-width: 1023px) {  
+@media (max-width: 830px) {
   .u-tabs > div:not([data-tab]) {
-   justify-content: left;
+    justify-content: left;
   }
 }
 
@@ -4769,14 +4783,10 @@ header.head h2 a.back::after,
 
 /*** СОРТИРОВКА ТАЙТЛОВ В КОЛЛЕКЦИЯХ ПО НАЛИЧИЮ В ЛИЧНЫХ СПИСКАХ ***/
 .b-collection-topic .collection-groups .cc-collection-groups {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 30px 15px;
-}
-
-.b-collection-topic .collection-groups .cc-collection-groups > .c-column {
-  width: 100%;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .b-collection-topic .collection-groups .cc-collection-groups > .b-catalog_entry.completed {
@@ -5376,6 +5386,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 /* Постеры, колонки и т.д */
 .cc-5, .cc-8,
+.cc-4, .cc-4a,
 .cc-entries,
 .cc-similar,
 .list-posters,
@@ -5429,8 +5440,11 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   padding: 4px;
 }
 
+.p-pages-ongoings .cc-entries > .c-column,
 .p-recommendations-favourites .cc-entries > .c-column,
-.cc-8 > .c-column, .cc-4a > .c-column {
+.cc-8 > .c-column,
+.cc-4a > .c-column,
+.cc-4 > .c-column {
   margin: 0;
   padding: 4px;
 }
@@ -5901,6 +5915,17 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   }
 }
 
+@media (min-width: 1024px) {
+  .p-profiles-friends .b-user {
+    width: 10%;
+  }
+  
+  .b-favoured .b-user,
+  .p-db_entries-show .b-clubs.one-line .b-club {
+    width: 24%;
+  }
+}
+
 /* Избранное */
 @media (max-width: 480px) {  
   #profiles_show .cc-favourites {
@@ -6224,15 +6249,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   }
 }
 
-/* Фикс в коллекциях */
-@media (max-width: 680px) {
-  .b-collection-topic .collection-groups .cc-collection-groups {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px 15px;
-  }
-}
-
 /** Постеры **/
 @media (max-width: 768px) {  
   .cc-5>.c-column:nth-child(2n + 1) {
@@ -6265,17 +6281,29 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     width: 10%;
   }
   
-  .cc-4a > .c-column {
-    width: 25%;
+  .cc-5 > .c-column {
+    width: 12%;
   }
   
-  .cc-5 > .c-column {
-    width: 14%;
+  .cc-4 > .c-column {
+    width: 13%;
+  }
+  
+  .cc-4a > .c-column {
+    width: 25%;
   }
   
   .p-recommendations-favourites .cc-entries > .c-column,
   .cc-8 > .c-column {
     width: 11%;
+  }
+  
+  .b-collection-topic .collection-groups .cc-collection-groups > .c-column {
+    width: 10%;
+  }
+  
+  .p-pages-ongoings .cc-entries > .c-column {
+    width: 13%;
   }
   
   .p-animes .cc-characters .c-character,
