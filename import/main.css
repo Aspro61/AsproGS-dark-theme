@@ -5552,7 +5552,11 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .p-user_rates-index .list-posters .user_rate > .text {
-  bottom: 41px;
+  overflow-y: auto;
+}
+
+.p-user_rates-index .list-posters ::-webkit-scrollbar {
+  width: 2px;
 }
 
 .p-user_rates-index .list-posters .user_rate > .text::before,
@@ -5707,6 +5711,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     padding: .5em;
     margin: 0 .5em 0 0;
     border: 0;
+  }
+  
+  .p-profiles .profile-head .c-history .entry img {
+    margin: 2px 10px 10px 0;
   }
 }
 
@@ -6237,6 +6245,15 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   
   .l-footer .links {
     display: none;
+  }
+}
+
+/* Фикс в коллекциях */
+@media (max-width: 680px) {
+  .b-collection-topic .collection-groups .cc-collection-groups {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 15px;
   }
 }
 
