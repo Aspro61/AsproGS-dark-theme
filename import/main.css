@@ -4789,6 +4789,12 @@ header.head h2 a.back::after,
   justify-content: center;
 }
 
+.x1000 .b-collection-topic .cc-collection-groups > .c-column,
+.x1200 .b-collection-topic .cc-collection-groups > .c-column {
+  margin: 0;
+  padding: 4px;
+}
+
 .b-collection-topic .collection-groups .cc-collection-groups > .b-catalog_entry.completed {
   order: -6;
 }
