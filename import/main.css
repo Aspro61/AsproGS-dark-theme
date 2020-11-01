@@ -1740,30 +1740,6 @@ body {
   text-transform: uppercase;
 }
 
-#profiles_show .about .b-spoiler .content .before::before {
-  display: inline-block;
-  content: 'Закрыть';
-  padding: 2px 0;
-  margin: 20px;
-  line-height: 1.6;
-  width: 8%;
-  font-size: 11px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 1px solid var(--color-main-border);
-  color: var(--color-main-text) !important;
-  background-color: var(--color-background);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#profiles_show .about .b-spoiler .content .before:hover::before {
-  background-color: var(--color-background-hover);
-}
-
-#profiles_show .about .b-spoiler .content .after {
-  display: none;
-}
-
 /* Новые спойлеры */
 .b-spoiler_block > div {
   border-left: 4px solid var(--color-border);
