@@ -258,7 +258,7 @@
 .p-profiles-favourites .cc-favourites:last-child img[alt*="Aya Tokiwa"],
 .b-catalog_entry-tooltip img[alt*="Aya Tokiwa"], 
 .p-profiles-show .about a img[alt*="Aya Tokiwa"] {
-  content: url(https://shikimori.one/system/user_images/original/184680/1250236.jpg);
+  content: url(https://kawai.shikimori.one/system/user_images/original/184680/1257246.jpg);
 }
 
 .b-catalog_entry .cover .image-decor img[alt*="Misa Hayase"],
@@ -267,7 +267,16 @@
 .p-profiles-favourites .cc-favourites:last-child img[alt*="Misa Hayase"],
 .b-catalog_entry-tooltip img[alt*="Misa Hayase"], 
 .p-profiles-show .about a img[alt*="Misa Hayase"] {
-  content: url(https://shikimori.one/system/user_images/original/184680/1250240.jpg);
+  content: url(https://dere.shikimori.one/system/user_images/original/184680/1257244.jpg);
+}
+
+.b-catalog_entry .cover .image-decor img[alt*="Kiichi Gotou"],
+.b-db_entry > .c-image img[alt*="Kiichi Gotou"],
+.p-profiles-show .cc-favourites img[alt*="Kiichi Gotou"],
+.p-profiles-favourites .cc-favourites:last-child img[alt*="Kiichi Gotou"],
+.b-catalog_entry-tooltip img[alt*="Kiichi Gotou"],
+.p-profiles-show .about a img[alt*="Kiichi Gotou"] {
+  content: url(https://nyaa.shikimori.one/system/user_images/original/184680/1257240.jpg);
 }
 
 /* Манга и ранобэ */
