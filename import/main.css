@@ -4781,6 +4781,24 @@ header.head h2 a.back::after,
   background: none;
 }
 
+.b-tip--dark {
+  color: var(--color-main-text);
+  background: var(--color-background);
+}
+
+.suggestions {
+  bottom: 10px !important;
+}
+
+.ProseMirror-suggestion {
+  color: var(--color-link);
+}
+
+.suggestions .item:not(.is-empty):not(.is-loading).is-selected,
+.suggestions .item:not(.is-empty):not(.is-loading):hover {
+  background-color: var(--color-background-active) !important;
+}
+
 /*** СОРТИРОВКА ТАЙТЛОВ В КОЛЛЕКЦИЯХ ПО НАЛИЧИЮ В ЛИЧНЫХ СПИСКАХ ***/
 .b-collection-topic .collection-groups .cc-collection-groups {
   display: flex;
@@ -5619,6 +5637,33 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-recommendations-favourites .b-catalog_entry .mobile-edit:active {
   color: var(--color-main-text);
   background-color: var(--color-background-hover);
+}
+
+/* Фикс постеров на определённых страницах */
+.b-comments .cc-6-g0,
+.b-comments .cc-6-g15, 
+.b-comments .cc-7-g0,
+.b-comments .cc-7-g15,
+.b-comments .cc-8-g0,
+.b-comments .cc-8-g15,
+.b-comments .cc-9-g0,
+.b-comments .cc-9-g15,
+.b-comments .cc-5,
+.b-comments .cc-8,
+.b-comments .cc-4 {
+  justify-content: flex-start;
+}
+
+.search-results {
+  display: block;
+}
+
+.p-moderations-show .cc-4 > .c-column,
+.p-moderations-index .cc-4 > .c-column {
+  width: 22%;
+  margin: 1px;
+  padding: 10px;
+  background: var(--color-background);
 }
 
 /*** МОБИЛЬНАЯ ВЕРСИЯ ***/
