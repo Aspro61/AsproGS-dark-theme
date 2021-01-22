@@ -5817,6 +5817,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 @media (max-width: 768px) {   
   .p-profiles .profile-head .c-brief .avatar img {
     width: auto;
+    height: auto;
   }
   
   .p-profiles-show .profile-head .c-brief .avatar {
