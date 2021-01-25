@@ -4823,10 +4823,6 @@ header.head h2 a.back::after,
   background-color: var(--color-background-active) !important;
 }
 
-.icon.is-button {
-  color: var(--color-main-text);
-}
-
 .icon.is-active.is-button {
   background-color: var(--color-background-active) !important;
 }
