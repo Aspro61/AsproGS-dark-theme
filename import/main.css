@@ -4700,32 +4700,28 @@ header.head h2 a.back::after,
   border-right: 1px solid var(--color-border) !important;
 }
 
-.icon[data-v-39840933]:not(.is-disabled) {
-  color: var(--color-auxiliary-text);
-  transition: 0.2s ease-in-out;
+.icon:not(.is-disabled) {
+  color: var(--color-auxiliary-text) !important;
+  transition: 0.2s ease-in-out !important;
 }
 
-.icon[data-v-39840933]:not(.is-disabled):hover,
-.icon[data-v-39840933]:not(.is-disabled):active {
-  color: var(--color-main-text-hover);
+.icon:not(.is-disabled):hover,
+.icon:not(.is-disabled):active {
+  color: var(--color-main-text-hover) !important;
 }
 
-.icon.is-disabled[data-v-39840933] {
-  color: var(--color-additional-background);
+.icon.is-disabled {
+  color: var(--color-additional-background) !important;
 }
 
-.icon[data-v-39840933] {
-  height: 22px;
-  border-radius: 0;
+.icon.is-active {
+  background: var(--color-background) !important;
 }
 
-.icon.is-active[data-v-39840933] {
-  background: var(--color-background);
-}
-
-.icon.is-active.is-button[data-v-39840933] {
-  color: var(--color-main-text);
-  background-color: var(--color-background);
+.icon.is-active.is-button {
+  color: var(--color-main-text) !important;
+  background-color: var(--color-background) !important;
+  border-radius: var(--border-radius) !important;
 }
 
 .shiki-file_uploader-upload_progress .bar {
