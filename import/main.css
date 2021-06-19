@@ -1579,8 +1579,12 @@ body {
   color: inherit;
 }
 
+.p-dashboards-show .v2 .my-list .label span {
+  color: var(--color-main-text);
+}
+
 .p-dashboards-show .v2 .my-list .label .misc-links a {
-  color: inherit;
+  color: var(--color-main-text);
   line-height: 1;
   font-size: 12px;
   text-transform: capitalize;
