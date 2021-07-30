@@ -316,14 +316,6 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   order: 16;
 }
 
-#profiles_show .cc-favourites .entry-26802 {
-  order: 17;
-}
-
-#profiles_show .cc-favourites .entry-506 {
-  order: 18;
-}
-
 #profiles_show .cc-favourites.user_rates-minified .c-anime,
 #profiles_show .cc-favourites.user_rates-minified .c-manga,
 #profiles_show .cc-favourites.user_rates-minified .c-person,
