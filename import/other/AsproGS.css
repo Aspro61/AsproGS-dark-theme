@@ -250,80 +250,6 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
 .score-1 + .score-notice::after { content: 'Мусор'; }
 
 /*** ИЗБРАННОЕ ***/
-/* Женские персонажи */
-#profiles_show .cc-favourites .entry-67067 {
-  order: 1;
-}
-
-#profiles_show .cc-favourites .entry-2756 {
-  order: 2;
-}
-
-#profiles_show .cc-favourites .entry-3105 {
-  order: 3;
-}
-
-#profiles_show .cc-favourites .entry-10285 {
-  order: 4;
-}
-
-#profiles_show .cc-favourites .entry-236 {
-  order: 5;
-}
-
-#profiles_show .cc-favourites .entry-4745 {
-  order: 6;
-}
-
-#profiles_show .cc-favourites .entry-110743 {
-  order: 7;
-}
-
-#profiles_show .cc-favourites .entry-78361 {
-  order: 8;
-}
-
-#profiles_show .cc-favourites .entry-3275 {
-  order: 9;
-}
-
-/* Мужские персонажи */
-#profiles_show .cc-favourites .entry-67065 {
-  order: 10;
-}
-
-#profiles_show .cc-favourites .entry-80 {
-  order: 11;
-}
-
-#profiles_show .cc-favourites .entry-425 {
-  order: 12;
-}
-
-#profiles_show .cc-favourites .entry-10010 {
-  order: 13;
-}
-
-#profiles_show .cc-favourites .entry-3096 {
-  order: 14;
-}
-
-#profiles_show .cc-favourites .entry-119763 {
-  order: 15;
-}
-
-#profiles_show .cc-favourites .entry-9028 {
-  order: 16;
-}
-
-#profiles_show .cc-favourites .entry-26802 {
-  order: 17;
-}
-
-#profiles_show .cc-favourites .entry-506 {
-  order: 18;
-}
-
 #profiles_show .cc-favourites.user_rates-minified .c-anime,
 #profiles_show .cc-favourites.user_rates-minified .c-manga,
 #profiles_show .cc-favourites.user_rates-minified .c-person,
@@ -331,6 +257,7 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
   display: none;
 }
 
+/* Женские персонажи */
 .p-profiles-show .cc-favourites img[alt*="Yukino Yukinoshita"] {
   border-top: 2px solid #3F888F;
 }
@@ -366,3 +293,5 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
 .p-profiles-show .cc-favourites img[alt*="Misa Hayase"] {
   border-top: 2px solid #ad1d06;
 }
+
+/* Мужские персонажи */
