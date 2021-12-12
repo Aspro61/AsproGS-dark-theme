@@ -4328,7 +4328,7 @@ header.head h2 a.back::after,
 
 .b-badge::before {
   background: var(--color-background);
-  color: var(--color-maun-text);
+  color: var(--color-main-text);
   border-radius: var(--border-radius);
 }
 
@@ -5880,7 +5880,8 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   border: 0 !important;
 }
 
-.b-anime_status_tag.is_written_before_release, .b-anime_status_tag.opened-collection {
+.b-anime_status_tag.is_written_before_release,
+.b-anime_status_tag.opened-collection {
   background-color: var(--color-watching-background);
   border: 1px solid var(--color-watching-border);
   color: var(--color-main-text);
