@@ -5694,6 +5694,199 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   background: var(--color-background);
 }
 
+/*** ОТЗЫВЫ ***/
+.b-review > .inner .review-details .b-status-line,
+.b-review > .inner .review-info .user-rate-label {
+  color: var(--color-main-text);
+}
+
+.b-status-line .section.main .comments::before {
+  color: var(--color-purple);
+}
+
+.b-status-line .section.additional .comments::before,
+.b-status-line .section.created_at time::before, 
+.b-status-line .section.additional .collection-size::before,
+.b-critique_votes::before, 
+.b-status-line .section.changed_at time::before {
+  color: var(--color-purple);
+}
+
+.b-review > .inner .review-details .name-url .to-review {
+  color: var(--color-main-text);
+}
+
+.b-review > .inner .review-details .name-url .to-review:hover {
+  color: var(--color-main-text-hover);
+}
+
+.b-review > .inner .review-details .name-url .to-review:active {
+  color: var(--color-main-text-active);
+}
+
+.b-critique_votes .votes-against {
+  color: var(--color-red);
+}
+
+.b-critique_votes .votes-for {
+  color: var(--color-green);
+}
+
+.b-reviews_navigation .navigation-node-all {
+  color: var(--color-main-text);
+  background-color: transparent;
+  border-color: var(--color-border);
+}
+
+.b-reviews_navigation .navigation-node-positive {
+  color: var(--color-green);
+  background-color: transparent;
+  border-color: var(--color-green);
+}
+
+.b-reviews_navigation .navigation-node-positive:not(.is-active):not(.is-empty):hover {
+  background-color: transparent;
+  color: #75b569;
+  border-color: #aae171;
+}
+
+.b-review > .inner .review-info .opinion.positive {
+  background: transparent;
+  color: var(--color-green);
+}
+
+.b-review > .inner .review-info .positive {
+  color: var(--color-green);
+}
+
+.b-reviews_navigation .navigation-node-neutral {
+  color: var(--color-blue);
+  background-color: transparent;
+  border-color: var(--color-blue);
+}
+
+.b-reviews_navigation .navigation-node-neutral:not(.is-active):not(.is-empty):hover {
+  background-color: transparent;
+  color: #69a4b5;
+  border-color: #71b3e1;
+}
+
+.b-review > .inner .review-info .opinion.negative {
+  background: transparent;
+  color: var(--color-red);
+}
+
+.b-review > .inner .review-info .negative {
+  color: var(--color-red);
+}
+
+.b-review > .inner .review-info .opinion.neutral {
+  color: var(--color-blue);
+  background: transparent;
+}
+
+.b-review > .inner .review-info .neutral {
+  color: var(--color-blue);
+}
+
+.b-reviews_navigation .navigation-node-negative {
+  color: var(--color-red);
+  background-color: transparent;
+  border-color: var(--color-red);
+}
+
+.b-reviews_navigation .navigation-node-negative:not(.is-active):not(.is-empty):hover {
+  background-color: transparent;
+  color: #b57569;
+  border-color: #e18370;
+}
+
+.b-review > .inner .review-details .name-url .name {
+  color: var(--color-text);
+  transition: 0.2s ease-in-out;
+}
+
+.b-review > .inner .review-details .name-url .name:hover {
+  color: var(--color-main-text-hover);
+}
+
+.b-review > .inner .review-details .name-url .name:active {
+  color: var(--color-main-text-active);
+}
+
+.b-footer_vote {
+  border-left: 3px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-main-text);
+}
+
+.b-reviews_navigation .navigation-node .count::before {
+  content: '–';
+  padding-right: 3px;
+}
+
+.b-reviews_navigation .navigation-node .count::after {
+  display: none;
+}
+
+.b-reviews_navigation .navigation-node-all:not(.is-active):not(.is-empty):hover {
+  background-color: transparent;
+  color: var(--color-main-text-hover);
+  border-color: var(--color-auxiliary-background);
+}
+
+.b-footer_vote .vote-group .vote span {
+  color: var(--color-blue);
+  border-bottom: 0;
+}
+
+.b-footer_vote .vote-group .vote.yes.selected,
+.b-footer_vote .vote-group .vote.yes:hover {
+  color: var(--color-green);
+}
+
+.b-footer_vote .vote-group .vote.no.selected,
+.b-footer_vote .vote-group .vote.no:hover {
+  color: var(--color-red);
+}
+
+.b-footer_vote .vote-group .vote span,
+.b-footer_vote .vote-group .vote.yes::before,
+.b-footer_vote .vote-group .vote.no::before {
+  font-size: 15px;
+}
+
+.b-footer_vote {
+  border: 0;
+  border-left: 3px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-main-text);
+}
+
+.b-review {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+}
+
+.b-reviews_navigation .navigation-node {
+  border-left: 3px solid;
+}
+
+.b-review > .inner  .b-rate .stars.score {
+  color: var(--color-orange) !important;
+}
+
+.b-review > .inner .b-add_to_list .trigger .edit-trigger {
+  border: 0 !important;
+}
+
+.b-anime_status_tag.is_written_before_release, .b-anime_status_tag.opened-collection {
+  background-color: var(--color-watching-background);
+  border: 1px solid var(--color-watching-border);
+  color: var(--color-main-text);
+  font-weight: bold;
+}
+
 /*** МОБИЛЬНАЯ ВЕРСИЯ ***/
 /* Меню */
 @media (max-width: 768px) {
