@@ -5904,11 +5904,13 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   color: inherit;
 }
 
-.b-reviews_navigation .navigation-node .label::before {
+.b-reviews_navigation .navigation-node .label::before,
+{
   content: "folder";
 }
 
-.b-reviews_navigation .navigation-node-positive .label::before {
+.b-reviews_navigation .navigation-node-positive .label::before,
+.b-review > .inner .review-info .opinion.positive::before {
   content: "thumb_up";
 }
 
@@ -5917,7 +5919,8 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   content: "thumbs_up_down";
 }
 
-.b-reviews_navigation .navigation-node-negative .label::before {
+.b-reviews_navigation .navigation-node-negative .label::before,
+.b-review > .inner .review-info .opinion.negative::before {
   content: "thumb_down";
 }
 
@@ -5925,7 +5928,9 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .b-reviews_navigation .navigation-node-positive .label::before,
 .b-reviews_navigation .navigation-node-neutral .label::before,
 .b-review > .inner .review-info .opinion.neutral::before,
-.b-reviews_navigation .navigation-node-negative .label::before {
+.b-reviews_navigation .navigation-node-negative .label::before,
+.b-review > .inner .review-info .opinion.positive::before,
+.b-review > .inner .review-info .opinion.negative::before {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
