@@ -16,6 +16,7 @@
 .p-profiles .profile-head[data-user-id="184680"] .c-brief header h1::before {
   content: 'Aspro';
   font-size: 2rem;
+  color: var(--color-special);
 }
 
 .p-profiles .profile-head .c-brief header h1.aliases::after {
@@ -43,17 +44,17 @@
 /* Меняем "обо мне" на своё */
 .p-profiles .profile-content > .about > .subheadline {
   font-size: 0px;
-  height: 28px;
+  height: 32px;
 }
 
 .p-profiles[data-locale='ru'] .profile-content > .about > .subheadline::after {
   content: 'Информация';
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .p-profiles[data-locale='en'] .profile-content > .about > .subheadline::after {
   content: 'Information';
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* Изменение в "обо мне" */
@@ -137,7 +138,7 @@
 }
 
 /*** VIP ***/
-.name-date a.name[title="'~'"], a.name[href*="/'~'"] {
+.name-date a.name[title="X+marks"], a.name[href*="/X+marks"] {
   color: var(--color-green) !important;
   font-family: Verdana, sans-serif !important;
 }
@@ -159,7 +160,7 @@
 }
 
 .name-date a.name:hover[title="AsproGS"], a.name:hover[href*="/AsproGS"],
-.name-date a.name:hover[title="'~'"], a.name:hover[href*="/'~'"],
+.name-date a.name:hover[title="X+marks"], a.name:hover[href*="/X+marks"],
 .name-date a.name:hover[title="Appalach1"], a.name:hover[href*="/Appalach1"],
 .name-date a.name:hover[title="pasha2142"], a.name:hover[href*="/pasha2142"],
 .name-date a.name:hover[title="Felzival"], a.name:hover[href*="/Felzival"] {
@@ -172,9 +173,9 @@
   border: none !important;
 }
 
-.name-date a.name[title="'~'"]:hover::after,
-.name-date a.name[href*="/'~'"]:hover::after,
-.subheadline a[title='~']:hover::after {
+.name-date a.name[title="X+marks"]:hover::after,
+.name-date a.name[href*="/X+marks"]:hover::after,
+.subheadline a[title='X+marks']:hover::after {
   position: absolute;
   content: "Илитный моэфаг";
   font-size: 11px;
@@ -192,10 +193,17 @@
   animation: 0.54s fadeIn cubic-bezier(0.4, 0, 0.6, 1);
 }
 
-.subheadline a[title='~']:hover::after {
+.subheadline a[title="X+marks"]:hover::after {
   line-height: 20px;
   padding-top: 2px;
   margin-top: -2px;
+}
+
+.b-user.avatar img[alt="X marks"],
+.b-user.named_avatar img[alt="X marks"],
+.b-comment > .inner header img[alt="X marks"] {
+  background-image: url(https://cdn.discordapp.com/attachments/211494615793139713/827183419175600148/unoS.png);
+  background-size: cover;
 }
 
 /* Имя персонажа */
