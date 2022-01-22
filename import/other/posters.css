@@ -177,7 +177,7 @@
 .p-profiles-favourites .cc-favourites:last-child img[alt*="Beatrice"],
 .b-catalog_entry-tooltip img[alt*="Beatrice"],
 .p-profiles-show .about a img[alt*="Beatrice"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/859058.jpg");
+  content: url("https://moe.shikimori.one/system/user_images/original/184680/1744337.jpg");
 }
 
 .b-catalog_entry .cover .image-decor img[alt*="Arcueid Brunestud"],
@@ -332,7 +332,7 @@
 .p-profiles-favourites .cc-favourites:last-child img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
 .b-catalog_entry-tooltip img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
 .p-profiles-show .about a img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/100971/464293.jpg");
+  content: url("https://desu.shikimori.one/system/user_images/original/184680/1744338.jpg");
 }
 
 .b-catalog_entry .cover .image-decor img[alt*="Ergo Proxy"],
@@ -341,7 +341,7 @@
 .p-profiles-favourites .cc-favourites:last-child img[alt*="Ergo Proxy"],
 .b-catalog_entry-tooltip img[alt*="Ergo Proxy"],
 .p-profiles-show .about a img[alt*="Ergo Proxy"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/1088424.jpg");
+  content: url("https://dere.shikimori.one/system/user_images/original/184680/859094.jpg");
 }
 
 .b-catalog_entry .cover .image-decor img[alt*="Texhnolyze"],
@@ -369,6 +369,15 @@
 .b-catalog_entry-tooltip img[alt*="Kidou Keisatsu Patlabor: On Television"],
 .p-profiles-show .about a img[alt*="Kidou Keisatsu Patlabor: On Television"] {
   content: url("https://desu.shikimori.one/system/user_images/original/184680/1088423.jpg");
+}
+
+.b-catalog_entry .cover .image-decor img[alt*="Perfect Blue"],
+.b-db_entry > .c-image img[alt*="Perfect Blue"],
+.p-profiles-show .cc-favourites img[alt*="Perfect Blue"],
+.p-profiles-favourites .cc-favourites:last-child img[alt*="Perfect Blue"],
+.b-catalog_entry-tooltip img[alt*="Perfect Blue"],
+.p-profiles-show .about a img[alt*="Perfect Blue"] {
+  content: url("https://desu.shikimori.one/system/user_images/original/184680/1744333.jpg");
 }
 
 /*** ПОСТЕРЫ ВТОРОЙ СПОСОБ ***/
