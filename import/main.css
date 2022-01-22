@@ -303,12 +303,6 @@ span[style="font-size:9px; color: green;"] {
   background: var(--color-menu-background);
 }
 
-@media (min-width: 1024px) {
-  #profiles_show .l-top_menu-v2 {
-    margin-bottom: 2rem;
-  }
-}
-
 .l-top_menu-v2 .menu-dropdown > span, .l-top_menu-v2 .submenu,
 .l-top_menu-v2 .menu-icon.active, .l-top_menu-v2 .menu-icon:focus,
 .l-top_menu-v2 .menu-dropdown > span a:hover,
