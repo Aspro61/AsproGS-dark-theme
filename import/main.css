@@ -18,35 +18,39 @@
   --color-main-text-active: #778998;
 
   /* Цвет текста */
-  --color-special: #8eafa3;
-  --color-text: #a794ad;
-  --color-auxiliary-text: #7b9da2;
-  --color-additional-text: #a8b3bd;
-
-  /* Цвет ссылок */
+  --color-text: #d3d7dc;
   --color-link: #a794ad;
+  --color-special: #8eafa3;
+  
+  /* Цвет иконок */
+  --color-selected: #c5abab;
+  --color-tooltipped: #b18079;
 
   /* Фоновые цвета */
   --color-main-background: rgb(15 17 19);
-  --color-background: #181c1f;
-  --color-auxiliary-background: #7b9da2;
-  --color-additional-background: #47505a;
-  --color-background-hover: #1e2629;
+  --color-background: #1d1b20;
+  --color-background-hover: #5e4759;
   --color-background-active: #343a3e;
   --color-input-background: #19191b;
+  --color-scrollbar: #624d5a;
 
   /* Цвет заголовков */
-  --color-headline-background: #272a2f;
-  --color-headline-auxiliary-background: #202e35;
+  --color-headline-background: #1e1f21;
 
   /* Цвет меню */
   --color-menu-background: #1e1f21;
   --color-submenu-background: #242527;
 
   /* Цвет обводки */
-  --color-main-border: #181c1f;
-  --color-border: #293135;
-  --color-auxiliary-border: #0f1112;
+  --color-border: #1e1b20;
+  --color-border-active: #3b383c;
+  --color-border-left: #584958;
+  --color-border-bottom: #725d72;
+
+  /* Цвет тегов */
+  --color-tag: #262326;
+  --color-tag-hover: #413244;
+  --color-tag-active: #343a3e;
 
   /* Разные цвета */
   --color-green: #5a9861;
@@ -60,7 +64,7 @@
   --color-dark: #0d0f10;
   --color-mint: #54af8d;
   
-  /* Цвет скопок */
+  /* Цвет кнопок */
   --color-button: #2f2831;
   --color-button-hover: #3c3040;
   --color-button-active: #4d3e52;
@@ -92,7 +96,7 @@ body, .l-page {
 }
 
 ::selection {
-  color: var(--color-link);
+  color: var(--color-special);
 }
 
 .b-link, .b-topic > .inner .name-date span.name {
@@ -100,25 +104,21 @@ body, .l-page {
 }
 
 hr {
-  background-image: -webkit-linear-gradient(left, #202a31, #415c75, #202a31);
+  background-image: -webkit-linear-gradient(left, #4c3e45, #835c6e, #4c3e45);
 }
 
-a, h2, h3, h4, .p-profiles .profile-head .c-info .c-additionals div a, .b-stats_bar .stat_names .stat_name a, .headline > a, .subheadline > a, .b-options-floated.mobile-desktop a, .b-options-floated .action, .p-profiles-show .achievements .header .title, .b-options-floated a, .b-options-floated .link, .p-profiles .profile-head .c-info .c-additionals b, .b-js-link, .b-stats_bar a.title, .headline .misc-links > a, .subheadline .misc-links > a, h3, .b-table th, .b-db_entry > .c-about .additional-links .line-container > .link, .b-db_entry > .c-about .additional-links .line-container > a, .b-user.detailed .history .line .event, .b-user.moderation .history .line .event, .p-userlist_comparer .comparer table .name a, .tooltip-details .b-nothing_here.centered, .b-forums .reload, .b-contests-menu .results, .b-contests-menu .grid a, .midheadline .misc-links > a, .b-stats_bar .title, header.head .notice, .bar.vertical .line .x_label, .b-achievement .c-about .percent, .b-achievement .about .percent, .b-entry-info .line .value, .bar.horizontal .line .x_label, .p-user_rates-index .list-groups .summary.lines, .p-profiles-edit .list .nickname-changes .link, .b-catalog_entry-tooltip .inner .additional-images .link .title, .b-db_entry-variant-list_item > .info .line .key, .b-catalog_entry-tooltip .inner .line .key, .b-catalog_entry-tooltip .inner .rating, .b-catalog_entry-tooltip .inner .rating .text, .b-comment > .inner .name-date a.name .normal, .b-animes-menu .total-rates, .b-rate .score-notice, .b-quote .quoteable::before, .b-quote-v2 .quoteable::before, .b-club .info .number, .p-animes_collection-index .pagination, .p-mangas_collection-index .pagination, .p-recommendations-index .pagination, .p-userlist_comparer-show .pagination, .b-header_filters .filter-line .title, .b-header_filters .filter-line a.current, .b-status-line .section.additional .collection-size, .b-animes-menu .menu-topics-block .entry .time, .p-animes-show .c-info-right .watch-online .kind, .p-mangas-show .c-info-right .watch-online .kind, .p-ranobe-show .c-info-right .watch-online .kind, .p-animes-show .c-info-right .watch-online a.kind, .p-mangas-show .c-info-right .watch-online a.kind, .p-ranobe-show .c-info-right .watch-online a.kind, .b-nothing_here, .p-profiles .profile-head .c-mobile-actions a, .p-profiles .profile-head .c-mobile-actions span, .b-options-floated.mobile-phone a, header.head a.misc, header.head .misc, header.head a.edit, .l-top_menu-v2, .l-top_menu-v2 .submenu > a, .l-top_menu-v2 .menu-dropdown > span a, .l-top_menu-v2 .global-search, .l-top_menu-v2 .global-search .search-results .nothing_found, .l-top_menu-v2 .global-search .search-results .search-mode, .l-top_menu-v2.is-search-focus .global-search .search-marker, .b-message .broken header .name-date a.name, .b-dialog .to_dialog {
+a, h2, h3, h4, .p-profiles .profile-head .c-info .c-additionals div a, .b-stats_bar .stat_names .stat_name a, .headline > a, .subheadline > a, .b-options-floated.mobile-desktop a, .b-options-floated .action, .p-profiles-show .achievements .header .title, .b-options-floated a, .b-options-floated .link, .p-profiles .profile-head .c-info .c-additionals b, .b-js-link, .b-stats_bar a.title, .headline .misc-links > a, .subheadline .misc-links > a, h3, .b-table th, .b-db_entry > .c-about .additional-links .line-container > .link, .b-db_entry > .c-about .additional-links .line-container > a, .b-user.detailed .history .line .event, .b-user.moderation .history .line .event, .tooltip-details .b-nothing_here.centered, .b-forums .reload, .b-contests-menu .results, .b-contests-menu .grid a, .midheadline .misc-links > a, .b-stats_bar .title, header.head .notice, .bar.vertical .line .x_label, .b-achievement .c-about .percent, .b-achievement .about .percent, .b-entry-info .line .value, .bar.horizontal .line .x_label, .p-user_rates-index .list-groups .summary.lines, .p-profiles-edit .list .nickname-changes .link, .b-catalog_entry-tooltip .inner .additional-images .link .title, .b-db_entry-variant-list_item > .info .line .key, .b-catalog_entry-tooltip .inner .line .key, .b-catalog_entry-tooltip .inner .rating, .b-catalog_entry-tooltip .inner .rating .text, .b-comment > .inner .name-date a.name .normal, .b-animes-menu .total-rates, .b-quote .quoteable::before, .b-quote-v2 .quoteable::before, .b-club .info .number, .p-animes_collection-index .pagination, .p-mangas_collection-index .pagination, .p-recommendations-index .pagination, .p-userlist_comparer-show .pagination, .b-header_filters .filter-line .title, .b-header_filters .filter-line a.current, .b-status-line .section.additional .collection-size, .b-animes-menu .menu-topics-block .entry .time, .p-animes-show .c-info-right .watch-online .kind, .p-mangas-show .c-info-right .watch-online .kind, .p-ranobe-show .c-info-right .watch-online .kind, .p-animes-show .c-info-right .watch-online a.kind, .p-mangas-show .c-info-right .watch-online a.kind, .p-ranobe-show .c-info-right .watch-online a.kind, .b-nothing_here, .p-profiles .profile-head .c-mobile-actions a, .p-profiles .profile-head .c-mobile-actions span, .b-options-floated.mobile-phone a, header.head a.misc, header.head .misc, header.head a.edit, .l-top_menu-v2, .l-top_menu-v2 .submenu > a, .l-top_menu-v2 .menu-dropdown > span a, .l-top_menu-v2 .global-search, .l-top_menu-v2 .global-search .search-results .nothing_found, .l-top_menu-v2 .global-search .search-results .search-mode, .l-top_menu-v2.is-search-focus .global-search .search-marker, .b-message .broken header .name-date a.name, .b-dialog .to_dialog, .b-entry-info .line .key, .b-db_entry > .c-about .additional-links .key, .b-source .contributors .key, .b-comment > .inner .name-date .time, .b-source .mal .key, .b-source .source .key, .p-dashboards .user_list .list-change .note, .b-user_rate_log .date, .b-options-floated.count, .p-achievements-global table.statistics td:first-child {
   color: var(--color-main-text);
   transition: 0.2s ease-in-out;
 }
 
-.p-profiles .profile-head .c-brief header .notice a, .b-user.named_avatar .name, .p-user_history-index .history-page .history-interval p a, .b-topic > .inner .name-date .name, .p-user_rates-index .list-lines tr .name a, .p-contests-index .contest a, .b-comment > .inner .name-date .name, .b-catalog_entry-tooltip .inner a.name, .b-catalog_entry .cover .misc span, .p-profiles .profile-head .c-history .entry .title, .b-achievement .c-about a.title, .b-achievement .about a.title, .b-ban a, .b-ban .link, .b-log_entry a, .b-log_entry .link, .b-mention, .b-ban .abuser, .p-topics .l-menu .calendar .entry .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry .title, .b-forums .forum .link-with-input .link, .p-user_rates-index .stat-categories .category, .b-block_list li, .p-user_rates-index .list-lines tr td, .p-user_rates-index .l-content .order-control, .p-user_rates-index .list-lines tr .index, .b-message > .inner .name-date .name, .p-profiles-edit .account .change-password a, .b-dialog > .inner .name-date .name, .b-js-action, .p-animes_collection-index .pagination .link, .p-mangas_collection-index .pagination .link, .p-recommendations-index .pagination .link, .p-userlist_comparer-show .pagination .link, .b-user.detailed .info .image-name .name, .b-user.moderation .info .image-name .name, .b-user.detailed .history .line a .event, .b-user.moderation .history .line a .event, .b-user_rate_log a, .b-user_rate_log .link, .b-spoiler label, .p-profiles-show .about a, .b-comment > .inner .was_updated, .b-user16, .p-translations .animes a, .p-studios .studio .name, .b-cosplay_gallery h3 a, .b-bb_codes-examples .example a, .b-bb_codes-examples .result a, .b-feedback-inner .about a, header.head h1 a.back::before, header.head h2 a.back::before, .p-user_rates-index .list-lines tr td .episodes_total, .b-mention::before, .ProseMirror .b-mention::before, a.b-mention, .p-profiles-edit .account .change-password a, .p-profiles-edit .account .reset-password a, .p-dashboards .user_list .list-change .title, .b-message > .inner .name-date a.name, .b-topic > .inner .name-date a.name, .b-comment > .inner .name-date a.name, .b-dialog > .inner .name-date a.name, .p-topics .l-menu .critiques .entry .title {
+.p-profiles .profile-head .c-brief header .notice a, .b-user.named_avatar .name, .p-user_history-index .history-page .history-interval p a, .b-topic > .inner .name-date .name, .p-user_rates-index .list-lines tr .name a, .p-contests-index .contest a, .b-comment > .inner .name-date .name, .b-catalog_entry-tooltip .inner a.name, .b-catalog_entry .cover .misc span, .p-profiles .profile-head .c-history .entry .title, .b-achievement .c-about a.title, .b-achievement .about a.title, .b-ban a, .b-ban .link, .b-log_entry a, .b-log_entry .link, .b-mention, .b-ban .abuser, .p-topics .l-menu .calendar .entry .title, .p-topics .l-menu .reviews .entry .title, .p-topics .l-menu .clubs .entry .title, .b-forums .forum .link-with-input .link, .p-user_rates-index .stat-categories .category, .b-block_list li, .p-user_rates-index .list-lines tr td, .p-user_rates-index .l-content .order-control, .p-user_rates-index .list-lines tr .index, .b-message > .inner .name-date .name, .p-profiles-edit .account .change-password a, .b-dialog > .inner .name-date .name, .b-js-action, .p-animes_collection-index .pagination .link, .p-mangas_collection-index .pagination .link, .p-recommendations-index .pagination .link, .p-userlist_comparer-show .pagination .link, .b-user.detailed .info .image-name .name, .b-user.moderation .info .image-name .name, .b-user.detailed .history .line a .event, .b-user.moderation .history .line a .event, .b-user_rate_log a, .b-user_rate_log .link, .b-spoiler label, .p-profiles-show .about a, .b-comment > .inner .was_updated, .b-user16, .p-translations .animes a, .p-studios .studio .name, .b-cosplay_gallery h3 a, .b-bb_codes-examples .example a, .b-bb_codes-examples .result a, .b-feedback-inner .about a, header.head h1 a.back::before, header.head h2 a.back::before, .p-user_rates-index .list-lines tr td .episodes_total, .b-mention::before, .ProseMirror .b-mention::before, a.b-mention, .p-profiles-edit .account .change-password a, .p-profiles-edit .account .reset-password a, .p-dashboards .user_list .list-change .title, .b-message > .inner .name-date a.name, .b-topic > .inner .name-date a.name, .b-comment > .inner .name-date a.name, .b-dialog > .inner .name-date a.name, .p-topics .l-menu .critiques .entry .title, .b-lang_trigger {
   color: var(--color-text);
   transition: 0.2s ease-in-out;
 }
 
-header.head h1, header.head h2, .b-rate .text-score, .p-topics header h1 a.reload {
-  color: var(--color-auxiliary-text);
-}
-
-.b-comment > .inner .name-date .time, .b-entry-info .line .key, .b-source .contributors .key, .b-source .mal .key, .b-source .source .key, .p-dashboards .user_list .list-change .note, .b-user_rate_log .date, .b-options-floated.count, .p-achievements-global table.statistics td:first-child, .b-db_entry > .c-about .additional-links .key {
-  color: var(--color-additional-text);
+header.head h1, header.head h2, .p-topics header h1 a.reload {
+  color: var(--color-red);
 }
 
 a:hover, .b-user16:hover a, .headline > a:hover, .subheadline > a:hover, .midheadline .misc-links > a:hover, .b-stats_bar .stat_names .stat_name a:hover, .p-profiles .profile-head .c-info .c-additionals div a:hover, .b-link:hover, .b-options-floated a:hover, .b-options-floated .link:hover, .b-options-floated.mobile-desktop a:hover, .p-profiles .profile-head .c-brief header .notice a:hover, .b-comment > .inner .name-date .name:hover, .b-user.named_avatar .name:hover, .b-js-link:hover, .b-stats_bar a.title:hover, .b-catalog_entry-tooltip .inner a.name:hover, .p-user_history-index .history-page .history-interval p a:hover, .b-lang_trigger span:hover, .p-profiles .profile-head .c-history .entry .title:hover, .b-achievement .c-about a.title:hover, .b-achievement .about a.title:hover, .b-ban a:hover, .b-ban .link:hover, .b-log_entry a:hover, .b-log_entry .link:hover, .b-topic > .inner .name-date .name:hover, .b-mention:hover, a.b-mention:hover, .b-ban .abuser:hover, .p-topics .l-menu .calendar .entry .title:hover, .p-topics .l-menu .reviews .entry .title:hover, .p-topics .l-menu .clubs .entry .title:hover, .b-forums .forum .link-with-input .link:hover, .p-user_rates-index .stat-categories .category:hover, .p-user_rates-index .l-content .order-control:hover, .b-message > .inner .name-date .name:hover, .p-profiles-edit .account .change-password a:hover, .b-dialog > .inner .name-date .name:hover, .headline .misc-links > a:hover, .subheadline .misc-links > a:hover, .b-js-action:hover, .p-animes_collection-index .pagination .link:hover, .p-mangas_collection-index .pagination .link:hover, .p-recommendations-index .pagination .link:hover, .p-userlist_comparer-show .pagination .link:hover, .b-user.detailed .info .image-name .name:hover, .b-user.moderation .info .image-name .name:hover, .b-user.detailed .history .line a .event:hover, .b-user.moderation .history .line a .event:hover, .b-user_rate_log a:hover, .b-user_rate_log .link:hover, .b-spoiler label:hover, .p-topics header h1 a.reload:hover, .p-profiles-show .about a:hover, .b-comment > .inner .was_updated:hover, .b-user16:hover, .p-translations .animes a:hover, .p-studios .studio .name:hover, .b-options-floated .action:hover, .p-contests-index .contest a:hover, .b-cosplay_gallery h3 a:hover, .b-bb_codes-examples .example a:hover, .b-bb_codes-examples .result a:hover, .b-feedback-inner .about a:hover, .b-forums .reload:hover, .b-contests-menu .results:hover, .b-contests-menu .grid a:hover, header.head a.misc:hover, header.head a.edit:hover, .p-animes-show .c-info-right .watch-online a.kind:hover, .p-mangas-show .c-info-right .watch-online a.kind:hover, .p-ranobe-show .c-info-right .watch-online a.kind:hover, .b-topic > .inner .was_updated:hover, .p-profiles .profile-head .c-mobile-actions a:hover, .p-profiles .profile-head .c-mobile-actions span:hover, .b-options-floated.mobile-phone a:hover, header.head h1 a.back:hover::before, header.head h2 a.back:hover::before, .p-profiles-edit .account .change-password a:hover, .p-profiles-edit .account .reset-password a:hover, .p-dashboards .user_list .list-change .title:hover, .p-dashboards-show .v2 .headline.magenta a:hover, .b-message>.inner .name-date a.name:hover, .b-topic > .inner .name-date a.name:hover, .b-comment > .inner .name-date a.name:hover, .b-dialog > .inner .name-date a.name:hover, .b-dialog .to_dialog:hover, .p-topics .l-menu .critiques .entry .title:hover  {
@@ -149,7 +149,7 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
 }
 
 .profile-actions > a, .buttons [class*='item-'], .buttons .editor-controls .b-tooltipped, .b-subposter-action, .p-profiles .item-back, .b-list_switchers .switcher, .l-top_menu-v2 .global-search .clear, .item-add, .p-user_history-index .history-page .history-interval p .destroy, .p-animes .item-new-review, .p-mangas .item-new-review, .item-sign, .p-profiles .item-edit, .p-animes .item-edit, .p-mangas .item-edit, .p-characters .item-edit {
-  color: var(--color-text) !important;
+  color: var(--color-tooltipped) !important;
   transition: 0.3s ease-in-out;
 }
 
@@ -187,7 +187,7 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
 .buttons .editor-controls .b-tooltipped.selected,
 .p-user_rates-index .stat-categories .category.active,
 .misc-links > a.selected, .item-mobile.selected {
-  color: var(--color-auxiliary-text) !important;
+  color: var(--color-selected) !important;
   transition: 0.2s ease-in-out;
 }
 
@@ -283,7 +283,7 @@ span[style="font-size:9px; color: green;"] {
 .p-mangas-show .other-names, 
 .p-ranobe-show .other-names {
   background-color: var(--color-background);
-  border-color: var(--color-main-border);
+  border-color: var(--color-border);
 }
 
 .p-animes-show .other-names:hover,
@@ -293,7 +293,7 @@ span[style="font-size:9px; color: green;"] {
 .p-mangas-show .other-names:active,
 .p-ranobe-show .other-names:active {
   background-color: var(--color-background-hover);
-  border-color: var(--color-main-border);
+  border-color: var(--color-border);
 }
 
 /*** МЕНЮ ***/
@@ -351,8 +351,8 @@ span[style="font-size:9px; color: green;"] {
   border-top: 1px solid;
   border-bottom: 1px solid;
   color: var(--color-main-text);
-  background: var(--color-headline-background);
-  border-color: var(--color-main-border);
+  background: var(--color-background);
+  border-color: var(--color-dark);
 }
   
 .l-top_menu-v2 .menu-dropdown>span span, 
@@ -443,12 +443,12 @@ span[style="font-size:9px; color: green;"] {
   width: 100%;
   border-top: solid 1px;
   border-bottom: solid 1px;
-  border-color: var(--color-main-border);
+  border-color: var(--color-border);
   background-color: var(--color-input-background);
 }
 
 .l-top_menu-v2 .global-search .search-results .b-tag {
-  border-color: var(--color-auxiliary-border);
+  border-color: var(--color-border);
 }
 
 .l-top_menu-v2 .menu-icon.mail::before,
@@ -489,18 +489,18 @@ span[style="font-size:9px; color: green;"] {
 .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:focus,
 .l-top_menu-v2 .global-search .search-results .search-mode.active,
 .l-top_menu-v2 .global-search .search-results .search-mode:focus {
-  background: var(--color-dark);
+  background: var(--color-background);
 }
 
 .l-top_menu-v2 .global-search .search-results .search-mode:hover {
-  background: var(--color-dark);
+  background: var(--color-background);
 }
 
 .l-top_menu-v2 .global-search .search-results .nothing_found,
 .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item,
 .l-top_menu-v2 .global-search .search-results .search-mode {
   border-top: 1px solid;
-  border-color: var(--color-main-border) !important;
+  border-color: var(--color-dark) !important;
 }
 
 .l-top_menu-v2 .global-search .search-results .nothing_found.active::before,
@@ -512,11 +512,11 @@ span[style="font-size:9px; color: green;"] {
 .l-top_menu-v2 .global-search .search-results .nothing_found:hover::before, 
 .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:hover::before,
 .l-top_menu-v2 .global-search .search-results .search-mode:hover::before {
-  background-color: var(--color-additional-background);
+  background-color: var(--color-border-left);
 }
 
 .l-top_menu-v2 .global-search .search-results .nothing_found::before {
-  background: var(--color-dropped-background);
+  background: var(--color-red);
 }
 
 .l-top_menu-v2 .menu-dropdown.profile > span {
@@ -735,7 +735,7 @@ body {
   height: 12px;
   line-height: 0;
   margin-top: 1rem;
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
 }
 
 .b-stats_bar .bar .first,
@@ -894,17 +894,15 @@ body {
 }
 
 .p-profiles .profile-head .c-info .c-additionals {
+  margin: -16rem auto;
   text-align: center;
-  margin-top: -16rem;
+  width: fit-content;
 }
 
 .p-profiles .profile-head .c-info .c-additionals b {
   display: block;
-  margin: auto;
-  padding-right: 0;
-  padding: 8px 5px;
+  padding: 8px 15px;
   font-size: 0;
-  width: 35%;
 }
 
 .p-profiles[data-locale='ru'] .profile-head .c-info .c-additionals b::before {
@@ -995,17 +993,15 @@ body {
 
 .bar.vertical .line .bar-container .bar {
   position: absolute;
-  width: 60%;
+  width: 50%;
   margin: auto;
   right: 0;
   left: 0;
 }
 
 .bar.vertical {
-  border-bottom: 1px solid;
-  border-color: var(--color-main-border);
-  padding-left: 2px;
-  padding-right: 0px;
+  border-bottom: 1px solid var(--color-border);
+  padding: 0;
 }
 
 .bar.simple .bar.s3 { background: var(--color-s3-background);}
@@ -1034,7 +1030,7 @@ body {
 
 .bar.horizontal .line .bar-container .value,
 .bar.vertical .line .bar-container .value {
-  color: inherit;
+  color: var(--color-main-text);
 }
 
 .b-stats_bar .bar .third {
@@ -1078,22 +1074,40 @@ body {
 }
 
 .p-profiles-show .cc-friends {
-  display: flex;
-  width: 195%;
+  white-space: nowrap;
 }
 
-.p-profiles-show .cc-friends .b-user {
-  margin: 10px 0 0 7px;
+.p-profiles-show .cc-friends::-webkit-scrollbar {
+  height: 2px;
+}
+
+.p-profiles-show .cc-friends .b-user:nth-child(n) {
   float: none;
-  width: auto;
+  margin-top: 10px;
+}
+
+@media (min-width: 1280px) {
+  .p-profiles-show .cc-friends .b-user:nth-child(n) {
+    width: auto;
+    margin: 10px 2px 0 5px;
+  }  
 }
 
 #profiles_show .b-clubs.one-line .b-club {
-  width: 14%;
+  width: auto;
+  margin: 10px auto;
 }
 
 #profiles_show .b-club .logo {
-  width: 32px;
+  width: 33px;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+@media (min-width: 1280px) {
+  #profiles_show .b-clubs.one-line .b-club {
+    margin: 10px 7px;
+  }
 }
 
 #profiles_show .b-clubs:last-child,
@@ -1111,10 +1125,6 @@ body {
 .b-favoured .b-user {
   margin: 0;
   padding: 4px;
-}
-
-.b-clubs.one-line .b-club {
-  margin-top: 10px;
 }
 
 .b-clubs-menu .admin .b-user {
@@ -1183,12 +1193,12 @@ body {
 .p-profiles-show .achievements .header, .subheadline, .midheadline {
   text-align: center;
   color: var(--color-main-text);
-  background: var(--color-menu-background);
-  border-left: 2px solid var(--color-additional-background);
+  background: var(--color-headline-background);
+  border-left: 2px solid var(--color-border-left);
 }
 
 .subheadline, .headline, .midheadline {
-  transition: 0.2s ease-in-out;
+  transition: var(--transition);
 }
 
 .subheadline:hover, .headline:hover, .midheadline:hover {
@@ -1263,10 +1273,6 @@ body {
   opacity: 1;
 }
 
-.subheadline-buttons {
-  margin-top: 2px;
-}
-
 #profiles_favorites .item-back::before, 
 #profiles_favorites .item-back::after {
   line-height: 1;
@@ -1280,8 +1286,8 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--color-main-text);
-  background: var(--color-menu-background);
-  border-left: 2px solid var(--color-additional-background);
+  background: var(--color-input-background);
+  border-left: 2px solid var(--color-border-left);
 }
 
 /*** СОВМЕСТИМОСТЬ ***/
@@ -1303,7 +1309,12 @@ body {
   margin-top: 1px;
 }
 
-.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility span.link-replacement, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.moderate, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.full, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.high, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.weak, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.zero {
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a,
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.moderate,
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.full,
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.high,
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.weak,
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text.zero {
   color: inherit;
 }
 
@@ -1324,7 +1335,6 @@ body {
   display: inline-block;
   white-space: normal;
   font-size: 11px;
-  color: inherit;
 }
 
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate::before {
@@ -1332,6 +1342,7 @@ body {
   padding-right: 0;
   font-size: 11px;
   float: none;
+  color: inherit;
   transition: 0.2s ease-in-out;
 }
 
@@ -1343,10 +1354,13 @@ body {
   display: none;
 }
 
+.p-userlist_comparer .comparer table .name a {
+  color: var(--color-text);
+}
+
 .p-userlist_comparer .comparer table .num, 
 .p-userlist_comparer .comparer table .name {
-  padding: 2px 4px;
-  border: 1px solid var(--color-border);
+  padding: 5px 5px;
 }
 
 .p-userlist_comparer-show .b-table th {
@@ -1374,11 +1388,7 @@ body {
 }
 
 .p-userlist_comparer .comparer table .selectable:hover {
-  background: var(--color-dark);
-}
-
-.b-collection-filters .block > .filter {
-  margin-top: 0;
+  background: var(--color-background);
 }
 
 /*** АНИМЕ И МАНГА ВНУТРИ СПИСКА ***/
@@ -1419,11 +1429,11 @@ body {
 .p-user_rates-index .l-content .order-control,
 .p-user_rates-index .list-lines tr .index {
   padding: 5px 1px;
-  border-bottom: 0px solid #456;
+  border-bottom: 0px solid var(--color-border-bottom);
 }
 
 .b-table tr.border {
-  border-top: 1px solid #456;
+  border-top: 1px solid var(--color-border);
   padding-bottom: 4px;
   padding-top: 0;
   text-align: left;
@@ -1446,8 +1456,8 @@ body {
 .p-user_rates-index .list-lines tr td .new-value input {
   border-radius: 0;
   color: var(--color-main-text);
-  background-color: var(--color-background);
-  border-color: var(--color-main-border);
+  background-color: var(--color-input-background);
+  border-color: var(--color-border);
 }
 
 .b-separator, .p-user_rates-index .list-lines tr td .episodes_total:before,
@@ -1457,15 +1467,19 @@ body {
 
 .p-user_rates-index .list-groups .summary.posters,
 .p-user_rates-index .list-groups .summary.lines.library {
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   background-color: var(--color-background);
   padding: 4px 10px 4px 10px;
   font-weight: bold;
   font-family: inherit;
 }
 
+.p-user_rates-index .list-groups .summary.lines.library {
+  text-transform: uppercase;
+}
+
 .p-user_rates-index .list-groups .summary.lines.list {
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   background-color: var(--color-background);
   padding: 2px 10px 2px 10px;
   text-align: center;
@@ -1488,12 +1502,11 @@ body {
 
 .p-user_rates-index .stat-categories .t2 {
   font-size: 14px;
-  font-weight: bold;
 }
 
 .p-user_rates-index .list-lines tr td .rate-text,
 .b-user_rate .rate-show .note {
-  color: var(--color-beige);
+  color: var(--color-red);
   font-size: 12px;
 }
 
@@ -1681,7 +1694,7 @@ body {
 
 .p-dashboards-show .v2 .my-list {
   padding: 5px 10px 8px;
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   background-color: var(--color-background);
 }
 
@@ -1691,7 +1704,7 @@ body {
 }
 
 .b-news_wall-topic {
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   background-color: var(--color-background);
   transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
 }
@@ -1711,8 +1724,7 @@ body {
 }
 
 .b-user_rate-history .progress {
-  background: var(--color-green);
-  background: var(--color-additional-background);
+  background: var(--color-background-active);
 }
 
 .b-user_rate-history .progress .completed {
@@ -1768,15 +1780,15 @@ body {
 .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag,
 .p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag,
 .p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag {
-  border: 1px solid var(--color-main-border);
-  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-tag);
 }
 
 .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag:hover,
 .p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag:hover,
 .p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag:hover {
-  background-color: var(--color-background-hover);
-  border-color: var(--color-main-border);
+  background-color: var(--color-tag-hover);
+  border-color: var(--color-border);
 }
 
 .b-link_button.dark-2 {
@@ -1806,36 +1818,36 @@ body {
 .b-link_button {
   color: var(--color-main-text);
   background-color: var(--color-background);
-  border-color: var(--color-main-border);
+  border-color: var(--color-border);
 }
 
 .b-link_button:hover {
   color: var(--color-main-text);
   background-color: var(--color-background-hover);
-  border-color: var(--color-main-border);
+  border-color: var(--color-border);
 }
 
 .p-dashboards-show .c-content .options .option {
   margin-right: 10px;
   padding: 7px 40px;
   text-transform: uppercase;
-  border: 1px solid var(--color-main-border) !important;
-  background-color: var(--color-additional-background);
+  border: 1px solid var(--color-button-border) !important;
+  background-color: var(--color-button);
   color: var(--color-main-text) !important;
   transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .p-dashboards-show .c-content .options .option:hover {
-  background-color: var(--color-background-hover);
+  background-color: var(--color-button-hover);
 }
 
 .p-dashboards-show .c-content .options .option.active {
-  background-color: var(--color-auxiliary-background);
-  color: var(--color-dark) !important;
+  background-color: var(--color-button-active);
+  color: var(--color-main-text) !important;
 }
 
 .p-dashboards-show .c-my_list {
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   background-color: var(--color-background);
 }
 
@@ -1854,7 +1866,7 @@ body {
 }
 
 .p-dashboards-show .cc-news .c-generated_news .b-topic {
-  border-top-color: var(--color-additional-background);
+  border-top-color: var(--color-border);
 }
 
 /*** СПОЙЛЕРЫ ***/
@@ -1878,9 +1890,9 @@ body {
 
 /* Новые спойлеры */
 .b-spoiler_block > div {
-  border-left: 4px solid var(--color-border);
   padding: 3px 3px 3px 14px;
   background-color: var(--color-background);
+  border-left: 4px solid var(--color-border-left);
   background: transparent;
 }
 
@@ -1891,6 +1903,7 @@ body {
   border: 1px solid var(--color-button-border);
   color: var(--color-main-text);
   background-color: var(--color-button);
+  transition: var(--transition);
 }
 
 .b-spoiler_block > span:hover,
@@ -1904,7 +1917,7 @@ body {
 }
 
 .b-spoiler_inline:not(.is-opened) {
-  background-color: var(--color-additional-background);
+  background-color: var(--color-background);
 }
 
 .b-spoiler_inline:not(.is-opened):hover,
@@ -1913,13 +1926,12 @@ body {
 }
 
 .b-quote-v2 {
-  border-left: 4px solid var(--color-border);
-  background-color: var(--color-input-background);
+  border-left: 4px solid var(--color-border-left);
   background: transparent;
 }
 
 code.b-code_inline {
-  border: 1px solid var(--color-auxiliary-border);
+  border: 1px solid var(--color-border);
   background-color: var(--color-background);
   color: var(--color-red);
 }
@@ -1932,8 +1944,7 @@ code.b-code_inline {
 /*** ВСПЛЫВАЮЩИЕ ОКНА ***/
 .tooltip-inner {
   background: var(--color-background);
-  border: 1px solid;
-  border-image: 1 -webkit-linear-gradient(left, #181c1f, #1b232b, #181c1f);
+  border: 1px solid var(--color-border);
   color: inherit;
 }
 
@@ -1969,7 +1980,7 @@ code.b-code_inline {
   border: 1px solid;
   font-weight: bold;
   text-transform: uppercase;
-  border: var(--color-main-border);
+  border: var(--color-border);
   border-radius: 0;
   box-shadow: none;
 }
@@ -2008,9 +2019,9 @@ code.b-code_inline {
 .b-tag, .b-db_entry > .c-about .additional-links .line-container > a {
   padding: 1px 4px !important;
   margin: 2px 4px 2px 0;
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text) !important;
-  background-color: var(--color-background);
+  background-color: var(--color-tag);
   border-radius: 0;
   font-size: 13px !important;
   font-weight: normal;
@@ -2019,25 +2030,25 @@ code.b-code_inline {
 }
 
 .b-tag[href] {
-  border: 1px solid var(--color-main-border) !important;
-  background-color: var(--color-background);
+  border: 1px solid var(--color-border) !important;
+  background-color: var(--color-tag);
 }
 
 .tooltip-inner .b-tag[href] {
-  background-color: var(----color-auxiliary-background);
-  border-color: var(--color-auxiliary-border) !important;
+  background-color: var(--color-tag);
+  border-color: var(--color-border) !important;
 }
 
 .b-tag[href]:hover, .b-tag[href]:focus, .b-tag[href].active,
 .b-db_entry > .c-about .additional-links .line-container > a:hover {
   margin: 2px 4px 2px 0;
   color: var(--color-main-text);
-  background-color: var(--color-background-hover);
-  border-color: var(--color-main-border);
+  background-color: var(--color-tag-hover);
+  border-color: var(--color-border);
 }
 
 .b-tag[href]:active {
-  background-color: var(--color-background-active);
+  background-color: var(--color-tag-active);
 }
 
 .b-tag:last-child {
@@ -2047,7 +2058,7 @@ code.b-code_inline {
 .b-tag:hover {
   margin: 2px 4px 2px 0;
   color: var(--color-main-text);
-  background-color: var(--color-background-hover);
+  background-color: var(--color-tag-hover);
 }
 
 .b-anime_status_tag.released,
@@ -2066,6 +2077,7 @@ code.b-code_inline {
 .b-anime_status_tag.broadcast, 
 .b-anime_status_tag.article,
 .b-anime_status_tag.contest,
+.b-anime_status_tag.critique,
 body[data-locale] .b-abuse_marker,
 body[data-locale] .b-broadcast_marker,
 body[data-locale] .b-offtopic_marker,
@@ -2119,7 +2131,7 @@ body[data-locale] .b-offtopic_marker {
   display: none !important;
 }
 
-.b-anime_status_tag.released::after, .b-anime_status_tag.anons::after, .b-anime_status_tag.ongoing::after, .b-anime_status_tag.episode::after, .b-anime_status_tag.studio::after, .b-anime_status_tag.other::after, .b-anime_status_tag.summary::after, .b-anime_status_tag.news::after, .b-anime_status_tag.review::after, .b-anime_status_tag.collection::after, .b-anime_status_tag.cosplay::after, .b-anime_status_tag.offtopic::after, .b-anime_status_tag.ignored::after, .b-anime_status_tag.broadcast::after, body[data-locale] .b-abuse_marker::after, body[data-locale] .b-broadcast_marker::after, body[data-locale] .b-offtopic_marker::after, body[data-locale] .b-summary_marker::after, body[data-locale] .b-spoiler_marker::after, body[data-locale] .b-new_marker::after, .b-anime_status_tag.article[data-text]::before, .b-anime_status_tag.contest[data-text]::before {
+.b-anime_status_tag.released::after, .b-anime_status_tag.anons::after, .b-anime_status_tag.ongoing::after, .b-anime_status_tag.episode::after, .b-anime_status_tag.studio::after, .b-anime_status_tag.other::after, .b-anime_status_tag.summary::after, .b-anime_status_tag.news::after, .b-anime_status_tag.review::after, .b-anime_status_tag.collection::after, .b-anime_status_tag.cosplay::after, .b-anime_status_tag.offtopic::after, .b-anime_status_tag.ignored::after, .b-anime_status_tag.broadcast::after, body[data-locale] .b-abuse_marker::after, body[data-locale] .b-broadcast_marker::after, body[data-locale] .b-offtopic_marker::after, body[data-locale] .b-summary_marker::after, body[data-locale] .b-spoiler_marker::after, body[data-locale] .b-new_marker::after, .b-anime_status_tag.article[data-text]::before, .b-anime_status_tag.contest[data-text]::before, .b-anime_status_tag.critique[data-text]::before {
   content: attr(data-text);
   text-transform: capitalize;
 }
@@ -2162,7 +2174,8 @@ body[data-locale] .b-offtopic_marker {
   color: var(--color-blue);
 }
 
-.b-anime_status_tag.article {
+.b-anime_status_tag.article,
+.b-anime_status_tag.critique {
   background-color: transparent;
   color: var(--color-pink);
 }
@@ -2175,21 +2188,21 @@ body[data-locale] .b-offtopic_marker {
 .b-anime_status_tag.studio,
 .b-anime_status_tag.studio[href] {
   padding: 2px 4px;
-  border: 1px solid var(--color-auxiliary-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text);
-  background-color: var(--color-additional-background);
+  background-color: var(--color-tag);
 }
 
 .b-anime_status_tag.episode[href]:hover,
 .b-anime_status_tag.studio[href]:hover {
-  background-color: var(--color-background-hover);
-  border-color: var(--color-main-border);
+  background-color: var(--color-tag-hover);
+  border-color: var(--color-border);
 }
 
 .b-anime_status_tag.other {
   color: var(--color-main-text);
-  background-color: var(--color-background);
-  border-color: var(--color-auxiliary-border);
+  background-color: var(--color-tag);
+  border-color: var(--color-border);
 }
 
 .b-anime_status_tag.summary {
@@ -2214,7 +2227,7 @@ body[data-locale] .b-offtopic_marker {
 
 .b-anime_status_tag.cosplay {
   background-color: transparent;
-  color: #e8dc4f;
+  color: var(--color-yellow);
 }
 
 .b-anime_status_tag.offtopic {
@@ -2267,12 +2280,21 @@ body[data-locale] .b-offtopic_marker {
 }
 
 /*** ПЕРЕКЛЮЧАТЕЛИ: СПИСКИ, НАСТРОЙКИ И Т.Д ***/
-#profiles_edit header.head {
-  margin-bottom: 2.5rem;
+#profiles_edit header.head,
+#dialogs_index header.head,
+#messages_index header.head {
+  margin-bottom: 5rem;
+}
+
+#messages_index .b-options-floated,
+#dialogs_index .b-options-floated {
+  margin-bottom: 2rem;
+  margin-top: -3rem;
 }
 
 #profiles_edit .b-options-floated {
-  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  margin-top: -3rem;
   left: 0;
   right: 0;
   font-size: 13px;
@@ -2300,8 +2322,8 @@ body[data-locale] .b-offtopic_marker {
   right: 0;
   left: 0;
   margin: auto;
-  top: 1rem;
-  background-color: #495c6b;
+  top: 23px;
+  background: var(--color-background-hover);
   padding: 0;
   border-radius: 0;
   display: block;
@@ -2422,13 +2444,13 @@ body[data-locale] .b-offtopic_marker {
 #messages_index .b-options-floated .selected::after,
 #profiles_edit .b-options-floated .selected::after,
 #dialogs_index .b-options-floated .selected::after {
-  background: var(--color-auxiliary-background);
+  background: var(--color-border-bottom);
 }
 
 .b-options-floated.mobile-desktop a::after {
   position: absolute;
   top: 1.5rem;
-  background: var(--color-additional-background);
+  background: var(--color-background-hover);
   display: block;
   width: 100%;
   height: 2px;
@@ -2491,24 +2513,29 @@ body[data-locale] .b-offtopic_marker {
 }
 
 .b-shiki_editor .body .editor textarea,
+.b-collection_search .field input, .b-input input,
+.b-input input[disabled], .b-input select, .b-input textarea,
+.subheadline-input {
+  color: var(--color-main-text);
+  background-color: var(--color-input-background);
+  border-color: var(--color-input-background);
+  transition: 0.3s ease-in-out;
+}
+
 .b-comments .comments-loader,
 .b-comments .comments-hider,
 .b-comments .comments-expander,
-.b-collection_search .field input,
-.b-input input, .b-input input[disabled],
-.b-input select, .subheadline-input,
 .b-forum .faye-loader, .b-postloader,
 .b-bb_codes-examples .example .textarea,
 .b-shiki_editor .links .link-value,
 .b-shiki_editor .images .link-value, 
 .b-shiki_editor .quotes .link-value,
-.b-shiki_editor .upload .link-value,
-.b-input textarea, .collapsed,
-.collapsed + .spoiler .hide-expanded,
+.b-shiki_editor .upload .link-value, 
+.collapsed, .collapsed + .spoiler .hide-expanded,
 .b-comments .faye-loader {
   color: var(--color-main-text);
-  background-color: var(--color-input-background);
-  border-color: var(--color-main-border);
+  background-color: var(--color-button);
+  border-color: var(--color-button-border);
   transition: 0.3s ease-in-out;
 }
 
@@ -2520,12 +2547,12 @@ body[data-locale] .b-offtopic_marker {
 .collapsed + .spoiler .hide-expanded:hover,
 .b-comments .faye-loader:hover {
   color: var(--color-main-text);
-  background-color: var(--color-background-hover);
-  border-color: var(--color-main-border);
+  background-color: var(--color-button-hover);
+  border-color: var(--color-button-border);
 }
 
 .b-quote, .b-quote .b-quote, .b-code-v2 {
-  border: 1px solid var(--color-main-border);
+  border: none;
   color: var(--color-main-text);
   background-color: var(--color-input-background);
 }
@@ -2539,7 +2566,7 @@ body[data-locale] .b-offtopic_marker {
 .b-shiki_editor .images .link-value:focus,
 .b-shiki_editor .quotes .link-value:focus,
 .b-shiki_editor .upload .link-value:focus {
-  border-color: var(--color-border);
+  border-color: var(--color-border-active);
 }
 
 .b-input input[type=file] {
@@ -2550,12 +2577,12 @@ body[data-locale] .b-offtopic_marker {
 
 .noUi-target {
   background-color: var(--color-input-background);
-  border-color: var(--color-main-border);
+  border-color: var(--color-border);
 }
 
 .noUi-handle {
-  background-color: var(--color-auxiliary-background);
-  border-color: var(--color-main-border);
+  background-color: var(--color-background);
+  border-color: var(--color-border);
 }
 
 .noUi-handle::after,
@@ -2569,13 +2596,13 @@ body[data-locale] .b-offtopic_marker {
 
 .p-user_rates-index .list-lines tr.edit-form form {
   background-color: var(--color-main-background);
-  border-color: var(--color-main-border);
+  border-color: var(--color-border);
   border: none;
 }
 
 .b-shiki_editor .body .preview {
   background: none;
-  border-color: var(--color-main-border);
+  border-color: var(--color-border);
 }
 
 #profiles_comments .subheadline-input[type=text],
@@ -2646,6 +2673,10 @@ body[data-locale] .b-offtopic_marker {
   font-family: inherit;
 }
 
+.buttons > div {
+  animation: var(--animation);
+}
+
 .b-link_button.dark {
   border-color: var(--color-button-border);
   color: var(--color-main-text);
@@ -2678,7 +2709,7 @@ body[data-locale] .b-offtopic_marker {
   padding: .4rem;
   margin: 0;
   border: 0;
-  color: var(--color-text);
+  color: var(--color-tooltipped);
   font-size: 0;
   line-height: 0;
   transition: 0.3s ease-in-out;
@@ -2713,7 +2744,7 @@ body[data-locale] .b-offtopic_marker {
   vertical-align: top;
   padding: 0 .5rem;
   border-radius: 0;
-  color: var(--color-auxiliary-text);
+  color: var(--color-tooltipped);
   font-size: .875rem;
   line-height: 1.25rem;
   user-select: none;
@@ -2748,7 +2779,7 @@ body[data-locale] .b-offtopic_marker {
   padding: 0 .5rem;
   margin: .25rem 0;
   border-radius: 0;
-  color: var(--color-auxiliary-text);
+  color: var(--color-tooltipped);
   font-size: .875rem;
   font-weight: bold;
   line-height: 1.25rem;
@@ -3059,11 +3090,11 @@ header.head h2 a.back::after,
 
 .b-collection-filters .b-block_list li.selected::before {
   content: 'check_box';
-  color: var(--color-auxiliary-text);
+  color: var(--color-pink);
 }
 
 .b-collection-filters .b-block_list li.selected {
-  color: var(--color-auxiliary-text);
+  color: var(--color-pink);
 }
 
 .b-collection-filters .b-block_list li.sub {
@@ -3198,17 +3229,17 @@ header.head h2 a.back::after,
   font-size: 11px;
   padding: 6px 0px 3px 0px;
   line-height: 14px;
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-button-border);
   color: var(--color-main-text);
-  background-color: var(--color-background);
+  background-color: var(--color-button);
   transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .p-user_rates .mylist-block + .block + .block + .block > .b-list > li > a:hover,
 .b-collection-filters > .block:nth-child(3) > .b-list > li > a:hover {
   color: var(--color-main-text) !important;
-  background-color: var(--color-background-hover);
-  border-color: var(--color-main-border);
+  background-color: var(--color-button-hover);
+  border-color: var(--color-button-border);
   text-decoration: none;
 }
 
@@ -3227,9 +3258,9 @@ header.head h2 a.back::after,
 .p-animes_collection-index .block > .b-spoiler > label {
   display: block;
   padding: 7px 0 7px 0;
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-button-border);
   color: var(--color-main-text) !important;
-  background-color: var(--color-background);
+  background-color: var(--color-button);
   font-weight: bold;
   line-height: 10px;
   text-align: center;
@@ -3241,8 +3272,8 @@ header.head h2 a.back::after,
 .p-userlist_comparer-show .block > .b-spoiler > label:hover,
 .p-animes_collection-index .block > .b-spoiler > label:hover {
   color: var(--color-main-text) !important;
-  background-color: var(--color-background-hover);
-  border-color: var(--color-main-border);
+  background-color: var(--color-button-hover);
+  border-color: var(--color-button-border);
 }
 
 .b-input input[type=checkbox] {
@@ -3254,7 +3285,7 @@ header.head h2 a.back::after,
   margin: 0 8px 2px 0;
   background: rgba(0, 0, 0, 0)!important;
   background-size: 14px!important;
-  border: 2px solid var(--color-auxiliary-text);
+  border: 2px solid var(--color-pink);
   border-radius: 2px;
   box-sizing: border-box;
   transition: 0.24s cubic-bezier(0.4, 0, 0.2, 1);
@@ -3265,7 +3296,7 @@ header.head h2 a.back::after,
 
 .b-input input[type=checkbox]:checked::before {
   content: 'check_box';
-  color: var(--color-auxiliary-text);
+  color: var(--color-pink);
 }
 
 .b-input input[type=checkbox]:checked::before {
@@ -3318,7 +3349,7 @@ header.head h2 a.back::after,
   top: 0;
   left: 0.375rem;
   width: 1em;
-  color: #4d6175;
+  color: var(--color-pink);
 }
 
 .b-forums .forum input:hover + .link::before {
@@ -3670,7 +3701,7 @@ header.head h2 a.back::after,
   margin-top: -.75rem;
   margin-left: -.75rem;
   background: transparent !important;
-  color: var(--color-auxiliary-text);
+  color: var(--color-pink);
   border: .1875rem solid;
   border-right-color: transparent;
   border-radius: 50%;
@@ -3769,112 +3800,6 @@ header.head h2 a.back::after,
   transition: 0.2s ease-in-out;
 }
 
-/*** ВКЛАДКИ/ТАБЫ ***/
-.u-tabs [data-tab] {
-  animation: 0.2s fadeIn cubic-bezier(0.4, 0, 0.6, 1);
-}
-
-.u-tabs > div:not([data-tab]) {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow-y: auto;
-  justify-content: center;
-}
-
-@media (max-width: 830px) {
-  .u-tabs > div:not([data-tab]) {
-    justify-content: left;
-  }
-}
-
-.u-tabs [data-tab-switch] {
-  display: block;
-  flex-shrink: 0;
-  min-width: 148px;
-  padding: 5px 14px;
-  margin: 8px;
-  border-radius: 0;
-  color: inherit;
-  font-weight: bold;
-  line-height: 1;
-  text-align: center;
-  cursor: pointer;
-  transition: .24s ease;
-  user-select: none;
-  border: 1px solid var(--color-button-border);
-  background-color: var(--color-button);
-}
-
-.u-tabs [data-tab-switch]:hover {
-  background-color: var(--color-button-hover);
-}
-
-.u-tabs [data-tab-switch].active,
-.u-tabs [data-tab-switch]:active {
-  background-color: var(--color-button-active);
-  border-color: var(--color-button-border);
-}
-
-.u-tabs [data-tab-switch].active {
-  color: inherit;
-  cursor: default;
-}
-
-.u-tabs [data-tab] {
-  padding: 12px 8px;
-}
-
-.u-tabs.--ripple [data-tab-switch] {
-  position: relative;
-  overflow: hidden;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.u-tabs.--ripple [data-tab-switch]::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 72%;
-  padding-top: 72%;
-  background: inherit;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate3d(-50%, -50%, 0);
-  pointer-events: none;
-}
-
-.u-tabs.--ripple [data-tab-switch]:not(.active):hover::after {
-  animation: 1s switch-focus--vertical ease infinite;
-}
-
-.u-tabs.--ripple [data-tab-switch].active::after {
-  animation: switch-tap--vertical 0.24s cubic-bezier(0.55, 0.06, 0.68, 0.19);
-}
-
-@keyframes switch-focus--vertical {
-  0%,
-  100% {
-    opacity: .8;
-    transform: translate3d(-50%, -50%, 0);
-  }
-  50% {
-    opacity: .8;
-    transform: translate3d(-50%, -50%, 0) scale(0.95);
-  }
-}
-
-@keyframes switch-tap--vertical {
-  0% {
-    opacity: .8;
-  }
-  100% {
-    opacity: 0;
-    transform: translate3d(-50%, -50%, 0) scale(2.5);
-  }
-}
-
 /*** ТУРНИРЫ ***/
 .b-contest_match .vs .label, .b-contest_match .prev-match, .b-contest_match .next-match, .b-contest_match .vs .invitation, .b-contest_match .vs .vote-voted, .b-contest_match .vs .vote-abstained, .b-contest_match .vs .thanks, .b-contest_match .vs .hint, .b-contest_match .vs .action, .b-contest_match .vs .not-selected, .p-contests .results .cc-result .c-rounds .label {
   color: inherit;
@@ -3907,7 +3832,7 @@ header.head h2 a.back::after,
 
 .p-contests .rating .member a, .p-contests .results a,
 .p-contests .suggestion > a, .p-contests .variant > a {
-  color: var(--color-auxiliary-text);
+  color: var(--color-pink);
 }
 
 .b-contest_match .prev-match:hover, .b-contest_match .next-match:hover, .p-contests .match-day .match-link a:hover, .p-contests .rating .member a:hover, .p-contests .match-day .match-link .c-column.loser a:hover, .p-contests .match-day .match-link .c-column.created a:hover, .p-contests .match-day .match-link.voted-none > .c-column a:hover, .p-contests .match-day .match-link.voted-left > .c-column:last-child a:hover, .p-contests .match-day .match-link.voted-right > .c-column:first-child a:hover, .p-contests .results a:hover, .p-contests .suggestion > a:hover, .p-contests .variant > a:hover {
@@ -3920,22 +3845,22 @@ header.head h2 a.back::after,
 
 .p-contests .match-day .match-link:hover,
 .p-contests .match-day .match-link:active {
-  background-color: var(--color-background-hover) !important;
+  background-color: var(--color-input-background) !important;
   transition: 0.2s ease-in;
 }
 
 .b-contest_match .vs .actions .action span {
   padding: 5px 10px;
   font-weight: bold;
-  border: 1px solid var(--color-main-border);
-  background-color: var(--color-background);
+  border: 1px solid var(--color-button-border);
+  background-color: var(--color-button);
   color: var(--color-main-text);
   transition: background-color 0.25s ease, border-color 0.25s ease
 }
 
 .b-contest_match .vs .actions .action span:hover {
-  background-color: var(--color-background-hover);
-  border-color: var(--color-main-border);
+  background-color: var(--color-button-hover);
+  border-color: var(--color-button-border);
   color: var(--color-main-text);
 }
 
@@ -3965,7 +3890,7 @@ header.head h2 a.back::after,
   font-size: 18px;
   line-height: 1.2;
   vertical-align: middle;
-  color: var(--color-auxiliary-text);
+  color: var(--color-pink);
 }
 
 .p-contests .match-day .match-link.voted-left .started:first-child::before,
@@ -3993,7 +3918,7 @@ header.head h2 a.back::after,
 
 /*** ОПРОСЫ ***/
 .b-poll .poll-variants .poll-variant.result .bar .line {
-  background: var(--color-additional-background);
+  background: var(--color-background-active);
   height: 5px;
   line-height: 5px;
 }
@@ -4012,7 +3937,7 @@ header.head h2 a.back::after,
 
 .b-radio input[type="radio"]:checked + .radio-label::before {
   content: 'check_box';
-  color: var(--color-auxiliary-text);
+  color: var(--color-pink);
   font-family: 'Material Icons';
   border: none;
   width: 21px;
@@ -4023,18 +3948,18 @@ header.head h2 a.back::after,
 
 .b-poll .poll-actions .vote,
 .b-poll .poll-actions .abstain {
-  background-color: var(--color-background);
-  border: 1px solid var(--color-main-border);
+  background-color: var(--color-button);
+  border: 1px solid var(--color-button-border);
   color: var(--color-main-text) !important;
 }
 
 .b-poll .poll-actions .vote:hover,
 .b-poll .poll-actions .abstain:hover {
-  background-color: var(--color-background-hover);
+  background-color: var(--color-button-hover);
 }
 
 .b-poll .poll-variants .poll-variant.result {
-  width: 130%;
+  width: 150%;
 }
 
 .b-poll .poll-variants .poll-variant label {
@@ -4047,7 +3972,7 @@ header.head h2 a.back::after,
   padding: 0 4px;
   color: var(--color-main-text);
   border: 1px solid var(--color-border);
-  background: var(--color-headline-auxiliary-background);
+  background: var(--color-background);
 }
 
 .b-poll .poll-variants .poll-variant.result .votes-total {
@@ -4056,7 +3981,7 @@ header.head h2 a.back::after,
   padding: 0 4px;
   color: var(--color-main-text);
   border: 1px solid var(--color-border);
-  background: var(--color-headline-auxiliary-background);
+  background: var(--color-background);
 }
 
 .b-poll .poll-variants .poll-variant.result label .voted-for {
@@ -4064,7 +3989,7 @@ header.head h2 a.back::after,
   margin-left: 8px;
   color: var(--color-green);
   border: 1px solid var(--color-border);
-  background: var(--color-headline-auxiliary-background);
+  background: var(--color-background);
 }
 
 .b-poll .poll-variants .poll-variant.result label .voted-for::before,
@@ -4100,8 +4025,8 @@ header.head h2 a.back::after,
 }
 
 .highcharts-root .highcharts-axis-labels text {
-  color: var(--color-auxiliary-text) !important;
-  fill: var(--color-auxiliary-text) !important;
+  color: var(--color-pink-text) !important;
+  fill: var(--color-pink-text) !important;
 }
 /*** О САЙТЕ: ГРАФИКИ ***/
 
@@ -4120,6 +4045,7 @@ header.head h2 a.back::after,
   justify-content: center;
   text-transform: uppercase;
   font-size: 13px;
+  line-height: 25px;
 }
 
 .p-profiles-show .achievements .header .size {
@@ -4130,7 +4056,7 @@ header.head h2 a.back::after,
 }
 
 .b-achievement .c-about .progress {
-  background: var(--color-additional-background);
+  background: var(--color-background-active);
   height: 5px;
 }
 
@@ -4144,7 +4070,7 @@ header.head h2 a.back::after,
   line-height: 27px;
   color: var(--color-main-text);
   background: var(--color-background);
-  border: var(--color-main-border);
+  border: var(--color-border);
 }
 
 .b-achievement .c-about .title {
@@ -4182,13 +4108,13 @@ header.head h2 a.back::after,
 }
 
 .b-achievements_notifier .achievement.gained {
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text);
   background: var(--color-background);
 }
 
 .b-achievements_notifier .achievement.lost {
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text);
   background: var(--color-dropped-background);
 }
@@ -4277,13 +4203,13 @@ header.head h2 a.back::after,
   line-height: 20px;
   font-weight: bold;
   right: 5px;
-  top: 7rem;
+  top: 114px;
   width: auto;
   z-index: 1;
 }
 
 #achievements_author .b-achievement.is-badge::before {
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text);
   background: var(--color-background);
   top: 102%;
@@ -4294,7 +4220,7 @@ header.head h2 a.back::after,
 }
 
 #achievements_author .b-achievement.is-badge::after {
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text);
   background: var(--color-background);
   top: 7.3rem;
@@ -4485,7 +4411,7 @@ header.head h2 a.back::after,
 #achievements_index .cc-franchises-genres .c-genres .b-achievement,
 #achievements_show .b-achievement.is-badge:before,
 #achievements_group .b-achievement.is-badge:before {
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text);
   background: var(--color-background);
 }
@@ -4515,7 +4441,7 @@ header.head h2 a.back::after,
 }
 
 .b-edit_styles ::-webkit-scrollbar-track-piece {
-  background: var(--color-additional-background)
+  background: var(--color-scrollbar)
 }
 
 .b-edit_styles ::-webkit-scrollbar-thumb {
@@ -4525,7 +4451,7 @@ header.head h2 a.back::after,
 .b-edit_styles .edit_style .style_css label,
 .b-edit_styles .new_style .style_css label {
   background: var(--color-background);
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text);
   padding: 4px 10px;
   margin-top: 0;
@@ -4564,7 +4490,7 @@ header.head h2 a.back::after,
 
 .cm-s-solarized.cm-s-light .CodeMirror-linenumber, .CodeMirror-gutter {
   color: var(--color-main-text);
-  background: var(--color-headline-auxiliary-background);
+  background: var(--color-headline-background);
 }
 
 .cm-searching {
@@ -4713,7 +4639,7 @@ header.head h2 a.back::after,
   border-radius: 3px;
   z-index: 9;
   overflow: auto;
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   background-color: var(--color-background);
 }
 
@@ -4744,7 +4670,7 @@ header.head h2 a.back::after,
 }
 
 .b-shiki_editor .smileys::-webkit-scrollbar-thumb {
-  background: var(--color-additional-background);
+  background: var(--color-scrollbar);
 }
 
 .b-shiki_editor .smileys div {
@@ -4846,17 +4772,17 @@ header.head h2 a.back::after,
 /*** НОВЫЙ ТЕКСТОВЫЙ РЕДАКТОР ***/
 .ProseMirror {
   background-color: var(--color-input-background);
-  border: 1px solid var(--color-auxiliary-border);
+  border: 1px solid var(--color-input-background);
   color: var(--color-main-text);
 }
 
 .ProseMirror:focus {
-  border-color: var(--color-border);
+  border-color: var(--color-border-active);
   transition: 0.3s ease-in-out;
 }
 
 textarea.ProseMirror:focus {
-  border-color: var(--color-border);
+  border-color: var(--color-border-active);
   transition: 0.3s ease-in-out;
 }
 
@@ -4886,7 +4812,7 @@ textarea.ProseMirror:focus {
 }
 
 .icon.is-disabled {
-  color: var(--color-additional-background) !important;
+  color: var(--color-background-active) !important;
 }
 
 .icon.is-active {
@@ -4894,16 +4820,16 @@ textarea.ProseMirror:focus {
 }
 
 .shiki-file_uploader-upload_progress .bar {
-  background-color: var(--color-auxiliary-background);
+  background-color: var(--color-background);
   color: var(--color-dark);
 }
 
 .shiki-file_uploader-upload_progress::before {
-  color: var(--color-auxiliary-text);
+  color: var(--color-pink);
 }
 .ProseMirror [data-image].is-prosemirror-selected,
 .ProseMirror [data-video].ProseMirror-selectednode {
-  outline: 2px solid var(--color-auxiliary-background) !important;
+  outline: 2px solid var(--color-background) !important;
 }
 
 .ProseMirror [data-div]:hover::before,
@@ -4913,7 +4839,7 @@ textarea.ProseMirror:focus {
 .ProseMirror [data-span]:hover::before, 
 .ProseMirror [data-video].ProseMirror-selectednode::before,
 .ProseMirror [data-video]:hover::before {
-  background: var(--color-auxiliary-background) !important;
+  background: var(--color-pink) !important;
   color: var(--color-dark) !important;
   font-family: inherit !important;
   padding: 1px 0 !important;
@@ -4935,7 +4861,7 @@ textarea.ProseMirror:focus {
 
 .b-image .edit, .b-image .delete, .b-image .collapse, .b-image .drag-handle, .b-image .confirm, .b-image .cancel, .b-image .move-left, .b-image .move-right, .b-image .mobile-edit, .b-image .prosemirror-expand, .b-image .prosemirror-open {
   background-color: var(--color-background);
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text);
 }
 
@@ -4945,7 +4871,7 @@ textarea.ProseMirror:focus {
 
 .menu_group .mobile_placeholder:not(.is-disabled),
 .menu_group .mobile_placeholder:not(.is-disabled):active {
-  color: var(--color-auxiliary-background) !important;
+  color: var(--color-text) !important;
 }
 
 .icon.is-active.is-button.is-disabled[data-v-39840933] {
@@ -5187,7 +5113,7 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-additional-background);
+  background: var(--color-scrollbar);
   border-radius: var(--border-radius);
 }
 
@@ -5208,7 +5134,7 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
 }
 
 .b-to-top.active .arrow {
-  color: var(--color-auxiliary-text);
+  color: var(--color-pink);
   font-size: 40px;
   height: 80px;
 }
@@ -5251,7 +5177,7 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
   font-size: 11px;
   height: 12px;
   line-height: 12px;
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text);
   background-color: var(--color-background);
 }
@@ -5269,7 +5195,7 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
   top: 0;
   left: 0;
   height: 4px;
-  background: var(--color-additional-background);
+  background: var(--color-pink);
   z-index: 9999;
   transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
   transform: translate3d(0, 0, 0);
@@ -5310,7 +5236,7 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
   transition-timing-function: ease-in-out;
 }
 
-.b-feedback > .marker-positioner > .marker-text:after {
+.b-feedback > .marker-positioner > .marker-text::after {
   color: var(--color-main-text);
   font-weight: bold;
   text-transform: uppercase;
@@ -5419,26 +5345,26 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .b-topic .footer-vote {
   padding: 0 10px 0 10px;
   line-height: 2;
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text);
   background-color: var(--color-background);
 }
 
-.b-topic .footer-vote .star:before,
+.b-topic .footer-vote .star::before,
 .b-topic .footer-vote .vote-group .vote,
-.b-topic .footer-vote .vote-group .separator:before {
+.b-topic .footer-vote .vote-group .separator::before {
   color: var(--color-text);
 }
 
 .b-collection-topic > .inner .see-more {
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   background: var(--color-background);
   border-width: 2px;
   transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1) !important;
 }
 
 .b-collection-topic > .inner .see-more:hover {
-  border: 1px solid var(--color-blue);
+  border: 1px solid var(--color-background-hover);
   border-width: 2px;
 }
 
@@ -5473,7 +5399,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 /* Темы дня */
 .b-hot_topics-v2 {
   background-color: transparent;
-  border-bottom: 2px solid var(--color-additional-background);
+  border-bottom: 2px solid var(--color-border-bottom);
 }
 
 .b-hot_topics-v2 .subject,
@@ -5493,11 +5419,11 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 /* Звезды и награды на странице аниме */
 .b-rate .stars.background, .b-user_rate-history .score-time .stars-container .background {
-  color: var(--color-additional-background);
+  color: var(--color-background-active);
 }
 
 .b-rate .stars.score, .b-db_entry > .c-about .contest_winners .medal::before,
-.b-user_rate-history .score-time .stars-container .score {
+.b-user_rate-history .score-time .stars-container .score, .b-rate .text-score, .b-rate .score-notice {
   color: var(--color-orange) !important;
 }
 
@@ -5510,7 +5436,14 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   color: var(--color-text);
 }
 
-.p-profiles-edit .misc .profile-action a:not(.b-button):hover, .p-profiles-edit .misc .profile-action .link:hover, .p-profiles-edit .misc .nickname-changes a:not(.b-button):hover, .p-profiles-edit .misc .nickname-changes .link:hover, .p-profiles-edit .list .profile-action a:not(.b-button):hover, .p-profiles-edit .list .profile-action .link:hover, .p-profiles-edit .list .nickname-changes a:not(.b-button):hover, .p-profiles-edit .list .nickname-changes .link:hover {
+.p-profiles-edit .misc .profile-action a:not(.b-button):hover,
+.p-profiles-edit .misc .profile-action .link:hover,
+.p-profiles-edit .misc .nickname-changes a:not(.b-button):hover,
+.p-profiles-edit .misc .nickname-changes .link:hover,
+.p-profiles-edit .list .profile-action a:not(.b-button):hover,
+.p-profiles-edit .list .profile-action .link:hover, 
+.p-profiles-edit .list .nickname-changes a:not(.b-button):hover,
+.p-profiles-edit .list .nickname-changes .link:hover {
   color: var(--color-main-text-hover);
 }
 
@@ -5543,10 +5476,11 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-coub .tags .tag.category {
-  background-color: var(--color-auxiliary-background);
+  background-color: var(--color-background);
   border-radius: 0;
-  color: var(--color-dark);
+  color: var(--color-main-text);
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .b-coub .tags .tag {
@@ -5554,7 +5488,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   line-height: 22px;
   margin-bottom: 0;
   margin-right: 4px;
-  border: 1px solid var(--color-main-border);
+  border: 1px solid var(--color-border);
   color: var(--color-main-text);
   background-color: var(--color-background);
 }
@@ -5744,11 +5678,12 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .p-user_rates-index .list-posters .user_rate .edit-user_rate {
-  color: inherit;
+  color: var(--color-tooltipped);
+  transition: var(--transition);
 }
 
 .p-user_rates-index .list-posters .user_rate .edit-user_rate::before {
-  background: rgb(24 28 31 / 0.9);
+  background: var(--color-background);
 }
 
 .p-user_rates-index .list-posters .user_rate .edit-user_rate:hover,
@@ -5984,7 +5919,8 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 .b-footer_vote {
-  border-left: 3px solid var(--color-border);
+  border: 0;
+  border-left: 3px solid var(--color-border-left);
   background-color: transparent;
   color: var(--color-main-text);
 }
@@ -6001,7 +5937,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .b-reviews_navigation .navigation-node-all:not(.is-active):not(.is-empty):hover {
   background-color: transparent;
   color: var(--color-main-text-hover);
-  border-color: var(--color-auxiliary-background);
+  border-color: var(--color-background);
 }
 
 .b-footer_vote .vote-group .vote.yes::before,
@@ -6072,13 +6008,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .b-footer_vote .vote-group .vote.yes::before,
 .b-footer_vote .vote-group .vote.no::before {
   font-size: 15px;
-}
-
-.b-footer_vote {
-  border: 0;
-  border-left: 3px solid var(--color-border);
-  background-color: transparent;
-  color: var(--color-main-text);
 }
 
 .b-review {
@@ -6280,7 +6209,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 /* История */
-@media (max-width: 480px) {
+@media (max-width: 720px) {
   .p-profiles .profile-head .c-history {
     display: block;
     float: none;
@@ -6309,6 +6238,11 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   
   .p-profiles .profile-head .c-history .entry img {
     margin: 2px 10px 10px 0;
+  }
+  
+  .p-profiles .profile-head .c-history .entry {
+    width: 50%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -6398,7 +6332,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   .l-page .menu-toggler .toggler {
     background: var(--color-background);
     border-radius: var(--border-radius);
-    border: 1px solid var(--color-main-border);
+    border: 1px solid var(--color-border);
   }
   
   .l-page .menu-toggler .toggler:before {
@@ -6410,8 +6344,21 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   }
 }
 
+@media (max-width: 480px) {
+  .p-user_rates-index .list-lines tr .num {
+    display: table-cell;
+    width: auto;
+  }
+  
+  th.num.order-control[data-order="episodes"],
+  th.num.order-control[data-order="kind"],
+  td.num.hoverable span.current-value[data-field="episodes"], span.misc-value {
+    display: none;
+  }
+}
+
 /* Совместимость */
-@media (max-width: 680px) {
+@media (max-width: 920px) {
   .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility {
     margin-top: 5px;
     top: -10px;
@@ -6419,7 +6366,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   .p-profiles-show .lifetime .title {
     text-align: left;
     padding: 0px 5px;
@@ -6439,32 +6386,12 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
     margin-bottom: 3%;
   }
-  
-  .p-profiles .profile-head .c-info .c-additionals b {
-    width: 55%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 920px) {
-  .p-profiles .profile-head .c-info .c-additionals b {
-    width: 45%;
-  }
-}
-
-@media (max-width: 600px) {
-  .p-profiles .profile-head .c-info .c-additionals b {
-    width: auto;
-  }
 }
 
 /* Друзья и клубы */
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .p-profiles-show .cc-friends {
-    width: 241%;
-  }
-  
-  #profiles_show .b-clubs.one-line .b-club {
-    width: 20%;
+    overflow-x: auto;
   }
 }
 
@@ -6483,10 +6410,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   
   .b-clubs.one-line .b-club:nth-child(4) {
     display: inline-block !important;
-  }
-  
-  #profiles_show .b-clubs.one-line .b-club {
-    margin: 10px;
   }
 }
 
@@ -6556,7 +6479,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   #profiles_show .cc-favourites .c-column {
     float: none;
     display: inline-block !important;
-    width: calc((100vw - 24px) / 3);
+    width: calc((85vw - 24px) / 3);
   }
 }
 
@@ -6727,10 +6650,25 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   }
 }
 
+@media (max-width: 1024px) {  
+  #achievements_show .b-achievement.is-badge::before,
+  #achievements_group .b-achievement.is-badge::before,
+  #achievements_index .cc-authors .b-achievement.is-badge::before {
+    display: none
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+  .p-achievements-index .cc-authors .b-achievement {
+    width: calc(26% - 36px);
+    margin: 0 5px 10px !important;
+  }
+}
+
 @media (max-width: 500px) {
   .p-achievements-index .cc-authors .b-achievement {
     width: calc(54% - 33px);
-    margin: 0 6px 35px !important;
+    margin: 0 5px 10px !important;
   }
   
   #achievements_index .cc-achievements .b-achievement,
@@ -6748,7 +6686,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 @media (min-width: 500px) and (max-width: 680px) {
   .p-achievements-index .cc-authors .b-achievement {
     width: calc(51% - 36px);
-    margin: 0 10px 42px !important;
+    margin: 0 5px 10px !important;
   }
   
   #achievements_index .cc-achievements .b-achievement,
@@ -6766,7 +6704,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 @media (min-width: 680px) and (max-width: 900px) {
   .p-achievements-index .cc-authors .b-achievement {
     width: calc(35% - 35px);
-    margin: 0 10px 38px !important;
+    margin: 0 5px 10px !important;
   }
   
   #achievements_index .cc-achievements .b-achievement,
