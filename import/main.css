@@ -6117,7 +6117,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   .b-reviews_navigation .navigation-node.is-active::after {
     position: absolute;
     top: 30px;
-    background: var(--color-auxiliary-background);
+    background: var(--color-border-bottom);
     width: 24%;
     height: 2px;
     content: '';
