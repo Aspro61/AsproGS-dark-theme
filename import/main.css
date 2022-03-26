@@ -2677,16 +2677,25 @@ body[data-locale] .b-offtopic_marker {
   animation: var(--animation);
 }
 
-.b-link_button.dark {
+.b-link_button.dark,
+.b-link_button.blue {
   border-color: var(--color-button-border);
   color: var(--color-main-text);
   background-color: var(--color-button);
 }
 
-.b-link_button.dark:hover {
+.b-link_button.dark:hover,
+.b-link_button.blue:hover {
   border-color: var(--color-button-border);
   color: var(--color-main-text);
   background-color: var(--color-button-hover);
+}
+
+.b-link_button.dark:active,
+.b-link_button.blue:active {
+  background-color: var(--color-button-active);
+  color: var(--color-main-text);
+  border-color: var(--color-button-border);
 }
 
 .b-shiki_editor-v2 footer .cancel,
@@ -2696,7 +2705,7 @@ body[data-locale] .b-offtopic_marker {
   border: 1px solid var(--color-button-border);
   color: var(--color-main-text) !important;
   background-color: var(--color-button);
-  line-height: 23px;
+  line-height: 23px !important;
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: bold;
