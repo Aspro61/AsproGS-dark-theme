@@ -5808,6 +5808,291 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 }
 
 /*** ОТЗЫВЫ ***/
+.b-status-line .section.main .comments::before,
+.b-status-line .section.additional .comments::before,
+.b-status-line .section.created_at time::before, 
+.b-status-line .section.additional .collection-size::before,
+.b-critique_votes::before, 
+.b-status-line .section.changed_at time::before {
+  color: var(--color-purple);
+}
+
+.b-critique_votes .votes-against,
+.b-footer_vote .vote-group .vote.no.selected,
+.b-footer_vote .vote-group .vote.no:hover,
+.b-critique_votes .user-vote .voted-against,
+.b-review-topic.is-review_review_author_details > .inner .review-info .negative {
+  color: var(--color-red);
+}
+
+.b-critique_votes .votes-for,
+.b-footer_vote .vote-group .vote.yes.selected,
+.b-footer_vote .vote-group .vote.yes:hover,
+.b-critique_votes .user-vote .voted-for,
+.b-review-topic.is-review_review_author_details > .inner .review-info .positive {
+  color: var(--color-green);
+}
+
+.b-footer_vote .vote-group .vote,
+.b-review-topic.is-review_review_author_details > .inner .review-info .neutral {
+  color: var(--color-blue);
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-info .opinion.positive {
+  background: transparent;
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-info .opinion.neutral {
+  color: var(--color-blue);
+  background: transparent;
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-info .opinion.negative {
+  background: transparent;
+}
+
+.b-footer_vote .vote-group .vote.yes::before,
+.b-footer_vote .vote-group .vote.no::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  vertical-align: bottom;
+}
+
+.b-footer_vote .vote-group .vote.yes::before {
+  content: "thumb_up";
+}
+
+.b-footer_vote .vote-group .vote.no::before {
+  content: "thumb_down";
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-info .user-rate-label,
+.b-review-topic.is-review_review_author_details > .inner .review-details .b-status-line {
+  color: var(--color-main-text);
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-details .name-url .to-review,
+.b-review-topic.is-review_review_author_details > .inner .review-details .name-url .name {
+  color: var(--color-text);
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-details .name-url .to-review:active,
+.b-review-topic.is-review_review_author_details > .inner .review-details .name-url .name:active {
+  color: var(--color-main-text-active);
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-details .name-url .to-review:hover,
+.b-review-topic.is-review_review_author_details > .inner .review-details .name-url .name:hover {
+  color: var(--color-main-text-hover);
+}
+
+.b-footer_vote {
+  border: none;
+  border-left: 3px solid var(--color-border-left);
+  background: transparent;
+  color: var(--color-main-text);
+  font-size: 14px;
+}
+
+.b-footer_vote .star::before {
+  color: var(--color-orange);
+}
+
+.b-status-line .section:not(:last-child)::after {
+  border-right: 1px solid var(--color-border);
+}
+
+.b-footer_vote .vote-group .vote span {
+  border-bottom: none;
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-info .opinion::before,
+.b-reviews_navigation .navigation-node-positive .label::before,
+.b-reviews_navigation .navigation-node-neutral .label::before,
+.b-reviews_navigation .navigation-node-negative .label::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  vertical-align: middle;
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-info .opinion.positive::before,
+.b-reviews_navigation .navigation-node-positive .label::before {
+  content: "thumb_up";
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-info .opinion.neutral::before,
+.b-reviews_navigation .navigation-node-neutral .label::before {
+  content: "thumbs_up_down";
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-info .opinion.negative::before,
+.b-reviews_navigation .navigation-node-negative .label::before {
+  content: "thumb_down";
+}
+
+.b-reviews_navigation .navigation-node {
+  border-left: 2px solid;
+}
+
+.b-reviews_navigation .navigation-node-positive:not(.is-active):not(.is-empty):hover,
+.b-reviews_navigation .navigation-node-neutral:not(.is-active):not(.is-empty):hover,
+.b-reviews_navigation .navigation-node-negative:not(.is-active):not(.is-empty):hover,
+.b-reviews_navigation .navigation-node-negative:not(.is-active):not(.is-empty):active,
+.b-reviews_navigation .navigation-node-positive:not(.is-active):not(.is-empty):active,
+.b-reviews_navigation .navigation-node-neutral:not(.is-active):not(.is-empty):active {
+  background: transparent;
+}
+
+.b-reviews_navigation .navigation-node-all:not(.is-active):not(.is-empty):hover {
+  color: var(--color-main-text-hover);
+  background: transparent;
+}
+
+.b-reviews_navigation .navigation-node-all:not(.is-active):not(.is-empty):active {
+  color: var(--color-main-text-active);
+  background: transparent;
+}
+
+.b-reviews_navigation .navigation-node-all {
+  color: var(--color-main-text);
+  background: transparent;
+  border-color: var(--color-border-left);
+}
+
+.b-reviews_navigation .navigation-node-positive {
+  color: var(--color-green);
+  background: transparent;
+  border-color: var(--color-green);
+}
+
+.b-reviews_navigation .navigation-node-neutral {
+  color: var(--color-blue);
+  background: transparent;
+  border-color: var(--color-blue);
+}
+
+.b-reviews_navigation .navigation-node-negative {
+  color: var(--color-red);
+  background: transparent;
+  border-color: var(--color-red);
+}
+
+@media screen and (min-width: 1024px) {
+  .b-reviews_navigation .navigation-node.is-active,
+  .b-reviews_navigation .navigation-node:not(.is-active):not(.is-empty) {
+    padding-top: 0;
+  }
+
+  .b-reviews_navigation .navigation-node {
+    font-size: 13px;
+    justify-content: center;
+    width: 100%;
+    border: none;
+  }
+
+  .b-reviews_navigation .navigation-node.is-active,
+  .b-reviews_navigation .navigation-node .label::before {
+    font-size: 13px;
+  }
+  
+  .b-reviews_navigation .navigation-container {
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 2rem;
+  }
+  
+  .b-reviews_navigation .navigation-node.is-active::after {
+    position: absolute;
+    top: 30px;
+    background: var(--color-border-bottom);
+    width: 24%;
+    height: 2px;
+    content: '';
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .p-reviews-index .b-reviews_navigation .navigation-node.is-active::after {
+    top: 80px;
+  }
+  
+  .b-reviews_navigation .navigation-node.is-empty:not(.is-active) .label,
+  .b-reviews_navigation .navigation-node.is-empty:not(.is-active) .count {
+    color: rgb(212 227 245 / 35%);
+  }
+}
+
+.b-reviews_navigation .navigation-node .count::before,
+.b-reviews_navigation .navigation-node .count::after,
+.b-reviews_navigation .navigation-node .label::before,
+.b-reviews_navigation .navigation-node-positive .label::before,
+.b-reviews_navigation .navigation-node-neutral .label::before,
+.b-reviews_navigation .navigation-node-negative .label::before {
+  color: inherit;
+}
+
+.b-reviews_navigation .navigation-node .count::before {
+  content: '–';
+  padding-right: 5px;
+}
+
+.b-reviews_navigation .navigation-node .count::after {
+  display: none;
+}
+
+.b-anime_status_tag.is_written_before_release,
+.b-anime_status_tag.opened-collection {
+  background-color: var(--color-watching-background);
+  border: 1px solid var(--color-watching-border);
+  color: var(--color-main-text);
+  font-weight: bold;
+}
+
+.b-reviews_navigation .navigation-node .label {
+  align-items: center;
+}
+
+.b-reviews_navigation .navigation-node .count {
+  font-size: 19px;
+}
+
+.b-review-topic.is-review_review_author_details > .inner .review-info .user-rate .b-add_to_list .edit-trigger {
+  border-right: none !important;
+}
+
+.b-critique-topic .critique-stars .title {
+  color: var(--color-main-text);
+}
 
 /*** МОБИЛЬНАЯ ВЕРСИЯ ***/
 /* Меню */
