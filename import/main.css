@@ -6113,6 +6113,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   font-weight: bold;
 }
 
+.b-reviews_navigation .navigation-node,
 .b-reviews_navigation .navigation-node .label {
   align-items: center;
 }
