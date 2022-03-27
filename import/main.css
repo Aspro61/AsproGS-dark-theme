@@ -96,7 +96,8 @@ body, .l-page {
 }
 
 ::selection {
-  color: var(--color-special);
+  color: var(--color-main-text);
+  background: var(--color-blue);
 }
 
 .b-link, .b-topic > .inner .name-date span.name {
@@ -200,7 +201,7 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
 }
 
 /* Красный цвет */
-.b-ban .duration-ban, .b-comment > .inner .body .ban .resolution, .b-comment > .inner .body .ban .resolution a, .b-review_votes .votes-against, .b-topic .footer-vote .vote-group .vote.no.selected, .b-topic .footer-vote .vote-group .vote.no:hover, .b-review_votes .warn, .p-contests-show .voting-warning .red-warning, .p-contests .match-day .match-link .loser::before, .p-contests .rating .member .progress.negative, .b-log_entry .state.deleted, .b-log_entry .state.rejected, .b-log_entry .state.post_rejected, .b-log_entry .change-details .field-changes .diff del.diffmod, .b-log_entry .change-details .field-changes .diff del.diffdel, .b-abuse_request .remove, .b-abuse_request .resolution.rejected, .b-user_rate_log .action.destroy, .b-input .error, .p-contests .match-day .match-link.voted-left .started:last-child::before, .p-contests .match-day .match-link.voted-right .started:first-child::before, .b-review_votes .user-vote .voted-against, .b-catalog_entry .cover .misc span.released, .p-profiles header.head .misc .banned, .p-moderations_genres-index.p-studios-index .check.no::before, .p-profiles-edit .misc .profile-action .warn, .p-profiles-edit .misc .nickname-changes .warn, .p-profiles-edit .list .profile-action .warn, .p-profiles-edit .list .nickname-changes .warn {
+.b-ban .duration-ban, .b-comment > .inner .body .ban .resolution, .b-comment > .inner .body .ban .resolution a, .b-review_votes .votes-against, .b-topic .footer-vote .vote-group .vote.no.selected, .b-topic .footer-vote .vote-group .vote.no:hover, .b-review_votes .warn, .p-contests-show .voting-warning .red-warning, .p-contests .match-day .match-link .loser::before, .p-contests .rating .member .progress.negative, .b-log_entry .state.deleted, .b-log_entry .state.rejected, .b-log_entry .state.post_rejected, .b-log_entry .change-details .field-changes .diff del.diffmod, .b-log_entry .change-details .field-changes .diff del.diffdel, .b-abuse_request .remove, .b-abuse_request .resolution.rejected, .b-user_rate_log .action.destroy, .b-input .error, .p-contests .match-day .match-link.voted-left .started:last-child::before, .p-contests .match-day .match-link.voted-right .started:first-child::before, .b-review_votes .user-vote .voted-against, .b-catalog_entry .cover .misc span.released, .p-profiles header.head .misc .banned, .p-moderations_genres-index.p-studios-index .check.no::before, .p-profiles-edit .misc .profile-action .warn, .p-profiles-edit .misc .nickname-changes .warn, .p-profiles-edit .list .profile-action .warn, .p-profiles-edit .list .nickname-changes .warn, .b-animes-menu .copyrighted {
   color: var(--color-red);
 }
 
@@ -1031,6 +1032,7 @@ body {
 .bar.horizontal .line .bar-container .value,
 .bar.vertical .line .bar-container .value {
   color: var(--color-main-text);
+  animation: var(--animation);
 }
 
 .b-stats_bar .bar .third {
@@ -2078,6 +2080,8 @@ code.b-code_inline {
 .b-anime_status_tag.article,
 .b-anime_status_tag.contest,
 .b-anime_status_tag.critique,
+.b-anime_status_tag.paused,
+.b-anime_status_tag.discontinued,
 body[data-locale] .b-abuse_marker,
 body[data-locale] .b-broadcast_marker,
 body[data-locale] .b-offtopic_marker,
@@ -2183,6 +2187,16 @@ body[data-locale] .b-offtopic_marker {
 .b-anime_status_tag.contest {
   background-color: transparent;
   color: var(--color-purple);
+}
+
+.b-anime_status_tag.paused {
+  background-color: transparent;
+  color: var(--color-purple);
+}
+
+.b-anime_status_tag.discontinued {
+  background-color: transparent;
+  color: var(--color-orange);
 }
 
 .b-anime_status_tag.studio,
@@ -2522,11 +2536,16 @@ body[data-locale] .b-offtopic_marker {
   transition: 0.3s ease-in-out;
 }
 
+.b-bb_codes-examples .example .textarea {
+  background-color: var(--color-input-background);
+  border: 1px solid var(--color-input-background);
+  color: var(--color-main-text);
+}
+
 .b-comments .comments-loader,
 .b-comments .comments-hider,
 .b-comments .comments-expander,
 .b-forum .faye-loader, .b-postloader,
-.b-bb_codes-examples .example .textarea,
 .b-shiki_editor .links .link-value,
 .b-shiki_editor .images .link-value, 
 .b-shiki_editor .quotes .link-value,
@@ -2741,11 +2760,11 @@ body[data-locale] .b-offtopic_marker {
 }
 
 .b-height_shortener .shade {
-  background: var(--color-main-background);
+  background: var(--color-main-background) !important;
 }
 
 .tooltip-inner .b-height_shortener .shade {
-  background: var(--color-background);
+  background: var(--color-background) !important;
 }
 
 .b-height_shortener .expand {
@@ -4036,6 +4055,22 @@ header.head h2 a.back::after,
 .highcharts-root .highcharts-axis-labels text {
   color: var(--color-pink-text) !important;
   fill: var(--color-pink-text) !important;
+}
+
+.b-log_entry .change-details .field-changes .diff del,
+.b-log_entry .change-details .field-changes .diff ins {
+  padding: 2px 5px;
+  margin-right: 5px;
+}
+
+.b-log_entry .change-details .field-changes .diff del {
+  background: var(--color-background) !important;
+  color: var(--color-red);
+}
+
+.b-log_entry .change-details .field-changes .diff ins {
+  background: var(--color-background) !important;
+  color: var(--color-green);
 }
 /*** О САЙТЕ: ГРАФИКИ ***/
 
