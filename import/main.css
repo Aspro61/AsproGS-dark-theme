@@ -302,6 +302,7 @@ span[style="font-size:9px; color: green;"] {
   position: sticky;
   top: 0;
   background: var(--color-menu-background);
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 80%);
 }
 
 .l-top_menu-v2 .menu-dropdown > span, .l-top_menu-v2 .submenu,
@@ -2258,12 +2259,12 @@ body[data-locale] .b-offtopic_marker {
 .b-anime_status_tag.ignored {
   vertical-align: top;
   background-color: transparent;
-  color: #ef5350;
+  color: var(--color-red);
 }
 
 .b-anime_status_tag.broadcast {
   background-color: transparent;
-  color: #e84fde;
+  color: var(--color-purple);
 }
 
 .b-shiki_editor aside.markers {
