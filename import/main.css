@@ -1044,11 +1044,7 @@ body {
   background: var(--color-s2-background);
 }
 
-#profiles_show .b-stats_bar.lifetime .times .time.checked {
-  color: var(--color-beige);
-  -webkit-text-stroke: thin;
-}
-
+#profiles_show .b-stats_bar.lifetime .times .time.checked,
 #profiles_show .b-stats_bar.lifetime .times .time.checked::before {
   color: var(--color-beige);
 }
