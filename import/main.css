@@ -6121,6 +6121,18 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   .b-reviews_navigation .navigation-node.is-empty:not(.is-active) .count {
     color: rgb(212 227 245 / 35%);
   }
+  
+  .b-reviews_navigation .navigation-node-positive.is-active::after {
+    background: var(--color-green);
+  }
+
+  .b-reviews_navigation .navigation-node-neutral.is-active::after {
+    background: var(--color-blue);
+  }
+
+  .b-reviews_navigation .navigation-node-negative.is-active::after {
+    background: var(--color-red);
+  }
 }
 
 .b-reviews_navigation .navigation-node .count::before,
@@ -6182,10 +6194,6 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
   background: transparent;
   border: 1px solid var(--color-red);
   color: var(--color-red);
-}
-
-.b-link_button.create-review::before {
-  content: "forum";
 }
 
 .b-status-line .section.main .collection-size {
