@@ -62,10 +62,6 @@
   display: none;
 }
 
-.about .b-image.b-poster img {
-  filter: invert(1) brightness(70%);
-}
-
 /*** СПОЙЛЕР СО ВСПЛЫВАЮЩИМ ОКНОМ ***/
 @keyframes fadeIn {
   0% {
