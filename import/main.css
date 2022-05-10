@@ -1017,7 +1017,6 @@ body {
 
 .bar.horizontal .line .x_label {
   line-height: 1.15rem;
-  margin-left: 1rem;
 }
 
 .bar.horizontal .line .bar-container .value {
