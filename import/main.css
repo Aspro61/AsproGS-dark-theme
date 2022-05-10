@@ -737,7 +737,6 @@ body {
   height: 12px;
   line-height: 0;
   margin-top: 1rem;
-  border: 1px solid var(--color-border);
 }
 
 .b-stats_bar .bar .first,
@@ -749,11 +748,13 @@ body {
 .b-stats_bar.anime .bar .first,
 .b-stats_bar.manga .bar .first {
   background: var(--color-completed-background);
+  border-right: 2px solid var(--color-dark);
 }
 
 .b-stats_bar.anime .bar .second,
 .b-stats_bar.manga .bar .second {
   background: var(--color-planned-background);
+  border-right: 2px solid var(--color-dark);
 }
 
 .b-stats_bar.anime .bar .third,
@@ -990,7 +991,7 @@ body {
 }
 
 #profiles_show .lifetime .bar {
-  height: 10px;
+  height: 12px;
 }
 
 .bar.vertical .line .bar-container .bar {
@@ -1003,6 +1004,26 @@ body {
 
 .bar.vertical {
   border-bottom: 1px solid var(--color-border);
+  padding: 0;
+}
+
+.bar.horizontal .line .bar-container {
+  margin-right: 2rem;
+}
+
+.bar.horizontal .line .bar-container .bar {
+  height: 1.15rem;
+}
+
+.bar.horizontal .line .x_label {
+  line-height: 1.15rem;
+  margin-left: 1rem;
+}
+
+.bar.horizontal .line .bar-container .value {
+  float: none;
+  text-align: center;
+  line-height: 1.2rem;
   padding: 0;
 }
 
@@ -1019,7 +1040,6 @@ body {
 .bar.horizontal .bar.s2,
 .bar.horizontal .bar.s1,
 .bar.horizontal .bar.s0 {
-  border: 1px solid var(--color-dark);
   background: var(--color-s0-background);
 }
 
@@ -1044,6 +1064,12 @@ body {
   background: var(--color-s2-background);
 }
 
+#profiles_show .b-stats_bar.lifetime .times .time.checked {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
 #profiles_show .b-stats_bar.lifetime .times .time.checked,
 #profiles_show .b-stats_bar.lifetime .times .time.checked::before {
   color: var(--color-beige);
@@ -1051,9 +1077,14 @@ body {
 
 #profiles_show .lifetime .cuts .cut {
   position: absolute;
-  height: 8px;
+  height: 1rem;
   width: 2px;
-  background: var(--color-beige);
+  background-color: var(--color-dark);
+}
+
+#profiles_show .lifetime .times .time {
+  color: var(--color-main-text);
+  text-transform: uppercase;
 }
 
 /* Друзья и клубы */
@@ -1497,16 +1528,57 @@ body {
   text-align: center;
 }
 
+.p-user_rates-index .stat-categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-user_rates-index .stat-categories .category {
+  flex-grow: 1;
+  height: auto;
+  margin: 0;
+  text-align: center;
+  line-height: 1.5rem;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-dark) !important;
+}
+
+.p-user_rates-index .stat-categories .category:hover {
+  color: var(--color-text);
+  background-color: #221f28;
+}
+
+.p-user_rates-index .stat-categories .t4:hover {
+  color: var(--color-pink);
+}
+
 .p-user_rates-index .stat-categories .t4 {
   font-size: 16px;
+  color: var(--color-pink);
+  order: -4;
 }
 
 .p-user_rates-index .stat-categories .t3 {
-  font-size: 15px;
+  font-size: 14px;
+  color: var(--color-text);
+  order: -3;
 }
 
 .p-user_rates-index .stat-categories .t2 {
-  font-size: 14px;
+  font-size: 13px;
+  color: var(--color-text);
+  order: -2;
+}
+
+.p-user_rates-index .stat-categories .t1 {
+  font-size: 12px;
+  color: var(--color-text);
+  order: -1;
+}
+
+.p-user_rates-index .stat-categories .t0 {
+  font-size: 11px;
+  color: var(--color-text);
 }
 
 .p-user_rates-index .list-lines tr td .rate-text,
