@@ -109,7 +109,7 @@ a, h2, h3, h4, .p-profiles .profile-head .c-info .c-additionals div a, .b-stats_
   transition: 0.2s ease-in-out;
 }
 
-.b-link, .b-topic > .inner .name-date span.name, .p-profiles-show .about a, .p-profiles .profile-head .c-brief header .notice a, .p-user_history-index .history-page .history-interval p a, a.b-mention, .p-topics .l-menu .critiques .entry .title, .b-forums .forum .link-with-input .link, .p-topics .l-menu .clubs .entry .title, .b-hot_topics-v2 .b-link, .p-user_rates-index .list-lines tr .name a, .p-user_rates-index .list-lines tr .index, .p-user_rates-index .list-lines tr td, .p-user_rates-index .list-lines tr td .episodes_total, .p-user_rates-index .l-content .order-control, .p-user_rates-index .stat-categories .category, .b-block_list > li {
+.b-link, .b-topic > .inner .name-date span.name, .p-profiles-show .about a, .p-profiles .profile-head .c-brief header .notice a, .p-user_history-index .history-page .history-interval p a, a.b-mention, .p-topics .l-menu .critiques .entry .title, .b-forums .forum .link-with-input .link, .p-topics .l-menu .clubs .entry .title, .b-hot_topics-v2 .b-link, .p-user_rates-index .list-lines tr .name a, .p-user_rates-index .list-lines tr .index, .p-user_rates-index .list-lines tr td, .p-user_rates-index .list-lines tr td .episodes_total, .p-user_rates-index .l-content .order-control, .p-user_rates-index .stat-categories .category, .b-block_list li {
   color: var(--color-link);
 }
 
@@ -1542,41 +1542,31 @@ body {
 }
 
 .p-user_rates-index .stat-categories .category:hover {
-  color: var(--color-text);
   background-color: #221f28;
-}
-
-.p-user_rates-index .stat-categories .t4:hover {
-  color: var(--color-pink);
 }
 
 .p-user_rates-index .stat-categories .t4 {
   font-size: 16px;
-  color: var(--color-pink);
   order: -4;
 }
 
 .p-user_rates-index .stat-categories .t3 {
   font-size: 14px;
-  color: var(--color-text);
   order: -3;
 }
 
 .p-user_rates-index .stat-categories .t2 {
   font-size: 13px;
-  color: var(--color-text);
   order: -2;
 }
 
 .p-user_rates-index .stat-categories .t1 {
   font-size: 12px;
-  color: var(--color-text);
   order: -1;
 }
 
 .p-user_rates-index .stat-categories .t0 {
   font-size: 11px;
-  color: var(--color-text);
 }
 
 .p-user_rates-index .list-lines tr td .rate-text,
