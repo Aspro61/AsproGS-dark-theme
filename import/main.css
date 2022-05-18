@@ -18,7 +18,7 @@
   --color-main-text-active: #778998;
 
   /* Цвет текста */
-  --color-text: #d18f8c;
+  --color-text: #b38482;
   --color-link: #b392a1;
   --color-special: #8eafa3;
   
@@ -135,13 +135,14 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
   color: var(--color-main-text) !important;
 }
 
-.b-club .name, .b-catalog_entry .cover .title, header.head h1 a.back, header.head h2 a.back, .b-oauth_application .name-logo .name, .b-animes-menu .menu-topics-block .entry .name {
+.b-club .name, .b-catalog_entry .cover .title, header.head h1 a.back, header.head h2 a.back, .b-oauth_application .name-logo .name {
   color: var(--color-text) !important;
   transition: 0.3s ease-in-out;
 }
 
-.b-mention s, .p-topics .l-menu .sticky-topics .topic .title, .p-topics .l-menu .sticky-topics .topic .title::after {
+.b-mention s, .p-topics .l-menu .sticky-topics .topic .title, .p-topics .l-menu .sticky-topics .topic .title::after, .b-animes-menu .menu-topics-block .entry .name {
   color: var(--color-link) !important;
+  transition: 0.3s ease-in-out;
 }
 
 .b-catalog_entry .cover:hover .title, .b-club .name:hover, .b-catalog_entry .cover .title:hover, .p-topics .l-menu .sticky-topics .topic .title:hover, .p-topics .l-menu .sticky-topics .topic .title:hover:after, header.head h1 a.back:hover, header.head h2 a.back:hover, .b-oauth_application .name-logo .name:hover, .b-animes-menu .menu-topics-block .entry .name:hover {
@@ -1805,6 +1806,7 @@ body {
 
 .b-news_line-topic .title span {
   color: var(--color-link) !important;
+  transition: 0.2s ease-in-out;
 }
 
 .b-user_rate-history .status-counter,
