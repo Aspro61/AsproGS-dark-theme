@@ -279,6 +279,15 @@
   content: url(https://nyaa.shikimori.one/system/user_images/original/184680/1257240.jpg);
 }
 
+.b-catalog_entry .cover .image-decor img[alt*="Kokusei"],
+.b-db_entry > .c-image img[alt*="Kokusei"],
+.p-profiles-show .cc-favourites img[alt*="Kokusei"],
+.p-profiles-favourites .cc-favourites:last-child img[alt*="Kokusei"],
+.b-catalog_entry-tooltip img[alt*="Kokusei"],
+.p-profiles-show .about > a img[alt*="Kokusei"] {
+  content: url("https://desu.shikimori.one/system/user_images/original/184680/1608283.jpg"); 
+}
+
 /* Манга и ранобэ */
 .b-catalog_entry .cover .image-decor img[alt*="Sekai no Owari to Yoakemae"],
 .b-db_entry > .c-image img[alt*="Sekai no Owari to Yoakemae"],
@@ -378,6 +387,15 @@
 .b-catalog_entry-tooltip img[alt*="Perfect Blue"],
 .p-profiles-show .about a img[alt*="Perfect Blue"] {
   content: url("https://desu.shikimori.one/system/user_images/original/184680/1744333.jpg");
+}
+
+.b-catalog_entry .cover .image-decor img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"],
+.b-db_entry > .c-image img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"],
+.p-profiles-show .cc-favourites img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"],
+.p-profiles-favourites .cc-favourites:last-child img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"],
+.b-catalog_entry-tooltip img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"],
+.p-profiles-show .about > a img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"] {
+  content: url("https://desu.shikimori.one/system/user_images/original/184680/1797993.jpg");
 }
 
 /*** ПОСТЕРЫ ВТОРОЙ СПОСОБ ***/
