@@ -136,31 +136,24 @@
 /*** VIP ***/
 .name-date a.name[title="X+marks"], a.name[href*="/X+marks"] {
   color: var(--color-green) !important;
-  font-family: Verdana, sans-serif !important;
 }
 
 .name-date a.name[title="AsproGS"], a.name[href*="/AsproGS"] {
-  color: var(--color-beige) !important;
+  color: var(--color-special) !important;
 }
 
 .name-date a.name[title="Appalach1"], a.name[href*="/Appalach1"] {
   color: var(--color-purple) !important;
 }
 
-.name-date a.name[title="pasha2142"], a.name[href*="/pasha2142"] {
-  color: var(--color-blue) !important;
-}
-
-.name-date a.name[title="Felzival"], a.name[href*="/Felzival"] {
-  color: var(--color-red) !important;
-}
-
 .name-date a.name:hover[title="AsproGS"], a.name:hover[href*="/AsproGS"],
 .name-date a.name:hover[title="X+marks"], a.name:hover[href*="/X+marks"],
-.name-date a.name:hover[title="Appalach1"], a.name:hover[href*="/Appalach1"],
-.name-date a.name:hover[title="pasha2142"], a.name:hover[href*="/pasha2142"],
-.name-date a.name:hover[title="Felzival"], a.name:hover[href*="/Felzival"] {
+.name-date a.name:hover[title="Appalach1"], a.name:hover[href*="/Appalach1"] {
   color: var(--color-main-text-hover) !important;
+}
+
+.name-date a.name:hover[title="AsproGS"], a.name:hover[href*="/AsproGS"]{
+  color: var(--color-pink) !important;
 }
 
 .b-comment .b-user16 img[alt="AsproGS"],
@@ -182,10 +175,9 @@
   padding: 3px 5px;
   border-radius: 0;
   z-index: 1;
-  color: #aeb3b7;
-  background: #0f1112 !important;
+  color: var(--color-main-text);
+  background: var(--color-background) !important;
   box-shadow: none;
-  font-family: 'Roboto Condensed', sans-serif !important;
   animation: 0.54s fadeIn cubic-bezier(0.4, 0, 0.6, 1);
 }
 
@@ -314,7 +306,6 @@ tr[data-target_id=""] .num span[data-field="score"].current-value::before {
 
 .rate_module > .c-column > .text::-webkit-scrollbar-thumb {
   background-color: var(--color-scrollbar);
-
 }
 
 .rate_module > .c-column .b-poster,
