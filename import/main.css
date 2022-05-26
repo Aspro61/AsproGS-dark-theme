@@ -6593,27 +6593,16 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 /* Аниме и манга в профиле */
 @media (max-width: 680px) {  
   .stat_names {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto;
-    grid-column-gap: 6px;
     margin: 10px;
   }
   
   .b-stats_bar .stat_names {
-    font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
   }
 }
 
 /* В списках аниме и манги */
-@media (max-width: 690px) {
-  .b-options-floated.mobile-desktop a {
-    margin: 0 10px;
-  }
-}
-
 @media (max-width: 1024px) {
   .l-page .menu-toggler .toggler {
     background: var(--color-background);
