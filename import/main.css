@@ -1579,20 +1579,6 @@ body {
   color: inherit;
 }
 
-.p-user_rates-index .l-content .b-options-floated span::after,
-.b-options-floated > a::after, .b-options-floated .link::after,
-.p-messages .mass-actions .action::after {
-  display: none;
-}
-
-.p-animes .b-options-floated > a::after,
-.p-people .b-options-floated > a::after,
-.p-contests .b-options-floated > a::after,
-.b-options-floated .link::after {
-  content: '●';
-  color: var(--color-beige);
-}
-
 .p-user_rates-index .list-lines tr td,
 .p-user_rates-index .l-content .order-control,
 .p-user_rates-index .list-lines tr .index {
@@ -5547,6 +5533,14 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
 }
 
 .p-profiles .profile-head .c-brief header .notice span::after {
+  content: '●';
+  color: var(--color-beige);
+}
+
+.p-animes .b-options-floated a::after,
+.p-people .b-options-floated a::after,
+.p-contests .b-options-floated a::after,
+.b-options-floated .link::after {
   content: '●';
   color: var(--color-beige);
 }
