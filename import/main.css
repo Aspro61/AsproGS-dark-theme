@@ -1580,6 +1580,7 @@ body {
 }
 
 .p-user_rates-index .l-content .b-options-floated span::after,
+.b-options-floated a::after, .b-options-floated .link::after,
 .p-messages .mass-actions .action::after {
   display: none;
 }
