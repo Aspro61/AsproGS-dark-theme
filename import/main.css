@@ -5551,7 +5551,6 @@ meta[itemid*='spoyler'] ~ .inner .collection-row > article .image-cutter {
   color: var(--color-beige);
 }
 
-.b-options-floated .link::after,
 .p-user_rates-index .list-groups .summary .stat-value::after {
   display: inline-block;
   content: '●';
