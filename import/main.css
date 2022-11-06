@@ -213,7 +213,7 @@ a:active, .p-profiles .profile-head .c-info .c-additionals div a:active, .b-stat
 }
 
 /* Красный цвет */
-.b-ban .duration-ban, .b-comment > .inner .body .ban .resolution, .b-comment > .inner .body .ban .resolution a, .b-review_votes .votes-against, .b-topic .footer-vote .vote-group .vote.no.selected, .b-topic .footer-vote .vote-group .vote.no:hover, .b-review_votes .warn, .p-contests-show .voting-warning .red-warning, .p-contests .match-day .match-link .loser::before, .p-contests .rating .member .progress.negative, .b-log_entry .state.deleted, .b-log_entry .state.rejected, .b-log_entry .state.post_rejected, .b-log_entry .change-details .field-changes .diff del.diffmod, .b-log_entry .change-details .field-changes .diff del.diffdel, .b-abuse_request .remove, .b-abuse_request .resolution.rejected, .b-user_rate_log .action.destroy, .b-input .error, .p-contests .match-day .match-link.voted-left .started:last-child::before, .p-contests .match-day .match-link.voted-right .started:first-child::before, .b-review_votes .user-vote .voted-against, .b-catalog_entry .cover .misc span.released, .p-profiles header.head .misc .banned, .p-moderations_genres-index.p-studios-index .check.no::before, .p-profiles-edit .misc .profile-action .warn, .p-profiles-edit .misc .nickname-changes .warn, .p-profiles-edit .list .profile-action .warn, .p-profiles-edit .list .nickname-changes .warn, .b-animes-menu .copyrighted, .b-critique_votes .warn, .hljs-number, .text-red, .b-club.censored .name::before {
+.b-ban .duration-ban, .b-comment > .inner .body .ban .resolution, .b-comment > .inner .body .ban .resolution a, .b-review_votes .votes-against, .b-topic .footer-vote .vote-group .vote.no.selected, .b-topic .footer-vote .vote-group .vote.no:hover, .b-review_votes .warn, .p-contests-show .voting-warning .red-warning, .p-contests .match-day .match-link .loser::before, .p-contests .rating .member .progress.negative, .b-log_entry .state.deleted, .b-log_entry .state.rejected, .b-log_entry .state.post_rejected, .b-log_entry .change-details .field-changes .diff del.diffmod, .b-log_entry .change-details .field-changes .diff del.diffdel, .b-abuse_request .remove, .b-abuse_request .resolution.rejected, .b-user_rate_log .action.destroy, .b-input .error, .p-contests .match-day .match-link.voted-left .started:last-child::before, .p-contests .match-day .match-link.voted-right .started:first-child::before, .b-review_votes .user-vote .voted-against, .b-catalog_entry .cover .misc span.released, .p-profiles header.head .misc .banned, .p-moderations_genres-index.p-studios-index .check.no::before, .p-profiles-edit .misc .profile-action .warn, .p-profiles-edit .misc .nickname-changes .warn, .p-profiles-edit .list .profile-action .warn, .p-profiles-edit .list .nickname-changes .warn, .b-animes-menu .copyrighted, .b-critique_votes .warn, .hljs-number, .text-red, .b-club.censored .name::before, .p-clubs header.head .censored {
   color: var(--color-red);
 }
 
@@ -4666,6 +4666,68 @@ header.head h2 a.back::after,
   right: 4rem;
 }
 
+/* тестовый вариант, ибо пока что мне лень этим заниматься */
+@media (min-width: 768px) {
+  #profiles_show .cc-3 > .c-column {
+    margin-bottom: 20px;
+  }
+
+  #profiles_show .achievements .cc-franchises .b-badge {
+    margin: 5px 2px 20px 2px;
+  }
+
+  .p-profiles-show .achievements .cc-authors .b-achievement {
+    width: 19.5%;
+    margin: 5px 2px 20px 2px;
+  }
+}
+
+@media (max-width: 500px) {
+  .p-profiles-show .achievements .cc-authors .b-achievement {
+    width: 45%;
+    margin: 5px;
+    margin-bottom: 7%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .p-profiles-show .achievements .cc-authors .b-achievement {
+    width: 23%;
+    margin: 5px;
+    margin-bottom: 4%;
+  }
+}
+
+@media (min-width: 768px) {
+  #profiles_show .achievements .cc-franchises .b-badge {
+    width: 11%;
+    margin: 5px auto 0 auto;
+  }
+
+  .p-profiles-show .achievements .cc-authors .b-achievement {
+    width: 15%;
+    margin: 5px 8px 20px 8px;
+  }
+
+  #profiles_show .cc-2>.c-column:nth-child(3),
+  #profiles_show .cc-2>.c-column:nth-child(4) {
+    width: 100%;
+    padding: 3px;
+  }
+  
+  .p-profiles-show .achievements .cc-2 > .c-column:nth-child(2n+1),
+  .p-profiles-show .achievements .cc-2 > .c-column:nth-child(2n) {
+    display: inline-block;
+    margin-right: 0;
+    width: 50%;
+    padding: 4px;
+  }
+
+  .p-profiles-show .achievements .cc-authors .b-achievement:nth-child(3n) {
+    margin-right: 8px;
+  }
+}
+
 /*** КСС РЕДАКТОР ***/
 .b-edit_styles ::-webkit-scrollbar {
   width: 10px;
@@ -5664,6 +5726,10 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 
 .p-db_entries-collections .b-collection-topic > .inner .see-more {
   height: 119px;
+}
+
+.b-collection-topic > .inner .collection-row.is-spoilers .cover .image-cutter {
+  border: none;
 }
 
 /* Темы дня */
