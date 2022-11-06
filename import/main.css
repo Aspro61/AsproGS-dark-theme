@@ -4712,7 +4712,7 @@ header.head h2 a.back::after,
   #profiles_show .cc-2>.c-column:nth-child(3),
   #profiles_show .cc-2>.c-column:nth-child(4) {
     width: 100%;
-    padding: 3px;
+    padding: 4px;
   }
   
   .p-profiles-show .achievements .cc-2 > .c-column:nth-child(2n+1),
@@ -4725,6 +4725,12 @@ header.head h2 a.back::after,
 
   .p-profiles-show .achievements .cc-authors .b-achievement:nth-child(3n) {
     margin-right: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-profiles-show .cc-2 > .c-column:nth-child(2n+1) {
+    margin-bottom: 10px;
   }
 }
 
