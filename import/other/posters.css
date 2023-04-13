@@ -1,545 +1,251 @@
-/*** ПОСТЕРЫ ***/
-/* Персонажи */
-.b-catalog_entry .cover .image-decor img[alt*="Hachiman Hikigaya"],
-.b-db_entry > .c-image img[alt*="Hachiman Hikigaya"],
-.p-profiles-show .cc-favourites img[alt*="Hachiman Hikigaya"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Hachiman Hikigaya"],
-.b-catalog_entry-tooltip img[alt*="Hachiman Hikigaya"],
-.p-profiles-show .about a img[alt*="Hachiman Hikigaya"] {
-  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/1176145.jpg");
+/* Yukino Yukinoshita */
+[href*="characters/67067-"] {
+  --show-default: 0;
+  --custom-image: url(https://dere.shikimori.one/system/user_images/original/184680/1212949.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Yukino Yukinoshita"],
-.b-db_entry > .c-image img[alt*="Yukino Yukinoshita"],
-.p-profiles-show .cc-favourites img[alt*="Yukino Yukinoshita"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Yukino Yukinoshita"],
-.b-catalog_entry-tooltip img[alt*="Yukino Yukinoshita"],
-.p-profiles-show .about a img[alt*="Yukino Yukinoshita"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/1212949.jpg"); 
+/* Shizuka Hiratsuka */
+[href*="characters/67077-"] {
+  --show-default: 0;
+  --custom-image: url(https://dere.shikimori.one/system/user_images/original/184680/859074.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Ginko"],
-.b-db_entry > .c-image img[alt*="Ginko"],
-.p-profiles-show .cc-favourites img[alt*="Ginko"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Ginko"],
-.b-catalog_entry-tooltip img[alt*="Ginko"],
-.p-profiles-show .about a img[alt*="Ginko"] {
-  content: url("https://moe.shikimori.one/system/user_images/original/184680/889652.jpg");
+/* Iroha Isshiki */
+[href*="characters/110743-"] {
+  --show-default: 0;
+  --custom-image: url(https://kawai.shikimori.one/system/user_images/original/184680/1176116.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Sayo Yasuda"],
-.b-db_entry > .c-image img[alt*="Sayo Yasuda"],
-.p-profiles-show .cc-favourites img[alt*="Sayo Yasuda"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Sayo Yasuda"],
-.b-catalog_entry-tooltip img[alt*="Sayo Yasuda"],
-.p-profiles-show .about a img[alt*="Sayo Yasuda"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/100971/676418.jpg"); 
+/* Kaori Miyazono */
+[href*="characters/69411-"] {
+  --show-default: 0;
+  --custom-image: url(https://kawai.shikimori.one/system/user_images/original/184680/859051.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Kousei Arima"],
-.b-db_entry > .c-image img[alt*="Kousei Arima"],
-.p-profiles-show .cc-favourites img[alt*="Kousei Arima"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kousei Arima"],
-.b-catalog_entry-tooltip img[alt*="Kousei Arima"],
-.p-profiles-show .about a img[alt*="Kousei Arima"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1176108.jpg"); 
+/* Shouko Nishimiya */
+[href*="characters/80243-"] {
+  --show-default: 0;
+  --custom-image: url(https://moe.shikimori.one/system/user_images/original/184680/1216452.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Kiritsugu Emiya"],
-.b-db_entry > .c-image img[alt*="Kiritsugu Emiya"],
-.p-profiles-show .cc-favourites img[alt*="Kiritsugu Emiya"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kiritsugu Emiya"],
-.b-catalog_entry-tooltip img[alt*="Kiritsugu Emiya"],
-.p-profiles-show .about a img[alt*="Kiritsugu Emiya"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/859071.jpg"); 
+/* Shinobu Oshino */
+[href*="characters/23602-"] {
+  --show-default: 0;
+  --custom-image: url(https://desu.shikimori.one/system/user_images/original/184680/859098.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Light Yagami"],
-.b-db_entry > .c-image img[alt*="Light Yagami"],
-.p-profiles-show .cc-favourites img[alt*="Light Yagami"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Light Yagami"],
-.b-catalog_entry-tooltip img[alt*="Light Yagami"],
-.p-profiles-show .about a img[alt*="Light Yagami"] {
-  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/859050.jpg");
+/* Kaguya Shinomiya */
+[href*="characters/136359-"] {
+  --show-default: 0;
+  --custom-image: url(https://desu.shikimori.one/system/user_images/original/184680/1216453.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Shizuka Hiratsuka"],
-.b-db_entry > .c-image img[alt*="Shizuka Hiratsuka"],
-.p-profiles-show .cc-favourites img[alt*="Shizuka Hiratsuka"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Shizuka Hiratsuka"],
-.b-catalog_entry-tooltip img[alt*="Shizuka Hiratsuka"],
-.p-profiles-show .about a img[alt*="Shizuka Hiratsuka"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859074.jpg"); 
+/* Kyouko Kirigiri */
+[href*="characters/63845-"] {
+  --show-default: 0;
+  --custom-image: url(https://kawai.shikimori.one/system/user_images/original/184680/859061.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Iroha Isshiki"],
-.b-db_entry > .c-image img[alt*="Iroha Isshiki"],
-.p-profiles-show .cc-favourites img[alt*="Iroha Isshiki"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Iroha Isshiki"],
-.b-catalog_entry-tooltip img[alt*="Iroha Isshiki"],
-.p-profiles-show .about a img[alt*="Iroha Isshiki"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/1176116.jpg"); 
+/* Beatrice */
+[href*="characters/10285-"] {
+  --show-default: 0;
+  --custom-image: url(https://moe.shikimori.one/system/user_images/original/184680/1744337.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Yumiko Miura"],
-.b-db_entry > .c-image img[alt*="Yumiko Miura"],
-.p-profiles-show .cc-favourites img[alt*="Yumiko Miura"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Yumiko Miura"],
-.b-catalog_entry-tooltip img[alt*="Yumiko Miura"],
-.p-profiles-show .about a img[alt*="Yumiko Miura"] {
-  content: url("https://moe.shikimori.one/system/user_images/original/184680/859077.jpg"); 
+/* Arcueid Brunestud */
+[href*="characters/2213-"] {
+  --show-default: 0;
+  --custom-image: url(https://desu.shikimori.one/system/user_images/original/184680/859063.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Kaori Miyazono"],
-.b-db_entry > .c-image img[alt*="Kaori Miyazono"],
-.p-profiles-show .cc-favourites img[alt*="Kaori Miyazono"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kaori Miyazono"],
-.b-catalog_entry-tooltip img[alt*="Kaori Miyazono"],
-.p-profiles-show .about a img[alt*="Kaori Miyazono"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/859051.jpg"); 
+/* Rin Toosaka */
+[href*="characters/498-"] {
+  --show-default: 0;
+  --custom-image: url(https://desu.shikimori.one/system/user_images/original/184680/859053.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Shouko Nishimiya"],
-.b-db_entry > .c-image img[alt*="Shouko Nishimiya"],
-.p-profiles-show .cc-favourites img[alt*="Shouko Nishimiya"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Shouko Nishimiya"],
-.b-catalog_entry-tooltip img[alt*="Shouko Nishimiya"],
-.p-profiles-show .about a img[alt*="Shouko Nishimiya"] {
-  content: url("https://moe.shikimori.one/system/user_images/original/184680/1216452.jpg"); 
+/* Chane Laforet */
+[href*="characters/7092-"] {
+  --show-default: 0;
+  --custom-image: url(https://kawai.shikimori.one/system/user_images/original/184680/859056.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Shinobu Oshino"],
-.b-db_entry > .c-image img[alt*="Shinobu Oshino"],
-.p-profiles-show .cc-favourites img[alt*="Shinobu Oshino"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Shinobu Oshino"],
-.b-catalog_entry-tooltip img[alt*="Shinobu Oshino"],
-.p-profiles-show .about a img[alt*="Shinobu Oshino"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/859098.jpg"); 
+/* Kyouko Otonashi */
+[href*="characters/4745-"] {
+  --show-default: 0;
+  --custom-image: url(https://dere.shikimori.one/system/user_images/original/184680/1250224.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Gintoki Sakata"],
-.b-db_entry > .c-image img[alt*="Gintoki Sakata"],
-.p-profiles-show .cc-favourites img[alt*="Gintoki Sakata"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Gintoki Sakata"],
-.b-catalog_entry-tooltip img[alt*="Gintoki Sakata"],
-.p-profiles-show .about a img[alt*="Gintoki Sakata"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859069.jpg"); 
+/* Aya Tokiwa */
+[href*="characters/78361-"] {
+  --show-default: 0;
+  --custom-image: url(https://kawai.shikimori.one/system/user_images/original/184680/1257246.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Shirou Emiya"],
-.b-db_entry > .c-image img[alt*="Shirou Emiya"],
-.p-profiles-show .cc-favourites img[alt*="Shirou Emiya"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Shirou Emiya"],
-.b-catalog_entry-tooltip img[alt*="Shirou Emiya"],
-.p-profiles-show .about a img[alt*="Shirou Emiya"] {
-  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/859070.jpg"); 
+/* Misa Hayase */
+[href*="characters/3275-"] {
+  --show-default: 0;
+  --custom-image: url(https://dere.shikimori.one/system/user_images/original/184680/1257244.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Shiki Toono"],
-.b-db_entry > .c-image img[alt*="Shiki Toono"],
-.p-profiles-show .cc-favourites img[alt*="Shiki Toono"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Shiki Toono"],
-.b-catalog_entry-tooltip img[alt*="Shiki Toono"],
-.p-profiles-show .about a img[alt*="Shiki Toono"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859064.jpg"); 
+/* Hachiman Hikigaya */
+[href*="characters/67065-"] {
+  --show-default: 0;
+  --custom-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/1176145.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Kaguya Shinomiya"],
-.b-db_entry > .c-image img[alt*="Kaguya Shinomiya"],
-.p-profiles-show .cc-favourites img[alt*="Kaguya Shinomiya"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kaguya Shinomiya"],
-.b-catalog_entry-tooltip img[alt*="Kaguya Shinomiya"],
-.p-profiles-show .about a img[alt*="Kaguya Shinomiya"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1216453.jpg"); 
+/* Ginko */
+[href*="characters/425-"] {
+  --show-default: 0;
+  --custom-image: url(https://moe.shikimori.one/system/user_images/original/184680/889652.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Winry Rockbell"],
-.b-db_entry > .c-image img[alt*="Winry Rockbell"],
-.p-profiles-show .cc-favourites img[alt*="Winry Rockbell"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Winry Rockbell"],
-.b-catalog_entry-tooltip img[alt*="Winry Rockbell"],
-.p-profiles-show .about a img[alt*="Winry Rockbell"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859079.jpg"); 
+/* Kousei Arima */
+[href*="characters/69407-"] {
+  --show-default: 0;
+  --custom-image: url(https://desu.shikimori.one/system/user_images/original/184680/1176108.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Kyouko Kirigiri"],
-.b-db_entry > .c-image img[alt*="Kyouko Kirigiri"],
-.p-profiles-show .cc-favourites img[alt*="Kyouko Kirigiri"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kyouko Kirigiri"],
-.b-catalog_entry-tooltip img[alt*="Kyouko Kirigiri"],
-.p-profiles-show .about a img[alt*="Kyouko Kirigiri"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/859061.jpg");
+/* Kiritsugu Emiya */
+[href*="characters/10010-"] {
+  --show-default: 0;
+  --custom-image: url(https://kawai.shikimori.one/system/user_images/original/184680/859071.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Beatrice"],
-.b-db_entry > .c-image img[alt*="Beatrice"],
-.p-profiles-show .cc-favourites img[alt*="Beatrice"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Beatrice"],
-.b-catalog_entry-tooltip img[alt*="Beatrice"],
-.p-profiles-show .about a img[alt*="Beatrice"] {
-  content: url("https://moe.shikimori.one/system/user_images/original/184680/1744337.jpg");
+/* Light Yagami */
+[href*="characters/80-"] {
+  --show-default: 0;
+  --custom-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/859050.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Arcueid Brunestud"],
-.b-db_entry > .c-image img[alt*="Arcueid Brunestud"],
-.p-profiles-show .cc-favourites img[alt*="Arcueid Brunestud"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Arcueid Brunestud"],
-.b-catalog_entry-tooltip img[alt*="Arcueid Brunestud"],
-.p-profiles-show .about a img[alt*="Arcueid Brunestud"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/859063.jpg");
+/* Gintoki Sakata */
+[href*="characters/672-"] {
+  --show-default: 0;
+  --custom-image: url(https://dere.shikimori.one/system/user_images/original/184680/859069.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Rin Tohsaka"],
-.b-db_entry > .c-image img[alt*="Rin Tohsaka"],
-.p-profiles-show .cc-favourites img[alt*="Rin Tohsaka"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Rin Tohsaka"],
-.b-catalog_entry-tooltip img[alt*="Rin Tohsaka"],
-.p-profiles-show .about a img[alt*="Rin Tohsaka"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/859053.jpg");
+/* Shirou Emiya */
+[href*="characters/496-"] {
+  --show-default: 0;
+  --custom-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/859070.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Claire Stanfield"],
-.b-db_entry > .c-image img[alt*="Claire Stanfield"],
-.p-profiles-show .cc-favourites img[alt*="Claire Stanfield"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Claire Stanfield"],
-.b-catalog_entry-tooltip img[alt*="Claire Stanfield"],
-.p-profiles-show .about a img[alt*="Claire Stanfield"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859054.jpg"); 
+/* Shiki Toono */
+[href*="characters/2212-"] {
+  --show-default: 0;
+  --custom-image: url(https://dere.shikimori.one/system/user_images/original/184680/859064.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Chane Laforet"],
-.b-db_entry > .c-image img[alt*="Chane Laforet"],
-.p-profiles-show .cc-favourites img[alt*="Chane Laforet"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Chane Laforet"],
-.b-catalog_entry-tooltip img[alt*="Chane Laforet"],
-.p-profiles-show .about a img[alt*="Chane Laforet"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/859056.jpg");
+/* Claire Stanfield */
+[href*="characters/5756-"] {
+  --show-default: 0;
+  --custom-image: url(https://dere.shikimori.one/system/user_images/original/184680/859054.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Yakumo Yuurakutei"],
-.b-db_entry > .c-image img[alt*="Yakumo Yuurakutei"],
-.p-profiles-show .cc-favourites img[alt*="Yakumo Yuurakutei"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Yakumo Yuurakutei"],
-.b-catalog_entry-tooltip img[alt*="Yakumo Yuurakutei"],
-.p-profiles-show .about a img[alt*="Yakumo Yuurakutei"] {
-  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/880140.jpg");
+/* Youzou Ooba */
+[href*="characters/26802-"] {
+  --show-default: 0;
+  --custom-image: url(https://desu.shikimori.one/system/user_images/original/184680/1185168.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Kansai"],
-.b-db_entry > .c-image img[alt*="Kansai"],
-.p-profiles-show .cc-favourites img[alt*="Kansai"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kansai"],
-.b-catalog_entry-tooltip img[alt*="Kansai"],
-.p-profiles-show .about a img[alt*="Kansai"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/947889.jpg");
+/* Kiichi Gotou */
+[href*="characters/9028-"] {
+  --show-default: 0;
+  --custom-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/1257240.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Kyouko Otonashi"],
-.b-db_entry > .c-image img[alt*="Kyouko Otonashi"], 
-.p-profiles-show .cc-favourites img[alt*="Kyouko Otonashi"], 
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kyouko Otonashi"],
-.b-catalog_entry-tooltip img[alt*="Kyouko Otonashi"], 
-.p-profiles-show .about a img[alt*="Kyouko Otonashi"] {
-  content: url(https://dere.shikimori.one/system/user_images/original/184680/1250224.jpg);
+/* Ergo Proxy */
+[href*="animes/z790-"] {
+  --show-default: 0;
+  --custom-image: url(https://dere.shikimori.one/system/user_images/original/184680/859094.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Youzou Ooba"],
-.b-db_entry > .c-image img[alt*="Youzou Ooba"],
-.p-profiles-show .cc-favourites img[alt*="Youzou Ooba"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Youzou Ooba"],
-.b-catalog_entry-tooltip img[alt*="Youzou Ooba"],
-.p-profiles-show .about a img[alt*="Youzou Ooba"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1185168.jpg"); 
+/* Texhnolyze */
+[href*="animes/z26-"] {
+  --show-default: 0;
+  --custom-image: url(https://dere.shikimori.one/system/user_images/original/184680/859084.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Aya Tokiwa"],
-.b-db_entry > .c-image img[alt*="Aya Tokiwa"], 
-.p-profiles-show .cc-favourites img[alt*="Aya Tokiwa"], 
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Aya Tokiwa"],
-.b-catalog_entry-tooltip img[alt*="Aya Tokiwa"], 
-.p-profiles-show .about a img[alt*="Aya Tokiwa"] {
-  content: url(https://kawai.shikimori.one/system/user_images/original/184680/1257246.jpg);
+/* Kara no Kyoukai Movie 7: Satsujin Kousatsu (Go) */
+[href*="animes/5205-"] {
+  --show-default: 0;
+  --custom-image: url(https://desu.shikimori.one/system/user_images/original/184680/1744338.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Misa Hayase"],
-.b-db_entry > .c-image img[alt*="Misa Hayase"], 
-.p-profiles-show .cc-favourites img[alt*="Misa Hayase"], 
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Misa Hayase"],
-.b-catalog_entry-tooltip img[alt*="Misa Hayase"], 
-.p-profiles-show .about a img[alt*="Misa Hayase"] {
-  content: url(https://dere.shikimori.one/system/user_images/original/184680/1257244.jpg);
+/* Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen */
+[href*="animes/z44-"] {
+  --show-default: 0;
+  --custom-image: url(https://kawai.shikimori.one/system/user_images/original/184680/859086.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Kiichi Gotou"],
-.b-db_entry > .c-image img[alt*="Kiichi Gotou"],
-.p-profiles-show .cc-favourites img[alt*="Kiichi Gotou"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kiichi Gotou"],
-.b-catalog_entry-tooltip img[alt*="Kiichi Gotou"],
-.p-profiles-show .about a img[alt*="Kiichi Gotou"] {
-  content: url(https://nyaa.shikimori.one/system/user_images/original/184680/1257240.jpg);
+/* Innocence */
+[href*="animes/468-"] {
+  --show-default: 0;
+  --custom-image: url(https://kawai.shikimori.one/system/user_images/original/184680/880101.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Kokusei"],
-.b-db_entry > .c-image img[alt*="Kokusei"],
-.p-profiles-show .cc-favourites img[alt*="Kokusei"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kokusei"],
-.b-catalog_entry-tooltip img[alt*="Kokusei"],
-.p-profiles-show .about > a img[alt*="Kokusei"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1608283.jpg"); 
+/* Kidou Keisatsu Patlabor: On Television */
+[href*="animes/324-"] {
+  --show-default: 0;
+  --custom-image: url(https://desu.shikimori.one/system/user_images/original/184680/1088423.jpg);
 }
 
-/* Манга и ранобэ */
-.b-catalog_entry .cover .image-decor img[alt*="Sekai no Owari to Yoakemae"],
-.b-db_entry > .c-image img[alt*="Sekai no Owari to Yoakemae"],
-.p-profiles-show .cc-favourites img[alt*="Sekai no Owari to Yoakemae"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Sekai no Owari to Yoakemae"],
-.b-catalog_entry-tooltip img[alt*="Sekai no Owari to Yoakemae"],
-.p-profiles-show .about a img[alt*="Sekai no Owari to Yoakemae"] {
-  content: url("https://moe.shikimori.one/system/user_images/original/184680/859082.jpg"); 
+/* Perfect Blue */
+[href*="animes/437-"] {
+  --show-default: 0;
+  --custom-image: url(https://desu.shikimori.one/system/user_images/original/184680/1744333.jpg);
 }
 
-/* Аниме */
-.b-catalog_entry .cover .image-decor img[alt*="Mobile Suit Gundam SEED"],
-.b-db_entry > .c-image img[alt*="Mobile Suit Gundam SEED"],
-.p-profiles-show .cc-favourites img[alt*="Mobile Suit Gundam SEED"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Mobile Suit Gundam SEED"],
-.b-catalog_entry-tooltip img[alt*="Mobile Suit Gundam SEED"],
-.p-profiles-show .about a img[alt*="Mobile Suit Gundam SEED"] {
-  content: url("https://nyaa.shikimori.one/system/user_images/original/184680/859090.jpg");
+/* Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan */
+[href*="animes/39547-"] {
+  --show-default: 0;
+  --custom-image: url(https://desu.shikimori.one/system/user_images/original/184680/1797993.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Mobile Suit Gundam SEED Destiny"],
-.b-db_entry > .c-image img[alt*="Mobile Suit Gundam SEED Destiny"],
-.p-profiles-show .cc-favourites img[alt*="Mobile Suit Gundam SEED Destiny"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Mobile Suit Gundam SEED Destiny"],
-.b-catalog_entry-tooltip img[alt*="Mobile Suit Gundam SEED Destiny"],
-.p-profiles-show .about a img[alt*="Mobile Suit Gundam SEED Destiny"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859089.jpg");
+/* Mushishi */
+[href*="animes/457-"] {
+  --show-default: 0;
+  --custom-image: url(https://dere.shikimori.one/system/user_images/original/184680/859049.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Hunter x Hunter (2011)"],
-.b-db_entry > .c-image img[alt*="Hunter x Hunter (2011)"],
-.p-profiles-show .cc-favourites img[alt*="Hunter x Hunter (2011)"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Hunter x Hunter (2011)"],
-.b-catalog_entry-tooltip img[alt*="Hunter x Hunter (2011)"],
-.p-profiles-show .about a img[alt*="Hunter x Hunter (2011)"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/859088.jpg");
+/* Samurai Champloo */
+[href*="animes/205-"] {
+  --show-default: 0;
+  --custom-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/859100.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"],
-.b-db_entry > .c-image img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"],
-.p-profiles-show .cc-favourites img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"],
-.b-catalog_entry-tooltip img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"],
-.p-profiles-show .about a img[alt*="Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/859086.jpg");
+/* Macross */
+[href*="animes/1088-"] {
+  --show-default: 0;
+  --custom-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/880105.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
-.b-db_entry > .c-image img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
-.p-profiles-show .cc-favourites img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
-.b-catalog_entry-tooltip img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"],
-.p-profiles-show .about a img[alt*="Kara no Kyoukai 7: Satsujin Kousatsu (Kou)"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1744338.jpg");
+/* Gintama */
+[href*="animes/z918-"] {
+  --show-default: 0;
+  --custom-image: url(https://kawai.shikimori.one/system/user_images/original/184680/881846.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Ergo Proxy"],
-.b-db_entry > .c-image img[alt*="Ergo Proxy"],
-.p-profiles-show .cc-favourites img[alt*="Ergo Proxy"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Ergo Proxy"],
-.b-catalog_entry-tooltip img[alt*="Ergo Proxy"],
-.p-profiles-show .about a img[alt*="Ergo Proxy"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859094.jpg");
+/* xxxHOLiC */
+[href*="animes/861-"] {
+  --show-default: 0;
+  --custom-image: url(https://kawai.shikimori.one/system/user_images/original/184680/1080961.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Texhnolyze"],
-.b-db_entry > .c-image img[alt*="Texhnolyze"],
-.p-profiles-show .cc-favourites img[alt*="Texhnolyze"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Texhnolyze"],
-.b-catalog_entry-tooltip img[alt*="Texhnolyze"],
-.p-profiles-show .about a img[alt*="Texhnolyze"] {
-  content: url("https://dere.shikimori.one/system/user_images/original/184680/859084.jpg");
+/* Hunter x Hunter (2011) */
+[href*="animes/z11061-"] {
+  --show-default: 0;
+  --custom-image: url(https://desu.shikimori.one/system/user_images/original/184680/859088.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Innocence"],
-.b-db_entry > .c-image img[alt*="Innocence"],
-.p-profiles-show .cc-favourites img[alt*="Innocence"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Innocence"],
-.b-catalog_entry-tooltip img[alt*="Innocence"],
-.p-profiles-show .about a img[alt*="Innocence"] {
-  content: url("https://kawai.shikimori.one/system/user_images/original/184680/880101.jpg");
+/* Aku no Hana */
+[href*="mangas/z24705-"] {
+  --show-default: 0;
+  --custom-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/1019705.jpg);
 }
 
-.b-catalog_entry .cover .image-decor img[alt*="Kidou Keisatsu Patlabor: On Television"],
-.b-db_entry > .c-image img[alt*="Kidou Keisatsu Patlabor: On Television"],
-.p-profiles-show .cc-favourites img[alt*="Kidou Keisatsu Patlabor: On Television"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Kidou Keisatsu Patlabor: On Television"],
-.b-catalog_entry-tooltip img[alt*="Kidou Keisatsu Patlabor: On Television"],
-.p-profiles-show .about a img[alt*="Kidou Keisatsu Patlabor: On Television"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1088423.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Perfect Blue"],
-.b-db_entry > .c-image img[alt*="Perfect Blue"],
-.p-profiles-show .cc-favourites img[alt*="Perfect Blue"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Perfect Blue"],
-.b-catalog_entry-tooltip img[alt*="Perfect Blue"],
-.p-profiles-show .about a img[alt*="Perfect Blue"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1744333.jpg");
-}
-
-.b-catalog_entry .cover .image-decor img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"],
-.b-db_entry > .c-image img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"],
-.p-profiles-show .cc-favourites img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"],
-.p-profiles-favourites .cc-favourites:last-child img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"],
-.b-catalog_entry-tooltip img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"],
-.p-profiles-show .about > a img[alt*="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"] {
-  content: url("https://desu.shikimori.one/system/user_images/original/184680/1797993.jpg");
-}
-
-/*** ПОСТЕРЫ ВТОРОЙ СПОСОБ ***/
-/* Общие настройки обложек */
-.b-catalog_entry .cover .image-cutter,
-.b-catalog_entry-tooltip > a,
-.entry-tooltip_container > .image-link {
-  background-size: cover;
-  background-position: top center;
-}
-
-/* Изменение контейнера во всплывающей подсказке */
-.b-catalog_entry-tooltip > a,
-.entry-tooltip_container > .image-link {
-  float: left;
-  width: 160px;
-  height: 249.34px;
-}
-
-/* Общие настройки обложек на станицах тайтлов */
-.p-db_entries .b-db_entry .c-poster center {
-  position: relative;
-}
-
-.p-db_entries .b-db_entry .c-poster center::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  max-width: 225px;
-  margin: auto;
-  background-position: top center;
-  background-size: cover;
-}
-
-.p-db_entries .b-db_entry .c-poster img {
-  vertical-align: top;
-}
-
-.p-db_entries .b-db_entry .c-poster {
-  margin-bottom: 5px;
-}
-
-/* Для аниме, манги и ранобэ */
-.b-catalog_entry > a[href *= 'animes/457-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/457-'] img,
-.b-catalog_entry > a[href *= 'animes/z1535-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/z1535-'] img,
-.b-catalog_entry > a[href *= 'animes/205-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/205-'] img,
-.b-catalog_entry > a[href *= 'animes/1088-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/1088-'] img,
-.b-catalog_entry > a[href *= 'animes/z918-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/z918-'] img,
-.b-catalog_entry > a[href *= 'mangas/z24705-'] img,
-.entry-tooltip_container > .image-link[href *= 'mangas/z24705-'] img,
-.b-catalog_entry > a[href *= 'animes/861-'] img,
-.entry-tooltip_container > .image-link[href *= 'animes/861-'] img {
-  opacity: 0;
-}
-
-/* Смена обложки – Mushishi */
-.b-catalog_entry a[href *= 'animes/457-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/457-'],
-.b-catalog_entry a[href *= 'animes/457-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/457-'],
-.p-db_entries meta[content *= 'animes/457-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://dere.shikimori.one/system/user_images/original/184680/859049.jpg);
-}
-
-/* Смена обложки – Death Note */
-.b-catalog_entry a[href *= 'animes/z1535-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/z1535-'],
-.b-catalog_entry a[href *= 'animes/z1535-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/z1535-'],
-.p-db_entries meta[content *= 'animes/z1535-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://desu.shikimori.one/system/user_images/original/184680/859093.jpg);
-}
-
-/* Смена обложки – Samurai Champloo */
-.b-catalog_entry a[href *= 'animes/205-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/205-'],
-.b-catalog_entry a[href *= 'animes/205-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/205-'],
-.p-db_entries meta[content *= 'animes/205-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/859100.jpg);
-}
-
-/* Смена обложки – Macross */
-.b-catalog_entry a[href *= 'animes/1088-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/1088-'],
-.b-catalog_entry a[href *= 'animes/1088-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/1088-'],
-.p-db_entries meta[content *= 'animes/1088-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/880105.jpg);
-}
-
-/* Смена обложки – Gintama */
-.b-catalog_entry a[href *= 'animes/z918-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/z918-'],
-.b-catalog_entry a[href *= 'animes/z918-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/z918-'],
-.p-db_entries meta[content *= 'animes/z918-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://kawai.shikimori.one/system/user_images/original/184680/881846.jpg);
-}
-
-/* Смена обложки – Aku no Hana */
-.b-catalog_entry a[href *= 'mangas/z24705-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'mangas/z24705-'],
-.b-catalog_entry a[href *= 'mangas/z24705-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'mangas/z24705-'],
-.p-db_entries meta[content *= 'mangas/z24705-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://nyaa.shikimori.one/system/user_images/original/184680/1019705.jpg);
-}
-
-/* Смена обложки – xxxHOLiC */
-.b-catalog_entry a[href *= 'animes/861-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/861-'],
-.b-catalog_entry a[href *= 'animes/861-'] .image-cutter,
-.entry-tooltip_container > .image-link[href *= 'animes/861-'],
-.p-db_entries meta[content *= 'animes/861-'] ~ .b-db_entry .c-poster center::after {
-  background-image: url(https://kawai.shikimori.one/system/user_images/original/184680/1080961.jpg);
-}
-
-/*** ДОСТИЖЕНИЯ ЗАМЕНА КАРТИНОК ***/
-.p-profiles .b-achievement > .c-image > .inner::after {
-  display: block;
-  content: '';
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: visible !important;
-  z-index: -1;
-}
-
-/*** Общие ***/
-.p-profiles .b-achievement[data-hint^='666 просмотренных аниме'] .inner img {visibility: hidden;}
-.p-profiles .b-achievement[data-hint^='666 просмотренных аниме'] .inner .border {border-color: #3F888F !important;}
-.p-profiles .b-achievement[data-hint^='666 просмотренных аниме'] .inner::after {
-  background: url(https://i.imgur.com/tCQwPfO.gif);
+/* Oyasumi Punpun */
+[href*="mangas/4632-"] {
+  --show-default: 0;
+  --custom-image: url(https://cdn.myanimelist.net/images/manga/3/164420l.jpg);
 }
