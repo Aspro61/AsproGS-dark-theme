@@ -928,31 +928,31 @@ body {
 .b-stats_bar .stat_names .stat_name[data-type='watching,rewatching'],
 .b-options-floated.mobile-desktop > a[data-id='watching'],
 .b-options-floated.mobile-desktop > a[data-id='rewatching'] {
-  order: -4;
+  order: 1;
 }
 
 .b-stats_bar .stat_names .stat_name[data-type='completed'],
 .b-options-floated.mobile-desktop > a[data-id='completed'] {
-  order: -3;
-}
-
-.b-stats_bar .stat_names .stat_name[data-type='planned'],
-.b-options-floated.mobile-desktop > a[data-id='planned'] {
-  order: -2;
+  order: 2;
 }
 
 .b-stats_bar .stat_names .stat_name[data-type='on_hold'],
 .b-options-floated.mobile-desktop > a[data-id='on_hold'] {
-  order: -1;
+  order: 3;
+}
+
+.b-stats_bar .stat_names .stat_name[data-type='planned'],
+.b-options-floated.mobile-desktop > a[data-id='planned'] {
+  order: 4;
 }
 
 .b-stats_bar .stat_names .stat_name[data-type='dropped'],
 .b-options-floated.mobile-desktop > a[data-id='dropped'] {
-  order: 0;
+  order: 5;
 }
 
 .b-options-floated.mobile-desktop > a.selected {
-  order: -5;
+  order: 0;
 }
 
 @media (max-width: 680px) {  
