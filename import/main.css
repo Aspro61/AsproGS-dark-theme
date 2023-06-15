@@ -20,6 +20,7 @@
   /* Цвет текста */
   --color-text: #b38482;
   --color-link: #b392a1;
+  --color-hint: #a7b3c1;
   --color-special: #8eafa3;
   
   /* Цвет иконок */
@@ -35,7 +36,7 @@
   --color-scrollbar: #624d5a;
 
   /* Цвет заголовков */
-  --color-headline-background: #1e1f21;
+  --color-headline-background: #1e1f2180;
 
   /* Цвет меню */
   --color-menu-background: #1e1f21;
@@ -71,9 +72,9 @@
   --color-button-border: #242025;
 
   /* Цвет списков */
-  --color-watching-background: #426060;
-  --color-watching-background-hover: #517675;
-  --color-watching-border: #3a5454;
+  --color-watching-background: #553854;
+  --color-watching-background-hover: #6c4669;
+  --color-watching-border: #322632;
   --color-completed-background: #364b37;
   --color-completed-background-hover: #445e45;
   --color-completed-border: #253326;
@@ -2199,6 +2200,35 @@ code.b-code_inline {
 .b-catalog_entry-tooltip .flexible-button .b-add_to_list {
   padding-bottom: 0;
   width: auto;
+}
+
+.b-catalog_entry-tooltip .inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.b-catalog_entry-tooltip .inner .line {
+  flex: 1 0 100%;
+  font-size: 13px;
+}
+
+.b-catalog_entry-tooltip .inner .line-container {
+  flex: 1 0 100%;
+}
+
+.b-catalog_entry-tooltip .inner .best-works {
+  flex: 1 0 100%;
+}
+
+.b-catalog_entry-tooltip .inner .text {
+  flex: 1 0 0;
+  font-size: 13px;
+}
+
+.b-catalog_entry-tooltip .inner .additional-images {
+  flex: 0 0 48px;
+  order: 1;
 }
 
 /*** ТЕГИ И СТАТУСЫ ***/
@@ -4566,7 +4596,8 @@ header.head h2 a.back::after,
 .p-achievements-franchise .b-badge::before,
 .p-achievements-franchise .b-badge::after,
 .p-achievements-author .b-achievement.is-badge::before,
-.p-achievements-author .b-achievement.is-badge::after {
+.p-achievements-author .b-achievement.is-badge::after,
+.p-achievements-franchise .b-badge[original-title]::before {
   display: block;
   position: absolute;
   top: auto;
@@ -4619,7 +4650,8 @@ header.head h2 a.back::after,
 .p-achievements-index .c-franchises .b-badge::before,
 .p-achievements-franchise .b-badge::before,
 .p-achievements-index .cc-authors .b-achievement.is-badge::before,
-.p-achievements-author .b-achievement.is-badge::before {
+.p-achievements-author .b-achievement.is-badge::before,
+.p-achievements-franchise .b-badge[original-title]::before {
   padding-right: 48px;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.60));
   text-align: left;
