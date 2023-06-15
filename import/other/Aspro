@@ -1,11 +1,3 @@
-/* Личное */
-@import url(https://raw.githubusercontent.com/Aspro61/dark-theme/master/import/other/AsproGS.css);
-/* Фиксированные размеры постеров */
-@import url(https://css-club.web.app/css/fixed_cover.min.css);
-/* Замена стандартных постеров */
-@import url(https://css-club.web.app/css/custom_posters.min.css);
-@import url(https://raw.githubusercontent.com/Aspro61/dark-theme/master/import/other/posters.css);
-
 /*** ПЕРЕМЕННЫЕ ***/
 :root {
   --font-main: 'Roboto Condensed', sans-serif;
