@@ -320,7 +320,7 @@ span[style="font-size:9px; color: green;"] {
   position: sticky;
   top: 0;
   background: var(--color-menu-background);
-  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 80%);
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 80%);
 }
 
 .l-top_menu-v2 .menu-dropdown > span, .l-top_menu-v2 .submenu,
@@ -1586,7 +1586,7 @@ body {
 .p-user_rates-index .l-content .order-control,
 .p-user_rates-index .list-lines tr .index {
   padding: 5px 1px;
-  border-bottom: 0px solid var(--color-border-bottom);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .b-table tr.border {
@@ -2118,6 +2118,13 @@ body {
 .b-spoiler_block > span:hover,
 .b-spoiler_block > span:active {
   background-color: var(--color-button-hover);
+}
+
+.b-spoiler_block > span::after {
+  font-family: 'Material Icons';
+  content: 'arrow_drop_down';
+  font-size: 18px;
+  transition: .24s;
 }
 
 .b-spoiler_inline.is-opened {
@@ -5963,7 +5970,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
 .p-animes .cc .c-screenshot,
 .p-mangas .cc .c-screenshot {
   margin: 0;
-  padding: 2px;
+  padding: 4px;
 }
 
 .p-animes_collection[class] .cc-entries .c-column:nth-child(n) {
@@ -7089,7 +7096,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     --profile-content: calc(100% - var(--profile-sidebar) - var(--profile-gutter));
 
     /* Костыль 1 */
-    --profile-avatar: 215px; /* нужна точная высота для margin-top Истории */
+    --profile-avatar: 205px; /* нужна точная высота для margin-top Истории */
   }
 
   /** 
