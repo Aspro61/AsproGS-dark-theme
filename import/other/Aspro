@@ -1717,9 +1717,11 @@ body {
 #user_rates_index .list-lines .tag-pause,
 #user_rates_index .list-lines .tag-forgotten,
 #user_rates_index .list-lines .tag-star {
-  width: 20px;
-  margin-top: -21px;
+  position: relative;
   float: right;
+  width: 0;
+  margin-top: -21px;
+  z-index: 1;
 }
 
 #user_rates_index .list-posters .tag-heart,
