@@ -6590,7 +6590,7 @@ a:hover, .entry:hover .title, .entry:hover .title > *, a:hover > span, .c-histor
     margin: 0;
   }
   
-  .p-profiles .profile-head .c-history .b-block_list {
+  .p-profiles .profile-head .c-history > div:not(div.subheadline.m13) {
     display: flex;
     margin-top: -.5em;
     overflow-x: auto;
